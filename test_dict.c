@@ -7,7 +7,7 @@
 
 int main(int argc, char **argv) {
     /* Create a dict */
-    dict_t **dict = dictAlloc();
+    dict_t**dict = dictAlloc();
     
     /* lets add foo, and bar to the dict */
     addItem(dict, "foo", "10");
@@ -20,8 +20,8 @@ int main(int argc, char **argv) {
     int true_value;  // o int me tin energeia
     value = (char *)getItem(*dict, "foo"); //diabazoume apo leksiko
     sscanf(value, "%d", &true_value); // metatrepoume ton charactira se int
-    printf("You entered: %d \n", true_value);
-
+    printf("You   entered: %d \n", true_value);
+ 
     /* lets delete them */
     delItem(dict, "foo");
     delItem(dict, "bar");
