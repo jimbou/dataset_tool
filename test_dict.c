@@ -1,4 +1,5 @@
 /* A key/value dict system in C */
+#define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -8,6 +9,39 @@
 int main(int argc, char **argv) {
     /* Create a dict */
     dict_t**dict = dictAlloc();
+
+
+
+    FILE * fp;
+    char * line = NULL;
+    size_t len = 0;
+    ssize_t read;
+
+    fp = fopen("opcodes.txt", "r");
+    if (fp == NULL)
+        exit(EXIT_FAILURE);
+
+    while ((read = getline(&line, &len, fp)) != -1) {
+        //printf("Retrieved line of length %zu:\n", read);
+        //printf("%s", line);
+
+        char *p = NULL;
+        char *p1 =NULL;
+        p = strtok(line," ");
+        p1=p; //periexei to kleidi diladi to opcode
+        p = strtok(NULL,"\n");   //periexei tin energeia
+        //printf("%s ",p1);  
+        //printf("%s ",p); 
+        //printf("%s %s",p,(p++));
+         //printf("%s %s ",p ,p++);
+        addItem(dict, p1, p); //prosthetoume sto leksiko to zeugos energeia opcode
+        printf("You entered %s  with key %s \n", (char *)getItem(*dict, p1), p1);
+    }
+
+    fclose(fp);
+    if (line)
+        free(line);
+    exit(EXIT_SUCCESS);
     
     /* lets add foo, and bar to the dict */
     addItem(dict, "foo", "10");
