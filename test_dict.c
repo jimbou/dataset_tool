@@ -42,12 +42,12 @@ int main(int argc, char **argv) {
     if (line)
         free(line);
     exit(EXIT_SUCCESS);
-    
-    /* lets add foo, and bar to the dict */
+    /*
+    //lets add foo, and bar to the dict 
     addItem(dict, "foo", "10");
     addItem(dict, "bar", "11");
     
-    /* and print their values */
+    //and print their values 
     printf("%s %s\n", (char *)getItem(*dict, "foo"), (char *)getItem(*dict, "bar"));
     
     char *value ;   // o xaraktiras aston opoio tha diabasoume tin timi tis  energias
@@ -56,25 +56,26 @@ int main(int argc, char **argv) {
     sscanf(value, "%d", &true_value); // metatrepoume ton charactira se int
     printf("You   entered: %d \n", true_value);
  
-    /* lets delete them */
+    //lets delete them 
     delItem(dict, "foo");
     delItem(dict, "bar");
     
-    /* see, their gone, there NULL */
+    //see, their gone, there NULL 
     printf("%s %s\n", (char *)getItem(*dict, "foo"), (char *)getItem(*dict, "bar"));
     
-    /* add them again to proof it works */
+    //add them again to proof it works 
     addItem(dict, "foo", "bar");
     addItem(dict, "bar", "foo");
     addItem(dict, "bar", "pan");
     
-    /* see, here */
+    //see, here 
     printf("%s %s\n", (char *)getItem(*dict, "foo"), (char *)getItem(*dict, "bar"));
     
     delItem(dict, "foo");
     delItem(dict, "bar");
     
     dictDealloc(dict);
+    */
     
     return 0;
 }

@@ -1,0 +1,997 @@
+        a_static 114158 [000] 262893.680341798:            401be0 _start+0x0 (/home/bbrapl/code/thesis_test/a_static) 		nop %edi, %edx
+        a_static 114158 [000] 262893.680341798:            401be4 _start+0x4 (/home/bbrapl/code/thesis_test/a_static) 		xor %ebp, %ebp
+        a_static 114158 [000] 262893.680341798:            401be6 _start+0x6 (/home/bbrapl/code/thesis_test/a_static) 		mov %rdx, %r9
+        a_static 114158 [000] 262893.680341798:            401be9 _start+0x9 (/home/bbrapl/code/thesis_test/a_static) 		popq  %rsi
+        a_static 114158 [000] 262893.680341798:            401bea _start+0xa (/home/bbrapl/code/thesis_test/a_static) 		mov %rsp, %rdx
+        a_static 114158 [000] 262893.680341798:            401bed _start+0xd (/home/bbrapl/code/thesis_test/a_static) 		and $0xfffffffffffffff0, %rsp
+        a_static 114158 [000] 262893.680341798:            401bf1 _start+0x11 (/home/bbrapl/code/thesis_test/a_static) 		pushq  %rax
+        a_static 114158 [000] 262893.680341798:            401bf2 _start+0x12 (/home/bbrapl/code/thesis_test/a_static) 		pushq  %rsp
+        a_static 114158 [000] 262893.680341798:            401bf3 _start+0x13 (/home/bbrapl/code/thesis_test/a_static) 		mov $0x402e00, %r8
+        a_static 114158 [000] 262893.680341798:            401bfa _start+0x1a (/home/bbrapl/code/thesis_test/a_static) 		mov $0x402d60, %rcx
+        a_static 114158 [000] 262893.680341798:            401c01 _start+0x21 (/home/bbrapl/code/thesis_test/a_static) 		mov $0x401d05, %rdi
+        a_static 114158 [000] 262893.680341798:            401c08 _start+0x28 (/home/bbrapl/code/thesis_test/a_static) 		addr32 callq  0x4f8
+        a_static 114158 [000] 262893.680341798:            402100 __libc_start_main+0x0 (/home/bbrapl/code/thesis_test/a_static) 		nop %edi, %edx
+        a_static 114158 [000] 262893.680341798:            402104 __libc_start_main+0x4 (/home/bbrapl/code/thesis_test/a_static) 		pushq  %r14
+        a_static 114158 [000] 262893.680341798:            402106 __libc_start_main+0x6 (/home/bbrapl/code/thesis_test/a_static) 		xor %eax, %eax
+        a_static 114158 [000] 262893.680341798:            402108 __libc_start_main+0x8 (/home/bbrapl/code/thesis_test/a_static) 		pushq  %r13
+        a_static 114158 [000] 262893.680341798:            40210a __libc_start_main+0xa (/home/bbrapl/code/thesis_test/a_static) 		mov %r9, %r13
+        a_static 114158 [000] 262893.680341798:            40210d __libc_start_main+0xd (/home/bbrapl/code/thesis_test/a_static) 		pushq  %r12
+        a_static 114158 [000] 262893.680341798:            40210f __libc_start_main+0xf (/home/bbrapl/code/thesis_test/a_static) 		mov %r8, %r12
+        a_static 114158 [000] 262893.680341798:            402112 __libc_start_main+0x12 (/home/bbrapl/code/thesis_test/a_static) 		pushq  %rbp
+        a_static 114158 [000] 262893.680341798:            402113 __libc_start_main+0x13 (/home/bbrapl/code/thesis_test/a_static) 		mov %rcx, %rbp
+        a_static 114158 [000] 262893.680341798:            402116 __libc_start_main+0x16 (/home/bbrapl/code/thesis_test/a_static) 		pushq  %rbx
+        a_static 114158 [000] 262893.680341798:            402117 __libc_start_main+0x17 (/home/bbrapl/code/thesis_test/a_static) 		sub $0xe0, %rsp
+        a_static 114158 [000] 262893.680341798:            40211e __libc_start_main+0x1e (/home/bbrapl/code/thesis_test/a_static) 		movq  %rdx, 0x10(%rsp)
+        a_static 114158 [000] 262893.680341798:            402123 __libc_start_main+0x23 (/home/bbrapl/code/thesis_test/a_static) 		mov $0x0, %rdx
+        a_static 114158 [000] 262893.680341798:            40212a __libc_start_main+0x2a (/home/bbrapl/code/thesis_test/a_static) 		movq  %rdi, 0x18(%rsp)
+        a_static 114158 [000] 262893.680341798:            40212f __libc_start_main+0x2f (/home/bbrapl/code/thesis_test/a_static) 		movl  %esi, 0xc(%rsp)
+        a_static 114158 [000] 262893.680341798:            402133 __libc_start_main+0x33 (/home/bbrapl/code/thesis_test/a_static) 		test %rdx, %rdx
+        a_static 114158 [000] 262893.680342131:            402136 __libc_start_main+0x36 (/home/bbrapl/code/thesis_test/a_static) 		jz 0xb
+        a_static 114158 [000] 262893.680344131:            402141 __libc_start_main+0x41 (/home/bbrapl/code/thesis_test/a_static) 		movl  %eax, 0xbf581(%rip)
+        a_static 114158 [000] 262893.680344131:            402147 __libc_start_main+0x47 (/home/bbrapl/code/thesis_test/a_static) 		callq  0xfffffffffffffac9
+        a_static 114158 [000] 262893.680344131:            401c10 _dl_relocate_static_pie+0x0 (/home/bbrapl/code/thesis_test/a_static) 		nop %edi, %edx
+        a_static 114158 [000] 262893.680344131:            401c14 _dl_relocate_static_pie+0x4 (/home/bbrapl/code/thesis_test/a_static) 		retq  
+        a_static 114158 [000] 262893.680344131:            40214c __libc_start_main+0x4c (/home/bbrapl/code/thesis_test/a_static) 		movsxdl  0xc(%rsp), %rax
+        a_static 114158 [000] 262893.680344131:            402151 __libc_start_main+0x51 (/home/bbrapl/code/thesis_test/a_static) 		movq  0x10(%rsp), %rbx
+        a_static 114158 [000] 262893.680344131:            402156 __libc_start_main+0x56 (/home/bbrapl/code/thesis_test/a_static) 		lea 0x8(%rbx,%rax,8), %rdi
+        a_static 114158 [000] 262893.680344131:            40215b __libc_start_main+0x5b (/home/bbrapl/code/thesis_test/a_static) 		movq  0x110(%rsp), %rax
+        a_static 114158 [000] 262893.680344131:            402163 __libc_start_main+0x63 (/home/bbrapl/code/thesis_test/a_static) 		movq  %rdi, 0xc0b6e(%rip)
+        a_static 114158 [000] 262893.680346464:            40216a __libc_start_main+0x6a (/home/bbrapl/code/thesis_test/a_static) 		movq  %rax, 0xbd8ff(%rip)
+        a_static 114158 [000] 262893.680346464:            402171 __libc_start_main+0x71 (/home/bbrapl/code/thesis_test/a_static) 		nopl  %eax, (%rax)
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402178 __libc_start_main+0x78 (/home/bbrapl/code/thesis_test/a_static) 		add $0x8, %rdi
+        a_static 114158 [000] 262893.680346464:            40217c __libc_start_main+0x7c (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, -0x8(%rdi)
+        a_static 114158 [000] 262893.680346464:            402181 __libc_start_main+0x81 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffff7
+        a_static 114158 [000] 262893.680346464:            402183 __libc_start_main+0x83 (/home/bbrapl/code/thesis_test/a_static) 		callq  0x5288d
+        a_static 114158 [000] 262893.680350131:            454a10 _dl_aux_init+0x0 (/home/bbrapl/code/thesis_test/a_static) 		nop %edi, %edx
+        a_static 114158 [000] 262893.680350131:            454a14 _dl_aux_init+0x4 (/home/bbrapl/code/thesis_test/a_static) 		movq  (%rdi), %rax
+        a_static 114158 [000] 262893.680352131:            454a17 _dl_aux_init+0x7 (/home/bbrapl/code/thesis_test/a_static) 		movq  %rdi, 0x6edc2(%rip)
+        a_static 114158 [000] 262893.680352131:            454a1e _dl_aux_init+0xe (/home/bbrapl/code/thesis_test/a_static) 		test %rax, %rax
+        a_static 114158 [000] 262893.680352464:            454a21 _dl_aux_init+0x11 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x3ff
+        a_static 114158 [000] 262893.680352464:            454a27 _dl_aux_init+0x17 (/home/bbrapl/code/thesis_test/a_static) 		pushq  %r15
+        a_static 114158 [000] 262893.680352464:            454a29 _dl_aux_init+0x19 (/home/bbrapl/code/thesis_test/a_static) 		movq  0x6e2d0(%rip), %rsi
+        a_static 114158 [000] 262893.680352464:            454a30 _dl_aux_init+0x20 (/home/bbrapl/code/thesis_test/a_static) 		xor %r11d, %r11d
+        a_static 114158 [000] 262893.680352464:            454a33 _dl_aux_init+0x23 (/home/bbrapl/code/thesis_test/a_static) 		xor %r9d, %r9d
+        a_static 114158 [000] 262893.680352464:            454a36 _dl_aux_init+0x26 (/home/bbrapl/code/thesis_test/a_static) 		pushq  %r14
+        a_static 114158 [000] 262893.680352464:            454a38 _dl_aux_init+0x28 (/home/bbrapl/code/thesis_test/a_static) 		movl  0x6ee52(%rip), %ecx
+        a_static 114158 [000] 262893.680352464:            454a3e _dl_aux_init+0x2e (/home/bbrapl/code/thesis_test/a_static) 		xor %r14d, %r14d
+        a_static 114158 [000] 262893.680352464:            454a41 _dl_aux_init+0x31 (/home/bbrapl/code/thesis_test/a_static) 		xor %r8d, %r8d
+        a_static 114158 [000] 262893.680352464:            454a44 _dl_aux_init+0x34 (/home/bbrapl/code/thesis_test/a_static) 		pushq  %r13
+        a_static 114158 [000] 262893.680352464:            454a46 _dl_aux_init+0x36 (/home/bbrapl/code/thesis_test/a_static) 		movq  0x6c6cb(%rip), %r10
+        a_static 114158 [000] 262893.680352464:            454a4d _dl_aux_init+0x3d (/home/bbrapl/code/thesis_test/a_static) 		lea 0x449ec(%rip), %rdx
+        a_static 114158 [000] 262893.680352464:            454a54 _dl_aux_init+0x44 (/home/bbrapl/code/thesis_test/a_static) 		movq  0x6eded(%rip), %r15
+        a_static 114158 [000] 262893.680352464:            454a5b _dl_aux_init+0x4b (/home/bbrapl/code/thesis_test/a_static) 		movq  0x6edae(%rip), %r13
+        a_static 114158 [000] 262893.680352464:            454a62 _dl_aux_init+0x52 (/home/bbrapl/code/thesis_test/a_static) 		pushq  %r12
+        a_static 114158 [000] 262893.680352464:            454a64 _dl_aux_init+0x54 (/home/bbrapl/code/thesis_test/a_static) 		xor %r12d, %r12d
+        a_static 114158 [000] 262893.680352464:            454a67 _dl_aux_init+0x57 (/home/bbrapl/code/thesis_test/a_static) 		pushq  %rbp
+        a_static 114158 [000] 262893.680352464:            454a68 _dl_aux_init+0x58 (/home/bbrapl/code/thesis_test/a_static) 		movl  0x6edba(%rip), %ebp
+        a_static 114158 [000] 262893.680352464:            454a6e _dl_aux_init+0x5e (/home/bbrapl/code/thesis_test/a_static) 		pushq  %rbx
+        a_static 114158 [000] 262893.680352464:            454a6f _dl_aux_init+0x5f (/home/bbrapl/code/thesis_test/a_static) 		movq  0x6edba(%rip), %rbx
+        a_static 114158 [000] 262893.680352464:            454a76 _dl_aux_init+0x66 (/home/bbrapl/code/thesis_test/a_static) 		movq  %rsi, -0x28(%rsp)
+        a_static 114158 [000] 262893.680352464:            454a7b _dl_aux_init+0x6b (/home/bbrapl/code/thesis_test/a_static) 		movl  0x6b01f(%rip), %esi
+        a_static 114158 [000] 262893.680352464:            454a81 _dl_aux_init+0x71 (/home/bbrapl/code/thesis_test/a_static) 		movq  %rbx, -0x20(%rsp)
+        a_static 114158 [000] 262893.680352464:            454a86 _dl_aux_init+0x76 (/home/bbrapl/code/thesis_test/a_static) 		movq  0x6afd3(%rip), %rbx
+        a_static 114158 [000] 262893.680352464:            454a8d _dl_aux_init+0x7d (/home/bbrapl/code/thesis_test/a_static) 		movl  %esi, -0x14(%rsp)
+        a_static 114158 [000] 262893.680352464:            454a91 _dl_aux_init+0x81 (/home/bbrapl/code/thesis_test/a_static) 		movq  0x6e270(%rip), %rsi
+        a_static 114158 [000] 262893.680352464:            454a98 _dl_aux_init+0x88 (/home/bbrapl/code/thesis_test/a_static) 		movq  %rbx, -0x10(%rsp)
+        a_static 114158 [000] 262893.680352464:            454a9d _dl_aux_init+0x8d (/home/bbrapl/code/thesis_test/a_static) 		movzxw  0x6c668(%rip), %ebx
+        a_static 114158 [000] 262893.680352464:            454aa4 _dl_aux_init+0x94 (/home/bbrapl/code/thesis_test/a_static) 		movl  %ecx, -0x8(%rsp)
+        a_static 114158 [000] 262893.680352464:            454aa8 _dl_aux_init+0x98 (/home/bbrapl/code/thesis_test/a_static) 		movq  0x6ed39(%rip), %rcx
+        a_static 114158 [000] 262893.680352464:            454aaf _dl_aux_init+0x9f (/home/bbrapl/code/thesis_test/a_static) 		movb  $0x0, -0x1(%rsp)
+        a_static 114158 [000] 262893.680352464:            454ab4 _dl_aux_init+0xa4 (/home/bbrapl/code/thesis_test/a_static) 		movb  $0x0, -0x2(%rsp)
+        a_static 114158 [000] 262893.680352464:            454ab9 _dl_aux_init+0xa9 (/home/bbrapl/code/thesis_test/a_static) 		movb  $0x0, -0x3(%rsp)
+        a_static 114158 [000] 262893.680352464:            454abe _dl_aux_init+0xae (/home/bbrapl/code/thesis_test/a_static) 		movb  $0x0, -0x15(%rsp)
+        a_static 114158 [000] 262893.680352464:            454ac3 _dl_aux_init+0xb3 (/home/bbrapl/code/thesis_test/a_static) 		movb  $0x0, -0x16(%rsp)
+        a_static 114158 [000] 262893.680352464:            454ac8 _dl_aux_init+0xb8 (/home/bbrapl/code/thesis_test/a_static) 		movb  $0x0, -0x4(%rsp)
+        a_static 114158 [000] 262893.680352464:            454acd _dl_aux_init+0xbd (/home/bbrapl/code/thesis_test/a_static) 		movw  %bx, -0x18(%rsp)
+        a_static 114158 [000] 262893.680352464:            454ad2 _dl_aux_init+0xc2 (/home/bbrapl/code/thesis_test/a_static) 		xor %ebx, %ebx
+        a_static 114158 [000] 262893.680352464:            454ad4 _dl_aux_init+0xc4 (/home/bbrapl/code/thesis_test/a_static) 		movq  %rsi, -0x30(%rsp)
+        a_static 114158 [000] 262893.680352464:            454ad9 _dl_aux_init+0xc9 (/home/bbrapl/code/thesis_test/a_static) 		xor %esi, %esi
+        a_static 114158 [000] 262893.680352464:            454adb _dl_aux_init+0xcb (/home/bbrapl/code/thesis_test/a_static) 		movq  %rcx, -0x38(%rsp)
+        a_static 114158 [000] 262893.680352464:            454ae0 _dl_aux_init+0xd0 (/home/bbrapl/code/thesis_test/a_static) 		xor %ecx, %ecx
+        a_static 114158 [000] 262893.680352464:            454ae2 _dl_aux_init+0xd2 (/home/bbrapl/code/thesis_test/a_static) 		nopw  %ax, (%rax,%rax,1)
+        a_static 114158 [000] 262893.680352464:            454ae8 _dl_aux_init+0xd8 (/home/bbrapl/code/thesis_test/a_static) 		sub $0x3, %rax
+        a_static 114158 [000] 262893.680352464:            454aec _dl_aux_init+0xdc (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1e, %rax
+        a_static 114158 [000] 262893.680352464:            454af0 _dl_aux_init+0xe0 (/home/bbrapl/code/thesis_test/a_static) 		jnbe 0x20
+        a_static 114158 [000] 262893.680356131:            454af2 _dl_aux_init+0xe2 (/home/bbrapl/code/thesis_test/a_static) 		movsxdl  (%rdx,%rax,4), %rax
+        a_static 114158 [000] 262893.680356131:            454af6 _dl_aux_init+0xe6 (/home/bbrapl/code/thesis_test/a_static) 		add %rdx, %rax
+        a_static 114158 [000] 262893.680356131:            454af9 _dl_aux_init+0xe9 (/home/bbrapl/code/thesis_test/a_static) 		jmp %rax
+        a_static 114158 [000] 262893.680356131:            454c00 _dl_aux_init+0x1f0 (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%rdi), %rax
+        a_static 114158 [000] 262893.680356131:            454c04 _dl_aux_init+0x1f4 (/home/bbrapl/code/thesis_test/a_static) 		add $0x10, %rdi
+        a_static 114158 [000] 262893.680356131:            454c08 _dl_aux_init+0x1f8 (/home/bbrapl/code/thesis_test/a_static) 		movb  $0x1, -0x3(%rsp)
+        a_static 114158 [000] 262893.680356131:            454c0d _dl_aux_init+0x1fd (/home/bbrapl/code/thesis_test/a_static) 		movq  %rax, -0x20(%rsp)
+        a_static 114158 [000] 262893.680356131:            454c12 _dl_aux_init+0x202 (/home/bbrapl/code/thesis_test/a_static) 		movq  (%rdi), %rax
+        a_static 114158 [000] 262893.680356131:            454c15 _dl_aux_init+0x205 (/home/bbrapl/code/thesis_test/a_static) 		test %rax, %rax
+        a_static 114158 [000] 262893.680356131:            454c18 _dl_aux_init+0x208 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffed0
+        a_static 114158 [000] 262893.680356131:            454ae8 _dl_aux_init+0xd8 (/home/bbrapl/code/thesis_test/a_static) 		sub $0x3, %rax
+        a_static 114158 [000] 262893.680356131:            454aec _dl_aux_init+0xdc (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1e, %rax
+        a_static 114158 [000] 262893.680356131:            454af0 _dl_aux_init+0xe0 (/home/bbrapl/code/thesis_test/a_static) 		jnbe 0x20
+        a_static 114158 [000] 262893.680356131:            454b10 _dl_aux_init+0x100 (/home/bbrapl/code/thesis_test/a_static) 		movq  0x10(%rdi), %rax
+        a_static 114158 [000] 262893.680356131:            454b14 _dl_aux_init+0x104 (/home/bbrapl/code/thesis_test/a_static) 		add $0x10, %rdi
+        a_static 114158 [000] 262893.680356131:            454b18 _dl_aux_init+0x108 (/home/bbrapl/code/thesis_test/a_static) 		test %rax, %rax
+        a_static 114158 [000] 262893.680356131:            454b1b _dl_aux_init+0x10b (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffcd
+        a_static 114158 [000] 262893.680356131:            454ae8 _dl_aux_init+0xd8 (/home/bbrapl/code/thesis_test/a_static) 		sub $0x3, %rax
+        a_static 114158 [000] 262893.680356131:            454aec _dl_aux_init+0xdc (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1e, %rax
+        a_static 114158 [000] 262893.680356131:            454af0 _dl_aux_init+0xe0 (/home/bbrapl/code/thesis_test/a_static) 		jnbe 0x20
+        a_static 114158 [000] 262893.680356131:            454af2 _dl_aux_init+0xe2 (/home/bbrapl/code/thesis_test/a_static) 		movsxdl  (%rdx,%rax,4), %rax
+        a_static 114158 [000] 262893.680356131:            454af6 _dl_aux_init+0xe6 (/home/bbrapl/code/thesis_test/a_static) 		add %rdx, %rax
+        a_static 114158 [000] 262893.680356131:            454af9 _dl_aux_init+0xe9 (/home/bbrapl/code/thesis_test/a_static) 		jmp %rax
+        a_static 114158 [000] 262893.680356131:            454cd0 _dl_aux_init+0x2c0 (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%rdi), %rax
+        a_static 114158 [000] 262893.680356131:            454cd4 _dl_aux_init+0x2c4 (/home/bbrapl/code/thesis_test/a_static) 		add $0x10, %rdi
+        a_static 114158 [000] 262893.680356131:            454cd8 _dl_aux_init+0x2c8 (/home/bbrapl/code/thesis_test/a_static) 		movb  $0x1, -0x4(%rsp)
+        a_static 114158 [000] 262893.680356131:            454cdd _dl_aux_init+0x2cd (/home/bbrapl/code/thesis_test/a_static) 		movq  %rax, -0x30(%rsp)
+        a_static 114158 [000] 262893.680356131:            454ce2 _dl_aux_init+0x2d2 (/home/bbrapl/code/thesis_test/a_static) 		movq  (%rdi), %rax
+        a_static 114158 [000] 262893.680356131:            454ce5 _dl_aux_init+0x2d5 (/home/bbrapl/code/thesis_test/a_static) 		test %rax, %rax
+        a_static 114158 [000] 262893.680356131:            454ce8 _dl_aux_init+0x2d8 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffe00
+        a_static 114158 [000] 262893.680356131:            454ae8 _dl_aux_init+0xd8 (/home/bbrapl/code/thesis_test/a_static) 		sub $0x3, %rax
+        a_static 114158 [000] 262893.680356131:            454aec _dl_aux_init+0xdc (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1e, %rax
+        a_static 114158 [000] 262893.680356131:            454af0 _dl_aux_init+0xe0 (/home/bbrapl/code/thesis_test/a_static) 		jnbe 0x20
+        a_static 114158 [000] 262893.680356131:            454af2 _dl_aux_init+0xe2 (/home/bbrapl/code/thesis_test/a_static) 		movsxdl  (%rdx,%rax,4), %rax
+        a_static 114158 [000] 262893.680356131:            454af6 _dl_aux_init+0xe6 (/home/bbrapl/code/thesis_test/a_static) 		add %rdx, %rax
+        a_static 114158 [000] 262893.680356131:            454af9 _dl_aux_init+0xe9 (/home/bbrapl/code/thesis_test/a_static) 		jmp %rax
+        a_static 114158 [000] 262893.680356131:            454da0 _dl_aux_init+0x390 (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%rdi), %rax
+        a_static 114158 [000] 262893.680356131:            454da4 _dl_aux_init+0x394 (/home/bbrapl/code/thesis_test/a_static) 		test %rax, %rax
+        a_static 114158 [000] 262893.680356131:            454da7 _dl_aux_init+0x397 (/home/bbrapl/code/thesis_test/a_static) 		cmovnz %rax, %r10
+        a_static 114158 [000] 262893.680356131:            454dab _dl_aux_init+0x39b (/home/bbrapl/code/thesis_test/a_static) 		mov $0x1, %eax
+        a_static 114158 [000] 262893.680356131:            454db0 _dl_aux_init+0x3a0 (/home/bbrapl/code/thesis_test/a_static) 		cmovnz %eax, %r9d
+        a_static 114158 [000] 262893.680356131:            454db4 _dl_aux_init+0x3a4 (/home/bbrapl/code/thesis_test/a_static) 		movq  0x10(%rdi), %rax
+        a_static 114158 [000] 262893.680356131:            454db8 _dl_aux_init+0x3a8 (/home/bbrapl/code/thesis_test/a_static) 		add $0x10, %rdi
+        a_static 114158 [000] 262893.680356131:            454dbc _dl_aux_init+0x3ac (/home/bbrapl/code/thesis_test/a_static) 		test %rax, %rax
+        a_static 114158 [000] 262893.680356131:            454dbf _dl_aux_init+0x3af (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffd29
+        a_static 114158 [000] 262893.680356131:            454ae8 _dl_aux_init+0xd8 (/home/bbrapl/code/thesis_test/a_static) 		sub $0x3, %rax
+        a_static 114158 [000] 262893.680356131:            454aec _dl_aux_init+0xdc (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1e, %rax
+        a_static 114158 [000] 262893.680356131:            454af0 _dl_aux_init+0xe0 (/home/bbrapl/code/thesis_test/a_static) 		jnbe 0x20
+        a_static 114158 [000] 262893.680356131:            454af2 _dl_aux_init+0xe2 (/home/bbrapl/code/thesis_test/a_static) 		movsxdl  (%rdx,%rax,4), %rax
+        a_static 114158 [000] 262893.680356131:            454af6 _dl_aux_init+0xe6 (/home/bbrapl/code/thesis_test/a_static) 		add %rdx, %rax
+        a_static 114158 [000] 262893.680356131:            454af9 _dl_aux_init+0xe9 (/home/bbrapl/code/thesis_test/a_static) 		jmp %rax
+        a_static 114158 [000] 262893.680356131:            454ca8 _dl_aux_init+0x298 (/home/bbrapl/code/thesis_test/a_static) 		movl  0x8(%rdi), %ebp
+        a_static 114158 [000] 262893.680356131:            454cab _dl_aux_init+0x29b (/home/bbrapl/code/thesis_test/a_static) 		movq  0x10(%rdi), %rax
+        a_static 114158 [000] 262893.680356131:            454caf _dl_aux_init+0x29f (/home/bbrapl/code/thesis_test/a_static) 		add $0x10, %rdi
+        a_static 114158 [000] 262893.680356131:            454cb3 _dl_aux_init+0x2a3 (/home/bbrapl/code/thesis_test/a_static) 		mov $0x1, %r11d
+        a_static 114158 [000] 262893.680356131:            454cb9 _dl_aux_init+0x2a9 (/home/bbrapl/code/thesis_test/a_static) 		test %rax, %rax
+        a_static 114158 [000] 262893.680356131:            454cbc _dl_aux_init+0x2ac (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffe2c
+        a_static 114158 [000] 262893.680356131:            454ae8 _dl_aux_init+0xd8 (/home/bbrapl/code/thesis_test/a_static) 		sub $0x3, %rax
+        a_static 114158 [000] 262893.680356131:            454aec _dl_aux_init+0xdc (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1e, %rax
+        a_static 114158 [000] 262893.680356464:            454af0 _dl_aux_init+0xe0 (/home/bbrapl/code/thesis_test/a_static) 		jnbe 0x20
+        a_static 114158 [000] 262893.680356464:            454af2 _dl_aux_init+0xe2 (/home/bbrapl/code/thesis_test/a_static) 		movsxdl  (%rdx,%rax,4), %rax
+        a_static 114158 [000] 262893.680356464:            454af6 _dl_aux_init+0xe6 (/home/bbrapl/code/thesis_test/a_static) 		add %rdx, %rax
+        a_static 114158 [000] 262893.680356464:            454af9 _dl_aux_init+0xe9 (/home/bbrapl/code/thesis_test/a_static) 		jmp %rax
+        a_static 114158 [000] 262893.680356464:            454df0 _dl_aux_init+0x3e0 (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%rdi), %r13
+        a_static 114158 [000] 262893.680356464:            454df4 _dl_aux_init+0x3e4 (/home/bbrapl/code/thesis_test/a_static) 		movq  0x10(%rdi), %rax
+        a_static 114158 [000] 262893.680356464:            454df8 _dl_aux_init+0x3e8 (/home/bbrapl/code/thesis_test/a_static) 		add $0x10, %rdi
+        a_static 114158 [000] 262893.680356464:            454dfc _dl_aux_init+0x3ec (/home/bbrapl/code/thesis_test/a_static) 		mov $0x1, %ebx
+        a_static 114158 [000] 262893.680356464:            454e01 _dl_aux_init+0x3f1 (/home/bbrapl/code/thesis_test/a_static) 		test %rax, %rax
+        a_static 114158 [000] 262893.680356464:            454e04 _dl_aux_init+0x3f4 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffce4
+        a_static 114158 [000] 262893.680356464:            454ae8 _dl_aux_init+0xd8 (/home/bbrapl/code/thesis_test/a_static) 		sub $0x3, %rax
+        a_static 114158 [000] 262893.680356464:            454aec _dl_aux_init+0xdc (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1e, %rax
+        a_static 114158 [000] 262893.680356464:            454af0 _dl_aux_init+0xe0 (/home/bbrapl/code/thesis_test/a_static) 		jnbe 0x20
+        a_static 114158 [000] 262893.680356464:            454af2 _dl_aux_init+0xe2 (/home/bbrapl/code/thesis_test/a_static) 		movsxdl  (%rdx,%rax,4), %rax
+        a_static 114158 [000] 262893.680356464:            454af6 _dl_aux_init+0xe6 (/home/bbrapl/code/thesis_test/a_static) 		add %rdx, %rax
+        a_static 114158 [000] 262893.680356464:            454af9 _dl_aux_init+0xe9 (/home/bbrapl/code/thesis_test/a_static) 		jmp %rax
+        a_static 114158 [000] 262893.680356464:            454b10 _dl_aux_init+0x100 (/home/bbrapl/code/thesis_test/a_static) 		movq  0x10(%rdi), %rax
+        a_static 114158 [000] 262893.680356464:            454b14 _dl_aux_init+0x104 (/home/bbrapl/code/thesis_test/a_static) 		add $0x10, %rdi
+        a_static 114158 [000] 262893.680356464:            454b18 _dl_aux_init+0x108 (/home/bbrapl/code/thesis_test/a_static) 		test %rax, %rax
+        a_static 114158 [000] 262893.680356464:            454b1b _dl_aux_init+0x10b (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffcd
+        a_static 114158 [000] 262893.680356464:            454ae8 _dl_aux_init+0xd8 (/home/bbrapl/code/thesis_test/a_static) 		sub $0x3, %rax
+        a_static 114158 [000] 262893.680356464:            454aec _dl_aux_init+0xdc (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1e, %rax
+        a_static 114158 [000] 262893.680356464:            454af0 _dl_aux_init+0xe0 (/home/bbrapl/code/thesis_test/a_static) 		jnbe 0x20
+        a_static 114158 [000] 262893.680356464:            454af2 _dl_aux_init+0xe2 (/home/bbrapl/code/thesis_test/a_static) 		movsxdl  (%rdx,%rax,4), %rax
+        a_static 114158 [000] 262893.680356464:            454af6 _dl_aux_init+0xe6 (/home/bbrapl/code/thesis_test/a_static) 		add %rdx, %rax
+        a_static 114158 [000] 262893.680356464:            454af9 _dl_aux_init+0xe9 (/home/bbrapl/code/thesis_test/a_static) 		jmp %rax
+        a_static 114158 [000] 262893.680356464:            454dd0 _dl_aux_init+0x3c0 (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%rdi), %r15
+        a_static 114158 [000] 262893.680356464:            454dd4 _dl_aux_init+0x3c4 (/home/bbrapl/code/thesis_test/a_static) 		movq  0x10(%rdi), %rax
+        a_static 114158 [000] 262893.680356464:            454dd8 _dl_aux_init+0x3c8 (/home/bbrapl/code/thesis_test/a_static) 		add $0x10, %rdi
+        a_static 114158 [000] 262893.680356464:            454ddc _dl_aux_init+0x3cc (/home/bbrapl/code/thesis_test/a_static) 		mov $0x1, %r12d
+        a_static 114158 [000] 262893.680356464:            454de2 _dl_aux_init+0x3d2 (/home/bbrapl/code/thesis_test/a_static) 		test %rax, %rax
+        a_static 114158 [000] 262893.680356464:            454de5 _dl_aux_init+0x3d5 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffd03
+        a_static 114158 [000] 262893.680356464:            454ae8 _dl_aux_init+0xd8 (/home/bbrapl/code/thesis_test/a_static) 		sub $0x3, %rax
+        a_static 114158 [000] 262893.680356464:            454aec _dl_aux_init+0xdc (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1e, %rax
+        a_static 114158 [000] 262893.680356464:            454af0 _dl_aux_init+0xe0 (/home/bbrapl/code/thesis_test/a_static) 		jnbe 0x20
+        a_static 114158 [000] 262893.680356464:            454af2 _dl_aux_init+0xe2 (/home/bbrapl/code/thesis_test/a_static) 		movsxdl  (%rdx,%rax,4), %rax
+        a_static 114158 [000] 262893.680356464:            454af6 _dl_aux_init+0xe6 (/home/bbrapl/code/thesis_test/a_static) 		add %rdx, %rax
+        a_static 114158 [000] 262893.680356464:            454af9 _dl_aux_init+0xe9 (/home/bbrapl/code/thesis_test/a_static) 		jmp %rax
+        a_static 114158 [000] 262893.680356464:            454b10 _dl_aux_init+0x100 (/home/bbrapl/code/thesis_test/a_static) 		movq  0x10(%rdi), %rax
+        a_static 114158 [000] 262893.680356464:            454b14 _dl_aux_init+0x104 (/home/bbrapl/code/thesis_test/a_static) 		add $0x10, %rdi
+        a_static 114158 [000] 262893.680356464:            454b18 _dl_aux_init+0x108 (/home/bbrapl/code/thesis_test/a_static) 		test %rax, %rax
+        a_static 114158 [000] 262893.680356464:            454b1b _dl_aux_init+0x10b (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffcd
+        a_static 114158 [000] 262893.680356464:            454ae8 _dl_aux_init+0xd8 (/home/bbrapl/code/thesis_test/a_static) 		sub $0x3, %rax
+        a_static 114158 [000] 262893.680356464:            454aec _dl_aux_init+0xdc (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1e, %rax
+        a_static 114158 [000] 262893.680356464:            454af0 _dl_aux_init+0xe0 (/home/bbrapl/code/thesis_test/a_static) 		jnbe 0x20
+        a_static 114158 [000] 262893.680356464:            454af2 _dl_aux_init+0xe2 (/home/bbrapl/code/thesis_test/a_static) 		movsxdl  (%rdx,%rax,4), %rax
+        a_static 114158 [000] 262893.680356464:            454af6 _dl_aux_init+0xe6 (/home/bbrapl/code/thesis_test/a_static) 		add %rdx, %rax
+        a_static 114158 [000] 262893.680356464:            454af9 _dl_aux_init+0xe9 (/home/bbrapl/code/thesis_test/a_static) 		jmp %rax
+        a_static 114158 [000] 262893.680356464:            454b10 _dl_aux_init+0x100 (/home/bbrapl/code/thesis_test/a_static) 		movq  0x10(%rdi), %rax
+        a_static 114158 [000] 262893.680356464:            454b14 _dl_aux_init+0x104 (/home/bbrapl/code/thesis_test/a_static) 		add $0x10, %rdi
+        a_static 114158 [000] 262893.680356464:            454b18 _dl_aux_init+0x108 (/home/bbrapl/code/thesis_test/a_static) 		test %rax, %rax
+        a_static 114158 [000] 262893.680356464:            454b1b _dl_aux_init+0x10b (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffcd
+        a_static 114158 [000] 262893.680356464:            454ae8 _dl_aux_init+0xd8 (/home/bbrapl/code/thesis_test/a_static) 		sub $0x3, %rax
+        a_static 114158 [000] 262893.680356464:            454aec _dl_aux_init+0xdc (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1e, %rax
+        a_static 114158 [000] 262893.680356464:            454af0 _dl_aux_init+0xe0 (/home/bbrapl/code/thesis_test/a_static) 		jnbe 0x20
+        a_static 114158 [000] 262893.680356464:            454af2 _dl_aux_init+0xe2 (/home/bbrapl/code/thesis_test/a_static) 		movsxdl  (%rdx,%rax,4), %rax
+        a_static 114158 [000] 262893.680356464:            454af6 _dl_aux_init+0xe6 (/home/bbrapl/code/thesis_test/a_static) 		add %rdx, %rax
+        a_static 114158 [000] 262893.680356464:            454af9 _dl_aux_init+0xe9 (/home/bbrapl/code/thesis_test/a_static) 		jmp %rax
+        a_static 114158 [000] 262893.680356464:            454b10 _dl_aux_init+0x100 (/home/bbrapl/code/thesis_test/a_static) 		movq  0x10(%rdi), %rax
+        a_static 114158 [000] 262893.680356464:            454b14 _dl_aux_init+0x104 (/home/bbrapl/code/thesis_test/a_static) 		add $0x10, %rdi
+        a_static 114158 [000] 262893.680356464:            454b18 _dl_aux_init+0x108 (/home/bbrapl/code/thesis_test/a_static) 		test %rax, %rax
+        a_static 114158 [000] 262893.680356464:            454b1b _dl_aux_init+0x10b (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffcd
+        a_static 114158 [000] 262893.680356464:            454ae8 _dl_aux_init+0xd8 (/home/bbrapl/code/thesis_test/a_static) 		sub $0x3, %rax
+        a_static 114158 [000] 262893.680356464:            454aec _dl_aux_init+0xdc (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1e, %rax
+        a_static 114158 [000] 262893.680356464:            454af0 _dl_aux_init+0xe0 (/home/bbrapl/code/thesis_test/a_static) 		jnbe 0x20
+        a_static 114158 [000] 262893.680356464:            454af2 _dl_aux_init+0xe2 (/home/bbrapl/code/thesis_test/a_static) 		movsxdl  (%rdx,%rax,4), %rax
+        a_static 114158 [000] 262893.680356464:            454af6 _dl_aux_init+0xe6 (/home/bbrapl/code/thesis_test/a_static) 		add %rdx, %rax
+        a_static 114158 [000] 262893.680356464:            454af9 _dl_aux_init+0xe9 (/home/bbrapl/code/thesis_test/a_static) 		jmp %rax
+        a_static 114158 [000] 262893.680356464:            454d80 _dl_aux_init+0x370 (/home/bbrapl/code/thesis_test/a_static) 		xorl  0x8(%rdi), %r8d
+        a_static 114158 [000] 262893.680356464:            454d84 _dl_aux_init+0x374 (/home/bbrapl/code/thesis_test/a_static) 		movq  0x10(%rdi), %rax
+        a_static 114158 [000] 262893.680356464:            454d88 _dl_aux_init+0x378 (/home/bbrapl/code/thesis_test/a_static) 		add $0x10, %rdi
+        a_static 114158 [000] 262893.680356464:            454d8c _dl_aux_init+0x37c (/home/bbrapl/code/thesis_test/a_static) 		or $0x1, %ecx
+        a_static 114158 [000] 262893.680356464:            454d8f _dl_aux_init+0x37f (/home/bbrapl/code/thesis_test/a_static) 		test %rax, %rax
+        a_static 114158 [000] 262893.680356464:            454d92 _dl_aux_init+0x382 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffd56
+        a_static 114158 [000] 262893.680356464:            454ae8 _dl_aux_init+0xd8 (/home/bbrapl/code/thesis_test/a_static) 		sub $0x3, %rax
+        a_static 114158 [000] 262893.680356464:            454aec _dl_aux_init+0xdc (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1e, %rax
+        a_static 114158 [000] 262893.680356464:            454af0 _dl_aux_init+0xe0 (/home/bbrapl/code/thesis_test/a_static) 		jnbe 0x20
+        a_static 114158 [000] 262893.680356464:            454af2 _dl_aux_init+0xe2 (/home/bbrapl/code/thesis_test/a_static) 		movsxdl  (%rdx,%rax,4), %rax
+        a_static 114158 [000] 262893.680356464:            454af6 _dl_aux_init+0xe6 (/home/bbrapl/code/thesis_test/a_static) 		add %rdx, %rax
+        a_static 114158 [000] 262893.680356464:            454af9 _dl_aux_init+0xe9 (/home/bbrapl/code/thesis_test/a_static) 		jmp %rax
+        a_static 114158 [000] 262893.680356464:            454d60 _dl_aux_init+0x350 (/home/bbrapl/code/thesis_test/a_static) 		xorl  0x8(%rdi), %r8d
+        a_static 114158 [000] 262893.680356464:            454d64 _dl_aux_init+0x354 (/home/bbrapl/code/thesis_test/a_static) 		movq  0x10(%rdi), %rax
+        a_static 114158 [000] 262893.680356464:            454d68 _dl_aux_init+0x358 (/home/bbrapl/code/thesis_test/a_static) 		add $0x10, %rdi
+        a_static 114158 [000] 262893.680356464:            454d6c _dl_aux_init+0x35c (/home/bbrapl/code/thesis_test/a_static) 		or $0x2, %ecx
+        a_static 114158 [000] 262893.680356464:            454d6f _dl_aux_init+0x35f (/home/bbrapl/code/thesis_test/a_static) 		test %rax, %rax
+        a_static 114158 [000] 262893.680356464:            454d72 _dl_aux_init+0x362 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffd76
+        a_static 114158 [000] 262893.680356464:            454ae8 _dl_aux_init+0xd8 (/home/bbrapl/code/thesis_test/a_static) 		sub $0x3, %rax
+        a_static 114158 [000] 262893.680356464:            454aec _dl_aux_init+0xdc (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1e, %rax
+        a_static 114158 [000] 262893.680356464:            454af0 _dl_aux_init+0xe0 (/home/bbrapl/code/thesis_test/a_static) 		jnbe 0x20
+        a_static 114158 [000] 262893.680356464:            454af2 _dl_aux_init+0xe2 (/home/bbrapl/code/thesis_test/a_static) 		movsxdl  (%rdx,%rax,4), %rax
+        a_static 114158 [000] 262893.680356464:            454af6 _dl_aux_init+0xe6 (/home/bbrapl/code/thesis_test/a_static) 		add %rdx, %rax
+        a_static 114158 [000] 262893.680356464:            454af9 _dl_aux_init+0xe9 (/home/bbrapl/code/thesis_test/a_static) 		jmp %rax
+        a_static 114158 [000] 262893.680356464:            454d40 _dl_aux_init+0x330 (/home/bbrapl/code/thesis_test/a_static) 		xorl  0x8(%rdi), %esi
+        a_static 114158 [000] 262893.680356464:            454d43 _dl_aux_init+0x333 (/home/bbrapl/code/thesis_test/a_static) 		movq  0x10(%rdi), %rax
+        a_static 114158 [000] 262893.680356464:            454d47 _dl_aux_init+0x337 (/home/bbrapl/code/thesis_test/a_static) 		add $0x10, %rdi
+        a_static 114158 [000] 262893.680356464:            454d4b _dl_aux_init+0x33b (/home/bbrapl/code/thesis_test/a_static) 		or $0x4, %ecx
+        a_static 114158 [000] 262893.680356464:            454d4e _dl_aux_init+0x33e (/home/bbrapl/code/thesis_test/a_static) 		test %rax, %rax
+        a_static 114158 [000] 262893.680356464:            454d51 _dl_aux_init+0x341 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffd97
+        a_static 114158 [000] 262893.680356464:            454ae8 _dl_aux_init+0xd8 (/home/bbrapl/code/thesis_test/a_static) 		sub $0x3, %rax
+        a_static 114158 [000] 262893.680356464:            454aec _dl_aux_init+0xdc (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1e, %rax
+        a_static 114158 [000] 262893.680356464:            454af0 _dl_aux_init+0xe0 (/home/bbrapl/code/thesis_test/a_static) 		jnbe 0x20
+        a_static 114158 [000] 262893.680356464:            454af2 _dl_aux_init+0xe2 (/home/bbrapl/code/thesis_test/a_static) 		movsxdl  (%rdx,%rax,4), %rax
+        a_static 114158 [000] 262893.680356464:            454af6 _dl_aux_init+0xe6 (/home/bbrapl/code/thesis_test/a_static) 		add %rdx, %rax
+        a_static 114158 [000] 262893.680356464:            454af9 _dl_aux_init+0xe9 (/home/bbrapl/code/thesis_test/a_static) 		jmp %rax
+        a_static 114158 [000] 262893.680356464:            454d20 _dl_aux_init+0x310 (/home/bbrapl/code/thesis_test/a_static) 		xorl  0x8(%rdi), %esi
+        a_static 114158 [000] 262893.680356464:            454d23 _dl_aux_init+0x313 (/home/bbrapl/code/thesis_test/a_static) 		movq  0x10(%rdi), %rax
+        a_static 114158 [000] 262893.680356464:            454d27 _dl_aux_init+0x317 (/home/bbrapl/code/thesis_test/a_static) 		add $0x10, %rdi
+        a_static 114158 [000] 262893.680356464:            454d2b _dl_aux_init+0x31b (/home/bbrapl/code/thesis_test/a_static) 		or $0x8, %ecx
+        a_static 114158 [000] 262893.680356464:            454d2e _dl_aux_init+0x31e (/home/bbrapl/code/thesis_test/a_static) 		test %rax, %rax
+        a_static 114158 [000] 262893.680356464:            454d31 _dl_aux_init+0x321 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffdb7
+        a_static 114158 [000] 262893.680356464:            454ae8 _dl_aux_init+0xd8 (/home/bbrapl/code/thesis_test/a_static) 		sub $0x3, %rax
+        a_static 114158 [000] 262893.680356464:            454aec _dl_aux_init+0xdc (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1e, %rax
+        a_static 114158 [000] 262893.680356464:            454af0 _dl_aux_init+0xe0 (/home/bbrapl/code/thesis_test/a_static) 		jnbe 0x20
+        a_static 114158 [000] 262893.680356464:            454af2 _dl_aux_init+0xe2 (/home/bbrapl/code/thesis_test/a_static) 		movsxdl  (%rdx,%rax,4), %rax
+        a_static 114158 [000] 262893.680356464:            454af6 _dl_aux_init+0xe6 (/home/bbrapl/code/thesis_test/a_static) 		add %rdx, %rax
+        a_static 114158 [000] 262893.680356464:            454af9 _dl_aux_init+0xe9 (/home/bbrapl/code/thesis_test/a_static) 		jmp %rax
+        a_static 114158 [000] 262893.680356464:            454c50 _dl_aux_init+0x240 (/home/bbrapl/code/thesis_test/a_static) 		movl  0x8(%rdi), %eax
+        a_static 114158 [000] 262893.680356464:            454c53 _dl_aux_init+0x243 (/home/bbrapl/code/thesis_test/a_static) 		add $0x10, %rdi
+        a_static 114158 [000] 262893.680356464:            454c57 _dl_aux_init+0x247 (/home/bbrapl/code/thesis_test/a_static) 		movb  $0x1, -0x2(%rsp)
+        a_static 114158 [000] 262893.680356464:            454c5c _dl_aux_init+0x24c (/home/bbrapl/code/thesis_test/a_static) 		mov $0xffffffff, %ecx
+        a_static 114158 [000] 262893.680356464:            454c61 _dl_aux_init+0x251 (/home/bbrapl/code/thesis_test/a_static) 		movl  $0x1, -0x8(%rsp)
+        a_static 114158 [000] 262893.680356464:            454c69 _dl_aux_init+0x259 (/home/bbrapl/code/thesis_test/a_static) 		movl  %eax, -0x14(%rsp)
+        a_static 114158 [000] 262893.680356464:            454c6d _dl_aux_init+0x25d (/home/bbrapl/code/thesis_test/a_static) 		movq  (%rdi), %rax
+        a_static 114158 [000] 262893.680356464:            454c70 _dl_aux_init+0x260 (/home/bbrapl/code/thesis_test/a_static) 		test %rax, %rax
+        a_static 114158 [000] 262893.680356464:            454c73 _dl_aux_init+0x263 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffe75
+        a_static 114158 [000] 262893.680356464:            454ae8 _dl_aux_init+0xd8 (/home/bbrapl/code/thesis_test/a_static) 		sub $0x3, %rax
+        a_static 114158 [000] 262893.680356464:            454aec _dl_aux_init+0xdc (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1e, %rax
+        a_static 114158 [000] 262893.680356464:            454af0 _dl_aux_init+0xe0 (/home/bbrapl/code/thesis_test/a_static) 		jnbe 0x20
+        a_static 114158 [000] 262893.680356464:            454af2 _dl_aux_init+0xe2 (/home/bbrapl/code/thesis_test/a_static) 		movsxdl  (%rdx,%rax,4), %rax
+        a_static 114158 [000] 262893.680356464:            454af6 _dl_aux_init+0xe6 (/home/bbrapl/code/thesis_test/a_static) 		add %rdx, %rax
+        a_static 114158 [000] 262893.680356464:            454af9 _dl_aux_init+0xe9 (/home/bbrapl/code/thesis_test/a_static) 		jmp %rax
+        a_static 114158 [000] 262893.680356464:            454b00 _dl_aux_init+0xf0 (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%rdi), %rax
+        a_static 114158 [000] 262893.680356464:            454b04 _dl_aux_init+0xf4 (/home/bbrapl/code/thesis_test/a_static) 		movb  $0x1, -0x1(%rsp)
+        a_static 114158 [000] 262893.680356464:            454b09 _dl_aux_init+0xf9 (/home/bbrapl/code/thesis_test/a_static) 		movq  %rax, -0x10(%rsp)
+        a_static 114158 [000] 262893.680356464:            454b0e _dl_aux_init+0xfe (/home/bbrapl/code/thesis_test/a_static) 		data16 nop
+        a_static 114158 [000] 262893.680356464:            454b10 _dl_aux_init+0x100 (/home/bbrapl/code/thesis_test/a_static) 		movq  0x10(%rdi), %rax
+        a_static 114158 [000] 262893.680356464:            454b14 _dl_aux_init+0x104 (/home/bbrapl/code/thesis_test/a_static) 		add $0x10, %rdi
+        a_static 114158 [000] 262893.680356464:            454b18 _dl_aux_init+0x108 (/home/bbrapl/code/thesis_test/a_static) 		test %rax, %rax
+        a_static 114158 [000] 262893.680356464:            454b1b _dl_aux_init+0x10b (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffcd
+        a_static 114158 [000] 262893.680356464:            454ae8 _dl_aux_init+0xd8 (/home/bbrapl/code/thesis_test/a_static) 		sub $0x3, %rax
+        a_static 114158 [000] 262893.680356464:            454aec _dl_aux_init+0xdc (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1e, %rax
+        a_static 114158 [000] 262893.680356464:            454af0 _dl_aux_init+0xe0 (/home/bbrapl/code/thesis_test/a_static) 		jnbe 0x20
+        a_static 114158 [000] 262893.680356464:            454af2 _dl_aux_init+0xe2 (/home/bbrapl/code/thesis_test/a_static) 		movsxdl  (%rdx,%rax,4), %rax
+        a_static 114158 [000] 262893.680356464:            454af6 _dl_aux_init+0xe6 (/home/bbrapl/code/thesis_test/a_static) 		add %rdx, %rax
+        a_static 114158 [000] 262893.680356464:            454af9 _dl_aux_init+0xe9 (/home/bbrapl/code/thesis_test/a_static) 		jmp %rax
+        a_static 114158 [000] 262893.680356464:            454c28 _dl_aux_init+0x218 (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%rdi), %rax
+        a_static 114158 [000] 262893.680356464:            454c2c _dl_aux_init+0x21c (/home/bbrapl/code/thesis_test/a_static) 		add $0x10, %rdi
+        a_static 114158 [000] 262893.680356464:            454c30 _dl_aux_init+0x220 (/home/bbrapl/code/thesis_test/a_static) 		movb  $0x1, -0x16(%rsp)
+        a_static 114158 [000] 262893.680356464:            454c35 _dl_aux_init+0x225 (/home/bbrapl/code/thesis_test/a_static) 		movq  %rax, -0x28(%rsp)
+        a_static 114158 [000] 262893.680356464:            454c3a _dl_aux_init+0x22a (/home/bbrapl/code/thesis_test/a_static) 		movq  (%rdi), %rax
+        a_static 114158 [000] 262893.680356464:            454c3d _dl_aux_init+0x22d (/home/bbrapl/code/thesis_test/a_static) 		test %rax, %rax
+        a_static 114158 [000] 262893.680356464:            454c40 _dl_aux_init+0x230 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffea8
+        a_static 114158 [000] 262893.680356464:            454ae8 _dl_aux_init+0xd8 (/home/bbrapl/code/thesis_test/a_static) 		sub $0x3, %rax
+        a_static 114158 [000] 262893.680356464:            454aec _dl_aux_init+0xdc (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1e, %rax
+        a_static 114158 [000] 262893.680356464:            454af0 _dl_aux_init+0xe0 (/home/bbrapl/code/thesis_test/a_static) 		jnbe 0x20
+        a_static 114158 [000] 262893.680356464:            454af2 _dl_aux_init+0xe2 (/home/bbrapl/code/thesis_test/a_static) 		movsxdl  (%rdx,%rax,4), %rax
+        a_static 114158 [000] 262893.680356464:            454af6 _dl_aux_init+0xe6 (/home/bbrapl/code/thesis_test/a_static) 		add %rdx, %rax
+        a_static 114158 [000] 262893.680356464:            454af9 _dl_aux_init+0xe9 (/home/bbrapl/code/thesis_test/a_static) 		jmp %rax
+        a_static 114158 [000] 262893.680356464:            454b10 _dl_aux_init+0x100 (/home/bbrapl/code/thesis_test/a_static) 		movq  0x10(%rdi), %rax
+        a_static 114158 [000] 262893.680356464:            454b14 _dl_aux_init+0x104 (/home/bbrapl/code/thesis_test/a_static) 		add $0x10, %rdi
+        a_static 114158 [000] 262893.680356464:            454b18 _dl_aux_init+0x108 (/home/bbrapl/code/thesis_test/a_static) 		test %rax, %rax
+        a_static 114158 [000] 262893.680356464:            454b1b _dl_aux_init+0x10b (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffcd
+        a_static 114158 [000] 262893.680356464:            454ae8 _dl_aux_init+0xd8 (/home/bbrapl/code/thesis_test/a_static) 		sub $0x3, %rax
+        a_static 114158 [000] 262893.680356464:            454aec _dl_aux_init+0xdc (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1e, %rax
+        a_static 114158 [000] 262893.680356464:            454af0 _dl_aux_init+0xe0 (/home/bbrapl/code/thesis_test/a_static) 		jnbe 0x20
+        a_static 114158 [000] 262893.680356464:            454af2 _dl_aux_init+0xe2 (/home/bbrapl/code/thesis_test/a_static) 		movsxdl  (%rdx,%rax,4), %rax
+        a_static 114158 [000] 262893.680356464:            454af6 _dl_aux_init+0xe6 (/home/bbrapl/code/thesis_test/a_static) 		add %rdx, %rax
+        a_static 114158 [000] 262893.680356464:            454af9 _dl_aux_init+0xe9 (/home/bbrapl/code/thesis_test/a_static) 		jmp %rax
+        a_static 114158 [000] 262893.680356464:            454cf8 _dl_aux_init+0x2e8 (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%rdi), %rax
+        a_static 114158 [000] 262893.680356464:            454cfc _dl_aux_init+0x2ec (/home/bbrapl/code/thesis_test/a_static) 		add $0x10, %rdi
+        a_static 114158 [000] 262893.680356464:            454d00 _dl_aux_init+0x2f0 (/home/bbrapl/code/thesis_test/a_static) 		mov $0x1, %r14d
+        a_static 114158 [000] 262893.680356464:            454d06 _dl_aux_init+0x2f6 (/home/bbrapl/code/thesis_test/a_static) 		movq  %rax, -0x38(%rsp)
+        a_static 114158 [000] 262893.680356464:            454d0b _dl_aux_init+0x2fb (/home/bbrapl/code/thesis_test/a_static) 		movq  (%rdi), %rax
+        a_static 114158 [000] 262893.680356464:            454d0e _dl_aux_init+0x2fe (/home/bbrapl/code/thesis_test/a_static) 		test %rax, %rax
+        a_static 114158 [000] 262893.680356464:            454d11 _dl_aux_init+0x301 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffdd7
+        a_static 114158 [000] 262893.680356464:            454d17 _dl_aux_init+0x307 (/home/bbrapl/code/thesis_test/a_static) 		jmp 0xfffffffffffffe09
+        a_static 114158 [000] 262893.680356464:            454b20 _dl_aux_init+0x110 (/home/bbrapl/code/thesis_test/a_static) 		test %r9b, %r9b
+        a_static 114158 [000] 262893.680356464:            454b23 _dl_aux_init+0x113 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x2ed
+        a_static 114158 [000] 262893.680356464:            454e10 _dl_aux_init+0x400 (/home/bbrapl/code/thesis_test/a_static) 		movq  %r10, 0x6c301(%rip)
+        a_static 114158 [000] 262893.680356464:            454e17 _dl_aux_init+0x407 (/home/bbrapl/code/thesis_test/a_static) 		jmp 0xfffffffffffffd12
+        a_static 114158 [000] 262893.680356464:            454b29 _dl_aux_init+0x119 (/home/bbrapl/code/thesis_test/a_static) 		test %r11b, %r11b
+        a_static 114158 [000] 262893.680356464:            454b2c _dl_aux_init+0x11c (/home/bbrapl/code/thesis_test/a_static) 		jz 0x8
+        a_static 114158 [000] 262893.680356464:            454b2e _dl_aux_init+0x11e (/home/bbrapl/code/thesis_test/a_static) 		movl  %ebp, 0x6ecf4(%rip)
+        a_static 114158 [000] 262893.680356464:            454b34 _dl_aux_init+0x124 (/home/bbrapl/code/thesis_test/a_static) 		test %bl, %bl
+        a_static 114158 [000] 262893.680356464:            454b36 _dl_aux_init+0x126 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x9
+        a_static 114158 [000] 262893.680356464:            454b38 _dl_aux_init+0x128 (/home/bbrapl/code/thesis_test/a_static) 		movq  %r13, 0x6ecd1(%rip)
+        a_static 114158 [000] 262893.680356464:            454b3f _dl_aux_init+0x12f (/home/bbrapl/code/thesis_test/a_static) 		test %r12b, %r12b
+        a_static 114158 [000] 262893.680356464:            454b42 _dl_aux_init+0x132 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x9
+        a_static 114158 [000] 262893.680356464:            454b44 _dl_aux_init+0x134 (/home/bbrapl/code/thesis_test/a_static) 		movq  %r15, 0x6ecfd(%rip)
+        a_static 114158 [000] 262893.680356464:            454b4b _dl_aux_init+0x13b (/home/bbrapl/code/thesis_test/a_static) 		test %r14b, %r14b
+        a_static 114158 [000] 262893.680356464:            454b4e _dl_aux_init+0x13e (/home/bbrapl/code/thesis_test/a_static) 		jz 0xe
+        a_static 114158 [000] 262893.680356464:            454b50 _dl_aux_init+0x140 (/home/bbrapl/code/thesis_test/a_static) 		movq  -0x38(%rsp), %rax
+        a_static 114158 [000] 262893.680356464:            454b55 _dl_aux_init+0x145 (/home/bbrapl/code/thesis_test/a_static) 		movq  %rax, 0x6ec8c(%rip)
+        a_static 114158 [000] 262893.680356464:            454b5c _dl_aux_init+0x14c (/home/bbrapl/code/thesis_test/a_static) 		cmpb  $0x0, -0x4(%rsp)
+        a_static 114158 [000] 262893.680356464:            454b61 _dl_aux_init+0x151 (/home/bbrapl/code/thesis_test/a_static) 		jz 0xe
+        a_static 114158 [000] 262893.680356464:            454b63 _dl_aux_init+0x153 (/home/bbrapl/code/thesis_test/a_static) 		movq  -0x30(%rsp), %rax
+        a_static 114158 [000] 262893.680356464:            454b68 _dl_aux_init+0x158 (/home/bbrapl/code/thesis_test/a_static) 		movq  %rax, 0x6e199(%rip)
+        a_static 114158 [000] 262893.680356464:            454b6f _dl_aux_init+0x15f (/home/bbrapl/code/thesis_test/a_static) 		cmpb  $0x0, -0x16(%rsp)
+        a_static 114158 [000] 262893.680356464:            454b74 _dl_aux_init+0x164 (/home/bbrapl/code/thesis_test/a_static) 		jz 0xe
+        a_static 114158 [000] 262893.680356464:            454b76 _dl_aux_init+0x166 (/home/bbrapl/code/thesis_test/a_static) 		movq  -0x28(%rsp), %rax
+        a_static 114158 [000] 262893.680356464:            454b7b _dl_aux_init+0x16b (/home/bbrapl/code/thesis_test/a_static) 		movq  %rax, 0x6e17e(%rip)
+        a_static 114158 [000] 262893.680356464:            454b82 _dl_aux_init+0x172 (/home/bbrapl/code/thesis_test/a_static) 		cmpb  $0x0, -0x15(%rsp)
+        a_static 114158 [000] 262893.680356464:            454b87 _dl_aux_init+0x177 (/home/bbrapl/code/thesis_test/a_static) 		jz 0xe
+        a_static 114158 [000] 262893.680356464:            454b95 _dl_aux_init+0x185 (/home/bbrapl/code/thesis_test/a_static) 		cmpb  $0x0, -0x3(%rsp)
+        a_static 114158 [000] 262893.680356464:            454b9a _dl_aux_init+0x18a (/home/bbrapl/code/thesis_test/a_static) 		jz 0xe
+        a_static 114158 [000] 262893.680356464:            454b9c _dl_aux_init+0x18c (/home/bbrapl/code/thesis_test/a_static) 		movq  -0x20(%rsp), %rax
+        a_static 114158 [000] 262893.680356464:            454ba1 _dl_aux_init+0x191 (/home/bbrapl/code/thesis_test/a_static) 		movq  %rax, 0x6ec88(%rip)
+        a_static 114158 [000] 262893.680356464:            454ba8 _dl_aux_init+0x198 (/home/bbrapl/code/thesis_test/a_static) 		cmpb  $0x0, -0x2(%rsp)
+        a_static 114158 [000] 262893.680356464:            454bad _dl_aux_init+0x19d (/home/bbrapl/code/thesis_test/a_static) 		jz 0x16
+        a_static 114158 [000] 262893.680356464:            454baf _dl_aux_init+0x19f (/home/bbrapl/code/thesis_test/a_static) 		movl  -0x14(%rsp), %eax
+        a_static 114158 [000] 262893.680356464:            454bb3 _dl_aux_init+0x1a3 (/home/bbrapl/code/thesis_test/a_static) 		movl  %eax, 0x6aee7(%rip)
+        a_static 114158 [000] 262893.680356464:            454bb9 _dl_aux_init+0x1a9 (/home/bbrapl/code/thesis_test/a_static) 		movl  -0x8(%rsp), %eax
+        a_static 114158 [000] 262893.680356464:            454bbd _dl_aux_init+0x1ad (/home/bbrapl/code/thesis_test/a_static) 		movl  %eax, 0x6eccd(%rip)
+        a_static 114158 [000] 262893.680356464:            454bc3 _dl_aux_init+0x1b3 (/home/bbrapl/code/thesis_test/a_static) 		cmpb  $0x0, -0x1(%rsp)
+        a_static 114158 [000] 262893.680356464:            454bc8 _dl_aux_init+0x1b8 (/home/bbrapl/code/thesis_test/a_static) 		jz 0xe
+        a_static 114158 [000] 262893.680356464:            454bca _dl_aux_init+0x1ba (/home/bbrapl/code/thesis_test/a_static) 		movq  -0x10(%rsp), %rax
+        a_static 114158 [000] 262893.680356464:            454bcf _dl_aux_init+0x1bf (/home/bbrapl/code/thesis_test/a_static) 		movq  %rax, 0x6ae8a(%rip)
+        a_static 114158 [000] 262893.680356464:            454bd6 _dl_aux_init+0x1c6 (/home/bbrapl/code/thesis_test/a_static) 		cmp $0xf, %ecx
+        a_static 114158 [000] 262893.680356464:            454bd9 _dl_aux_init+0x1c9 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x1a
+        a_static 114158 [000] 262893.680356464:            454bf3 _dl_aux_init+0x1e3 (/home/bbrapl/code/thesis_test/a_static) 		popq  %rbx
+        a_static 114158 [000] 262893.680356464:            454bf4 _dl_aux_init+0x1e4 (/home/bbrapl/code/thesis_test/a_static) 		popq  %rbp
+        a_static 114158 [000] 262893.680356464:            454bf5 _dl_aux_init+0x1e5 (/home/bbrapl/code/thesis_test/a_static) 		popq  %r12
+        a_static 114158 [000] 262893.680356464:            454bf7 _dl_aux_init+0x1e7 (/home/bbrapl/code/thesis_test/a_static) 		popq  %r13
+        a_static 114158 [000] 262893.680356464:            454bf9 _dl_aux_init+0x1e9 (/home/bbrapl/code/thesis_test/a_static) 		popq  %r14
+        a_static 114158 [000] 262893.680356464:            454bfb _dl_aux_init+0x1eb (/home/bbrapl/code/thesis_test/a_static) 		popq  %r15
+        a_static 114158 [000] 262893.680356464:            454bfd _dl_aux_init+0x1ed (/home/bbrapl/code/thesis_test/a_static) 		retq  
+        a_static 114158 [000] 262893.680356464:            402188 __libc_start_main+0x88 (/home/bbrapl/code/thesis_test/a_static) 		cmpq  $0x0, 0xc1680(%rip)
+        a_static 114158 [000] 262893.680356464:            402190 __libc_start_main+0x90 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x32
+        a_static 114158 [000] 262893.680356464:            4021c2 __libc_start_main+0xc2 (/home/bbrapl/code/thesis_test/a_static) 		callq  0x539ae
+        a_static 114158 [000] 262893.680356464:            455b70 __libc_init_secure+0x0 (/home/bbrapl/code/thesis_test/a_static) 		nop %edi, %edx
+        a_static 114158 [000] 262893.680356464:            455b74 __libc_init_secure+0x4 (/home/bbrapl/code/thesis_test/a_static) 		movl  0x6dd16(%rip), %eax
+        a_static 114158 [000] 262893.680356464:            455b7a __libc_init_secure+0xa (/home/bbrapl/code/thesis_test/a_static) 		test %eax, %eax
+        a_static 114158 [000] 262893.680356464:            455b7c __libc_init_secure+0xc (/home/bbrapl/code/thesis_test/a_static) 		jz 0x4
+        a_static 114158 [000] 262893.680356464:            455b7e __libc_init_secure+0xe (/home/bbrapl/code/thesis_test/a_static) 		retq  
+        a_static 114158 [000] 262893.680356464:            4021c7 __libc_start_main+0xc7 (/home/bbrapl/code/thesis_test/a_static) 		movq  0xc0b0a(%rip), %rdi
+        a_static 114158 [000] 262893.680356464:            4021ce __libc_start_main+0xce (/home/bbrapl/code/thesis_test/a_static) 		callq  0x52242
+        a_static 114158 [000] 262893.680356464:            454410 __tunables_init+0x0 (/home/bbrapl/code/thesis_test/a_static) 		nop %edi, %edx
+        a_static 114158 [000] 262893.680356464:            454414 __tunables_init+0x4 (/home/bbrapl/code/thesis_test/a_static) 		pushq  %r15
+        a_static 114158 [000] 262893.680356464:            454416 __tunables_init+0x6 (/home/bbrapl/code/thesis_test/a_static) 		mov %rdi, %r8
+        a_static 114158 [000] 262893.680356464:            454419 __tunables_init+0x9 (/home/bbrapl/code/thesis_test/a_static) 		pushq  %r14
+        a_static 114158 [000] 262893.680356464:            45441b __tunables_init+0xb (/home/bbrapl/code/thesis_test/a_static) 		pushq  %r13
+        a_static 114158 [000] 262893.680356464:            45441d __tunables_init+0xd (/home/bbrapl/code/thesis_test/a_static) 		pushq  %r12
+        a_static 114158 [000] 262893.680356464:            45441f __tunables_init+0xf (/home/bbrapl/code/thesis_test/a_static) 		pushq  %rbp
+        a_static 114158 [000] 262893.680356464:            454420 __tunables_init+0x10 (/home/bbrapl/code/thesis_test/a_static) 		pushq  %rbx
+        a_static 114158 [000] 262893.680356464:            454421 __tunables_init+0x11 (/home/bbrapl/code/thesis_test/a_static) 		sub $0x38, %rsp
+        a_static 114158 [000] 262893.680356464:            454425 __tunables_init+0x15 (/home/bbrapl/code/thesis_test/a_static) 		movl  0x6b675(%rip), %edx
+        a_static 114158 [000] 262893.680356464:            45442b __tunables_init+0x1b (/home/bbrapl/code/thesis_test/a_static) 		test %edx, %edx
+        a_static 114158 [000] 262893.680356464:            45442d __tunables_init+0x1d (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x511
+        a_static 114158 [000] 262893.680356464:            454433 __tunables_init+0x23 (/home/bbrapl/code/thesis_test/a_static) 		mov %r8, %r13
+        a_static 114158 [000] 262893.680356464:            454436 __tunables_init+0x26 (/home/bbrapl/code/thesis_test/a_static) 		nopw  %ax, (%rax,%rax,1)
+        a_static 114158 [000] 262893.680356464:            454440 __tunables_init+0x30 (/home/bbrapl/code/thesis_test/a_static) 		test %r13, %r13
+        a_static 114158 [000] 262893.680356464:            454443 __tunables_init+0x33 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x117
+        a_static 114158 [000] 262893.680356464:            454449 __tunables_init+0x39 (/home/bbrapl/code/thesis_test/a_static) 		movq  (%r13), %rbx
+        a_static 114158 [000] 262893.680356464:            45444d __tunables_init+0x3d (/home/bbrapl/code/thesis_test/a_static) 		test %rbx, %rbx
+        a_static 114158 [000] 262893.680356464:            454450 __tunables_init+0x40 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x10a
+        a_static 114158 [000] 262893.680356464:            454456 __tunables_init+0x46 (/home/bbrapl/code/thesis_test/a_static) 		movzxb  (%rbx), %edx
+        a_static 114158 [000] 262893.680356464:            454459 __tunables_init+0x49 (/home/bbrapl/code/thesis_test/a_static) 		lea 0x8(%r13), %r15
+        a_static 114158 [000] 262893.680356464:            45445d __tunables_init+0x4d (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x3d, %dl
+        a_static 114158 [000] 262893.680356798:            454460 __tunables_init+0x50 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x465
+        a_static 114158 [000] 262893.680356798:            454466 __tunables_init+0x56 (/home/bbrapl/code/thesis_test/a_static) 		test %dl, %dl
+        a_static 114158 [000] 262893.680356798:            454468 __tunables_init+0x58 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x45d
+        a_static 114158 [000] 262893.680356798:            45446e __tunables_init+0x5e (/home/bbrapl/code/thesis_test/a_static) 		mov $0x1, %eax
+        a_static 114158 [000] 262893.680356798:            454473 __tunables_init+0x63 (/home/bbrapl/code/thesis_test/a_static) 		nopl  %eax, (%rax,%rax,1)
+        a_static 114158 [000] 262893.680356798:            454478 __tunables_init+0x68 (/home/bbrapl/code/thesis_test/a_static) 		movzxb  (%rbx,%rax,1), %edx
+        a_static 114158 [000] 262893.680356798:            45447c __tunables_init+0x6c (/home/bbrapl/code/thesis_test/a_static) 		mov %rax, %rcx
+        a_static 114158 [000] 262893.680356798:            45447f __tunables_init+0x6f (/home/bbrapl/code/thesis_test/a_static) 		add $0x1, %rax
+        a_static 114158 [000] 262893.680356798:            454483 __tunables_init+0x73 (/home/bbrapl/code/thesis_test/a_static) 		test %dl, %dl
+        a_static 114158 [000] 262893.680356798:            454485 __tunables_init+0x75 (/home/bbrapl/code/thesis_test/a_static) 		jz 0xc9
+        a_static 114158 [000] 262893.680356798:            45448b __tunables_init+0x7b (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x3d, %dl
+        a_static 114158 [000] 262893.680356798:            45448e __tunables_init+0x7e (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffea
+        a_static 114158 [000] 262893.680356798:            454478 __tunables_init+0x68 (/home/bbrapl/code/thesis_test/a_static) 		movzxb  (%rbx,%rax,1), %edx
+        a_static 114158 [000] 262893.680356798:            45447c __tunables_init+0x6c (/home/bbrapl/code/thesis_test/a_static) 		mov %rax, %rcx
+        a_static 114158 [000] 262893.680356798:            45447f __tunables_init+0x6f (/home/bbrapl/code/thesis_test/a_static) 		add $0x1, %rax
+        a_static 114158 [000] 262893.680356798:            454483 __tunables_init+0x73 (/home/bbrapl/code/thesis_test/a_static) 		test %dl, %dl
+        a_static 114158 [000] 262893.680356798:            454485 __tunables_init+0x75 (/home/bbrapl/code/thesis_test/a_static) 		jz 0xc9
+        a_static 114158 [000] 262893.680356798:            45448b __tunables_init+0x7b (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x3d, %dl
+        a_static 114158 [000] 262893.680356798:            45448e __tunables_init+0x7e (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffea
+        a_static 114158 [000] 262893.680356798:            454478 __tunables_init+0x68 (/home/bbrapl/code/thesis_test/a_static) 		movzxb  (%rbx,%rax,1), %edx
+        a_static 114158 [000] 262893.680356798:            45447c __tunables_init+0x6c (/home/bbrapl/code/thesis_test/a_static) 		mov %rax, %rcx
+        a_static 114158 [000] 262893.680356798:            45447f __tunables_init+0x6f (/home/bbrapl/code/thesis_test/a_static) 		add $0x1, %rax
+        a_static 114158 [000] 262893.680356798:            454483 __tunables_init+0x73 (/home/bbrapl/code/thesis_test/a_static) 		test %dl, %dl
+        a_static 114158 [000] 262893.680356798:            454485 __tunables_init+0x75 (/home/bbrapl/code/thesis_test/a_static) 		jz 0xc9
+        a_static 114158 [000] 262893.680356798:            45448b __tunables_init+0x7b (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x3d, %dl
+        a_static 114158 [000] 262893.680356798:            45448e __tunables_init+0x7e (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffea
+        a_static 114158 [000] 262893.680356798:            454478 __tunables_init+0x68 (/home/bbrapl/code/thesis_test/a_static) 		movzxb  (%rbx,%rax,1), %edx
+        a_static 114158 [000] 262893.680356798:            45447c __tunables_init+0x6c (/home/bbrapl/code/thesis_test/a_static) 		mov %rax, %rcx
+        a_static 114158 [000] 262893.680356798:            45447f __tunables_init+0x6f (/home/bbrapl/code/thesis_test/a_static) 		add $0x1, %rax
+        a_static 114158 [000] 262893.680356798:            454483 __tunables_init+0x73 (/home/bbrapl/code/thesis_test/a_static) 		test %dl, %dl
+        a_static 114158 [000] 262893.680356798:            454485 __tunables_init+0x75 (/home/bbrapl/code/thesis_test/a_static) 		jz 0xc9
+        a_static 114158 [000] 262893.680356798:            45448b __tunables_init+0x7b (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x3d, %dl
+        a_static 114158 [000] 262893.680356798:            45448e __tunables_init+0x7e (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffea
+        a_static 114158 [000] 262893.680356798:            454478 __tunables_init+0x68 (/home/bbrapl/code/thesis_test/a_static) 		movzxb  (%rbx,%rax,1), %edx
+        a_static 114158 [000] 262893.680356798:            45447c __tunables_init+0x6c (/home/bbrapl/code/thesis_test/a_static) 		mov %rax, %rcx
+        a_static 114158 [000] 262893.680356798:            45447f __tunables_init+0x6f (/home/bbrapl/code/thesis_test/a_static) 		add $0x1, %rax
+        a_static 114158 [000] 262893.680356798:            454483 __tunables_init+0x73 (/home/bbrapl/code/thesis_test/a_static) 		test %dl, %dl
+        a_static 114158 [000] 262893.680356798:            454485 __tunables_init+0x75 (/home/bbrapl/code/thesis_test/a_static) 		jz 0xc9
+        a_static 114158 [000] 262893.680356798:            45448b __tunables_init+0x7b (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x3d, %dl
+        a_static 114158 [000] 262893.680356798:            45448e __tunables_init+0x7e (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffea
+        a_static 114158 [000] 262893.680356798:            454490 __tunables_init+0x80 (/home/bbrapl/code/thesis_test/a_static) 		test %dl, %dl
+        a_static 114158 [000] 262893.680356798:            454492 __tunables_init+0x82 (/home/bbrapl/code/thesis_test/a_static) 		jz 0xbc
+        a_static 114158 [000] 262893.680356798:            454498 __tunables_init+0x88 (/home/bbrapl/code/thesis_test/a_static) 		lea 0x1(%rcx), %rbp
+        a_static 114158 [000] 262893.680356798:            45449c __tunables_init+0x8c (/home/bbrapl/code/thesis_test/a_static) 		lea 0x44be6(%rip), %rsi
+        a_static 114158 [000] 262893.680356798:            4544a3 __tunables_init+0x93 (/home/bbrapl/code/thesis_test/a_static) 		mov $0x47, %edx
+        a_static 114158 [000] 262893.680356798:            4544a8 __tunables_init+0x98 (/home/bbrapl/code/thesis_test/a_static) 		lea (%rbx,%rbp,1), %rax
+        a_static 114158 [000] 262893.680356798:            4544ac __tunables_init+0x9c (/home/bbrapl/code/thesis_test/a_static) 		movq  %rax, 0x8(%rsp)
+        a_static 114158 [000] 262893.680356798:            4544b1 __tunables_init+0xa1 (/home/bbrapl/code/thesis_test/a_static) 		mov %rbx, %rax
+        a_static 114158 [000] 262893.680356798:            4544b4 __tunables_init+0xa4 (/home/bbrapl/code/thesis_test/a_static) 		jmp 0x27
+        a_static 114158 [000] 262893.680356798:            4544db __tunables_init+0xcb (/home/bbrapl/code/thesis_test/a_static) 		movzxb  (%rax), %ecx
+        a_static 114158 [000] 262893.680356798:            4544de __tunables_init+0xce (/home/bbrapl/code/thesis_test/a_static) 		cmp %dl, %cl
+        a_static 114158 [000] 262893.680356798:            4544e0 __tunables_init+0xd0 (/home/bbrapl/code/thesis_test/a_static) 		jz 0xffffffffffffffe0
+        a_static 114158 [000] 262893.680356798:            4544e2 __tunables_init+0xd2 (/home/bbrapl/code/thesis_test/a_static) 		movl  0x6b5b7(%rip), %r11d
+        a_static 114158 [000] 262893.680356798:            4544e9 __tunables_init+0xd9 (/home/bbrapl/code/thesis_test/a_static) 		lea 0x6af58(%rip), %r8
+        a_static 114158 [000] 262893.680356798:            4544f0 __tunables_init+0xe0 (/home/bbrapl/code/thesis_test/a_static) 		xor %r9d, %r9d
+        a_static 114158 [000] 262893.680356798:            4544f3 __tunables_init+0xe3 (/home/bbrapl/code/thesis_test/a_static) 		nopl  %eax, (%rax,%rax,1)
+        a_static 114158 [000] 262893.680356798:            4544f8 __tunables_init+0xe8 (/home/bbrapl/code/thesis_test/a_static) 		cmpb  $0x0, (%r8)
+        a_static 114158 [000] 262893.680356798:            4544fc __tunables_init+0xec (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x44
+        a_static 114158 [000] 262893.680356798:            4544fe __tunables_init+0xee (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%r8), %r10
+        a_static 114158 [000] 262893.680356798:            454502 __tunables_init+0xf2 (/home/bbrapl/code/thesis_test/a_static) 		test %r10, %r10
+        a_static 114158 [000] 262893.680356798:            454505 __tunables_init+0xf5 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x3b
+        a_static 114158 [000] 262893.680356798:            454540 __tunables_init+0x130 (/home/bbrapl/code/thesis_test/a_static) 		add $0x1, %r9d
+        a_static 114158 [000] 262893.680356798:            454544 __tunables_init+0x134 (/home/bbrapl/code/thesis_test/a_static) 		add $0x38, %r8
+        a_static 114158 [000] 262893.680356798:            454548 __tunables_init+0x138 (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1a, %r9d
+        a_static 114158 [000] 262893.680356798:            45454c __tunables_init+0x13c (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffac
+        a_static 114158 [000] 262893.680356798:            4544f8 __tunables_init+0xe8 (/home/bbrapl/code/thesis_test/a_static) 		cmpb  $0x0, (%r8)
+        a_static 114158 [000] 262893.680356798:            4544fc __tunables_init+0xec (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x44
+        a_static 114158 [000] 262893.680356798:            4544fe __tunables_init+0xee (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%r8), %r10
+        a_static 114158 [000] 262893.680356798:            454502 __tunables_init+0xf2 (/home/bbrapl/code/thesis_test/a_static) 		test %r10, %r10
+        a_static 114158 [000] 262893.680356798:            454505 __tunables_init+0xf5 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x3b
+        a_static 114158 [000] 262893.680356798:            454507 __tunables_init+0xf7 (/home/bbrapl/code/thesis_test/a_static) 		movzxb  (%r10), %edi
+        a_static 114158 [000] 262893.680356798:            45450b __tunables_init+0xfb (/home/bbrapl/code/thesis_test/a_static) 		mov %r10, %rsi
+        a_static 114158 [000] 262893.680356798:            45450e __tunables_init+0xfe (/home/bbrapl/code/thesis_test/a_static) 		mov %rbx, %rax
+        a_static 114158 [000] 262893.680356798:            454511 __tunables_init+0x101 (/home/bbrapl/code/thesis_test/a_static) 		mov %edi, %ecx
+        a_static 114158 [000] 262893.680356798:            454513 __tunables_init+0x103 (/home/bbrapl/code/thesis_test/a_static) 		test %dil, %dil
+        a_static 114158 [000] 262893.680356798:            454516 __tunables_init+0x106 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x1e
+        a_static 114158 [000] 262893.680356798:            454534 __tunables_init+0x124 (/home/bbrapl/code/thesis_test/a_static) 		movzxb  (%rax), %edx
+        a_static 114158 [000] 262893.680356798:            454537 __tunables_init+0x127 (/home/bbrapl/code/thesis_test/a_static) 		test %dl, %dl
+        a_static 114158 [000] 262893.680356798:            454539 __tunables_init+0x129 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffe7
+        a_static 114158 [000] 262893.680356798:            454520 __tunables_init+0x110 (/home/bbrapl/code/thesis_test/a_static) 		cmp %cl, %dl
+        a_static 114158 [000] 262893.680356798:            454522 __tunables_init+0x112 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x1e
+        a_static 114158 [000] 262893.680356798:            454540 __tunables_init+0x130 (/home/bbrapl/code/thesis_test/a_static) 		add $0x1, %r9d
+        a_static 114158 [000] 262893.680356798:            454544 __tunables_init+0x134 (/home/bbrapl/code/thesis_test/a_static) 		add $0x38, %r8
+        a_static 114158 [000] 262893.680356798:            454548 __tunables_init+0x138 (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1a, %r9d
+        a_static 114158 [000] 262893.680356798:            45454c __tunables_init+0x13c (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffac
+        a_static 114158 [000] 262893.680356798:            4544f8 __tunables_init+0xe8 (/home/bbrapl/code/thesis_test/a_static) 		cmpb  $0x0, (%r8)
+        a_static 114158 [000] 262893.680356798:            4544fc __tunables_init+0xec (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x44
+        a_static 114158 [000] 262893.680356798:            4544fe __tunables_init+0xee (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%r8), %r10
+        a_static 114158 [000] 262893.680356798:            454502 __tunables_init+0xf2 (/home/bbrapl/code/thesis_test/a_static) 		test %r10, %r10
+        a_static 114158 [000] 262893.680356798:            454505 __tunables_init+0xf5 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x3b
+        a_static 114158 [000] 262893.680356798:            454507 __tunables_init+0xf7 (/home/bbrapl/code/thesis_test/a_static) 		movzxb  (%r10), %edi
+        a_static 114158 [000] 262893.680356798:            45450b __tunables_init+0xfb (/home/bbrapl/code/thesis_test/a_static) 		mov %r10, %rsi
+        a_static 114158 [000] 262893.680356798:            45450e __tunables_init+0xfe (/home/bbrapl/code/thesis_test/a_static) 		mov %rbx, %rax
+        a_static 114158 [000] 262893.680356798:            454511 __tunables_init+0x101 (/home/bbrapl/code/thesis_test/a_static) 		mov %edi, %ecx
+        a_static 114158 [000] 262893.680356798:            454513 __tunables_init+0x103 (/home/bbrapl/code/thesis_test/a_static) 		test %dil, %dil
+        a_static 114158 [000] 262893.680356798:            454516 __tunables_init+0x106 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x1e
+        a_static 114158 [000] 262893.680356798:            454534 __tunables_init+0x124 (/home/bbrapl/code/thesis_test/a_static) 		movzxb  (%rax), %edx
+        a_static 114158 [000] 262893.680356798:            454537 __tunables_init+0x127 (/home/bbrapl/code/thesis_test/a_static) 		test %dl, %dl
+        a_static 114158 [000] 262893.680356798:            454539 __tunables_init+0x129 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffe7
+        a_static 114158 [000] 262893.680356798:            454520 __tunables_init+0x110 (/home/bbrapl/code/thesis_test/a_static) 		cmp %cl, %dl
+        a_static 114158 [000] 262893.680356798:            454522 __tunables_init+0x112 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x1e
+        a_static 114158 [000] 262893.680356798:            454540 __tunables_init+0x130 (/home/bbrapl/code/thesis_test/a_static) 		add $0x1, %r9d
+        a_static 114158 [000] 262893.680356798:            454544 __tunables_init+0x134 (/home/bbrapl/code/thesis_test/a_static) 		add $0x38, %r8
+        a_static 114158 [000] 262893.680356798:            454548 __tunables_init+0x138 (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1a, %r9d
+        a_static 114158 [000] 262893.680356798:            45454c __tunables_init+0x13c (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffac
+        a_static 114158 [000] 262893.680356798:            4544f8 __tunables_init+0xe8 (/home/bbrapl/code/thesis_test/a_static) 		cmpb  $0x0, (%r8)
+        a_static 114158 [000] 262893.680356798:            4544fc __tunables_init+0xec (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x44
+        a_static 114158 [000] 262893.680356798:            4544fe __tunables_init+0xee (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%r8), %r10
+        a_static 114158 [000] 262893.680356798:            454502 __tunables_init+0xf2 (/home/bbrapl/code/thesis_test/a_static) 		test %r10, %r10
+        a_static 114158 [000] 262893.680356798:            454505 __tunables_init+0xf5 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x3b
+        a_static 114158 [000] 262893.680356798:            454540 __tunables_init+0x130 (/home/bbrapl/code/thesis_test/a_static) 		add $0x1, %r9d
+        a_static 114158 [000] 262893.680356798:            454544 __tunables_init+0x134 (/home/bbrapl/code/thesis_test/a_static) 		add $0x38, %r8
+        a_static 114158 [000] 262893.680356798:            454548 __tunables_init+0x138 (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1a, %r9d
+        a_static 114158 [000] 262893.680356798:            45454c __tunables_init+0x13c (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffac
+        a_static 114158 [000] 262893.680356798:            4544f8 __tunables_init+0xe8 (/home/bbrapl/code/thesis_test/a_static) 		cmpb  $0x0, (%r8)
+        a_static 114158 [000] 262893.680356798:            4544fc __tunables_init+0xec (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x44
+        a_static 114158 [000] 262893.680356798:            4544fe __tunables_init+0xee (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%r8), %r10
+        a_static 114158 [000] 262893.680356798:            454502 __tunables_init+0xf2 (/home/bbrapl/code/thesis_test/a_static) 		test %r10, %r10
+        a_static 114158 [000] 262893.680356798:            454505 __tunables_init+0xf5 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x3b
+        a_static 114158 [000] 262893.680356798:            454540 __tunables_init+0x130 (/home/bbrapl/code/thesis_test/a_static) 		add $0x1, %r9d
+        a_static 114158 [000] 262893.680356798:            454544 __tunables_init+0x134 (/home/bbrapl/code/thesis_test/a_static) 		add $0x38, %r8
+        a_static 114158 [000] 262893.680356798:            454548 __tunables_init+0x138 (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1a, %r9d
+        a_static 114158 [000] 262893.680356798:            45454c __tunables_init+0x13c (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffac
+        a_static 114158 [000] 262893.680356798:            4544f8 __tunables_init+0xe8 (/home/bbrapl/code/thesis_test/a_static) 		cmpb  $0x0, (%r8)
+        a_static 114158 [000] 262893.680356798:            4544fc __tunables_init+0xec (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x44
+        a_static 114158 [000] 262893.680356798:            4544fe __tunables_init+0xee (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%r8), %r10
+        a_static 114158 [000] 262893.680356798:            454502 __tunables_init+0xf2 (/home/bbrapl/code/thesis_test/a_static) 		test %r10, %r10
+        a_static 114158 [000] 262893.680356798:            454505 __tunables_init+0xf5 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x3b
+        a_static 114158 [000] 262893.680356798:            454540 __tunables_init+0x130 (/home/bbrapl/code/thesis_test/a_static) 		add $0x1, %r9d
+        a_static 114158 [000] 262893.680356798:            454544 __tunables_init+0x134 (/home/bbrapl/code/thesis_test/a_static) 		add $0x38, %r8
+        a_static 114158 [000] 262893.680356798:            454548 __tunables_init+0x138 (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1a, %r9d
+        a_static 114158 [000] 262893.680356798:            45454c __tunables_init+0x13c (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffac
+        a_static 114158 [000] 262893.680356798:            4544f8 __tunables_init+0xe8 (/home/bbrapl/code/thesis_test/a_static) 		cmpb  $0x0, (%r8)
+        a_static 114158 [000] 262893.680356798:            4544fc __tunables_init+0xec (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x44
+        a_static 114158 [000] 262893.680356798:            4544fe __tunables_init+0xee (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%r8), %r10
+        a_static 114158 [000] 262893.680356798:            454502 __tunables_init+0xf2 (/home/bbrapl/code/thesis_test/a_static) 		test %r10, %r10
+        a_static 114158 [000] 262893.680356798:            454505 __tunables_init+0xf5 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x3b
+        a_static 114158 [000] 262893.680356798:            454540 __tunables_init+0x130 (/home/bbrapl/code/thesis_test/a_static) 		add $0x1, %r9d
+        a_static 114158 [000] 262893.680356798:            454544 __tunables_init+0x134 (/home/bbrapl/code/thesis_test/a_static) 		add $0x38, %r8
+        a_static 114158 [000] 262893.680356798:            454548 __tunables_init+0x138 (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1a, %r9d
+        a_static 114158 [000] 262893.680356798:            45454c __tunables_init+0x13c (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffac
+        a_static 114158 [000] 262893.680356798:            4544f8 __tunables_init+0xe8 (/home/bbrapl/code/thesis_test/a_static) 		cmpb  $0x0, (%r8)
+        a_static 114158 [000] 262893.680356798:            4544fc __tunables_init+0xec (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x44
+        a_static 114158 [000] 262893.680356798:            4544fe __tunables_init+0xee (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%r8), %r10
+        a_static 114158 [000] 262893.680356798:            454502 __tunables_init+0xf2 (/home/bbrapl/code/thesis_test/a_static) 		test %r10, %r10
+        a_static 114158 [000] 262893.680356798:            454505 __tunables_init+0xf5 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x3b
+        a_static 114158 [000] 262893.680356798:            454540 __tunables_init+0x130 (/home/bbrapl/code/thesis_test/a_static) 		add $0x1, %r9d
+        a_static 114158 [000] 262893.680356798:            454544 __tunables_init+0x134 (/home/bbrapl/code/thesis_test/a_static) 		add $0x38, %r8
+        a_static 114158 [000] 262893.680356798:            454548 __tunables_init+0x138 (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1a, %r9d
+        a_static 114158 [000] 262893.680356798:            45454c __tunables_init+0x13c (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffac
+        a_static 114158 [000] 262893.680356798:            4544f8 __tunables_init+0xe8 (/home/bbrapl/code/thesis_test/a_static) 		cmpb  $0x0, (%r8)
+        a_static 114158 [000] 262893.680356798:            4544fc __tunables_init+0xec (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x44
+        a_static 114158 [000] 262893.680356798:            4544fe __tunables_init+0xee (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%r8), %r10
+        a_static 114158 [000] 262893.680356798:            454502 __tunables_init+0xf2 (/home/bbrapl/code/thesis_test/a_static) 		test %r10, %r10
+        a_static 114158 [000] 262893.680356798:            454505 __tunables_init+0xf5 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x3b
+        a_static 114158 [000] 262893.680356798:            454507 __tunables_init+0xf7 (/home/bbrapl/code/thesis_test/a_static) 		movzxb  (%r10), %edi
+        a_static 114158 [000] 262893.680356798:            45450b __tunables_init+0xfb (/home/bbrapl/code/thesis_test/a_static) 		mov %r10, %rsi
+        a_static 114158 [000] 262893.680356798:            45450e __tunables_init+0xfe (/home/bbrapl/code/thesis_test/a_static) 		mov %rbx, %rax
+        a_static 114158 [000] 262893.680356798:            454511 __tunables_init+0x101 (/home/bbrapl/code/thesis_test/a_static) 		mov %edi, %ecx
+        a_static 114158 [000] 262893.680356798:            454513 __tunables_init+0x103 (/home/bbrapl/code/thesis_test/a_static) 		test %dil, %dil
+        a_static 114158 [000] 262893.680356798:            454516 __tunables_init+0x106 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x1e
+        a_static 114158 [000] 262893.680356798:            454534 __tunables_init+0x124 (/home/bbrapl/code/thesis_test/a_static) 		movzxb  (%rax), %edx
+        a_static 114158 [000] 262893.680356798:            454537 __tunables_init+0x127 (/home/bbrapl/code/thesis_test/a_static) 		test %dl, %dl
+        a_static 114158 [000] 262893.680356798:            454539 __tunables_init+0x129 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffe7
+        a_static 114158 [000] 262893.680356798:            454520 __tunables_init+0x110 (/home/bbrapl/code/thesis_test/a_static) 		cmp %cl, %dl
+        a_static 114158 [000] 262893.680356798:            454522 __tunables_init+0x112 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x1e
+        a_static 114158 [000] 262893.680356798:            454540 __tunables_init+0x130 (/home/bbrapl/code/thesis_test/a_static) 		add $0x1, %r9d
+        a_static 114158 [000] 262893.680356798:            454544 __tunables_init+0x134 (/home/bbrapl/code/thesis_test/a_static) 		add $0x38, %r8
+        a_static 114158 [000] 262893.680356798:            454548 __tunables_init+0x138 (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1a, %r9d
+        a_static 114158 [000] 262893.680356798:            45454c __tunables_init+0x13c (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffac
+        a_static 114158 [000] 262893.680356798:            4544f8 __tunables_init+0xe8 (/home/bbrapl/code/thesis_test/a_static) 		cmpb  $0x0, (%r8)
+        a_static 114158 [000] 262893.680356798:            4544fc __tunables_init+0xec (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x44
+        a_static 114158 [000] 262893.680356798:            4544fe __tunables_init+0xee (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%r8), %r10
+        a_static 114158 [000] 262893.680356798:            454502 __tunables_init+0xf2 (/home/bbrapl/code/thesis_test/a_static) 		test %r10, %r10
+        a_static 114158 [000] 262893.680356798:            454505 __tunables_init+0xf5 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x3b
+        a_static 114158 [000] 262893.680356798:            454540 __tunables_init+0x130 (/home/bbrapl/code/thesis_test/a_static) 		add $0x1, %r9d
+        a_static 114158 [000] 262893.680356798:            454544 __tunables_init+0x134 (/home/bbrapl/code/thesis_test/a_static) 		add $0x38, %r8
+        a_static 114158 [000] 262893.680356798:            454548 __tunables_init+0x138 (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1a, %r9d
+        a_static 114158 [000] 262893.680356798:            45454c __tunables_init+0x13c (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffac
+        a_static 114158 [000] 262893.680356798:            4544f8 __tunables_init+0xe8 (/home/bbrapl/code/thesis_test/a_static) 		cmpb  $0x0, (%r8)
+        a_static 114158 [000] 262893.680356798:            4544fc __tunables_init+0xec (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x44
+        a_static 114158 [000] 262893.680356798:            4544fe __tunables_init+0xee (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%r8), %r10
+        a_static 114158 [000] 262893.680356798:            454502 __tunables_init+0xf2 (/home/bbrapl/code/thesis_test/a_static) 		test %r10, %r10
+        a_static 114158 [000] 262893.680356798:            454505 __tunables_init+0xf5 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x3b
+        a_static 114158 [000] 262893.680356798:            454540 __tunables_init+0x130 (/home/bbrapl/code/thesis_test/a_static) 		add $0x1, %r9d
+        a_static 114158 [000] 262893.680356798:            454544 __tunables_init+0x134 (/home/bbrapl/code/thesis_test/a_static) 		add $0x38, %r8
+        a_static 114158 [000] 262893.680356798:            454548 __tunables_init+0x138 (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1a, %r9d
+        a_static 114158 [000] 262893.680356798:            45454c __tunables_init+0x13c (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffac
+        a_static 114158 [000] 262893.680356798:            4544f8 __tunables_init+0xe8 (/home/bbrapl/code/thesis_test/a_static) 		cmpb  $0x0, (%r8)
+        a_static 114158 [000] 262893.680356798:            4544fc __tunables_init+0xec (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x44
+        a_static 114158 [000] 262893.680356798:            4544fe __tunables_init+0xee (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%r8), %r10
+        a_static 114158 [000] 262893.680356798:            454502 __tunables_init+0xf2 (/home/bbrapl/code/thesis_test/a_static) 		test %r10, %r10
+        a_static 114158 [000] 262893.680356798:            454505 __tunables_init+0xf5 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x3b
+        a_static 114158 [000] 262893.680356798:            454507 __tunables_init+0xf7 (/home/bbrapl/code/thesis_test/a_static) 		movzxb  (%r10), %edi
+        a_static 114158 [000] 262893.680356798:            45450b __tunables_init+0xfb (/home/bbrapl/code/thesis_test/a_static) 		mov %r10, %rsi
+        a_static 114158 [000] 262893.680356798:            45450e __tunables_init+0xfe (/home/bbrapl/code/thesis_test/a_static) 		mov %rbx, %rax
+        a_static 114158 [000] 262893.680356798:            454511 __tunables_init+0x101 (/home/bbrapl/code/thesis_test/a_static) 		mov %edi, %ecx
+        a_static 114158 [000] 262893.680356798:            454513 __tunables_init+0x103 (/home/bbrapl/code/thesis_test/a_static) 		test %dil, %dil
+        a_static 114158 [000] 262893.680356798:            454516 __tunables_init+0x106 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x1e
+        a_static 114158 [000] 262893.680356798:            454534 __tunables_init+0x124 (/home/bbrapl/code/thesis_test/a_static) 		movzxb  (%rax), %edx
+        a_static 114158 [000] 262893.680356798:            454537 __tunables_init+0x127 (/home/bbrapl/code/thesis_test/a_static) 		test %dl, %dl
+        a_static 114158 [000] 262893.680356798:            454539 __tunables_init+0x129 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffe7
+        a_static 114158 [000] 262893.680356798:            454520 __tunables_init+0x110 (/home/bbrapl/code/thesis_test/a_static) 		cmp %cl, %dl
+        a_static 114158 [000] 262893.680356798:            454522 __tunables_init+0x112 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x1e
+        a_static 114158 [000] 262893.680356798:            454540 __tunables_init+0x130 (/home/bbrapl/code/thesis_test/a_static) 		add $0x1, %r9d
+        a_static 114158 [000] 262893.680356798:            454544 __tunables_init+0x134 (/home/bbrapl/code/thesis_test/a_static) 		add $0x38, %r8
+        a_static 114158 [000] 262893.680356798:            454548 __tunables_init+0x138 (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1a, %r9d
+        a_static 114158 [000] 262893.680356798:            45454c __tunables_init+0x13c (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffac
+        a_static 114158 [000] 262893.680356798:            4544f8 __tunables_init+0xe8 (/home/bbrapl/code/thesis_test/a_static) 		cmpb  $0x0, (%r8)
+        a_static 114158 [000] 262893.680356798:            4544fc __tunables_init+0xec (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x44
+        a_static 114158 [000] 262893.680356798:            4544fe __tunables_init+0xee (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%r8), %r10
+        a_static 114158 [000] 262893.680356798:            454502 __tunables_init+0xf2 (/home/bbrapl/code/thesis_test/a_static) 		test %r10, %r10
+        a_static 114158 [000] 262893.680356798:            454505 __tunables_init+0xf5 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x3b
+        a_static 114158 [000] 262893.680356798:            454507 __tunables_init+0xf7 (/home/bbrapl/code/thesis_test/a_static) 		movzxb  (%r10), %edi
+        a_static 114158 [000] 262893.680356798:            45450b __tunables_init+0xfb (/home/bbrapl/code/thesis_test/a_static) 		mov %r10, %rsi
+        a_static 114158 [000] 262893.680356798:            45450e __tunables_init+0xfe (/home/bbrapl/code/thesis_test/a_static) 		mov %rbx, %rax
+        a_static 114158 [000] 262893.680356798:            454511 __tunables_init+0x101 (/home/bbrapl/code/thesis_test/a_static) 		mov %edi, %ecx
+        a_static 114158 [000] 262893.680356798:            454513 __tunables_init+0x103 (/home/bbrapl/code/thesis_test/a_static) 		test %dil, %dil
+        a_static 114158 [000] 262893.680356798:            454516 __tunables_init+0x106 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x1e
+        a_static 114158 [000] 262893.680356798:            454534 __tunables_init+0x124 (/home/bbrapl/code/thesis_test/a_static) 		movzxb  (%rax), %edx
+        a_static 114158 [000] 262893.680356798:            454537 __tunables_init+0x127 (/home/bbrapl/code/thesis_test/a_static) 		test %dl, %dl
+        a_static 114158 [000] 262893.680356798:            454539 __tunables_init+0x129 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffe7
+        a_static 114158 [000] 262893.680356798:            454520 __tunables_init+0x110 (/home/bbrapl/code/thesis_test/a_static) 		cmp %cl, %dl
+        a_static 114158 [000] 262893.680356798:            454522 __tunables_init+0x112 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x1e
+        a_static 114158 [000] 262893.680356798:            454540 __tunables_init+0x130 (/home/bbrapl/code/thesis_test/a_static) 		add $0x1, %r9d
+        a_static 114158 [000] 262893.680356798:            454544 __tunables_init+0x134 (/home/bbrapl/code/thesis_test/a_static) 		add $0x38, %r8
+        a_static 114158 [000] 262893.680356798:            454548 __tunables_init+0x138 (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1a, %r9d
+        a_static 114158 [000] 262893.680356798:            45454c __tunables_init+0x13c (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffac
+        a_static 114158 [000] 262893.680356798:            4544f8 __tunables_init+0xe8 (/home/bbrapl/code/thesis_test/a_static) 		cmpb  $0x0, (%r8)
+        a_static 114158 [000] 262893.680356798:            4544fc __tunables_init+0xec (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x44
+        a_static 114158 [000] 262893.680356798:            4544fe __tunables_init+0xee (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%r8), %r10
+        a_static 114158 [000] 262893.680356798:            454502 __tunables_init+0xf2 (/home/bbrapl/code/thesis_test/a_static) 		test %r10, %r10
+        a_static 114158 [000] 262893.680356798:            454505 __tunables_init+0xf5 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x3b
+        a_static 114158 [000] 262893.680356798:            454540 __tunables_init+0x130 (/home/bbrapl/code/thesis_test/a_static) 		add $0x1, %r9d
+        a_static 114158 [000] 262893.680356798:            454544 __tunables_init+0x134 (/home/bbrapl/code/thesis_test/a_static) 		add $0x38, %r8
+        a_static 114158 [000] 262893.680356798:            454548 __tunables_init+0x138 (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1a, %r9d
+        a_static 114158 [000] 262893.680356798:            45454c __tunables_init+0x13c (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffac
+        a_static 114158 [000] 262893.680356798:            4544f8 __tunables_init+0xe8 (/home/bbrapl/code/thesis_test/a_static) 		cmpb  $0x0, (%r8)
+        a_static 114158 [000] 262893.680356798:            4544fc __tunables_init+0xec (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x44
+        a_static 114158 [000] 262893.680356798:            4544fe __tunables_init+0xee (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%r8), %r10
+        a_static 114158 [000] 262893.680356798:            454502 __tunables_init+0xf2 (/home/bbrapl/code/thesis_test/a_static) 		test %r10, %r10
+        a_static 114158 [000] 262893.680356798:            454505 __tunables_init+0xf5 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x3b
+        a_static 114158 [000] 262893.680356798:            454540 __tunables_init+0x130 (/home/bbrapl/code/thesis_test/a_static) 		add $0x1, %r9d
+        a_static 114158 [000] 262893.680356798:            454544 __tunables_init+0x134 (/home/bbrapl/code/thesis_test/a_static) 		add $0x38, %r8
+        a_static 114158 [000] 262893.680356798:            454548 __tunables_init+0x138 (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1a, %r9d
+        a_static 114158 [000] 262893.680356798:            45454c __tunables_init+0x13c (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffac
+        a_static 114158 [000] 262893.680356798:            4544f8 __tunables_init+0xe8 (/home/bbrapl/code/thesis_test/a_static) 		cmpb  $0x0, (%r8)
+        a_static 114158 [000] 262893.680356798:            4544fc __tunables_init+0xec (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x44
+        a_static 114158 [000] 262893.680356798:            4544fe __tunables_init+0xee (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%r8), %r10
+        a_static 114158 [000] 262893.680356798:            454502 __tunables_init+0xf2 (/home/bbrapl/code/thesis_test/a_static) 		test %r10, %r10
+        a_static 114158 [000] 262893.680356798:            454505 __tunables_init+0xf5 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x3b
+        a_static 114158 [000] 262893.680356798:            454540 __tunables_init+0x130 (/home/bbrapl/code/thesis_test/a_static) 		add $0x1, %r9d
+        a_static 114158 [000] 262893.680356798:            454544 __tunables_init+0x134 (/home/bbrapl/code/thesis_test/a_static) 		add $0x38, %r8
+        a_static 114158 [000] 262893.680356798:            454548 __tunables_init+0x138 (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1a, %r9d
+        a_static 114158 [000] 262893.680356798:            45454c __tunables_init+0x13c (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffac
+        a_static 114158 [000] 262893.680356798:            4544f8 __tunables_init+0xe8 (/home/bbrapl/code/thesis_test/a_static) 		cmpb  $0x0, (%r8)
+        a_static 114158 [000] 262893.680356798:            4544fc __tunables_init+0xec (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x44
+        a_static 114158 [000] 262893.680356798:            4544fe __tunables_init+0xee (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%r8), %r10
+        a_static 114158 [000] 262893.680356798:            454502 __tunables_init+0xf2 (/home/bbrapl/code/thesis_test/a_static) 		test %r10, %r10
+        a_static 114158 [000] 262893.680356798:            454505 __tunables_init+0xf5 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x3b
+        a_static 114158 [000] 262893.680356798:            454540 __tunables_init+0x130 (/home/bbrapl/code/thesis_test/a_static) 		add $0x1, %r9d
+        a_static 114158 [000] 262893.680356798:            454544 __tunables_init+0x134 (/home/bbrapl/code/thesis_test/a_static) 		add $0x38, %r8
+        a_static 114158 [000] 262893.680356798:            454548 __tunables_init+0x138 (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1a, %r9d
+        a_static 114158 [000] 262893.680356798:            45454c __tunables_init+0x13c (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffac
+        a_static 114158 [000] 262893.680356798:            4544f8 __tunables_init+0xe8 (/home/bbrapl/code/thesis_test/a_static) 		cmpb  $0x0, (%r8)
+        a_static 114158 [000] 262893.680356798:            4544fc __tunables_init+0xec (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x44
+        a_static 114158 [000] 262893.680356798:            4544fe __tunables_init+0xee (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%r8), %r10
+        a_static 114158 [000] 262893.680356798:            454502 __tunables_init+0xf2 (/home/bbrapl/code/thesis_test/a_static) 		test %r10, %r10
+        a_static 114158 [000] 262893.680356798:            454505 __tunables_init+0xf5 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x3b
+        a_static 114158 [000] 262893.680356798:            454540 __tunables_init+0x130 (/home/bbrapl/code/thesis_test/a_static) 		add $0x1, %r9d
+        a_static 114158 [000] 262893.680356798:            454544 __tunables_init+0x134 (/home/bbrapl/code/thesis_test/a_static) 		add $0x38, %r8
+        a_static 114158 [000] 262893.680356798:            454548 __tunables_init+0x138 (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1a, %r9d
+        a_static 114158 [000] 262893.680356798:            45454c __tunables_init+0x13c (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffac
+        a_static 114158 [000] 262893.680356798:            4544f8 __tunables_init+0xe8 (/home/bbrapl/code/thesis_test/a_static) 		cmpb  $0x0, (%r8)
+        a_static 114158 [000] 262893.680356798:            4544fc __tunables_init+0xec (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x44
+        a_static 114158 [000] 262893.680356798:            4544fe __tunables_init+0xee (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%r8), %r10
+        a_static 114158 [000] 262893.680356798:            454502 __tunables_init+0xf2 (/home/bbrapl/code/thesis_test/a_static) 		test %r10, %r10
+        a_static 114158 [000] 262893.680356798:            454505 __tunables_init+0xf5 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x3b
+        a_static 114158 [000] 262893.680356798:            454507 __tunables_init+0xf7 (/home/bbrapl/code/thesis_test/a_static) 		movzxb  (%r10), %edi
+        a_static 114158 [000] 262893.680356798:            45450b __tunables_init+0xfb (/home/bbrapl/code/thesis_test/a_static) 		mov %r10, %rsi
+        a_static 114158 [000] 262893.680356798:            45450e __tunables_init+0xfe (/home/bbrapl/code/thesis_test/a_static) 		mov %rbx, %rax
+        a_static 114158 [000] 262893.680356798:            454511 __tunables_init+0x101 (/home/bbrapl/code/thesis_test/a_static) 		mov %edi, %ecx
+        a_static 114158 [000] 262893.680356798:            454513 __tunables_init+0x103 (/home/bbrapl/code/thesis_test/a_static) 		test %dil, %dil
+        a_static 114158 [000] 262893.680356798:            454516 __tunables_init+0x106 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x1e
+        a_static 114158 [000] 262893.680356798:            454534 __tunables_init+0x124 (/home/bbrapl/code/thesis_test/a_static) 		movzxb  (%rax), %edx
+        a_static 114158 [000] 262893.680356798:            454537 __tunables_init+0x127 (/home/bbrapl/code/thesis_test/a_static) 		test %dl, %dl
+        a_static 114158 [000] 262893.680356798:            454539 __tunables_init+0x129 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffe7
+        a_static 114158 [000] 262893.680356798:            454520 __tunables_init+0x110 (/home/bbrapl/code/thesis_test/a_static) 		cmp %cl, %dl
+        a_static 114158 [000] 262893.680356798:            454522 __tunables_init+0x112 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x1e
+        a_static 114158 [000] 262893.680356798:            454540 __tunables_init+0x130 (/home/bbrapl/code/thesis_test/a_static) 		add $0x1, %r9d
+        a_static 114158 [000] 262893.680356798:            454544 __tunables_init+0x134 (/home/bbrapl/code/thesis_test/a_static) 		add $0x38, %r8
+        a_static 114158 [000] 262893.680356798:            454548 __tunables_init+0x138 (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1a, %r9d
+        a_static 114158 [000] 262893.680356798:            45454c __tunables_init+0x13c (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffac
+        a_static 114158 [000] 262893.680356798:            4544f8 __tunables_init+0xe8 (/home/bbrapl/code/thesis_test/a_static) 		cmpb  $0x0, (%r8)
+        a_static 114158 [000] 262893.680356798:            4544fc __tunables_init+0xec (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x44
+        a_static 114158 [000] 262893.680356798:            4544fe __tunables_init+0xee (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%r8), %r10
+        a_static 114158 [000] 262893.680356798:            454502 __tunables_init+0xf2 (/home/bbrapl/code/thesis_test/a_static) 		test %r10, %r10
+        a_static 114158 [000] 262893.680356798:            454505 __tunables_init+0xf5 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x3b
+        a_static 114158 [000] 262893.680356798:            454507 __tunables_init+0xf7 (/home/bbrapl/code/thesis_test/a_static) 		movzxb  (%r10), %edi
+        a_static 114158 [000] 262893.680356798:            45450b __tunables_init+0xfb (/home/bbrapl/code/thesis_test/a_static) 		mov %r10, %rsi
+        a_static 114158 [000] 262893.680356798:            45450e __tunables_init+0xfe (/home/bbrapl/code/thesis_test/a_static) 		mov %rbx, %rax
+        a_static 114158 [000] 262893.680356798:            454511 __tunables_init+0x101 (/home/bbrapl/code/thesis_test/a_static) 		mov %edi, %ecx
+        a_static 114158 [000] 262893.680356798:            454513 __tunables_init+0x103 (/home/bbrapl/code/thesis_test/a_static) 		test %dil, %dil
+        a_static 114158 [000] 262893.680356798:            454516 __tunables_init+0x106 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x1e
+        a_static 114158 [000] 262893.680356798:            454534 __tunables_init+0x124 (/home/bbrapl/code/thesis_test/a_static) 		movzxb  (%rax), %edx
+        a_static 114158 [000] 262893.680356798:            454537 __tunables_init+0x127 (/home/bbrapl/code/thesis_test/a_static) 		test %dl, %dl
+        a_static 114158 [000] 262893.680356798:            454539 __tunables_init+0x129 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffe7
+        a_static 114158 [000] 262893.680356798:            454520 __tunables_init+0x110 (/home/bbrapl/code/thesis_test/a_static) 		cmp %cl, %dl
+        a_static 114158 [000] 262893.680356798:            454522 __tunables_init+0x112 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x1e
+        a_static 114158 [000] 262893.680356798:            454540 __tunables_init+0x130 (/home/bbrapl/code/thesis_test/a_static) 		add $0x1, %r9d
+        a_static 114158 [000] 262893.680356798:            454544 __tunables_init+0x134 (/home/bbrapl/code/thesis_test/a_static) 		add $0x38, %r8
+        a_static 114158 [000] 262893.680356798:            454548 __tunables_init+0x138 (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1a, %r9d
+        a_static 114158 [000] 262893.680356798:            45454c __tunables_init+0x13c (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffac
+        a_static 114158 [000] 262893.680356798:            4544f8 __tunables_init+0xe8 (/home/bbrapl/code/thesis_test/a_static) 		cmpb  $0x0, (%r8)
+        a_static 114158 [000] 262893.680356798:            4544fc __tunables_init+0xec (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x44
+        a_static 114158 [000] 262893.680356798:            4544fe __tunables_init+0xee (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%r8), %r10
+        a_static 114158 [000] 262893.680356798:            454502 __tunables_init+0xf2 (/home/bbrapl/code/thesis_test/a_static) 		test %r10, %r10
+        a_static 114158 [000] 262893.680356798:            454505 __tunables_init+0xf5 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x3b
+        a_static 114158 [000] 262893.680356798:            454540 __tunables_init+0x130 (/home/bbrapl/code/thesis_test/a_static) 		add $0x1, %r9d
+        a_static 114158 [000] 262893.680356798:            454544 __tunables_init+0x134 (/home/bbrapl/code/thesis_test/a_static) 		add $0x38, %r8
+        a_static 114158 [000] 262893.680356798:            454548 __tunables_init+0x138 (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1a, %r9d
+        a_static 114158 [000] 262893.680356798:            45454c __tunables_init+0x13c (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffac
+        a_static 114158 [000] 262893.680356798:            4544f8 __tunables_init+0xe8 (/home/bbrapl/code/thesis_test/a_static) 		cmpb  $0x0, (%r8)
+        a_static 114158 [000] 262893.680356798:            4544fc __tunables_init+0xec (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x44
+        a_static 114158 [000] 262893.680356798:            4544fe __tunables_init+0xee (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%r8), %r10
+        a_static 114158 [000] 262893.680356798:            454502 __tunables_init+0xf2 (/home/bbrapl/code/thesis_test/a_static) 		test %r10, %r10
+        a_static 114158 [000] 262893.680356798:            454505 __tunables_init+0xf5 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x3b
+        a_static 114158 [000] 262893.680356798:            454540 __tunables_init+0x130 (/home/bbrapl/code/thesis_test/a_static) 		add $0x1, %r9d
+        a_static 114158 [000] 262893.680356798:            454544 __tunables_init+0x134 (/home/bbrapl/code/thesis_test/a_static) 		add $0x38, %r8
+        a_static 114158 [000] 262893.680356798:            454548 __tunables_init+0x138 (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1a, %r9d
+        a_static 114158 [000] 262893.680356798:            45454c __tunables_init+0x13c (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffac
+        a_static 114158 [000] 262893.680356798:            4544f8 __tunables_init+0xe8 (/home/bbrapl/code/thesis_test/a_static) 		cmpb  $0x0, (%r8)
+        a_static 114158 [000] 262893.680356798:            4544fc __tunables_init+0xec (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x44
+        a_static 114158 [000] 262893.680356798:            4544fe __tunables_init+0xee (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%r8), %r10
+        a_static 114158 [000] 262893.680356798:            454502 __tunables_init+0xf2 (/home/bbrapl/code/thesis_test/a_static) 		test %r10, %r10
+        a_static 114158 [000] 262893.680356798:            454505 __tunables_init+0xf5 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x3b
+        a_static 114158 [000] 262893.680356798:            454507 __tunables_init+0xf7 (/home/bbrapl/code/thesis_test/a_static) 		movzxb  (%r10), %edi
+        a_static 114158 [000] 262893.680356798:            45450b __tunables_init+0xfb (/home/bbrapl/code/thesis_test/a_static) 		mov %r10, %rsi
+        a_static 114158 [000] 262893.680356798:            45450e __tunables_init+0xfe (/home/bbrapl/code/thesis_test/a_static) 		mov %rbx, %rax
+        a_static 114158 [000] 262893.680356798:            454511 __tunables_init+0x101 (/home/bbrapl/code/thesis_test/a_static) 		mov %edi, %ecx
+        a_static 114158 [000] 262893.680356798:            454513 __tunables_init+0x103 (/home/bbrapl/code/thesis_test/a_static) 		test %dil, %dil
+        a_static 114158 [000] 262893.680356798:            454516 __tunables_init+0x106 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x1e
+        a_static 114158 [000] 262893.680356798:            454534 __tunables_init+0x124 (/home/bbrapl/code/thesis_test/a_static) 		movzxb  (%rax), %edx
+        a_static 114158 [000] 262893.680356798:            454537 __tunables_init+0x127 (/home/bbrapl/code/thesis_test/a_static) 		test %dl, %dl
+        a_static 114158 [000] 262893.680356798:            454539 __tunables_init+0x129 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffe7
+        a_static 114158 [000] 262893.680356798:            454520 __tunables_init+0x110 (/home/bbrapl/code/thesis_test/a_static) 		cmp %cl, %dl
+        a_static 114158 [000] 262893.680356798:            454522 __tunables_init+0x112 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x1e
+        a_static 114158 [000] 262893.680356798:            454540 __tunables_init+0x130 (/home/bbrapl/code/thesis_test/a_static) 		add $0x1, %r9d
+        a_static 114158 [000] 262893.680356798:            454544 __tunables_init+0x134 (/home/bbrapl/code/thesis_test/a_static) 		add $0x38, %r8
+        a_static 114158 [000] 262893.680356798:            454548 __tunables_init+0x138 (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1a, %r9d
+        a_static 114158 [000] 262893.680356798:            45454c __tunables_init+0x13c (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffac
+        a_static 114158 [000] 262893.680356798:            4544f8 __tunables_init+0xe8 (/home/bbrapl/code/thesis_test/a_static) 		cmpb  $0x0, (%r8)
+        a_static 114158 [000] 262893.680356798:            4544fc __tunables_init+0xec (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x44
+        a_static 114158 [000] 262893.680356798:            4544fe __tunables_init+0xee (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%r8), %r10
+        a_static 114158 [000] 262893.680356798:            454502 __tunables_init+0xf2 (/home/bbrapl/code/thesis_test/a_static) 		test %r10, %r10
+        a_static 114158 [000] 262893.680356798:            454505 __tunables_init+0xf5 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x3b
+        a_static 114158 [000] 262893.680356798:            454540 __tunables_init+0x130 (/home/bbrapl/code/thesis_test/a_static) 		add $0x1, %r9d
+        a_static 114158 [000] 262893.680356798:            454544 __tunables_init+0x134 (/home/bbrapl/code/thesis_test/a_static) 		add $0x38, %r8
+        a_static 114158 [000] 262893.680356798:            454548 __tunables_init+0x138 (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1a, %r9d
+        a_static 114158 [000] 262893.680356798:            45454c __tunables_init+0x13c (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffac
+        a_static 114158 [000] 262893.680356798:            4544f8 __tunables_init+0xe8 (/home/bbrapl/code/thesis_test/a_static) 		cmpb  $0x0, (%r8)
+        a_static 114158 [000] 262893.680356798:            4544fc __tunables_init+0xec (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x44
+        a_static 114158 [000] 262893.680356798:            4544fe __tunables_init+0xee (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%r8), %r10
+        a_static 114158 [000] 262893.680356798:            454502 __tunables_init+0xf2 (/home/bbrapl/code/thesis_test/a_static) 		test %r10, %r10
+        a_static 114158 [000] 262893.680356798:            454505 __tunables_init+0xf5 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x3b
+        a_static 114158 [000] 262893.680356798:            454540 __tunables_init+0x130 (/home/bbrapl/code/thesis_test/a_static) 		add $0x1, %r9d
+        a_static 114158 [000] 262893.680356798:            454544 __tunables_init+0x134 (/home/bbrapl/code/thesis_test/a_static) 		add $0x38, %r8
+        a_static 114158 [000] 262893.680356798:            454548 __tunables_init+0x138 (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1a, %r9d
+        a_static 114158 [000] 262893.680356798:            45454c __tunables_init+0x13c (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffac
+        a_static 114158 [000] 262893.680356798:            4544f8 __tunables_init+0xe8 (/home/bbrapl/code/thesis_test/a_static) 		cmpb  $0x0, (%r8)
+        a_static 114158 [000] 262893.680356798:            4544fc __tunables_init+0xec (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x44
+        a_static 114158 [000] 262893.680356798:            4544fe __tunables_init+0xee (/home/bbrapl/code/thesis_test/a_static) 		movq  0x8(%r8), %r10
+        a_static 114158 [000] 262893.680356798:            454502 __tunables_init+0xf2 (/home/bbrapl/code/thesis_test/a_static) 		test %r10, %r10
+        a_static 114158 [000] 262893.680356798:            454505 __tunables_init+0xf5 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x3b
+        a_static 114158 [000] 262893.680356798:            454507 __tunables_init+0xf7 (/home/bbrapl/code/thesis_test/a_static) 		movzxb  (%r10), %edi
+        a_static 114158 [000] 262893.680356798:            45450b __tunables_init+0xfb (/home/bbrapl/code/thesis_test/a_static) 		mov %r10, %rsi
+        a_static 114158 [000] 262893.680356798:            45450e __tunables_init+0xfe (/home/bbrapl/code/thesis_test/a_static) 		mov %rbx, %rax
+        a_static 114158 [000] 262893.680356798:            454511 __tunables_init+0x101 (/home/bbrapl/code/thesis_test/a_static) 		mov %edi, %ecx
+        a_static 114158 [000] 262893.680356798:            454513 __tunables_init+0x103 (/home/bbrapl/code/thesis_test/a_static) 		test %dil, %dil
+        a_static 114158 [000] 262893.680356798:            454516 __tunables_init+0x106 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x1e
+        a_static 114158 [000] 262893.680356798:            454534 __tunables_init+0x124 (/home/bbrapl/code/thesis_test/a_static) 		movzxb  (%rax), %edx
+        a_static 114158 [000] 262893.680356798:            454537 __tunables_init+0x127 (/home/bbrapl/code/thesis_test/a_static) 		test %dl, %dl
+        a_static 114158 [000] 262893.680356798:            454539 __tunables_init+0x129 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffe7
+        a_static 114158 [000] 262893.680356798:            454520 __tunables_init+0x110 (/home/bbrapl/code/thesis_test/a_static) 		cmp %cl, %dl
+        a_static 114158 [000] 262893.680356798:            454522 __tunables_init+0x112 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0x1e
+        a_static 114158 [000] 262893.680356798:            454540 __tunables_init+0x130 (/home/bbrapl/code/thesis_test/a_static) 		add $0x1, %r9d
+        a_static 114158 [000] 262893.680356798:            454544 __tunables_init+0x134 (/home/bbrapl/code/thesis_test/a_static) 		add $0x38, %r8
+        a_static 114158 [000] 262893.680356798:            454548 __tunables_init+0x138 (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x1a, %r9d
+        a_static 114158 [000] 262893.680356798:            45454c __tunables_init+0x13c (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffac
+        a_static 114158 [000] 262893.680356798:            45454e __tunables_init+0x13e (/home/bbrapl/code/thesis_test/a_static) 		mov %r15, %r13
+        a_static 114158 [000] 262893.680356798:            454551 __tunables_init+0x141 (/home/bbrapl/code/thesis_test/a_static) 		test %r13, %r13
+        a_static 114158 [000] 262893.680356798:            454554 __tunables_init+0x144 (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xfffffffffffffef5
+        a_static 114158 [000] 262893.680356798:            454449 __tunables_init+0x39 (/home/bbrapl/code/thesis_test/a_static) 		movq  (%r13), %rbx
+        a_static 114158 [000] 262893.680356798:            45444d __tunables_init+0x3d (/home/bbrapl/code/thesis_test/a_static) 		test %rbx, %rbx
+        a_static 114158 [000] 262893.680356798:            454450 __tunables_init+0x40 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x10a
+        a_static 114158 [000] 262893.680356798:            454456 __tunables_init+0x46 (/home/bbrapl/code/thesis_test/a_static) 		movzxb  (%rbx), %edx
+        a_static 114158 [000] 262893.680356798:            454459 __tunables_init+0x49 (/home/bbrapl/code/thesis_test/a_static) 		lea 0x8(%r13), %r15
+        a_static 114158 [000] 262893.680356798:            45445d __tunables_init+0x4d (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x3d, %dl
+        a_static 114158 [000] 262893.680356798:            454460 __tunables_init+0x50 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x465
+        a_static 114158 [000] 262893.680356798:            454466 __tunables_init+0x56 (/home/bbrapl/code/thesis_test/a_static) 		test %dl, %dl
+        a_static 114158 [000] 262893.680356798:            454468 __tunables_init+0x58 (/home/bbrapl/code/thesis_test/a_static) 		jz 0x45d
+        a_static 114158 [000] 262893.680356798:            45446e __tunables_init+0x5e (/home/bbrapl/code/thesis_test/a_static) 		mov $0x1, %eax
+        a_static 114158 [000] 262893.680356798:            454473 __tunables_init+0x63 (/home/bbrapl/code/thesis_test/a_static) 		nopl  %eax, (%rax,%rax,1)
+        a_static 114158 [000] 262893.680356798:            454478 __tunables_init+0x68 (/home/bbrapl/code/thesis_test/a_static) 		movzxb  (%rbx,%rax,1), %edx
+        a_static 114158 [000] 262893.680356798:            45447c __tunables_init+0x6c (/home/bbrapl/code/thesis_test/a_static) 		mov %rax, %rcx
+        a_static 114158 [000] 262893.680356798:            45447f __tunables_init+0x6f (/home/bbrapl/code/thesis_test/a_static) 		add $0x1, %rax
+        a_static 114158 [000] 262893.680356798:            454483 __tunables_init+0x73 (/home/bbrapl/code/thesis_test/a_static) 		test %dl, %dl
+        a_static 114158 [000] 262893.680356798:            454485 __tunables_init+0x75 (/home/bbrapl/code/thesis_test/a_static) 		jz 0xc9
+        a_static 114158 [000] 262893.680356798:            45448b __tunables_init+0x7b (/home/bbrapl/code/thesis_test/a_static) 		cmp $0x3d, %dl
+        a_static 114158 [000] 262893.680356798:            45448e __tunables_init+0x7e (/home/bbrapl/code/thesis_test/a_static) 		jnz 0xffffffffffffffea
+        a_static 114158 [000] 262893.680356798:            454478 __tunables_init+0x68 (/home/bbrapl/code/thesis_test/a_static) 		movzxb  (%rbx,%rax,1), %edx
+        a_static 114158 [000] 262893.680356798:            45447c __tunables_init+0x6c (/home/bbrapl/code/thesis_test/a_static) 		mov %rax, %rcx
+        a_static 114158 [000] 262893.680356798:            45447f __tunables_init+0x6f (/home/bbrapl/code/thesis_test/a_static) 		add $0x1, %rax
+        a_static 114158 [000] 262893.680356798:            454483 __tunables_init+0x73 (/home/bbrapl/code/thesis_test/a_static) 		test %dl, %dl
+        a_static 114158 [000] 262893.680356798:            454485 __tunables_init+0x75 (/home/bbrapl/code/thesis_test/a_static) 		jz 0xc9
