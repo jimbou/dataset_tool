@@ -16,8 +16,31 @@ bool StartsWith(const char *a, const char *b)
    return 0;
 }
 
+bool Isnumber (char *str ){
+    for (int i = 0; i < strlen(str); i++) {
+        if(!isdigit((str[i]))){return 0;}
+        
+    }
+    return 1;
+}
 
-
+void removeChar(char * str, char charToRemmove){
+    int i, j;
+    int len = strlen(str);
+    for(i=0; i<len; i++)
+    {
+        if(str[i] == charToRemmove)
+        {
+            for(j=i; j<len; j++)
+            {
+                str[j] = str[j+1];
+            }
+            len--;
+            i--;
+        }
+    }
+    
+}
 
 char* give_opcode(char *argument, char *line)  //returns the name of the command in our format 
 {
@@ -41,8 +64,10 @@ char* give_opcode(char *argument, char *line)  //returns the name of the command
         bool arg1reg =false;
         bool arg2reg =false;
         bool arg3reg =false;
-
-
+        char Delim1[] = ")";
+        char Delim2[] = "(";
+        
+        char *temporary;
         
         p = strstr(line, argument);
         
@@ -50,7 +75,7 @@ char* give_opcode(char *argument, char *line)  //returns the name of the command
         p2 =strtok(NULL,"\n"); //periexei tin actuall entoli me kena stin arxi
         while (isspace(*p2)){
             ++p2;}             //katharizoume ta kena stin arxi
-        printf("%s \n",  p2); 
+        //printf("%s \n",  p2); 
         opcode  =strtok(p2,Delimit); //pairnoume to onoma tis entolis
         if (opcode != NULL) {   //pairnoume proto operator
             op1 = strtok(NULL, Delimit); }
@@ -59,7 +84,67 @@ char* give_opcode(char *argument, char *line)  //returns the name of the command
         if (op2!= NULL) {       //pairnoume trito operator
             op3= strtok(NULL,Delimit); }
 
+         printf("op1 1is %s \n", op1);
+        printf("%s-%s-%s-%s\n",  opcode , op1, op2 ,op3);
+        
+        //Tsekaroume ama periexoun parentheseis
+        //Ama exoun moni parenthesi simainei pos exei kopei kai prepei na petaxtei
+        if (op1 !=NULL){
+        if (StartsWith(op1, "(") && (strchr(op1, ')') == NULL)){ //parenthesi ( o protos char tote petietai
+            op1++;
+            printf("the CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC op1 is %s \n", op1);
+        }
+        else if (((strchr(op1, '(') != NULL) && (strchr(op1, ')') == NULL))){ //parenthesi ( o mesaios char tote kratietai to kommati meta apo parenthesi
+             temporary=strtok(op1,Delim2);
+             temporary =strtok(NULL," ");
+             if(temporary != NULL) strcpy(op1,temporary);
+             else {op1=NULL;}
+                           
+             printf("the BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB op1 is %s \n", op1);
+             }
+        else if (((strchr(op1, '(') == NULL) && (strchr(op1, ')') != NULL))){ //parenthesi ) stin mesi h telos  tote kratame prin apo parenthesi
+             temporary=strtok(op1,Delim1);
+             printf("the AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA op1 is %s \n", op1);}
+            }
 
+        if (op2 !=NULL){
+        if (StartsWith(op2, "(") && (strchr(op2, ')') == NULL)){
+            op2++;
+            printf("the CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC op2 is %s \n", op2);
+        }
+        else if (((strchr(op2, '(') != NULL) && (strchr(op2, ')') == NULL))){
+             temporary=strtok(op2,Delim2);
+             temporary =strtok(NULL," ");
+             if(temporary != NULL) {strcpy(op2,temporary);}
+             else {op2=NULL;}
+                           
+             printf("the BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB op2 is %s \n", op2);
+             }
+        else if (((strchr(op2, '(') == NULL) && (strchr(op2, ')') != NULL))){
+             temporary=strtok(op2,Delim1);
+             printf("the AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA op2 is %s \n", op2);}
+            }
+
+        if (op3 !=NULL){
+        if (StartsWith(op3, "(") && (strchr(op3, ')') == NULL)){
+            op3++;
+            printf("the CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC  op3 is %s \n", op3);
+        }
+        else if (((strchr(op3, '(') != NULL) && (strchr(op3, ')') == NULL))){
+             temporary=strtok(op3,Delim2);
+             temporary =strtok(NULL," ");
+             if(temporary != NULL) strcpy(op3,temporary);
+             else {op3=NULL;}
+                           
+             printf("the BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB op3 is %s \n", op3);
+             }
+        else if (((strchr(op3, '(') == NULL) && (strchr(op3, ')') != NULL))){
+             temporary=strtok(op3,Delim1);
+             printf("the AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA op3 is %s \n", op3);}
+            }
+
+
+        
         //Now starts the categorizing opcodes part
         //first we check if the operators are in the register list
         if (op1!= NULL) {
@@ -96,6 +181,8 @@ char* give_opcode(char *argument, char *line)  //returns the name of the command
 
         //Now we do all the checking 
 
+        
+
          if (op1== NULL) {
             arg1 = "0";
          }
@@ -114,7 +201,7 @@ char* give_opcode(char *argument, char *line)  //returns the name of the command
          {
             arg1 = "m";
          }
-          else if (StartsWith(op1, "$0x"))
+          else if( (StartsWith(op1, "$0x") )|| (StartsWith(op1, "0x"))   )
          {
             arg1 = "I";
          }
@@ -122,16 +209,20 @@ char* give_opcode(char *argument, char *line)  //returns the name of the command
          {
             arg1 ="cl";
          }
+         else if (Isnumber(op1))
+         {
+            arg1 = "I";
+         }
          else 
          {
-            printf("could not find type of op1 \n");
+            printf("could not find type of %s\n", op1);
             arg1="0";
          }
          
         printf ("Type of op1 %s is %s \n",op1 ,arg1);
 
         
-        printf("%s %s %s %s\n",  opcode , op1, op2 ,op3);
+        //printf("%s %s %s %s\n",  opcode , op1, op2 ,op3);
         return opcode;
     
 }
@@ -159,7 +250,7 @@ int main(int argc, char *argv[]) {
         char *result =NULL;
         result =give_opcode(argv[1],line);
 
-        printf("Result is %s \n",  result);
+       // printf("Result is %s \n",  result);
     }
 
         fclose(fp);
