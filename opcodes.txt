@@ -266,6 +266,28 @@ pxor_0_0_0 0.33
 por_0_0_0 0.33
 pandn_0_0_0 0.33
 pand_0_0_0 0.33
+psradq_0_0_0 1
+psraqq_0_0_0 1
+psrawq_0_0_0 1
+psrlqq_0_0_0 1
+psrldq_0_0_0 1
+psrlwq_0_0_0 1
+psllqq_0_0_0 1
+pslldq_0_0_0 1
+psllwq_0_0_0 1
+ptestq_0_0_0 1
+pxorq_0_0_m 0.5
+porq_0_0_m 0.5
+pandnq_0_0_m 0.5
+pandq_0_0_m 0.5
+pxorq_0_m_0 0.5
+porq_0_m_0 0.5
+pandnq_0_m_0 0.5
+pandq_0_m_0 0.5
+pxorq_0_0_0 0.33
+porq_0_0_0 0.33
+pandnq_0_0_0 0.33
+pandq_0_0_0 0.33
 mpsadbw_0_0_0 2
 psadbw_0_0_0 1
 psignd_0_0_0 0.5
@@ -601,7 +623,7 @@ stos_0_0_0 5
 rep stos_0_0_0 5
 rep lods_0_0_0 20
 lods_0_0_0 20
-rep _0_0_0 20
+rep_0_0_0 20
 lodsq_0_0_0 1
 lodsd_0_0_0 1
 lodsw_0_0_0 1
@@ -611,9 +633,15 @@ bound_0_0_0 8
 ret_0_I_0 2
 ret_I_0_0 2
 ret_0_0_0 1
+retq_0_I_0 2
+retq_I_0_0 2
+retq_0_0_0 1
 call_0_m_0 3
 call_m_0_0 3
 call_0_0_0 2
+callq_0_m_0 3
+callq_m_0_0 3
+callq_0_0_0 2
 loopne_0_0_0 6
 loope_0_0_0 6
 loop_0_0_0 5
@@ -668,6 +696,9 @@ cmc_0_0_0 1
 clc_0_0_0 0.25
 SETcc_m_0_0 1
 SETcc_r_0_0 0.5
+set_m_0_0 1
+set_r_0_0 0.5
+set_0_0_0 0.8
 bsr_0_0_0 1
 bsf_0_0_0 1
 btc_m_r_0 5
@@ -682,6 +713,18 @@ btr_r_0_0 0.5
 bt_m_r_0 5
 bt_m_I_0 0.5
 bt_r_0_0 0.5
+ror_0_0_0 0.5
+sar_0_0_0 0.5
+shr_0_0_0 0.5
+shl_0_0_0 0.5
+shl_m_r_cl 4
+shl_r_r_cl 2
+shl_m_r_I 2
+shl_r_r_I 1
+shr_m_r_cl 4
+shr_r_r_cl 2
+shr_m_r_I 2
+shr_r_r_I 1
 rorx_0_0_0 0.5
 sarx_0_0_0 0.5
 shrx_0_0_0 0.5
@@ -792,6 +835,9 @@ popf_0_0_0 20
 pop_m_0_0 1
 pop_sp_0_0 3
 pop_r_0_0 0.5
+popq_m_0_0 1
+popq_sp_0_0 3
+popq_r_0_0 0.5
 pushad_0_0_0 8
 pushfq_0_0_0 1
 pushfd_0_0_0 1
@@ -802,6 +848,9 @@ xlat_0_0_0 2
 xchg_0_0_0 1
 CMOVcc_r_m_0 0.5
 CMOVcc_r_r_0 0.5
+cmov_r_m_0 0.5
+cmov_r_r_0 0.5
+cmov_0_0_0 0.5
 movzx_r_m_0 0.5
 movsxd_r_m_0 0.5
 movsxd_r_r_0 0.25
@@ -813,6 +862,10 @@ mov_m_0_0 1
 mov_r_m_0 0.5
 mov_r_r_0 0.25
 mov_r_I_0 0.25
+vmov_m_0_0 1
+vmov_r_m_0 0.5
+vmov_r_r_0 0.25
+vmov_r_I_0 0.25
 movabs_m_0_0 1
 movabs_r_m_0 0.5
 movabs_r_r_0 0.25

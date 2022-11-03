@@ -45,6 +45,8 @@ void removeChar(char * str, char charToRemmove){
     
 }
 
+
+
 struct Tuple give_opcode(char *argument, char *line)  //returns the name of the command in our format 
 {
   
@@ -295,13 +297,71 @@ struct Tuple give_opcode(char *argument, char *line)  //returns the name of the 
             arg1="0";
          }
         //printf ("Type of op2 %s is %s \n",op2 ,arg1);
-
-        struct Tuple command = {opcode, arg1,arg2,arg3 };
+        if(!strcmp(arg2,"0")){
+        struct Tuple command = {opcode, arg1,arg2,arg3 }; //exo allaksei seira ton arg1 , arg2 giati otan trexei sto pc einai anapoda
+        //printf("%s %s %s %s\n",  opcode , op1, op2 ,op3);
+        return command;}
+        else {
+        struct Tuple command = {opcode, arg2,arg1,arg3 }; //exo allaksei seira ton arg1 , arg2 giati otan trexei sto pc einai anapoda
         //printf("%s %s %s %s\n",  opcode , op1, op2 ,op3);
         return command;
+        }
     
 }
 int main(int argc, char *argv[]) {
+
+       dict_t**dict = dictAlloc();
+
+
+
+    FILE * fp1;
+    char * line1 = NULL;
+    size_t len1 = 0;
+    ssize_t read1;
+
+    fp1 = fopen("opcodes.txt", "r");
+    if (fp1 == NULL)
+        exit(EXIT_FAILURE);
+    
+    while ((read1 = getline(&line1, &len1, fp1)) != -1) {
+        //printf("Retrieved line of length %zu:\n", read);
+        //printf("%s", line);
+        
+        char *p =NULL ;
+        char *p1= NULL ;
+        char *opcode_name;
+        opcode_name = malloc(100);
+        char *energy;
+        energy = malloc(100);
+        
+        p1 = strtok(line1," ");
+        //strcpy(p1,p); //periexei to kleidi diladi to opcode
+        p = strtok(NULL,"\n");   //periexei tin energeia
+
+        //printf("DDDDDDDDDDDDDDDDDDDDDD %s \n",p1);  
+        //printf("EEEEEEEEEEEEEEEEEEEEE %s \n",p); 
+        if (opcode_name) {  
+        // Always check that the return value of malloc() is not NULL
+          // Now you can use the allocated memory
+          strcpy(opcode_name, p1);//opcode_name periexei ton opcode
+        }
+        if (opcode_name) {
+        // Always check that the return value of malloc() is not NULL
+          // Now you can use the allocated memory
+          strcpy(energy, p); //energy periexei tin energeia
+        }
+        
+        //printf("%s %s",p,(p++));
+         //printf("%s %s ",p ,p++);
+        addItem(dict, opcode_name, energy); //prosthetoume sto leksiko to zeugos energeia opcode
+        printf("You entered %s  with key %s \n", (char *)getItem(*dict, opcode_name), opcode_name);
+        
+    }
+    
+        
+    fclose(fp1);
+    if (line1)
+        free(line1);
     
     
     FILE * fp;
@@ -338,8 +398,36 @@ int main(int argc, char *argv[]) {
         char result110[20]="aa";
         char result111[20]="aa";
 
+        char result000_cut[20] ="aa"; // the opcode without last char
+        char result001_cut[20]="aa";
+        char result010_cut[20]="aa";
+        char result011_cut[20]="aa";
+        char result100_cut[20]="aa";
+        char result101_cut[20]="aa";
+        char result110_cut[20]="aa";
+        char result111_cut[20]="aa";
+
+        char result000_cut2[20] ="aa"; //the opcode without 2 last chars
+        char result001_cut2[20]="aa";
+        char result010_cut2[20]="aa";
+        char result011_cut2[20]="aa";
+        char result100_cut2[20]="aa";
+        char result101_cut2[20]="aa";
+        char result110_cut2[20]="aa";
+        char result111_cut2[20]="aa";
+
+        char result000_cut3[20] ="aa"; //the opcode without 3 last chars
+        char result001_cut3[20]="aa";
+        char result010_cut3[20]="aa";
+        char result011_cut3[20]="aa";
+        char result100_cut3[20]="aa";
+        char result101_cut3[20]="aa";
+        char result110_cut3[20]="aa";
+        char result111_cut3[20]="aa";
+
+       
       
-        strcpy(result000, result.opcode);
+        strcpy(result000, result.opcode); //copy here the opcode
         strcpy(result001, result.opcode);
         strcpy(result010, result.opcode);
         strcpy(result011, result.opcode);
@@ -347,11 +435,65 @@ int main(int argc, char *argv[]) {
         strcpy(result101, result.opcode);
         strcpy(result110, result.opcode);
         strcpy(result111, result.opcode);
+
+        strcpy(result000_cut, result.opcode); //copy here the opcode
+        strcpy(result001_cut, result.opcode);
+        strcpy(result010_cut, result.opcode);
+        strcpy(result011_cut, result.opcode);
+        strcpy(result100_cut, result.opcode);
+        strcpy(result101_cut, result.opcode);
+        strcpy(result110_cut, result.opcode);
+        strcpy(result111_cut, result.opcode);
+
+        result000_cut[strlen(result000_cut)-1] = '\0';  //remove last char
+        result001_cut[strlen(result001_cut)-1] = '\0';
+        result010_cut[strlen(result010_cut)-1] = '\0';
+        result011_cut[strlen(result011_cut)-1] = '\0';
+        result100_cut[strlen(result100_cut)-1] = '\0';
+        result101_cut[strlen(result101_cut)-1] = '\0';
+        result110_cut[strlen(result110_cut)-1] = '\0';
+        result111_cut[strlen(result111_cut)-1] = '\0';
+
+        strcpy(result000_cut2, result000_cut); //copy here the opcode without last char
+        strcpy(result001_cut2, result000_cut);
+        strcpy(result010_cut2, result000_cut);
+        strcpy(result011_cut2, result000_cut);
+        strcpy(result100_cut2, result000_cut);
+        strcpy(result101_cut2, result000_cut);
+        strcpy(result110_cut2, result000_cut);
+        strcpy(result111_cut2, result000_cut);
+
+        result000_cut2[strlen(result000_cut2)-1] = '\0';  //remove last char so 2 now removed
+        result001_cut2[strlen(result001_cut2)-1] = '\0';
+        result010_cut2[strlen(result010_cut2)-1] = '\0';
+        result011_cut2[strlen(result011_cut2)-1] = '\0';
+        result100_cut2[strlen(result100_cut2)-1] = '\0';
+        result101_cut2[strlen(result101_cut2)-1] = '\0';
+        result110_cut2[strlen(result110_cut2)-1] = '\0';
+        result111_cut2[strlen(result111_cut2)-1] = '\0';
+
+        strcpy(result000_cut3, result000_cut2);  //copy here the opcode without  2 last chars
+        strcpy(result001_cut3, result000_cut2);
+        strcpy(result010_cut3, result000_cut2);
+        strcpy(result011_cut3, result000_cut2);
+        strcpy(result100_cut3, result000_cut2);
+        strcpy(result101_cut3, result000_cut2);
+        strcpy(result110_cut3, result000_cut2);
+        strcpy(result111_cut3, result000_cut2);
+
+        result000_cut3[strlen(result000_cut3)-1] = '\0'; //remove last char so 3 now removed
+        result001_cut3[strlen(result001_cut3)-1] = '\0';
+        result010_cut3[strlen(result010_cut3)-1] = '\0';
+        result011_cut3[strlen(result011_cut3)-1] = '\0';
+        result100_cut3[strlen(result100_cut3)-1] = '\0';
+        result101_cut3[strlen(result101_cut3)-1] = '\0';
+        result110_cut3[strlen(result110_cut3)-1] = '\0';
+        result111_cut3[strlen(result111_cut3)-1] = '\0';
+
         
 
-        printf("Result FFF is %s \n ",result000 );
+        //Create the 8 different combos for the string opcode
         strcat(result000,"_0_0_0");
-        printf("Result 000 is %s \n ",result000 );
         
         strcat(result001,"_0_0_");
         strcat(result001,result.arg3);
@@ -387,6 +529,122 @@ int main(int argc, char *argv[]) {
         strcat(result111,"_");
         strcat(result111,result.arg3);
 
+
+        //Create the 8 different combos for the string with missing last  char
+        strcat(result000_cut,"_0_0_0");
+        
+        strcat(result001_cut,"_0_0_");
+        strcat(result001_cut,result.arg3);
+
+        strcat(result010_cut,"_0_");
+        strcat(result010_cut,result.arg2);
+        strcat(result010_cut,"_0");
+
+        strcat(result011_cut,"_0_");
+        strcat(result011_cut,result.arg2);
+        strcat(result011_cut,"_");
+        strcat(result011_cut,result.arg3);
+
+        strcat(result100_cut,"_");
+        strcat(result100_cut,result.arg1);
+        strcat(result100_cut,"_0_0");
+
+        strcat(result101_cut,"_");
+        strcat(result101_cut,result.arg1);
+        strcat(result101_cut,"_0_");
+        strcat(result101_cut,result.arg3);
+
+        strcat(result110_cut,"_");
+        strcat(result110_cut,result.arg1);
+        strcat(result110_cut,"_");
+        strcat(result110_cut,result.arg2);
+        strcat(result110_cut,"_0");
+
+        strcat(result111_cut,"_");
+        strcat(result111_cut,result.arg1);
+        strcat(result111_cut,"_");
+        strcat(result111_cut,result.arg2);
+        strcat(result111_cut,"_");
+        strcat(result111_cut,result.arg3);
+
+        //Create the 8 different combos for the string with missing last 2 chars
+        strcat(result000_cut2,"_0_0_0");
+        
+        
+        strcat(result001_cut2,"_0_0_");
+        strcat(result001_cut2,result.arg3);
+
+        strcat(result010_cut2,"_0_");
+        strcat(result010_cut2,result.arg2);
+        strcat(result010_cut2,"_0");
+
+        strcat(result011_cut2,"_0_");
+        strcat(result011_cut2,result.arg2);
+        strcat(result011_cut2,"_");
+        strcat(result011_cut2,result.arg3);
+
+        strcat(result100_cut2,"_");
+        strcat(result100_cut2,result.arg1);
+        strcat(result100_cut2,"_0_0");
+
+        strcat(result101_cut2,"_");
+        strcat(result101_cut2,result.arg1);
+        strcat(result101_cut2,"_0_");
+        strcat(result101_cut2,result.arg3);
+
+        strcat(result110_cut2,"_");
+        strcat(result110_cut2,result.arg1);
+        strcat(result110_cut2,"_");
+        strcat(result110_cut2,result.arg2);
+        strcat(result110_cut2,"_0");
+
+        strcat(result111_cut2,"_");
+        strcat(result111_cut2,result.arg1);
+        strcat(result111_cut2,"_");
+        strcat(result111_cut2,result.arg2);
+        strcat(result111_cut2,"_");
+        strcat(result111_cut2,result.arg3);
+
+
+        //Create the 8 different combos for the string with missing last 3 chars
+        strcat(result000_cut3,"_0_0_0");
+        
+        
+        strcat(result001_cut3,"_0_0_");
+        strcat(result001_cut3,result.arg3);
+
+        strcat(result010_cut3,"_0_");
+        strcat(result010_cut3,result.arg2);
+        strcat(result010_cut3,"_0");
+
+        strcat(result011_cut3,"_0_");
+        strcat(result011_cut3,result.arg2);
+        strcat(result011_cut3,"_");
+        strcat(result011_cut3,result.arg3);
+
+        strcat(result100_cut3,"_");
+        strcat(result100_cut3,result.arg1);
+        strcat(result100_cut3,"_0_0");
+
+        strcat(result101_cut3,"_");
+        strcat(result101_cut3,result.arg1);
+        strcat(result101_cut3,"_0_");
+        strcat(result101_cut3,result.arg3);
+
+        strcat(result110_cut3,"_");
+        strcat(result110_cut3,result.arg1);
+        strcat(result110_cut3,"_");
+        strcat(result110_cut3,result.arg2);
+        strcat(result110_cut3,"_0");
+
+        strcat(result111_cut3,"_");
+        strcat(result111_cut3,result.arg1);
+        strcat(result111_cut3,"_");
+        strcat(result111_cut3,result.arg2);
+        strcat(result111_cut3,"_");
+        strcat(result111_cut3,result.arg3);
+
+        /* 
         printf("Result 000 is %s \n ",result000 );    
         printf("Result 001 is %s \n ",result001 );
         printf("Result 010 is %s \n ",result010 );
@@ -395,11 +653,169 @@ int main(int argc, char *argv[]) {
         printf("Result 101 is %s \n ",result101 );
         printf("Result 110 is %s \n ",result110 );
         printf("Result 111 is %s \n ",result111 );
+        printf("Result 000 is %s \n ",result000 );
+
+        printf("Result 000_cut is %s \n ",result000_cut );    
+        printf("Result 001_cut is %s \n ",result001_cut );
+        printf("Result 010_cut is %s \n ",result010_cut );
+        printf("Result 011_cut is %s \n ",result011_cut );
+        printf("Result 100_cut is %s \n ",result100_cut );
+        printf("Result 101_cut is %s \n ",result101_cut );
+        printf("Result 110_cut is %s \n ",result110_cut );
+        printf("Result 111_cut is %s \n ",result111_cut );
+        printf("Result 000_cut is %s \n ",result000_cut );
+        */
+
+        char *value ; 
+
+        if ((char *)getItem(*dict, result000) != NULL ) {
+            value =(char *)getItem(*dict, result000) ;
+            printf("VALUE IS XXXXXXXXXXXXXXXXXX-000 %s of %s \n", result000, value);
+        }
         
+        else if ((char *)getItem(*dict, result001) != NULL ) {
+            value =(char *)getItem(*dict, result001) ;
+            printf("VALUE IS XXXXXXXXXXXXXXXXXX-001 %s of %s \n", result001, value);
+        }
+        else if ((char *)getItem(*dict, result010) != NULL ) {
+            value =(char *)getItem(*dict, result010) ;
+            printf("VALUE IS XXXXXXXXXXXXXXXXXX-010 %s of %s \n", result010, value);
+        }
+        else if ((char *)getItem(*dict, result011) != NULL ) {
+            value =(char *)getItem(*dict, result011) ;
+            printf("VALUE IS XXXXXXXXXXXXXXXXXX-011 %s of %s \n", result011, value);
+        }
+        else if ((char *)getItem(*dict, result100) != NULL ) {
+            value =(char *)getItem(*dict, result100) ;
+            printf("VALUE IS XXXXXXXXXXXXXXXXXX-100 %s of %s \n", result100, value);
+        }
+        else if ((char *)getItem(*dict, result101) != NULL ) {
+            value =(char *)getItem(*dict, result101) ;
+            printf("VALUE IS XXXXXXXXXXXXXXXXXX-101 %s of %s \n", result101, value);
+        }
+        else if ((char *)getItem(*dict, result110) != NULL ) {
+            value =(char *)getItem(*dict, result110) ;
+            printf("VALUE IS XXXXXXXXXXXXXXXXXX-110 %s of %s \n", result110, value);
+        }
+        else if ((char *)getItem(*dict, result111) != NULL ) {
+            value =(char *)getItem(*dict, result111) ;
+            printf("VALUE IS XXXXXXXXXXXXXXXXXX-111 %s of %s \n", result111, value);
+        }
+        else{
+            if ((char *)getItem(*dict, result000_cut) != NULL ) {
+            value =(char *)getItem(*dict, result000_cut) ;
+            printf("VALUE IS XXXXXXXXXXXXXXXXXX-000 %s of %s \n", result000_cut, value);
+            }
+            
+            else if ((char *)getItem(*dict, result001_cut) != NULL ) {
+                value =(char *)getItem(*dict, result001_cut) ;
+                printf("VALUE IS XXXXXXXXXXXXXXXXXX-001 %s of %s \n", result001_cut, value);
+            }
+            else if ((char *)getItem(*dict, result010_cut) != NULL ) {
+                value =(char *)getItem(*dict, result010_cut) ;
+                printf("VALUE IS XXXXXXXXXXXXXXXXXX-010 %s of %s \n", result010_cut, value);
+            }
+            else if ((char *)getItem(*dict, result011_cut) != NULL ) {
+                value =(char *)getItem(*dict, result011_cut) ;
+                printf("VALUE IS XXXXXXXXXXXXXXXXXX-011 %s of %s \n", result011_cut, value);
+            }
+            else if ((char *)getItem(*dict, result100_cut) != NULL ) {
+                value =(char *)getItem(*dict, result100_cut) ;
+                printf("VALUE IS XXXXXXXXXXXXXXXXXX-100 %s of %s \n", result100_cut, value);
+            }
+            else if ((char *)getItem(*dict, result101_cut) != NULL ) {
+                value =(char *)getItem(*dict, result101_cut) ;
+                printf("VALUE IS XXXXXXXXXXXXXXXXXX-101 %s of %s \n", result101_cut, value);
+            }
+            else if ((char *)getItem(*dict, result110_cut) != NULL ) {
+                value =(char *)getItem(*dict, result110_cut) ;
+                printf("VALUE IS XXXXXXXXXXXXXXXXXX-110 %s of %s \n", result110_cut, value);
+            }
+            else if ((char *)getItem(*dict, result111_cut) != NULL ) {
+                value =(char *)getItem(*dict, result111_cut) ;
+                printf("VALUE IS XXXXXXXXXXXXXXXXXX-111 %s of %s \n", result111_cut, value);
+            }
+            else{
+                if ((char *)getItem(*dict, result000_cut2) != NULL ) {
+                value =(char *)getItem(*dict, result000_cut2) ;
+                printf("VALUE IS XXXXXXXXXXXXXXXXXX-000 %s of %s \n", result000_cut2, value);
+                }
+        
+                else if ((char *)getItem(*dict, result001_cut2) != NULL ) {
+                    value =(char *)getItem(*dict, result001_cut2) ;
+                    printf("VALUE IS XXXXXXXXXXXXXXXXXX-001 %s of %s \n", result001_cut2, value);
+                }
+                else if ((char *)getItem(*dict, result010_cut2) != NULL ) {
+                    value =(char *)getItem(*dict, result010_cut2) ;
+                    printf("VALUE IS XXXXXXXXXXXXXXXXXX-010 %s of %s \n", result010_cut2, value);
+                }
+                else if ((char *)getItem(*dict, result011_cut2) != NULL ) {
+                    value =(char *)getItem(*dict, result011_cut2) ;
+                    printf("VALUE IS XXXXXXXXXXXXXXXXXX-011 %s of %s \n", result011_cut2, value);
+                }
+                else if ((char *)getItem(*dict, result100_cut2) != NULL ) {
+                    value =(char *)getItem(*dict, result100_cut2) ;
+                    printf("VALUE IS XXXXXXXXXXXXXXXXXX-100 %s of %s \n", result100_cut2, value);
+                }
+                else if ((char *)getItem(*dict, result101_cut2) != NULL ) {
+                    value =(char *)getItem(*dict, result101_cut2) ;
+                    printf("VALUE IS XXXXXXXXXXXXXXXXXX-101 %s of %s \n", result101_cut2, value);
+                }
+                else if ((char *)getItem(*dict, result110_cut2) != NULL ) {
+                    value =(char *)getItem(*dict, result110_cut2) ;
+                    printf("VALUE IS XXXXXXXXXXXXXXXXXX-110 %s of %s \n", result110_cut2, value);
+                }
+                else if ((char *)getItem(*dict, result111_cut2) != NULL ) {
+                    value =(char *)getItem(*dict, result111_cut2) ;
+                    printf("VALUE IS XXXXXXXXXXXXXXXXXX-111 %s of %s \n", result111_cut2, value);
+                }
+                else{
+                    
+                    if ((char *)getItem(*dict, result000_cut3) != NULL ) {
+                    value =(char *)getItem(*dict, result000_cut3) ;
+                    printf("VALUE IS XXXXXXXXXXXXXXXXXX-000 %s of %s \n", result000_cut3, value);
+                    }
+        
+                    else if ((char *)getItem(*dict, result001_cut3) != NULL ) {
+                        value =(char *)getItem(*dict, result001_cut3) ;
+                        printf("VALUE IS XXXXXXXXXXXXXXXXXX-001 %s of %s \n", result001_cut3, value);
+                    }
+                    else if ((char *)getItem(*dict, result010_cut3) != NULL ) {
+                        value =(char *)getItem(*dict, result010_cut3) ;
+                        printf("VALUE IS XXXXXXXXXXXXXXXXXX-010 %s of %s \n", result010_cut3, value);
+                    }
+                    else if ((char *)getItem(*dict, result011_cut3) != NULL ) {
+                        value =(char *)getItem(*dict, result011_cut3) ;
+                        printf("VALUE IS XXXXXXXXXXXXXXXXXX-011 %s of %s \n", result011_cut3, value);
+                    }
+                    else if ((char *)getItem(*dict, result100_cut3) != NULL ) {
+                        value =(char *)getItem(*dict, result100_cut3) ;
+                        printf("VALUE IS XXXXXXXXXXXXXXXXXX-100 %s of %s \n", result100_cut3, value);
+                    }
+                    else if ((char *)getItem(*dict, result101_cut3) != NULL ) {
+                        value =(char *)getItem(*dict, result101_cut3) ;
+                        printf("VALUE IS XXXXXXXXXXXXXXXXXX-101 %s of %s \n", result101_cut3, value);
+                    }
+                    else if ((char *)getItem(*dict, result110_cut3) != NULL ) {
+                        value =(char *)getItem(*dict, result110_cut3) ;
+                        printf("VALUE IS XXXXXXXXXXXXXXXXXX-110 %s of %s \n", result110_cut3, value);
+                    }
+                    else if ((char *)getItem(*dict, result111_cut3) != NULL ) {
+                        value =(char *)getItem(*dict, result111_cut3) ;
+                        printf("VALUE IS XXXXXXXXXXXXXXXXXX-111 %s of %s \n", result111_cut3, value);
+                    }
+                    else{
+                        if (!strcmp(result.opcode,"syscall") ){printf("We had a Syscall \n");}
+                        else{
+                             printf("i cannot  find opcode %s or %s or %s or %s  \n",result000 ,result000_cut, result000_cut2, result000_cut3);}
+                    }
+                }
+            }
+        } 
     
     }
 
-
+      
     
 
         fclose(fp);
