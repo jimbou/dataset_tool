@@ -602,26 +602,26 @@ xgetbv_0_0_0 9
 leave_0_0_0 5
 enter_0_0_0 8
 pause_0_0_0 9
-long nop_0_0_0 0.25
+longnop_0_0_0 0.25
 nop_0_0_0 0.25
-lock cmpxchg16b_0_0_0 26
+lockcmpxchg16b_0_0_0 26
 cmpxchg16b_0_0_0 16
-lock cmpxchg8b_0_0_0 19
+lockcmpxchg8b_0_0_0 19
 cmpxchg8b_0_0_0 11
-lock cmpxchg_0_0_0 18
+lockcmpxchg_0_0_0 18
 cmpxchg_0_0_0 6
-lock add_0_0_0 18
-lock xadd_0_0_0 18
+lockadd_0_0_0 18
+lockxadd_0_0_0 18
 xadd_0_0_0 5
-rep cmps_0_0_0 25
+repcmps_0_0_0 25
 cmps_0_0_0 4
-rep scas_0_0_0 25
+repscas_0_0_0 25
 scas_0_0_0 1
-rep movs_0_0_0 10
+repmovs_0_0_0 10
 movs_0_0_0 4
 stos_0_0_0 5
-rep stos_0_0_0 5
-rep lods_0_0_0 20
+repstos_0_0_0 5
+replods_0_0_0 20
 lods_0_0_0 20
 rep_0_0_0 20
 lodsq_0_0_0 1

@@ -71,19 +71,30 @@ struct Tuple give_opcode(char *argument, char *line)  //returns the name of the 
         bool arg3reg =false;
         char Delim1[] = ")";
         char Delim2[] = "(";
-        
+        char *ptemp1 =NULL;
         char *temporary;
         
         p = strstr(line, argument);
         
-        p1 = strtok(p," ");   
+        p1 = strtok(p," "); 
+        
         p2 =strtok(NULL,"\n"); //periexei tin actuall entoli me kena stin arxi
+        
         while (isspace(*p2)){
             ++p2;}             //katharizoume ta kena stin arxi
         //printf("%s \n",  p2); 
         opcode  =strtok(p2,Delimit); //pairnoume to onoma tis entolis
         if (opcode != NULL) {   //pairnoume proto operator
-            op1 = strtok(NULL, Delimit); }
+            if((!strcmp(opcode,"long")) ||(!strcmp(opcode,"rep"))  || (!strcmp(opcode,"lock"))  ){
+                //ptemp1 = strtok(NULL,Delimit);   
+                ptemp1 = strtok(NULL, Delimit);
+                strcat(opcode,ptemp1);
+                //printf("QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ  concatenated %s into %s \n",ptemp1 ,opcode); 
+                }             
+            
+            op1 = strtok(NULL, Delimit); 
+            
+            }
         if (op1!= NULL) {       //pairnoume deutero operator
             op2 = strtok(NULL,Delimit); }
         if (op2!= NULL) {       //pairnoume trito operator
@@ -329,12 +340,14 @@ int main(int argc, char *argv[]) {
         
         char *p =NULL ;
         char *p1= NULL ;
+        char *ptemp =NULL;
         char *opcode_name;
         opcode_name = malloc(100);
         char *energy;
         energy = malloc(100);
         
         p1 = strtok(line1," ");
+        
         //strcpy(p1,p); //periexei to kleidi diladi to opcode
         p = strtok(NULL,"\n");   //periexei tin energeia
 
@@ -670,139 +683,139 @@ int main(int argc, char *argv[]) {
 
         if ((char *)getItem(*dict, result000) != NULL ) {
             value =(char *)getItem(*dict, result000) ;
-            printf("VALUE IS XXXXXXXXXXXXXXXXXX-000 %s of %s \n", result000, value);
+            //printf("VALUE IS XXXXXXXXXXXXXXXXXX-000 %s of %s \n", result000, value);
         }
         
         else if ((char *)getItem(*dict, result001) != NULL ) {
             value =(char *)getItem(*dict, result001) ;
-            printf("VALUE IS XXXXXXXXXXXXXXXXXX-001 %s of %s \n", result001, value);
+            //printf("VALUE IS XXXXXXXXXXXXXXXXXX-001 %s of %s \n", result001, value);
         }
         else if ((char *)getItem(*dict, result010) != NULL ) {
             value =(char *)getItem(*dict, result010) ;
-            printf("VALUE IS XXXXXXXXXXXXXXXXXX-010 %s of %s \n", result010, value);
+            //printf("VALUE IS XXXXXXXXXXXXXXXXXX-010 %s of %s \n", result010, value);
         }
         else if ((char *)getItem(*dict, result011) != NULL ) {
             value =(char *)getItem(*dict, result011) ;
-            printf("VALUE IS XXXXXXXXXXXXXXXXXX-011 %s of %s \n", result011, value);
+            //printf("VALUE IS XXXXXXXXXXXXXXXXXX-011 %s of %s \n", result011, value);
         }
         else if ((char *)getItem(*dict, result100) != NULL ) {
             value =(char *)getItem(*dict, result100) ;
-            printf("VALUE IS XXXXXXXXXXXXXXXXXX-100 %s of %s \n", result100, value);
+            //printf("VALUE IS XXXXXXXXXXXXXXXXXX-100 %s of %s \n", result100, value);
         }
         else if ((char *)getItem(*dict, result101) != NULL ) {
             value =(char *)getItem(*dict, result101) ;
-            printf("VALUE IS XXXXXXXXXXXXXXXXXX-101 %s of %s \n", result101, value);
+            //printf("VALUE IS XXXXXXXXXXXXXXXXXX-101 %s of %s \n", result101, value);
         }
         else if ((char *)getItem(*dict, result110) != NULL ) {
             value =(char *)getItem(*dict, result110) ;
-            printf("VALUE IS XXXXXXXXXXXXXXXXXX-110 %s of %s \n", result110, value);
+            //printf("VALUE IS XXXXXXXXXXXXXXXXXX-110 %s of %s \n", result110, value);
         }
         else if ((char *)getItem(*dict, result111) != NULL ) {
             value =(char *)getItem(*dict, result111) ;
-            printf("VALUE IS XXXXXXXXXXXXXXXXXX-111 %s of %s \n", result111, value);
+            //printf("VALUE IS XXXXXXXXXXXXXXXXXX-111 %s of %s \n", result111, value);
         }
         else{
             if ((char *)getItem(*dict, result000_cut) != NULL ) {
             value =(char *)getItem(*dict, result000_cut) ;
-            printf("VALUE IS XXXXXXXXXXXXXXXXXX-000 %s of %s \n", result000_cut, value);
+            //printf("VALUE IS XXXXXXXXXXXXXXXXXX-000 %s of %s \n", result000_cut, value);
             }
             
             else if ((char *)getItem(*dict, result001_cut) != NULL ) {
                 value =(char *)getItem(*dict, result001_cut) ;
-                printf("VALUE IS XXXXXXXXXXXXXXXXXX-001 %s of %s \n", result001_cut, value);
+                //printf("VALUE IS XXXXXXXXXXXXXXXXXX-001 %s of %s \n", result001_cut, value);
             }
             else if ((char *)getItem(*dict, result010_cut) != NULL ) {
                 value =(char *)getItem(*dict, result010_cut) ;
-                printf("VALUE IS XXXXXXXXXXXXXXXXXX-010 %s of %s \n", result010_cut, value);
+                //printf("VALUE IS XXXXXXXXXXXXXXXXXX-010 %s of %s \n", result010_cut, value);
             }
             else if ((char *)getItem(*dict, result011_cut) != NULL ) {
                 value =(char *)getItem(*dict, result011_cut) ;
-                printf("VALUE IS XXXXXXXXXXXXXXXXXX-011 %s of %s \n", result011_cut, value);
+                //printf("VALUE IS XXXXXXXXXXXXXXXXXX-011 %s of %s \n", result011_cut, value);
             }
             else if ((char *)getItem(*dict, result100_cut) != NULL ) {
                 value =(char *)getItem(*dict, result100_cut) ;
-                printf("VALUE IS XXXXXXXXXXXXXXXXXX-100 %s of %s \n", result100_cut, value);
+                //printf("VALUE IS XXXXXXXXXXXXXXXXXX-100 %s of %s \n", result100_cut, value);
             }
             else if ((char *)getItem(*dict, result101_cut) != NULL ) {
                 value =(char *)getItem(*dict, result101_cut) ;
-                printf("VALUE IS XXXXXXXXXXXXXXXXXX-101 %s of %s \n", result101_cut, value);
+                //printf("VALUE IS XXXXXXXXXXXXXXXXXX-101 %s of %s \n", result101_cut, value);
             }
             else if ((char *)getItem(*dict, result110_cut) != NULL ) {
                 value =(char *)getItem(*dict, result110_cut) ;
-                printf("VALUE IS XXXXXXXXXXXXXXXXXX-110 %s of %s \n", result110_cut, value);
+                //printf("VALUE IS XXXXXXXXXXXXXXXXXX-110 %s of %s \n", result110_cut, value);
             }
             else if ((char *)getItem(*dict, result111_cut) != NULL ) {
                 value =(char *)getItem(*dict, result111_cut) ;
-                printf("VALUE IS XXXXXXXXXXXXXXXXXX-111 %s of %s \n", result111_cut, value);
+                //printf("VALUE IS XXXXXXXXXXXXXXXXXX-111 %s of %s \n", result111_cut, value);
             }
             else{
                 if ((char *)getItem(*dict, result000_cut2) != NULL ) {
                 value =(char *)getItem(*dict, result000_cut2) ;
-                printf("VALUE IS XXXXXXXXXXXXXXXXXX-000 %s of %s \n", result000_cut2, value);
+                //printf("VALUE IS XXXXXXXXXXXXXXXXXX-000 %s of %s \n", result000_cut2, value);
                 }
         
                 else if ((char *)getItem(*dict, result001_cut2) != NULL ) {
                     value =(char *)getItem(*dict, result001_cut2) ;
-                    printf("VALUE IS XXXXXXXXXXXXXXXXXX-001 %s of %s \n", result001_cut2, value);
+                    //printf("VALUE IS XXXXXXXXXXXXXXXXXX-001 %s of %s \n", result001_cut2, value);
                 }
                 else if ((char *)getItem(*dict, result010_cut2) != NULL ) {
                     value =(char *)getItem(*dict, result010_cut2) ;
-                    printf("VALUE IS XXXXXXXXXXXXXXXXXX-010 %s of %s \n", result010_cut2, value);
+                    //printf("VALUE IS XXXXXXXXXXXXXXXXXX-010 %s of %s \n", result010_cut2, value);
                 }
                 else if ((char *)getItem(*dict, result011_cut2) != NULL ) {
                     value =(char *)getItem(*dict, result011_cut2) ;
-                    printf("VALUE IS XXXXXXXXXXXXXXXXXX-011 %s of %s \n", result011_cut2, value);
+                    //printf("VALUE IS XXXXXXXXXXXXXXXXXX-011 %s of %s \n", result011_cut2, value);
                 }
                 else if ((char *)getItem(*dict, result100_cut2) != NULL ) {
                     value =(char *)getItem(*dict, result100_cut2) ;
-                    printf("VALUE IS XXXXXXXXXXXXXXXXXX-100 %s of %s \n", result100_cut2, value);
+                    //printf("VALUE IS XXXXXXXXXXXXXXXXXX-100 %s of %s \n", result100_cut2, value);
                 }
                 else if ((char *)getItem(*dict, result101_cut2) != NULL ) {
                     value =(char *)getItem(*dict, result101_cut2) ;
-                    printf("VALUE IS XXXXXXXXXXXXXXXXXX-101 %s of %s \n", result101_cut2, value);
+                    //printf("VALUE IS XXXXXXXXXXXXXXXXXX-101 %s of %s \n", result101_cut2, value);
                 }
                 else if ((char *)getItem(*dict, result110_cut2) != NULL ) {
                     value =(char *)getItem(*dict, result110_cut2) ;
-                    printf("VALUE IS XXXXXXXXXXXXXXXXXX-110 %s of %s \n", result110_cut2, value);
+                    //printf("VALUE IS XXXXXXXXXXXXXXXXXX-110 %s of %s \n", result110_cut2, value);
                 }
                 else if ((char *)getItem(*dict, result111_cut2) != NULL ) {
                     value =(char *)getItem(*dict, result111_cut2) ;
-                    printf("VALUE IS XXXXXXXXXXXXXXXXXX-111 %s of %s \n", result111_cut2, value);
+                    //printf("VALUE IS XXXXXXXXXXXXXXXXXX-111 %s of %s \n", result111_cut2, value);
                 }
                 else{
                     
                     if ((char *)getItem(*dict, result000_cut3) != NULL ) {
                     value =(char *)getItem(*dict, result000_cut3) ;
-                    printf("VALUE IS XXXXXXXXXXXXXXXXXX-000 %s of %s \n", result000_cut3, value);
+                    //printf("VALUE IS XXXXXXXXXXXXXXXXXX-000 %s of %s \n", result000_cut3, value);
                     }
         
                     else if ((char *)getItem(*dict, result001_cut3) != NULL ) {
                         value =(char *)getItem(*dict, result001_cut3) ;
-                        printf("VALUE IS XXXXXXXXXXXXXXXXXX-001 %s of %s \n", result001_cut3, value);
+                        //printf("VALUE IS XXXXXXXXXXXXXXXXXX-001 %s of %s \n", result001_cut3, value);
                     }
                     else if ((char *)getItem(*dict, result010_cut3) != NULL ) {
                         value =(char *)getItem(*dict, result010_cut3) ;
-                        printf("VALUE IS XXXXXXXXXXXXXXXXXX-010 %s of %s \n", result010_cut3, value);
+                        //printf("VALUE IS XXXXXXXXXXXXXXXXXX-010 %s of %s \n", result010_cut3, value);
                     }
                     else if ((char *)getItem(*dict, result011_cut3) != NULL ) {
                         value =(char *)getItem(*dict, result011_cut3) ;
-                        printf("VALUE IS XXXXXXXXXXXXXXXXXX-011 %s of %s \n", result011_cut3, value);
+                        //printf("VALUE IS XXXXXXXXXXXXXXXXXX-011 %s of %s \n", result011_cut3, value);
                     }
                     else if ((char *)getItem(*dict, result100_cut3) != NULL ) {
                         value =(char *)getItem(*dict, result100_cut3) ;
-                        printf("VALUE IS XXXXXXXXXXXXXXXXXX-100 %s of %s \n", result100_cut3, value);
+                        //printf("VALUE IS XXXXXXXXXXXXXXXXXX-100 %s of %s \n", result100_cut3, value);
                     }
                     else if ((char *)getItem(*dict, result101_cut3) != NULL ) {
                         value =(char *)getItem(*dict, result101_cut3) ;
-                        printf("VALUE IS XXXXXXXXXXXXXXXXXX-101 %s of %s \n", result101_cut3, value);
+                        //printf("VALUE IS XXXXXXXXXXXXXXXXXX-101 %s of %s \n", result101_cut3, value);
                     }
                     else if ((char *)getItem(*dict, result110_cut3) != NULL ) {
                         value =(char *)getItem(*dict, result110_cut3) ;
-                        printf("VALUE IS XXXXXXXXXXXXXXXXXX-110 %s of %s \n", result110_cut3, value);
+                        //printf("VALUE IS XXXXXXXXXXXXXXXXXX-110 %s of %s \n", result110_cut3, value);
                     }
                     else if ((char *)getItem(*dict, result111_cut3) != NULL ) {
                         value =(char *)getItem(*dict, result111_cut3) ;
-                        printf("VALUE IS XXXXXXXXXXXXXXXXXX-111 %s of %s \n", result111_cut3, value);
+                        //printf("VALUE IS XXXXXXXXXXXXXXXXXX-111 %s of %s \n", result111_cut3, value);
                     }
                     else{
                         if (!strcmp(result.opcode,"syscall") ){printf("We had a Syscall \n");}

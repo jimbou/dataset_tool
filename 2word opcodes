@@ -1,0 +1,9 @@
+long nop =-> longnop
+lock cmpxchg16b -> lockcmpxchg16b
+lock cmpxchg8b -> lockcmpxchg8b
+lock cmpxchg -> lockcmpxchg
+lock add ->lockadd
+lock xadd -> lockxadd
+rep cmps ->repcmps
+rep scas ->  repscas
+
