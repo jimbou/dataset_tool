@@ -325,6 +325,88 @@ int main(int argc, char *argv[]) {
 
 
 
+    FILE * fp2;
+    char * line2 = NULL;
+    size_t len2 = 0;
+    ssize_t read2;
+
+    char addr1[20] ="aa"; //address of first rapl function
+    char length1[20] ="aa";  //length of first rapl function
+    char addr2[20] ="aa";
+    char length2[20] ="aa";
+    char addr3[20] ="aa";
+    char length3[20] ="aa";
+
+    if (argc<3){                //if an argument is not provided then error message and fail 
+        printf("You have not given the name of the file where addresses of rapl reads are \n");
+        return 1;}
+    fp2 = fopen(argv[2], "r");
+    if (fp2 == NULL){
+        printf("Could not open file with addresses \n");
+        exit(EXIT_FAILURE);}
+    
+    while ((read2 = getline(&line2, &len2, fp2)) != -1) {
+        if (strchr(line2, 'A') != NULL){
+            //tempor1 = strtok(line2," ");
+            //addr1 = strtok(tempor1," ");
+            //length1 = strtok(addr1,"\n");  
+            char * tempor1 = strtok(line2, " ");
+            
+            tempor1 = strtok(NULL, " ");
+            strcpy(addr1, tempor1);
+            tempor1 = strtok(NULL, "\n");
+            strcpy(length1, tempor1);
+
+  
+        }
+        else if (strchr(line2, 'B') != NULL){
+            //tempor1 = strtok(line2," ");
+            //addr1 = strtok(tempor1," ");
+            //length1 = strtok(addr1,"\n");  
+            char * tempor2 = strtok(line2, " ");
+            
+            tempor2 = strtok(NULL, " ");
+            strcpy(addr2, tempor2);
+            tempor2 = strtok(NULL, "\n");
+            strcpy(length2, tempor2);
+
+  
+        }
+        else if (strchr(line2, 'C') != NULL){
+            //tempor1 = strtok(line2," ");
+            //addr1 = strtok(tempor1," ");
+            //length1 = strtok(addr1,"\n");  
+            char * tempor3 = strtok(line2, " ");
+            
+            tempor3 = strtok(NULL, " ");
+            strcpy(addr3, tempor3);
+            tempor3 = strtok(NULL, "\n");
+            strcpy(length3, tempor3);
+
+  
+        }
+
+        
+        
+
+
+
+        }
+
+        printf("Rapl1 is  %s with length %s  \n",  addr1 , length1  );
+        printf("Rapl2 is  %s with length %s  \n",  addr2 , length2  );
+        printf("Rapl3 is  %s with length %s  \n",  addr3 , length3  );
+      
+    
+
+        fclose(fp2);
+        if (line2)
+        free(line2);
+
+
+
+
+
     FILE * fp1;
     char * line1 = NULL;
     size_t len1 = 0;
@@ -657,28 +739,28 @@ int main(int argc, char *argv[]) {
         strcat(result111_cut3,"_");
         strcat(result111_cut3,result.arg3);
 
-        /* 
-        printf("Result 000 is %s \n ",result000 );    
-        printf("Result 001 is %s \n ",result001 );
-        printf("Result 010 is %s \n ",result010 );
-        printf("Result 011 is %s \n ",result011 );
-        printf("Result 100 is %s \n ",result100 );
-        printf("Result 101 is %s \n ",result101 );
-        printf("Result 110 is %s \n ",result110 );
-        printf("Result 111 is %s \n ",result111 );
-        printf("Result 000 is %s \n ",result000 );
+        //here starts
+        //printf("Result 000 is %s \n ",result000 );    
+        //printf("Result 001 is %s \n ",result001 );
+        //printf("Result 010 is %s \n ",result010 );
+        //printf("Result 011 is %s \n ",result011 );
+        //printf("Result 100 is %s \n ",result100 );
+        //printf("Result 101 is %s \n ",result101 );
+        //printf("Result 110 is %s \n ",result110 );
+        //printf("Result 111 is %s \n ",result111 );
+        //printf("Result 000 is %s \n ",result000 );
 
-        printf("Result 000_cut is %s \n ",result000_cut );    
-        printf("Result 001_cut is %s \n ",result001_cut );
-        printf("Result 010_cut is %s \n ",result010_cut );
-        printf("Result 011_cut is %s \n ",result011_cut );
-        printf("Result 100_cut is %s \n ",result100_cut );
-        printf("Result 101_cut is %s \n ",result101_cut );
-        printf("Result 110_cut is %s \n ",result110_cut );
-        printf("Result 111_cut is %s \n ",result111_cut );
-        printf("Result 000_cut is %s \n ",result000_cut );
-        */
-
+        //printf("Result 000_cut is %s \n ",result000_cut );    
+        //printf("Result 001_cut is %s \n ",result001_cut );
+        //printf("Result 010_cut is %s \n ",result010_cut );
+        //printf("Result 011_cut is %s \n ",result011_cut );
+        //printf("Result 100_cut is %s \n ",result100_cut );
+        //printf("Result 101_cut is %s \n ",result101_cut );
+        //printf("Result 110_cut is %s \n ",result110_cut );
+        //printf("Result 111_cut is %s \n ",result111_cut );
+        //printf("Result 000_cut is %s \n ",result000_cut );
+        //here ends
+    
         char *value ; 
 
         if ((char *)getItem(*dict, result000) != NULL ) {
