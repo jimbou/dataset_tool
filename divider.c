@@ -5,6 +5,7 @@
 //3)output for bb energy- ekei tha graftei i energeia ton bbs
 //4)input me energeia arxikou rapl read
 //5)input with the rest rapl energies
+//6)input with the last rapl read energy
 #define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
@@ -136,7 +137,7 @@ int main(int argc, char *argv[]) {
     size_t len2 = 0;
     ssize_t read2;
 
-    FILE * fp3; //the input file with first rapl read energies
+    FILE * fp3; //the input file with first rapl read energy
     char * line3 = NULL;
     size_t len3 = 0;
     ssize_t read3;
@@ -146,16 +147,25 @@ int main(int argc, char *argv[]) {
     size_t len4 = 0;
     ssize_t read4;
 
+    FILE * fp5; //the input file with last rapl read energy
+    char * line5 = NULL;
+    size_t len5 = 0;
+    ssize_t read5;
 
-    float original_read, previous_read , current_read , current_energy;
+    float original_read,final_read, previous_read , current_read , current_energy , current_weight, current_total_weight , current_total_energy;
     const char s[2] = "\n";
     char* token;
 
+    char* command_weight =NULL;
+    char* temp =NULL;
+    char* temp1 =NULL;
+    char* temp2 =NULL;
 
-    if (argc<5)
+
+    if (argc<6)
         {    //if an argument is not provided then error message and fail 
         fprintf(stderr,"You have not given the name of one ore more argumets\n");
-        fprintf(stderr,"Arguments should be in that order :\n 1)cleaner script output file\n 2)output for BBs code\n 3)output for bb energy\n 4)input me energeia arxikou rapl read\n 5)name of input with the rest rapl energies\n");
+        fprintf(stderr,"Arguments should be in that order :\n 1)cleaner script output file\n 2)output for BBs code\n 3)output for bb energy\n 4)input me energeia arxikou rapl read\n 5)input with the rest rapl energies\n 6)input me last rapl read energy\n");
         return 1;
         }
     fp  = fopen(argv[1], "r"); //to proto argument einai to onoma tou arxeiou me to apotelsma tou cleaner script
@@ -163,6 +173,7 @@ int main(int argc, char *argv[]) {
     fp2 = fopen(argv[3], "w"); //to trito gia output gia bbs energy
     fp3 = fopen(argv[4], "r"); //to tetarto einai input me enrgeia tou first rapl read
     fp4 = fopen(argv[5], "r"); //to pempto einai input me enrgeia apo rest of rapl reads
+    fp5 = fopen(argv[6], "r"); //to pempto einai input me enrgeia apo last of rapl read
     
 
     if (fp == NULL)
@@ -190,8 +201,15 @@ int main(int argc, char *argv[]) {
         fprintf(stderr,"Could not open file for input with the rest rapl reads\n");
         exit(EXIT_FAILURE);
         }
+    if (fp5 == NULL)
+        {
+        fprintf(stderr,"Could not open file for input with the last rapl read\n");
+        exit(EXIT_FAILURE);
+        }
 
     read3 = getline(&line3, &len3, fp3);
+    read5 = getline(&line5, &len5, fp5);
+    final_read = atof(line5);;
     original_read=atof(line3);
     previous_read=original_read;
 
@@ -207,6 +225,33 @@ if (head == NULL) {
 head->val = original_read;
 head->next = NULL;
 
+node_t * weight = NULL;
+weight = (node_t *) malloc(sizeof(node_t));
+if (weight == NULL) {
+    return 1;
+}
+
+
+weight->val = 0;
+weight->next = NULL;
+
+
+node_t * total_weight = NULL;
+total_weight = (node_t *) malloc(sizeof(node_t));
+if (total_weight == NULL) {
+    return 1;
+}
+total_weight->val = 0;
+total_weight->next = NULL;
+
+node_t * total_energy = NULL;
+total_energy = (node_t *) malloc(sizeof(node_t));
+if (total_energy == NULL) {
+    return 1;
+}
+total_energy->val = 0;
+total_energy->next = NULL;
+
 
     while ((read4 = getline(&line4, &len4, fp4)) != -1) 
         {
@@ -218,9 +263,112 @@ head->next = NULL;
         }
     
     current_energy = pop(&head); 
+    push_last(head,final_read-previous_read);
+    printf("LIST OF RAPL ENERGIES IS :\n");
     print_list(head);
     
-    current_energy = pop(&head); 
+    
+    //edo i lista head periexei oles tis energeis anamesa se rapl reads
+    int counter = 0; //autos o counter tha antistoixizei kathe bb me tin eenrgeia tou
+    while ((read = getline(&line, &len, fp)) != -1) 
+        { 
+        if (strchr(line, '@') != NULL)
+        {
+        temp1= strtok(line,"@"); 
+        temp2= strtok(NULL,"\n");
+        current_weight=atof(temp2);
+        push_last(weight,current_weight);
+
+        }
+        }
+        current_weight = pop(&weight);
+        printf("LIST OF WEIGHT IS :\n");
+        print_list(weight);
+
+
+    //edo i lasta weight periexei ola ta bari ton bb
+
+    node_t * list_head = head ;
+    node_t * list_weight = weight ;
+    float temp_head ,temp_weight ,total_temp_weight;
+    
+
+    while ((list_head != NULL) && (list_weight != NULL))
+    {
+        temp_head = list_head->val;
+        temp_weight = list_weight->val;
+        total_temp_weight = total_temp_weight +temp_weight;
+        if (temp_head != 0)
+        {   push_last(total_energy,temp_head);
+            push_last(total_weight,total_temp_weight );
+            total_temp_weight=0;
+        }
+        list_head= list_head->next; 
+        list_weight =list_weight->next;
+        
+
+    }
+    printf("LIST OF TOTAL WEIGHT IS :\n");
+    float not_important = pop(&total_weight);
+    print_list(total_weight);
+
+     //Edo i lista total_weight exei simplirothei : auti perixei ta total weigths gia polla bb pou apoteloun ena rapl read interval
+
+    printf("LIST OF TOTAL ENERGY IS :\n");
+    not_important = pop(&total_energy);
+    print_list(total_energy);
+    
+    //Edo i lista total_energy exei simplirothei :auti periexei tin energeia pou antistoixei se ena energy interval
+    
+    
+    current_total_weight = pop(&total_weight);
+    current_total_energy = pop(&total_energy);
+    
+
+    //fprintf(fp2, "%f %f \n", current_total_weight, current_total_energy);
+    float result;
+    
+    
+    fp  = fopen(argv[1], "r");
+    fprintf(fp1,"BASIC BLOCK __________________  %d:\n",counter);
+     while ((read = getline(&line, &len, fp)) != -1)  
+        {
+        if (strchr(line, '@') != NULL)  
+        //opote blep rapl read ama mpika se nao inteval annaneono ta current_total_energy kai current_total_weight
+        //allios xrhsimopoio auta tou interval pou eimai tora kai me basi to baros tou torinou bb xorizo tin energeia tou interval
+        //pou eimai tora gia na paei kapoia sto bb pou eimai tora 
+        {   
+            
+            current_weight = pop(&weight);
+            current_energy = pop(&head);
+            result = (current_weight / current_total_weight ) * current_total_energy; 
+            fprintf(fp2,"BASIC BLOCK __________________  %d: %f %f %f \n",counter, current_weight , current_total_weight,  result);
+            counter++;
+            if (strchr(line, 'R') != NULL)  
+            fprintf(fp1,"BASIC BLOCK __________________  %d:\n",counter);
+            if (current_energy != 0)
+            {
+            current_total_energy = pop(&total_energy);
+            current_total_weight = pop(&total_weight);
+            }
+            
+            
+
+
+            
+            
+
+        }
+        else
+            {
+            //temp= strtok(line,"-");  //the command is splitted into the actual command
+            //command_weight =strtok(NULL,"\n"); //and its weight
+            fprintf(fp1,"%s",line);
+
+            }
+        
+        }
+
     
 }
 

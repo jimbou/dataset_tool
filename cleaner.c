@@ -348,6 +348,8 @@ int main(int argc, char *argv[]) {
     size_t len2 = 0;
     ssize_t read2;
 
+    
+
     char addr1[20] ="00000"; //address of first rapl function
     char length1[20] ="0";  //length of first rapl function
     char addr2[20] ="00000";
@@ -355,9 +357,10 @@ int main(int argc, char *argv[]) {
     char addr3[20] ="00000";
     char length3[20] ="0";
 
-    if (argc<3)
+    if (argc<4)
         {    //if an argument is not provided then error message and fail 
-        fprintf(stderr,"You have not given the name of the file where addresses of rapl reads are \n");
+        fprintf(stderr,"You have not given all the 3 arguments \n");
+        fprintf(stderr,"1) the name of the file where the addresses for rapl reads are stores \n 2) the name of executed file that has been traced command 3) the trace input file");
         return 1;
         }
     fp2 = fopen(argv[2], "r"); //to deutero argument einai to onoma tou arxeiou me tis rapl addresses
@@ -463,10 +466,10 @@ int main(int argc, char *argv[]) {
     size_t len = 0;
     ssize_t read;
 
-    fp = fopen("trace.txt", "r");
+    fp = fopen(argv[3], "r");
     if (fp == NULL)
         exit(EXIT_FAILURE);
-    if (argc<2 )
+    if (argc<4)
         {  //if the name of file run is not provided then error message and fail 
         fprintf(stderr,"You have not given the name of the file that was executed \n");
         return 1;
@@ -513,21 +516,18 @@ int main(int argc, char *argv[]) {
             if ((!strcmp(temp_first, addr1))|| (!strcmp(temp_second, addr1)) || (!strcmp(temp_third, addr1)) ) //if it contains the addr for rapl1 call then this is rapl instruction
                 {
                 count_ignore = true_length1; //poses entoles prepei na kanoume ignore
-                printf("%f\n",rapl_total_weight);
-                printf("Raplread1\n");
+                printf("Raplread1 @%f\n", rapl_total_weight);
                 rapl_total_weight=0;
                 }
             else if ((!strcmp(temp_first, addr2))|| (!strcmp(temp_second, addr2)) || (!strcmp(temp_third, addr2)) )
                 {
-                printf("%f\n",rapl_total_weight);
-                printf("Raplread2\n");
+                printf("Raplread2 @%f\n", rapl_total_weight);
                 count_ignore = true_length2; //poses entoles prepei na kanoume ignore
                 rapl_total_weight=0;
                 }
             else if ((!strcmp(temp_first, addr3))|| (!strcmp(temp_second, addr3)) || (!strcmp(temp_third, addr3)) )
                 {
-                printf("%f\n",rapl_total_weight);
-                printf("Raplread3\n");
+                printf("Raplread3 @%f\n", rapl_total_weight);
                 count_ignore = true_length3; //poses entoles prepei na kanoume ignore
                 rapl_total_weight=0;
                 }
@@ -1037,6 +1037,9 @@ int main(int argc, char *argv[]) {
         
         }
     }
+    printf(" @%f\n", rapl_total_weight);
+
+
 
       
     
