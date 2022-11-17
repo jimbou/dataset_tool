@@ -1,7 +1,10 @@
 //Auto einai to deutero script
-//pairnei san eisodo to arxeio pou pargetai apo to cleaner.c (ekei pou bgainei to stdout tou cleaner.c)
-//to dinoume loipon san proto argument
-
+//pairnei san eisodo 5 arxeia
+//1)auto pou pargetai apo to cleaner.c (ekei pou bgainei to stdout tou cleaner.c)
+//2)output for BBs code -ekei tha graftei o kodikas ton bb
+//3)output for bb energy- ekei tha graftei i energeia ton bbs
+//4)input me energeia arxikou rapl read
+//5)input with the rest rapl energies
 #define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
@@ -214,9 +217,10 @@ head->next = NULL;
         previous_read=current_read; 
         }
     
+    current_energy = pop(&head); 
     print_list(head);
-    current_energy = pop(head); 
-    current_energy = pop(head); 
+    
+    current_energy = pop(&head); 
     
 }
 
