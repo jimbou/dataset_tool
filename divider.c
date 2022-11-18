@@ -1,5 +1,5 @@
 //Auto einai to deutero script
-//pairnei san eisodo 5 arxeia
+//pairnei san eisodo 6 arxeia
 //1)auto pou pargetai apo to cleaner.c (ekei pou bgainei to stdout tou cleaner.c)
 //2)output for BBs code -ekei tha graftei o kodikas ton bb
 //3)output for bb energy- ekei tha graftei i energeia ton bbs
@@ -328,28 +328,47 @@ total_energy->next = NULL;
     //fprintf(fp2, "%f %f \n", current_total_weight, current_total_energy);
     float result;
     
-    
+    char type_of_rapl_read= 'A'; 
     fp  = fopen(argv[1], "r");
-    fprintf(fp1,"BASIC BLOCK __________________  %d:\n",counter);
+    fprintf(fp1,"B@ %d\n",counter);
      while ((read = getline(&line, &len, fp)) != -1)  
         {
-        if (strchr(line, '@') != NULL)  
+            
         //opote blep rapl read ama mpika se nao inteval annaneono ta current_total_energy kai current_total_weight
         //allios xrhsimopoio auta tou interval pou eimai tora kai me basi to baros tou torinou bb xorizo tin energeia tou interval
         //pou eimai tora gia na paei kapoia sto bb pou eimai tora 
-        {   
-            
-            current_weight = pop(&weight);
-            current_energy = pop(&head);
-            result = (current_weight / current_total_weight ) * current_total_energy; 
-            fprintf(fp2,"BASIC BLOCK __________________  %d: %f %f %f \n",counter, current_weight , current_total_weight,  result);
-            counter++;
-            if (strchr(line, 'R') != NULL)  
-            fprintf(fp1,"BASIC BLOCK __________________  %d:\n",counter);
-            if (current_energy != 0)
+            if (strchr(line, 'A') != NULL)  
             {
-            current_total_energy = pop(&total_energy);
-            current_total_weight = pop(&total_weight);
+                type_of_rapl_read ='A';
+            }
+            else if (strchr(line, 'B') != NULL)  
+            {
+                type_of_rapl_read ='B';
+            }
+            else if (strchr(line, 'C') != NULL) 
+            {
+                type_of_rapl_read ='C';
+            }
+            else
+            {
+                type_of_rapl_read = 'L';
+            }
+
+            if((strchr(line, '@') != NULL))
+            {
+                current_weight = pop(&weight);
+                current_energy = pop(&head);
+                result = (current_weight / current_total_weight ) * current_total_energy; 
+                fprintf(fp2,"%c@ %d %f %f %f \n",type_of_rapl_read, counter, current_weight , current_total_weight,  result);
+                counter++;
+                if (strchr(line, 'L') == NULL) {//dn einai to teleutaio rapl read  
+                fprintf(fp1,"%c@ %d\n",type_of_rapl_read,counter);}
+                else {fprintf(fp1,"L@ %d\n",counter);}
+
+                if (current_energy != 0)
+                {
+                current_total_energy = pop(&total_energy);
+                current_total_weight = pop(&total_weight);
             }
             
             
@@ -358,12 +377,12 @@ total_energy->next = NULL;
             
             
 
-        }
-        else
+            }
+            else
             {
-            //temp= strtok(line,"-");  //the command is splitted into the actual command
-            //command_weight =strtok(NULL,"\n"); //and its weight
-            fprintf(fp1,"%s",line);
+                //temp= strtok(line,"-");  //the command is splitted into the actual command
+                //command_weight =strtok(NULL,"\n"); //and its weight
+                fprintf(fp1,"%s",line);
 
             }
         

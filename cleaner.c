@@ -516,18 +516,18 @@ int main(int argc, char *argv[]) {
             if ((!strcmp(temp_first, addr1))|| (!strcmp(temp_second, addr1)) || (!strcmp(temp_third, addr1)) ) //if it contains the addr for rapl1 call then this is rapl instruction
                 {
                 count_ignore = true_length1; //poses entoles prepei na kanoume ignore
-                printf("Raplread1 @%f\n", rapl_total_weight);
+                printf("A___________ @%f\n", rapl_total_weight); //rapl read 1
                 rapl_total_weight=0;
                 }
             else if ((!strcmp(temp_first, addr2))|| (!strcmp(temp_second, addr2)) || (!strcmp(temp_third, addr2)) )
                 {
-                printf("Raplread2 @%f\n", rapl_total_weight);
+                printf("B__________ @%f\n", rapl_total_weight); //rapl read 2
                 count_ignore = true_length2; //poses entoles prepei na kanoume ignore
                 rapl_total_weight=0;
                 }
             else if ((!strcmp(temp_first, addr3))|| (!strcmp(temp_second, addr3)) || (!strcmp(temp_third, addr3)) )
                 {
-                printf("Raplread3 @%f\n", rapl_total_weight);
+                printf("C__________ @%f\n", rapl_total_weight); //rapl read 3
                 count_ignore = true_length3; //poses entoles prepei na kanoume ignore
                 rapl_total_weight=0;
                 }
@@ -796,234 +796,234 @@ int main(int argc, char *argv[]) {
                 if ((char *)getItem(*dict, result000) != NULL ) {
                     value =(char *)getItem(*dict, result000) ;
                     rapl_total_weight+=atof(value);
-                    printf(" -%f\n",  atof(value));
+                    printf(" =%f\n",  atof(value));
                     //printf("total is %f\n",rapl_total_weight);
-                    //printf("VALUE IS XXXXXXXXXXXXXXXXXX-000 %s of %s \n", result000, value);
+                    //printf("VALUE IS XXXXXXXXXXXXXXXXXX=000 %s of %s \n", result000, value);
                 }
                 
                 else if ((char *)getItem(*dict, result001) != NULL ) {
                     value =(char *)getItem(*dict, result001) ;
                     rapl_total_weight+=atof(value);
-                    printf(" -%f\n",  atof(value));
+                    printf(" =%f\n",  atof(value));
                     //printf("total is %f\n",rapl_total_weight);
-                    //printf("VALUE IS XXXXXXXXXXXXXXXXXX-001 %s of %s \n", result001, value);
+                    //printf("VALUE IS XXXXXXXXXXXXXXXXXX=001 %s of %s \n", result001, value);
                 }
                 else if ((char *)getItem(*dict, result010) != NULL ) {
                     value =(char *)getItem(*dict, result010) ;
                     rapl_total_weight+=atof(value);
-                    printf(" -%f\n",  atof(value));
+                    printf(" =%f\n",  atof(value));
                     //printf("total is %f\n",rapl_total_weight);
-                    //printf("VALUE IS XXXXXXXXXXXXXXXXXX-010 %s of %s \n", result010, value);
+                    //printf("VALUE IS XXXXXXXXXXXXXXXXXX=010 %s of %s \n", result010, value);
                 }
                 else if ((char *)getItem(*dict, result011) != NULL ) {
                     value =(char *)getItem(*dict, result011) ;
                     rapl_total_weight+=atof(value);
-                    printf(" -%f\n",  atof(value));
+                    printf(" =%f\n",  atof(value));
                     //printf("total is %f\n",rapl_total_weight);
-                    //printf("VALUE IS XXXXXXXXXXXXXXXXXX-011 %s of %s \n", result011, value);
+                    //printf("VALUE IS XXXXXXXXXXXXXXXXXX=011 %s of %s \n", result011, value);
                 }
                 else if ((char *)getItem(*dict, result100) != NULL ) {
                     value =(char *)getItem(*dict, result100) ;
                     rapl_total_weight+=atof(value);
-                    printf(" -%f\n",  atof(value));
+                    printf(" =%f\n",  atof(value));
                     //printf("total is %f\n",rapl_total_weight);
-                    //printf("VALUE IS XXXXXXXXXXXXXXXXXX-100 %s of %s \n", result100, value);
+                    //printf("VALUE IS XXXXXXXXXXXXXXXXXX=100 %s of %s \n", result100, value);
                 }
                 else if ((char *)getItem(*dict, result101) != NULL ) {
                     value =(char *)getItem(*dict, result101) ;
                     rapl_total_weight+=atof(value);
-                    printf(" -%f\n",  atof(value));
+                    printf(" =%f\n",  atof(value));
                     //printf("total is %f\n",rapl_total_weight);
-                    //printf("VALUE IS XXXXXXXXXXXXXXXXXX-101 %s of %s \n", result101, value);
+                    //printf("VALUE IS XXXXXXXXXXXXXXXXXX=101 %s of %s \n", result101, value);
                 }
                 else if ((char *)getItem(*dict, result110) != NULL ) {
                     value =(char *)getItem(*dict, result110) ;
                     rapl_total_weight+=atof(value);
-                    printf(" -%f\n",  atof(value));
+                    printf(" =%f\n",  atof(value));
                     //printf("total is %f\n",rapl_total_weight);
-                    //printf("VALUE IS XXXXXXXXXXXXXXXXXX-110 %s of %s \n", result110, value);
+                    //printf("VALUE IS XXXXXXXXXXXXXXXXXX=110 %s of %s \n", result110, value);
                 }
                 else if ((char *)getItem(*dict, result111) != NULL ) {
                     value =(char *)getItem(*dict, result111) ;
                     rapl_total_weight+=atof(value);
-                    printf(" -%f\n",  atof(value));
+                    printf(" =%f\n",  atof(value));
                     //printf("total is %f\n",rapl_total_weight);
-                    //printf("VALUE IS XXXXXXXXXXXXXXXXXX-111 %s of %s \n", result111, value);
+                    //printf("VALUE IS XXXXXXXXXXXXXXXXXX=111 %s of %s \n", result111, value);
                 }
                 else{
                     if ((char *)getItem(*dict, result000_cut) != NULL ) {
                         value =(char *)getItem(*dict, result000_cut) ;
                         rapl_total_weight+=atof(value);
-                        printf(" -%f\n",  atof(value));
+                        printf(" =%f\n",  atof(value));
                     //printf("total is %f\n",rapl_total_weight);
-                    //printf("VALUE IS XXXXXXXXXXXXXXXXXX-000 %s of %s \n", result000_cut, value);
+                    //printf("VALUE IS XXXXXXXXXXXXXXXXXX=000 %s of %s \n", result000_cut, value);
                     }
                     
                     else if ((char *)getItem(*dict, result001_cut) != NULL ) {
                         value =(char *)getItem(*dict, result001_cut) ;
                         rapl_total_weight+=atof(value);
-                        printf(" -%f\n",  atof(value));
+                        printf(" =%f\n",  atof(value));
                         //printf("total is %f\n",rapl_total_weight);
-                        //printf("VALUE IS XXXXXXXXXXXXXXXXXX-001 %s of %s \n", result001_cut, value);
+                        //printf("VALUE IS XXXXXXXXXXXXXXXXXX=001 %s of %s \n", result001_cut, value);
                     }
                     else if ((char *)getItem(*dict, result010_cut) != NULL ) {
                         value =(char *)getItem(*dict, result010_cut) ;
                         rapl_total_weight+=atof(value);
-                        printf(" -%f\n",  atof(value));
+                        printf(" =%f\n",  atof(value));
                         //printf("total is %f\n",rapl_total_weight);
-                        //printf("VALUE IS XXXXXXXXXXXXXXXXXX-010 %s of %s \n", result010_cut, value);
+                        //printf("VALUE IS XXXXXXXXXXXXXXXXXX=010 %s of %s \n", result010_cut, value);
                     }
                     else if ((char *)getItem(*dict, result011_cut) != NULL ) {
                         value =(char *)getItem(*dict, result011_cut) ;
                         rapl_total_weight+=atof(value);
-                        printf(" -%f\n",  atof(value));
+                        printf(" =%f\n",  atof(value));
                         //printf("total is %f\n",rapl_total_weight);
-                        //printf("VALUE IS XXXXXXXXXXXXXXXXXX-011 %s of %s \n", result011_cut, value);
+                        //printf("VALUE IS XXXXXXXXXXXXXXXXXX=011 %s of %s \n", result011_cut, value);
                     }
                     else if ((char *)getItem(*dict, result100_cut) != NULL ) {
                         value =(char *)getItem(*dict, result100_cut) ;
                         rapl_total_weight+=atof(value);
-                        printf(" -%f\n",  atof(value));
+                        printf(" =%f\n",  atof(value));
                         //printf("total is %f\n",rapl_total_weight);
-                        //printf("VALUE IS XXXXXXXXXXXXXXXXXX-100 %s of %s \n", result100_cut, value);
+                        //printf("VALUE IS XXXXXXXXXXXXXXXXXX=100 %s of %s \n", result100_cut, value);
                     }
                     else if ((char *)getItem(*dict, result101_cut) != NULL ) {
                         value =(char *)getItem(*dict, result101_cut) ;
                         rapl_total_weight+=atof(value);
-                        printf(" -%f\n",  atof(value));
+                        printf(" =%f\n",  atof(value));
                         //printf("total is %f\n",rapl_total_weight);
-                        //printf("VALUE IS XXXXXXXXXXXXXXXXXX-101 %s of %s \n", result101_cut, value);
+                        //printf("VALUE IS XXXXXXXXXXXXXXXXXX=101 %s of %s \n", result101_cut, value);
                     }
                     else if ((char *)getItem(*dict, result110_cut) != NULL ) {
                         value =(char *)getItem(*dict, result110_cut) ;
                         rapl_total_weight+=atof(value);
-                        printf(" -%f\n",  atof(value));
+                        printf(" =%f\n",  atof(value));
                         //printf("total is %f\n",rapl_total_weight);
-                        //printf("VALUE IS XXXXXXXXXXXXXXXXXX-110 %s of %s \n", result110_cut, value);
+                        //printf("VALUE IS XXXXXXXXXXXXXXXXXX=110 %s of %s \n", result110_cut, value);
                     }
                     else if ((char *)getItem(*dict, result111_cut) != NULL ) {
                         value =(char *)getItem(*dict, result111_cut) ;
                         rapl_total_weight+=atof(value);
-                        printf(" -%f\n",  atof(value));
+                        printf(" =%f\n",  atof(value));
                         //printf("total is %f\n",rapl_total_weight);
-                        //printf("VALUE IS XXXXXXXXXXXXXXXXXX-111 %s of %s \n", result111_cut, value);
+                        //printf("VALUE IS XXXXXXXXXXXXXXXXXX=111 %s of %s \n", result111_cut, value);
                     }
                     else{
                         if ((char *)getItem(*dict, result000_cut2) != NULL ) {
                         value =(char *)getItem(*dict, result000_cut2) ;
                         rapl_total_weight+=atof(value);
-                        printf(" -%f\n",  atof(value));
+                        printf(" =%f\n",  atof(value));
                         //printf("total is %f\n",rapl_total_weight);
-                        //printf("VALUE IS XXXXXXXXXXXXXXXXXX-000 %s of %s \n", result000_cut2, value);
+                        //printf("VALUE IS XXXXXXXXXXXXXXXXXX=000 %s of %s \n", result000_cut2, value);
                         }
                 
                         else if ((char *)getItem(*dict, result001_cut2) != NULL ) {
                             value =(char *)getItem(*dict, result001_cut2) ;
                             rapl_total_weight+=atof(value);
-                            printf(" -%f\n",  atof(value));
+                            printf(" =%f\n",  atof(value));
                             //printf("total is %f\n",rapl_total_weight);
-                            //printf("VALUE IS XXXXXXXXXXXXXXXXXX-001 %s of %s \n", result001_cut2, value);
+                            //printf("VALUE IS XXXXXXXXXXXXXXXXXX=001 %s of %s \n", result001_cut2, value);
                         }
                         else if ((char *)getItem(*dict, result010_cut2) != NULL ) {
                             value =(char *)getItem(*dict, result010_cut2) ;
                             rapl_total_weight+=atof(value);
-                            printf(" -%f\n",  atof(value));
+                            printf(" =%f\n",  atof(value));
                             //printf("total is %f\n",rapl_total_weight);
-                            //printf("VALUE IS XXXXXXXXXXXXXXXXXX-010 %s of %s \n", result010_cut2, value);
+                            //printf("VALUE IS XXXXXXXXXXXXXXXXXX=010 %s of %s \n", result010_cut2, value);
                         }
                         else if ((char *)getItem(*dict, result011_cut2) != NULL ) {
                             value =(char *)getItem(*dict, result011_cut2) ;
                             rapl_total_weight+=atof(value);
-                            printf(" -%f\n",  atof(value));
+                            printf(" =%f\n",  atof(value));
                             //printf("total is %f\n",rapl_total_weight);
-                            //printf("VALUE IS XXXXXXXXXXXXXXXXXX-011 %s of %s \n", result011_cut2, value);
+                            //printf("VALUE IS XXXXXXXXXXXXXXXXXX=011 %s of %s \n", result011_cut2, value);
                         }
                         else if ((char *)getItem(*dict, result100_cut2) != NULL ) {
                             value =(char *)getItem(*dict, result100_cut2) ;
                             rapl_total_weight+=atof(value);
-                            printf(" -%f\n",  atof(value));
+                            printf(" =%f\n",  atof(value));
                             //printf("total is %f\n",rapl_total_weight);
-                            //printf("VALUE IS XXXXXXXXXXXXXXXXXX-100 %s of %s \n", result100_cut2, value);
+                            //printf("VALUE IS XXXXXXXXXXXXXXXXXX=100 %s of %s \n", result100_cut2, value);
                         }
                         else if ((char *)getItem(*dict, result101_cut2) != NULL ) {
                             value =(char *)getItem(*dict, result101_cut2) ;
                             rapl_total_weight+=atof(value);
-                            printf(" -%f\n",  atof(value));
+                            printf(" =%f\n",  atof(value));
                             //printf("total is %f\n",rapl_total_weight);
-                            //printf("VALUE IS XXXXXXXXXXXXXXXXXX-101 %s of %s \n", result101_cut2, value);
+                            //printf("VALUE IS XXXXXXXXXXXXXXXXXX=101 %s of %s \n", result101_cut2, value);
                         }
                         else if ((char *)getItem(*dict, result110_cut2) != NULL ) {
                             value =(char *)getItem(*dict, result110_cut2) ;
                             rapl_total_weight+=atof(value);
-                            printf(" -%f\n",  atof(value));
+                            printf(" =%f\n",  atof(value));
                             //printf("total is %f\n",rapl_total_weight);
-                            //printf("VALUE IS XXXXXXXXXXXXXXXXXX-110 %s of %s \n", result110_cut2, value);
+                            //printf("VALUE IS XXXXXXXXXXXXXXXXXX=110 %s of %s \n", result110_cut2, value);
                         }
                         else if ((char *)getItem(*dict, result111_cut2) != NULL ) {
                             value =(char *)getItem(*dict, result111_cut2) ;
                             rapl_total_weight+=atof(value);
-                            printf(" -%f\n",  atof(value));
+                            printf(" =%f\n",  atof(value));
                             //printf("total is %f\n",rapl_total_weight);
-                            //printf("VALUE IS XXXXXXXXXXXXXXXXXX-111 %s of %s \n", result111_cut2, value);
+                            //printf("VALUE IS XXXXXXXXXXXXXXXXXX=111 %s of %s \n", result111_cut2, value);
                         }
                         else{
                             
                             if ((char *)getItem(*dict, result000_cut3) != NULL ) {
                             value =(char *)getItem(*dict, result000_cut3) ;
                             rapl_total_weight+=atof(value);
-                            printf(" -%f\n",  atof(value));
+                            printf(" =%f\n",  atof(value));
                             //printf("total is %f\n",rapl_total_weight);
-                            //printf("VALUE IS XXXXXXXXXXXXXXXXXX-000 %s of %s \n", result000_cut3, value);
+                            //printf("VALUE IS XXXXXXXXXXXXXXXXXX=000 %s of %s \n", result000_cut3, value);
                             }
                 
                             else if ((char *)getItem(*dict, result001_cut3) != NULL ) {
                                 value =(char *)getItem(*dict, result001_cut3) ;
                                 rapl_total_weight+=atof(value);
-                                printf(" -%f\n",  atof(value));
+                                printf(" =%f\n",  atof(value));
                                 //printf("total is %f\n",rapl_total_weight);
-                                //printf("VALUE IS XXXXXXXXXXXXXXXXXX-001 %s of %s \n", result001_cut3, value);
+                                //printf("VALUE IS XXXXXXXXXXXXXXXXXX=001 %s of %s \n", result001_cut3, value);
                             }
                             else if ((char *)getItem(*dict, result010_cut3) != NULL ) {
                                 value =(char *)getItem(*dict, result010_cut3) ;
                                 rapl_total_weight+=atof(value);
-                                printf(" -%f\n",  atof(value));
+                                printf(" =%f\n",  atof(value));
                                 //printf("total is %f\n",rapl_total_weight);
-                                //printf("VALUE IS XXXXXXXXXXXXXXXXXX-010 %s of %s \n", result010_cut3, value);
+                                //printf("VALUE IS XXXXXXXXXXXXXXXXXX=010 %s of %s \n", result010_cut3, value);
                             }
                             else if ((char *)getItem(*dict, result011_cut3) != NULL ) {
                                 value =(char *)getItem(*dict, result011_cut3) ;
                                 rapl_total_weight+=atof(value);
-                                printf(" -%f\n",  atof(value));
+                                printf(" =%f\n",  atof(value));
                                 //printf("total is %f\n",rapl_total_weight);
-                                //printf("VALUE IS XXXXXXXXXXXXXXXXXX-011 %s of %s \n", result011_cut3, value);
+                                //printf("VALUE IS XXXXXXXXXXXXXXXXXX=011 %s of %s \n", result011_cut3, value);
                             }
                             else if ((char *)getItem(*dict, result100_cut3) != NULL ) {
                                 value =(char *)getItem(*dict, result100_cut3) ;
                                 rapl_total_weight+=atof(value);
-                                printf(" -%f\n",  atof(value));
+                                printf(" =%f\n",  atof(value));
                                 //printf("total is %f\n",rapl_total_weight);
-                                //printf("VALUE IS XXXXXXXXXXXXXXXXXX-100 %s of %s \n", result100_cut3, value);
+                                //printf("VALUE IS XXXXXXXXXXXXXXXXXX=100 %s of %s \n", result100_cut3, value);
                             }
                             else if ((char *)getItem(*dict, result101_cut3) != NULL ) {
                                 value =(char *)getItem(*dict, result101_cut3) ;
                                 rapl_total_weight+=atof(value);
-                                printf(" -%f\n",  atof(value));
+                                printf(" =%f\n",  atof(value));
                                 //printf("total is %f\n",rapl_total_weight);
-                                //printf("VALUE IS XXXXXXXXXXXXXXXXXX-101 %s of %s \n", result101_cut3, value);
+                                //printf("VALUE IS XXXXXXXXXXXXXXXXXX=101 %s of %s \n", result101_cut3, value);
                             }
                             else if ((char *)getItem(*dict, result110_cut3) != NULL ) {
                                 value =(char *)getItem(*dict, result110_cut3) ;
                                 rapl_total_weight+=atof(value);
-                                printf(" -%f\n",  atof(value));
+                                printf(" =%f\n",  atof(value));
                                 //printf("total is %f\n",rapl_total_weight);
-                                //printf("VALUE IS XXXXXXXXXXXXXXXXXX-110 %s of %s \n", result110_cut3, value);
+                                //printf("VALUE IS XXXXXXXXXXXXXXXXXX=110 %s of %s \n", result110_cut3, value);
                             }
                             else if ((char *)getItem(*dict, result111_cut3) != NULL ) {
                                 value =(char *)getItem(*dict, result111_cut3) ;
                                 rapl_total_weight+=atof(value);
-                                printf(" -%f\n",  atof(value));
+                                printf(" =%f\n",  atof(value));
                                 //printf("total is %f\n",rapl_total_weight);
-                                //printf("VALUE IS XXXXXXXXXXXXXXXXXX-111 %s of %s \n", result111_cut3, value);
+                                //printf("VALUE IS XXXXXXXXXXXXXXXXXX=111 %s of %s \n", result111_cut3, value);
                             }
                             else{
                                 if (!strcmp(result.opcode,"syscall") ){fprintf(stderr,"We had a Syscall \n");} // see what to add for these
@@ -1037,7 +1037,7 @@ int main(int argc, char *argv[]) {
         
         }
     }
-    printf(" @%f\n", rapl_total_weight);
+    printf("L@ %f\n", rapl_total_weight);
 
 
 
