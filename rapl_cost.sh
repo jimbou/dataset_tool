@@ -1,4 +1,5 @@
 #!/bin/bash
+#this is the sh that find the enrgy cost of each rapl read 
 rm help_rapl.txt 2> /dev/null
 
 

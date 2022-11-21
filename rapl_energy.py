@@ -1,5 +1,7 @@
 #!/usr/bin/python
 
+#this is the python script that find the enrgy cost of each rapl read 
+
 import sys
  
 # total arguments
@@ -38,10 +40,10 @@ content = f4.readlines()
 first_clean = float(content[0])
 last_clean = float(content[1])
 
-clean = last_clean - first_clean
-dirty = last_line3 -last_line1
-overhead =dirty - clean
-cost = overhead /counter
+clean = last_clean - first_clean #kathari energeia tou ektelesimou
+dirty = last_line3 -last_line1 #energeia ektelesimou mazi me rapl reads
+overhead =dirty - clean #ekstra kostos rapl reads sunoliko
+cost = overhead /counter #kostos kathe rapl read
 
 
 
