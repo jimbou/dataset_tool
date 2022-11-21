@@ -128,7 +128,7 @@ int main(int argc, char *argv[]) {
         if (prev_read != current_read) //rapl read energy read has changed
         {
             result = current_read - (num_prv_reads*cost);
-            num_prv_reads=1;
+            num_prv_reads++;
             prev_read =current_read;
             fprintf(fp3,"%f\n",result);
         }
