@@ -30,6 +30,7 @@ int main(int argc, char *argv[]) {
     ssize_t read;
 
     FILE * fp1; //the file we gonna last rapl read
+    char * line1 = NULL;
     size_t len1 = 0;
     ssize_t read1;
 
@@ -100,25 +101,30 @@ int main(int argc, char *argv[]) {
     
     float cost =0;
     char *energy1 =NULL;
-    char *energy_tmp =NULL,*original_temp =NULL , *last_temp=NULL;
+    char *energy_tmp =NULL,*original_temp =NULL , *last_temp=NULL ;
     int num_prv_reads =1;
-    float current_read =0, prev_read =0;
+    float current_read =0, prev_read =0 ,last =0;
     float result=0;
 
-     printf("i am here1\n");
-   if((read0 = getline(&line0, &len0, fp0)) != -1){
-            //original_temp= strtok(line0, "\n");
-            //printf("it is--%s---\n",line0);
-            //prev_read = atof(original_temp); //read the individual rapl cost
-       }
-printf("i am here2\n");
-    if((read2 = getline(&line2, &len2, fp2)) != -1){
+    if((read0 = getline(&line0, &len0, fp0)) != -1)
+    {
+        original_temp= strtok(line0, "\n");
+        prev_read = atof(original_temp); //read the individual rapl cost
+    }
+
+    if((read1 = getline(&line1, &len1, fp1)) != -1)
+    {
+        last_temp= strtok(line1, "\n");
+        last = atof(last_temp); //read the individual rapl cost
+    }
+
+    if((read2 = getline(&line2, &len2, fp2)) != -1)
+    {
         last_temp=strtok(line2, "\n");
         cost = atof(last_temp); //read the individual rapl cost
     }
 
   
-    printf("i am here\n");
     while ((read = getline(&line, &len, fp)) != -1)
     {
         energy_tmp= strtok(line, "\n");
@@ -136,11 +142,16 @@ printf("i am here2\n");
             fprintf(fp3,"%f\n",result);
 
         }
-        
-
-
-
 
     }
-
+    if(prev_read !=last )
+    {
+        result = last - (num_prv_reads*cost);
+        num_prv_reads++;
+        fprintf(fp4,"%f\n",result);
+    }
+    else
+    {
+        fprintf(fp4,"%f",result);
+    }
 }

@@ -9,7 +9,7 @@
 #include <string.h>
 #include <ctype.h>
 #include <stdbool.h>
-#include "dict.c" //here the custom dictionary we use to store the opcode energy values
+#include "../dict/dict.c" //here the custom dictionary we use to store the opcode energy values
 
 char * registers [] = { "%eax" , "%ebx" ,"%ecx", "%edx", "%cs", "%ds", "%es", "%fs", "%gs", "%ss","%esi", "%edi" , "%ebp", "%eip" ,"%esp", "%ax", "%bx", "%cx" , "%dx" ,"%ah" ,"%al" ,"%bh" ,"%bl" , "%ch" ,"%dh" ,"%dl" ,"%rax", "%rcx" ,"%rdx" ,"%rbx" ,"%rsp" ,"%rbp" ,"%rsi" ,"%rdi" ,"%sp" ,"%bp" ,"%si" ,"%di" ,"%spl" ,"%bpl" ,"%sil" ,"%dil" , "%ss" ,"%cs" ,"%ds" ,"%es" ,"%fs" ,"%gs" ,"%eflags" ,"%eip","%r8", "%r9","%r10", "%r11", "%r12","%r13", "%r14","%r15","%r8d", "%r9d","%r10d", "%r11d", "%r12d","%r13d", "%r14d","%r15d", "%r8w", "%r9w","%r10w", "%r11w", "%r12w","%r13w", "%r14w","%r15w","%r8b", "%r9b","%r10b", "%r11b", "%r12b" ,"%r13b", "%r14b", "%r15b"}; //size =49
 // the register list contains the possible names for all registers
@@ -350,6 +350,7 @@ int main(int argc, char *argv[]) {
 
     
 
+    
     char addr1[20] ="00000"; //address of first rapl function
     char length1[20] ="0";  //length of first rapl function
     char addr2[20] ="00000";
@@ -357,10 +358,10 @@ int main(int argc, char *argv[]) {
     char addr3[20] ="00000";
     char length3[20] ="0";
 
-    if (argc<4)
+    if (argc<5)
         {    //if an argument is not provided then error message and fail 
         fprintf(stderr,"You have not given all the 3 arguments \n");
-        fprintf(stderr,"1) the name of the file where the addresses for rapl reads are stores \n 2) the name of executed file that has been traced command 3) the trace input file");
+        fprintf(stderr,"1) the name of the file where the addresses for rapl reads are stores \n 2) the name of executed file that has been traced command 3) the trace input file\n 4) opcode file txt\n");
         return 1;
         }
     fp2 = fopen(argv[2], "r"); //to deutero argument einai to onoma tou arxeiou me tis rapl addresses
@@ -417,9 +418,12 @@ int main(int argc, char *argv[]) {
     size_t len1 = 0;
     ssize_t read1;
 
-    fp1 = fopen("opcodes.txt", "r");
+    fp1 = fopen(argv[4], "r");
     if (fp1 == NULL)
+    {
+        fprintf(stderr,"Could not open file with opcodes \n");
         exit(EXIT_FAILURE);
+    }
     
     while ((read1 = getline(&line1, &len1, fp1)) != -1)     
         {

@@ -1,18 +1,8 @@
-# Python Program to Print Lines
-# Containing Given String in File
-import sys
-# input file name with extension
-#file_name = input("Enter The File's Name: ")
-  
-# using try catch except to
-# handle file not found error.
-  
-# entering try block
 
-# opening and reading the file 
+import sys
+#pyhton script to give addresses of rapl functions
 file_read = open(str(sys.argv[1]), "r")
-# asking the user to enter the string to be 
-# searched
+
 function1 ="<print_1>"  #the first rapl function
 function2 ="<print_2>"  #the second rapl function
 function3 ="<print_3>"  #the second rapl function
@@ -106,12 +96,12 @@ for line in lines:
 # closing file after reading
 file_read.close()
 
+
+
 new_file_str = str(sys.argv[1][:-4]+ "_rapl_addresses.txt")
-
-
+#to dimiourgei sto run directory
 with open(new_file_str, 'w') as f:
 
     print("A",result1,counter_function1 ,file=f)
     print("B",result2,counter_function2 ,file=f)
     print("C",result3,counter_function3 ,file=f)
-
