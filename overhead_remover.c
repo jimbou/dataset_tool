@@ -56,7 +56,7 @@ int main(int argc, char *argv[]) {
         fprintf(stderr,"Arguments should be in that order :\n 0)to proto proto me to original rapl read 1)to proto me rest rapl reads\n 2)to deutero me last rapl read\n 3)to trito me rapl read cost\n 4)to tetarto pou tha graftei updated rest rapl reads\n 5)to pempro pou tha graftei updated last rapl read");
         return 1;
         }
-    fp  = fopen(argv[1], "r"); //1)to proto proto  me original rapl read
+    fp0  = fopen(argv[1], "r"); //1)to proto proto  me original rapl read
     fp  = fopen(argv[2], "r"); //1)to proto me rest rapl reads
     fp1 = fopen(argv[3], "r"); //2)to deutero me last rapl read
     fp2 = fopen(argv[4], "r"); //3)to trito me rapl read cost
@@ -97,33 +97,31 @@ int main(int argc, char *argv[]) {
 
 
 
-    char *code1=NULL, *code2=NULL;
-    char *command1=NULL, *command2=NULL , *opcode =NULL;
-    char *energy2=NULL , *energy3=NULL ,*energy4=NULL , *energy5=NULL;
-    int energy_counter1=0,energy_counter2=0 ,counter =0;
-    float weight_total=0 , weight=0 , weight_temp=0, energy_total=0 , energy_temp=0;
-    bool is_break = false;
-
+    
     float cost =0;
     char *energy1 =NULL;
-    char *energy_tmp =NULL;
+    char *energy_tmp =NULL,*original_temp =NULL , *last_temp=NULL;
     int num_prv_reads =1;
     float current_read =0, prev_read =0;
     float result=0;
 
-
-    if((read0 = getline(&line0, &len0, fp0)) != -1){
-            prev_read = atof(read0); //read the individual rapl cost
-        }
-
+     printf("i am here1\n");
+   if((read0 = getline(&line0, &len0, fp0)) != -1){
+            //original_temp= strtok(line0, "\n");
+            //printf("it is--%s---\n",line0);
+            //prev_read = atof(original_temp); //read the individual rapl cost
+       }
+printf("i am here2\n");
     if((read2 = getline(&line2, &len2, fp2)) != -1){
-        cost = atof(read2); //read the individual rapl cost
+        last_temp=strtok(line2, "\n");
+        cost = atof(last_temp); //read the individual rapl cost
     }
 
-
+  
+    printf("i am here\n");
     while ((read = getline(&line, &len, fp)) != -1)
     {
-        energy_tmp= strtok(line, '\n');
+        energy_tmp= strtok(line, "\n");
         current_read= atof(energy_tmp);
         if (prev_read != current_read) //rapl read energy read has changed
         {
