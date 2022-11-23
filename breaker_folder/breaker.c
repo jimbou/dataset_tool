@@ -11,10 +11,9 @@
 #include <ctype.h>
 #include <stdbool.h>
 
-char * break_opcodes [] = { "%callq" , "%call", "retq" ,"ret","jump","jmp", "jne", "je" , "jg", "jle" ,"jge" , "jl", "calll" ,"retl" ,"callw" , "retw" ,"jz", "jnz" };
+char * break_opcodes [] = { "%callq" , "%call", "retq" ,"ret","jump","jmp", "jne", "je" , "jg", "jle" ,"jge" , "jl", "calll" ,"retl" ,"callw" , "retw" ,"jz", "jnz" , "jns", "js", "ja", "jae", "jb","jbe","jc","jcxz","jecxz","jna","jnae","jnb",  "jnbe","jnc","jne","jng","jnge","jnle","jnl","jnle","jo", "jp", "jpe","jno","jnp","jnz","jpe","jpo"};
 
 int main(int argc, char *argv[]) {
-
 
     //MAIN PART 1 : read the files 
     FILE * fp; //the file we gonna read code from
@@ -129,13 +128,28 @@ int main(int argc, char *argv[]) {
             else
             {   
                 fprintf(fp2,"%s",line); //ektipono tin grammi kodika
-                opcode = strtok(line, " "); //periexetai to opcode tis entolis
+                //opcode = strtok(line, " "); //periexetai to opcode tis entolis
+               
+                opcode = strtok (line, " ");
                 command1= strtok(NULL,"="); 
+
                 command2= strtok(NULL,"\n");
-                weight_temp=atof(command2); //periexetai to weight tis entolis
+               
+                if (command2 !=NULL)
+                {
+                    weight_temp=atof(command2); //periexetai to weight tis entolis
+                }
+                else if (command1 !=NULL) 
+                {
+                    weight_temp=atof(command1);
+                }
+                else 
+                {
+                    printf("SOmething wrong with pointers in breker script\n");
+                }
                 weight =weight +weight_temp; //athroisma weight entolon tou spasmenou bb
                 is_break =false;
-                for(int i = 0; i < 18; ++i) //ama to opcode anoikei se break opcodes prepei na spasoume to bb
+                for(int i = 0; i < 46; ++i) //ama to opcode anoikei se break opcodes prepei na spasoume to bb
                 {
                     if(!strcmp(break_opcodes[i], opcode))
                     {
@@ -145,6 +159,7 @@ int main(int argc, char *argv[]) {
                 if (is_break) //ama molis spasame to bb prepei na ektuposoume eenrgeia mexri tora kai na pame sto epomeno
                 {   energy_temp = (weight/ weight_total)*energy_total;
                     fprintf(fp3, "@ %d_%d: %f ,%f ,%f , ------%f\n",energy_counter2,counter, weight , weight_total , energy_total ,energy_temp);
+                    
                     weight =0;
                     counter++;
                     fprintf(fp2, "@ %d_%d:\n",energy_counter2,counter);

@@ -875,3 +875,173 @@ You entered 0.25  with key movabs_r_r_0
 You entered 0.25  with key movabs_r_I_0 
 could not find type of callq
 i cannot  find opcode addr32_0_0_0 or addr3_0_0_0 or addr_0_0_0 or add_0_0_0  
+could not find type of nop
+i cannot  find opcode data16_0_0_0 or data1_0_0_0 or data_0_0_0 or dat_0_0_0  
+We had a Syscall 
+We had a Syscall 
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+i cannot  find opcode vpxor_0_0_0 or vpxo_0_0_0 or vpx_0_0_0 or vp_0_0_0  
+i cannot  find opcode vpcmpeqby_0_0_0 or vpcmpeqb_0_0_0 or vpcmpeq_0_0_0 or vpcmpe_0_0_0  
+i cannot  find opcode vpmovmskb_0_0_0 or vpmovmsk_0_0_0 or vpmovms_0_0_0 or vpmovm_0_0_0  
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+i cannot  find opcode vpxor_0_0_0 or vpxo_0_0_0 or vpx_0_0_0 or vp_0_0_0  
+i cannot  find opcode vpcmpeqby_0_0_0 or vpcmpeqb_0_0_0 or vpcmpeq_0_0_0 or vpcmpe_0_0_0  
+i cannot  find opcode vpmovmskb_0_0_0 or vpmovmsk_0_0_0 or vpmovms_0_0_0 or vpmovm_0_0_0  
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+i cannot  find opcode vpxor_0_0_0 or vpxo_0_0_0 or vpx_0_0_0 or vp_0_0_0  
+i cannot  find opcode vpcmpeqby_0_0_0 or vpcmpeqb_0_0_0 or vpcmpeq_0_0_0 or vpcmpe_0_0_0  
+i cannot  find opcode vpmovmskb_0_0_0 or vpmovmsk_0_0_0 or vpmovms_0_0_0 or vpmovm_0_0_0  
+i cannot  find opcode vpcmpeqby_0_0_0 or vpcmpeqb_0_0_0 or vpcmpeq_0_0_0 or vpcmpe_0_0_0  
+i cannot  find opcode vpmovmskb_0_0_0 or vpmovmsk_0_0_0 or vpmovms_0_0_0 or vpmovm_0_0_0  
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+i cannot  find opcode vpxor_0_0_0 or vpxo_0_0_0 or vpx_0_0_0 or vp_0_0_0  
+i cannot  find opcode vpcmpeqby_0_0_0 or vpcmpeqb_0_0_0 or vpcmpeq_0_0_0 or vpcmpe_0_0_0  
+i cannot  find opcode vpminub_0_0_0 or vpminu_0_0_0 or vpmin_0_0_0 or vpmi_0_0_0  
+i cannot  find opcode vpcmpeqb_0_0_0 or vpcmpeq_0_0_0 or vpcmpe_0_0_0 or vpcmp_0_0_0  
+i cannot  find opcode vpmovmskb_0_0_0 or vpmovmsk_0_0_0 or vpmovms_0_0_0 or vpmovm_0_0_0  
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+i cannot  find opcode vpxor_0_0_0 or vpxo_0_0_0 or vpx_0_0_0 or vp_0_0_0  
+i cannot  find opcode vpcmpeqby_0_0_0 or vpcmpeqb_0_0_0 or vpcmpeq_0_0_0 or vpcmpe_0_0_0  
+i cannot  find opcode vpminub_0_0_0 or vpminu_0_0_0 or vpmin_0_0_0 or vpmi_0_0_0  
+i cannot  find opcode vpcmpeqb_0_0_0 or vpcmpeq_0_0_0 or vpcmpe_0_0_0 or vpcmp_0_0_0  
+i cannot  find opcode vpmovmskb_0_0_0 or vpmovmsk_0_0_0 or vpmovms_0_0_0 or vpmovm_0_0_0  
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+i cannot  find opcode vpxor_0_0_0 or vpxo_0_0_0 or vpx_0_0_0 or vp_0_0_0  
+i cannot  find opcode vpcmpeqby_0_0_0 or vpcmpeqb_0_0_0 or vpcmpeq_0_0_0 or vpcmpe_0_0_0  
+i cannot  find opcode vpminub_0_0_0 or vpminu_0_0_0 or vpmin_0_0_0 or vpmi_0_0_0  
+i cannot  find opcode vpcmpeqb_0_0_0 or vpcmpeq_0_0_0 or vpcmpe_0_0_0 or vpcmp_0_0_0  
+i cannot  find opcode vpmovmskb_0_0_0 or vpmovmsk_0_0_0 or vpmovms_0_0_0 or vpmovm_0_0_0  
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+i cannot  find opcode vpxor_0_0_0 or vpxo_0_0_0 or vpx_0_0_0 or vp_0_0_0  
+i cannot  find opcode vpcmpeqby_0_0_0 or vpcmpeqb_0_0_0 or vpcmpeq_0_0_0 or vpcmpe_0_0_0  
+i cannot  find opcode vpminub_0_0_0 or vpminu_0_0_0 or vpmin_0_0_0 or vpmi_0_0_0  
+i cannot  find opcode vpcmpeqb_0_0_0 or vpcmpeq_0_0_0 or vpcmpe_0_0_0 or vpcmp_0_0_0  
+i cannot  find opcode vpmovmskb_0_0_0 or vpmovmsk_0_0_0 or vpmovms_0_0_0 or vpmovm_0_0_0  
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+i cannot  find opcode vpxor_0_0_0 or vpxo_0_0_0 or vpx_0_0_0 or vp_0_0_0  
+i cannot  find opcode vpcmpeqby_0_0_0 or vpcmpeqb_0_0_0 or vpcmpeq_0_0_0 or vpcmpe_0_0_0  
+i cannot  find opcode vpminub_0_0_0 or vpminu_0_0_0 or vpmin_0_0_0 or vpmi_0_0_0  
+i cannot  find opcode vpcmpeqb_0_0_0 or vpcmpeq_0_0_0 or vpcmpe_0_0_0 or vpcmp_0_0_0  
+i cannot  find opcode vpmovmskb_0_0_0 or vpmovmsk_0_0_0 or vpmovms_0_0_0 or vpmovm_0_0_0  
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+i cannot  find opcode vpxor_0_0_0 or vpxo_0_0_0 or vpx_0_0_0 or vp_0_0_0  
+i cannot  find opcode vpcmpeqby_0_0_0 or vpcmpeqb_0_0_0 or vpcmpeq_0_0_0 or vpcmpe_0_0_0  
+i cannot  find opcode vpmovmskb_0_0_0 or vpmovmsk_0_0_0 or vpmovms_0_0_0 or vpmovm_0_0_0  
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+i cannot  find opcode vpxor_0_0_0 or vpxo_0_0_0 or vpx_0_0_0 or vp_0_0_0  
+i cannot  find opcode vpcmpeqby_0_0_0 or vpcmpeqb_0_0_0 or vpcmpeq_0_0_0 or vpcmpe_0_0_0  
+i cannot  find opcode vpmovmskb_0_0_0 or vpmovmsk_0_0_0 or vpmovms_0_0_0 or vpmovm_0_0_0  
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+could not find type of nop
+i cannot  find opcode data16_0_0_0 or data1_0_0_0 or data_0_0_0 or dat_0_0_0  
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+i cannot  find opcode vpxor_0_0_0 or vpxo_0_0_0 or vpx_0_0_0 or vp_0_0_0  
+i cannot  find opcode vpcmpeqby_0_0_0 or vpcmpeqb_0_0_0 or vpcmpeq_0_0_0 or vpcmpe_0_0_0  
+i cannot  find opcode vpmovmskb_0_0_0 or vpmovmsk_0_0_0 or vpmovms_0_0_0 or vpmovm_0_0_0  
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+i cannot  find opcode vpxor_0_0_0 or vpxo_0_0_0 or vpx_0_0_0 or vp_0_0_0  
+i cannot  find opcode vpcmpeqby_0_0_0 or vpcmpeqb_0_0_0 or vpcmpeq_0_0_0 or vpcmpe_0_0_0  
+i cannot  find opcode vpmovmskb_0_0_0 or vpmovmsk_0_0_0 or vpmovms_0_0_0 or vpmovm_0_0_0  
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+i cannot  find opcode vpxor_0_0_0 or vpxo_0_0_0 or vpx_0_0_0 or vp_0_0_0  
+i cannot  find opcode vpcmpeqby_0_0_0 or vpcmpeqb_0_0_0 or vpcmpeq_0_0_0 or vpcmpe_0_0_0  
+i cannot  find opcode vpmovmskb_0_0_0 or vpmovmsk_0_0_0 or vpmovms_0_0_0 or vpmovm_0_0_0  
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+i cannot  find opcode vpxor_0_0_0 or vpxo_0_0_0 or vpx_0_0_0 or vp_0_0_0  
+i cannot  find opcode vpcmpeqby_0_0_0 or vpcmpeqb_0_0_0 or vpcmpeq_0_0_0 or vpcmpe_0_0_0  
+i cannot  find opcode vpmovmskb_0_0_0 or vpmovmsk_0_0_0 or vpmovms_0_0_0 or vpmovm_0_0_0  
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+i cannot  find opcode vpxor_0_0_0 or vpxo_0_0_0 or vpx_0_0_0 or vp_0_0_0  
+i cannot  find opcode vpcmpeqby_0_0_0 or vpcmpeqb_0_0_0 or vpcmpeq_0_0_0 or vpcmpe_0_0_0  
+i cannot  find opcode vpmovmskb_0_0_0 or vpmovmsk_0_0_0 or vpmovms_0_0_0 or vpmovm_0_0_0  
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+i cannot  find opcode vpxor_0_0_0 or vpxo_0_0_0 or vpx_0_0_0 or vp_0_0_0  
+i cannot  find opcode vpcmpeqby_0_0_0 or vpcmpeqb_0_0_0 or vpcmpeq_0_0_0 or vpcmpe_0_0_0  
+i cannot  find opcode vpmovmskb_0_0_0 or vpmovmsk_0_0_0 or vpmovms_0_0_0 or vpmovm_0_0_0  
+i cannot  find opcode vpcmpeqby_0_0_0 or vpcmpeqb_0_0_0 or vpcmpeq_0_0_0 or vpcmpe_0_0_0  
+i cannot  find opcode vpmovmskb_0_0_0 or vpmovmsk_0_0_0 or vpmovms_0_0_0 or vpmovm_0_0_0  
+We had a Syscall 
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+i cannot  find opcode vpxor_0_0_0 or vpxo_0_0_0 or vpx_0_0_0 or vp_0_0_0  
+i cannot  find opcode vpcmpeqb_0_0_0 or vpcmpeq_0_0_0 or vpcmpe_0_0_0 or vpcmp_0_0_0  
+i cannot  find opcode vpcmpeqb_0_0_0 or vpcmpeq_0_0_0 or vpcmpe_0_0_0 or vpcmp_0_0_0  
+i cannot  find opcode vpmovmskb_0_0_0 or vpmovmsk_0_0_0 or vpmovms_0_0_0 or vpmovm_0_0_0  
+i cannot  find opcode vpmovmskb_0_0_0 or vpmovmsk_0_0_0 or vpmovms_0_0_0 or vpmovm_0_0_0  
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+i cannot  find opcode vpxor_0_0_0 or vpxo_0_0_0 or vpx_0_0_0 or vp_0_0_0  
+i cannot  find opcode vpcmpeqby_0_0_0 or vpcmpeqb_0_0_0 or vpcmpeq_0_0_0 or vpcmpe_0_0_0  
+i cannot  find opcode vpmovmskb_0_0_0 or vpmovmsk_0_0_0 or vpmovms_0_0_0 or vpmovm_0_0_0  
+We had a Syscall 
+We had a Syscall 
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+i cannot  find opcode vpxor_0_0_0 or vpxo_0_0_0 or vpx_0_0_0 or vp_0_0_0  
+i cannot  find opcode vpcmpeqb_0_0_0 or vpcmpeq_0_0_0 or vpcmpe_0_0_0 or vpcmp_0_0_0  
+i cannot  find opcode vpcmpeqb_0_0_0 or vpcmpeq_0_0_0 or vpcmpe_0_0_0 or vpcmp_0_0_0  
+i cannot  find opcode vpor_0_0_0 or vpo_0_0_0 or vp_0_0_0 or v_0_0_0  
+i cannot  find opcode vpmovmskb_0_0_0 or vpmovmsk_0_0_0 or vpmovms_0_0_0 or vpmovm_0_0_0  
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+i cannot  find opcode vpxor_0_0_0 or vpxo_0_0_0 or vpx_0_0_0 or vp_0_0_0  
+i cannot  find opcode vpcmpeqb_0_0_0 or vpcmpeq_0_0_0 or vpcmpe_0_0_0 or vpcmp_0_0_0  
+i cannot  find opcode vpcmpeqb_0_0_0 or vpcmpeq_0_0_0 or vpcmpe_0_0_0 or vpcmp_0_0_0  
+i cannot  find opcode vpor_0_0_0 or vpo_0_0_0 or vp_0_0_0 or v_0_0_0  
+i cannot  find opcode vpmovmskb_0_0_0 or vpmovmsk_0_0_0 or vpmovms_0_0_0 or vpmovm_0_0_0  
+could not find type of jmpq
+i cannot  find opcode bnd_0_0_0 or bn_0_0_0 or b_0_0_0 or _0_0_0  
+We had a Syscall 
+We had a Syscall 
