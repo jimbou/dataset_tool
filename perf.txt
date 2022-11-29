@@ -1,0 +1,2 @@
+perf record -e intel_pt//u ./a_static 
+perf script --insn-trace --xed > trace.txt
