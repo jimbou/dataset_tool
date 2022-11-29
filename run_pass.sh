@@ -1,6 +1,7 @@
 #!/bin/bash
 
-
+#this script passes the c source code through the pass produces exe  and 
+#the resulting exe is dissasemlied
 
 clang -S -emit-llvm $1.c
 llvm-as $1.ll
@@ -13,3 +14,7 @@ chmod +x $1
  echo "Creation of modified  executable successfull"
 
 objdump -d $1 > code_assembly_$1.txt
+
+rm -r $1 2> /dev/null
+mkdir $1
+cp code_assembly_$1.txt $1
