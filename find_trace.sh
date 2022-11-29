@@ -21,4 +21,4 @@ clang -o general_rapl general_rapl.c
 perf record -e intel_pt//u ./$1
 ./general_rapl >> rapl_last.txt #store finishing rapl value of the pass exe
 perf script --insn-trace --xed > trace.txt
-cp trace.txt $1
+cp trace.txt $1_folder

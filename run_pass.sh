@@ -18,6 +18,7 @@ chmod +x $1
 
 objdump -d $1 > code_assembly_$1.txt
 
-rm -r $1 2> /dev/null
-mkdir $1
-cp code_assembly_$1.txt $1
+rm -r $1_folder 2> /dev/null
+mkdir $1_folder
+cp code_assembly_$1.txt $1_folder
+mv -t $1_folder $1.ll $1.bc $1 $1_inst.bc $1_inst.o $1_unchanged $1-debug.ll $1.o  
