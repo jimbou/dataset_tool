@@ -1,6 +1,7 @@
 //Auto einai ena script to opoio trexoume pano sto trace tou kodika pou exei perasei idi apo to pass mas 
 //proto orisma to onoma tou arxeiou pou ektelestike kai kaname trace
 //deutero orisma to onoma tou arxeiou me ton assembly kodika tou arxeiou pou ektelestike
+//pempto onoma opou apothikeuontai ta command opcodes pou dn brethikan sto leksiko
 //teksto san ./cleaner a_static opcodes.txt >>output.txt 2>log.txt
 
 #define _GNU_SOURCE
@@ -95,10 +96,16 @@ struct Tuple give_opcode(char *argument, char *line )   //returns for an instruc
         
         opcode  =strtok(p2,Delimit); //pairnoume to onoma tis entolis dld to opcode 
         if (opcode != NULL) {   //pairnoume proto operator 
-            if((!strcmp(opcode,"long")) ||(!strcmp(opcode,"rep"))  || (!strcmp(opcode,"lock"))  )\
+            if((!strcmp(opcode,"long")) ||(!strcmp(opcode,"rep"))  || (!strcmp(opcode,"lock"))  )
                 {  //an to opcode einai ena apo auta tote to opcode periexei kai tin epomeni leksi
                 ptemp1 = strtok(NULL, Delimit);
                 strcat(opcode,ptemp1); //ara prosthetoume sto opcode kai tin deuteri leksi
+                }
+            
+            if((!strcmp(opcode,"bnd")) ||(!strcmp(opcode,"repne"))  )
+                {  //an to opcode einai ena apo auta tote to opcode periexei mono tin epomeni leksi
+                ptemp1 = strtok(NULL, Delimit);
+                strcpy(opcode,ptemp1); //ara prosthetoume sto opcode mono tin deuteri leksi
                 }             
             
             op1 = strtok(NULL, Delimit);  //protos operator
@@ -348,6 +355,10 @@ int main(int argc, char *argv[]) {
     size_t len2 = 0;
     ssize_t read2;
 
+    FILE * fp3;
+    char * line3 = NULL;
+    size_t len3 = 0;
+    ssize_t read3;
     
 
     
@@ -361,7 +372,7 @@ int main(int argc, char *argv[]) {
     if (argc<5)
         {    //if an argument is not provided then error message and fail 
         fprintf(stderr,"You have not given all the 3 arguments \n");
-        fprintf(stderr,"1) the name of the file where the addresses for rapl reads are stores \n 2) the name of executed file that has been traced command 3) the trace input file\n 4) opcode file txt\n");
+        fprintf(stderr,"1) the name of the file where the addresses for rapl reads are stores \n 2) the name of executed file that has been traced command 3) the trace input file\n 4) opcode file txt \n 5)the file where misiing opcodes will be stored");
         return 1;
         }
     fp2 = fopen(argv[2], "r"); //to deutero argument einai to onoma tou arxeiou me tis rapl addresses
@@ -425,6 +436,13 @@ int main(int argc, char *argv[]) {
         exit(EXIT_FAILURE);
     }
     
+
+    fp3 = fopen("missing_opcodes.txt", "w+");
+    if (fp3 == NULL)
+    {
+        fprintf(stderr,"Could not open file with opcodes \n");
+        exit(EXIT_FAILURE);
+    }
     while ((read1 = getline(&line1, &len1, fp1)) != -1)     
         {
         char *p =NULL ;
@@ -1030,8 +1048,13 @@ int main(int argc, char *argv[]) {
                                 //printf("VALUE IS XXXXXXXXXXXXXXXXXX=111 %s of %s \n", result111_cut3, value);
                             }
                             else{
-                                if (!strcmp(result.opcode,"syscall") ){fprintf(stderr,"We had a Syscall \n");} // see what to add for these
+                                if (!strcmp(result.opcode,"syscall") ){
+                                    fprintf(stderr,"We had a Syscall \n");
+                                    } // see what to add for these
                                 else{
+                                    rapl_total_weight+=5.0; //esto bazoume 5 san mystery value
+                                    printf(" =%f\n",  5.0);
+                                    fprintf(fp3,"%s\n",result000);
                                     fprintf(stderr,"i cannot  find opcode %s or %s or %s or %s  \n",result000 ,result000_cut, result000_cut2, result000_cut3);}
                             }
                         }
