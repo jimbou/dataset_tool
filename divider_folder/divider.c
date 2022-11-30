@@ -252,7 +252,6 @@ if (total_energy == NULL) {
 total_energy->val = 0;
 total_energy->next = NULL;
 
-
     while ((read4 = getline(&line4, &len4, fp4)) != -1) 
         {
         token = strtok(line4, s);
@@ -331,6 +330,7 @@ total_energy->next = NULL;
     char type_of_rapl_read= 'A'; 
     fp  = fopen(argv[1], "r");
     fprintf(fp1,"B@ %d\n",counter);
+    read = getline(&line, &len, fp); //gia na fugei i keni grammi pano pano 
      while ((read = getline(&line, &len, fp)) != -1)  
         {
             
@@ -353,6 +353,8 @@ total_energy->next = NULL;
             {
                 type_of_rapl_read = 'L';
             }
+
+
 
             if((strchr(line, '@') != NULL))
             {
@@ -378,7 +380,11 @@ total_energy->next = NULL;
             
 
             }
-            else
+            else if (strchr(line, '+') != NULL)
+            {
+                ;
+            }
+            else 
             {
                 //temp= strtok(line,"-");  //the command is splitted into the actual command
                 //command_weight =strtok(NULL,"\n"); //and its weight

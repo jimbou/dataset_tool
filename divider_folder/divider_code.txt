@@ -113,7 +113,6 @@ cmpq  $0x0, -0x8(%rdi) =0.500000
 jnz 0xfffffffffffffff7 =1.000000
 add $0x8, %rdi =0.250000
 A@ 1
-jnz 0xfffffffffffffff7 =1.000000
 add $0x8, %rdi =0.250000
 cmpq  $0x0, -0x8(%rdi) =0.500000
 jnz 0xfffffffffffffff7 =1.000000
@@ -151,7 +150,6 @@ add $0x8, %rdi =0.250000
 cmpq  $0x0, -0x8(%rdi) =0.500000
 jnz 0xfffffffffffffff7 =1.000000
 B@ 2
-jnz 0xfffffffffffffff7 =1.000000
 add $0x8, %rdi =0.250000
 cmpq  $0x0, -0x8(%rdi) =0.500000
 jnz 0xfffffffffffffff7 =1.000000
@@ -199,7 +197,6 @@ test %rax, %rax =0.250000
 jz 0x3ff =1.000000
 pushq  %r15 =1.000000
 C@ 3
-movq  0x6c6cb(%rip), %r10 =1.000000
 lea 0x449ec(%rip), %rdx =1.000000
 movq  0x6eded(%rip), %r15 =1.000000
 movq  0x6edae(%rip), %r13 =1.000000
@@ -26480,7 +26477,8 @@ xor %edi, %edi =0.250000
 callq  0x2676e =2.000000
 nop %edi, %edx =0.250000
 mov $0xc, %eax =0.250000
-syscall cmp $0xfffffffffffff000, %rax =0.250000
+syscall 
+cmp $0xfffffffffffff000, %rax =0.250000
 jnbe 0x17 =1.000000
 movq  %rax, 0x4b1ee(%rip) =1.000000
 cmp %rax, %rdi =0.250000
@@ -26502,7 +26500,8 @@ lea (%r12,%rbx,1), %rdi =1.000000
 callq  0x26744 =2.000000
 nop %edi, %edx =0.250000
 mov $0xc, %eax =0.250000
-syscall cmp $0xfffffffffffff000, %rax =0.250000
+syscall 
+cmp $0xfffffffffffff000, %rax =0.250000
 jnbe 0x17 =1.000000
 movq  %rax, 0x4b1ee(%rip) =1.000000
 cmp %rax, %rdi =0.250000
@@ -26563,7 +26562,8 @@ movq  %rax, 0x8(%rsi) =1.000000
 mov $0x9e, %eax =0.250000
 movq  %rsi, (%rsi) =1.000000
 movq  %rsi, 0x10(%rsi) =1.000000
-syscall test %eax, %eax =0.250000
+syscall 
+test %eax, %eax =0.250000
 jz 0x17 =1.000000
 lea 0xbf629(%rip), %rax =1.000000
 movqq  0x8(%rsp), %xmm0 =1.000000
@@ -26610,7 +26610,8 @@ lea 0x40(%rsp), %rdi =1.000000
 callq  0x2119c =2.000000
 nop %edi, %edx =0.250000
 mov $0x3f, %eax =0.250000
-syscall cmp $0xfffffffffffff001, %rax =0.250000
+syscall 
+cmp $0xfffffffffffff001, %rax =0.250000
 jnb 0x3 =1.000000
 retq   =1.000000
 lea 0xc2(%rsp), %rdi =1.000000
@@ -26743,7 +26744,8 @@ lea 0x2957d(%rip), %rdi =1.000000
 mov $0x59, %eax =0.250000
 mov %rsp, %rbp =0.250000
 mov %rbp, %rsi =0.250000
-syscall cmp $0xfffff000, %eax =0.250000
+syscall 
+cmp $0xfffff000, %eax =0.250000
 jnbe 0x60 =1.000000
 test %eax, %eax =0.250000
 jle 0x5c =1.000000
@@ -28137,7 +28139,8 @@ lea (%r12,%rbx,1), %rdi =1.000000
 callq  0x26744 =2.000000
 nop %edi, %edx =0.250000
 mov $0xc, %eax =0.250000
-syscall cmp $0xfffffffffffff000, %rax =0.250000
+syscall 
+cmp $0xfffffffffffff000, %rax =0.250000
 jnbe 0x17 =1.000000
 movq  %rax, 0x4b1ee(%rip) =1.000000
 cmp %rax, %rdi =0.250000
@@ -28224,7 +28227,8 @@ lea (%r12,%rbx,1), %rdi =1.000000
 callq  0x26744 =2.000000
 nop %edi, %edx =0.250000
 mov $0xc, %eax =0.250000
-syscall cmp $0xfffffffffffff000, %rax =0.250000
+syscall 
+cmp $0xfffffffffffff000, %rax =0.250000
 jnbe 0x17 =1.000000
 movq  %rax, 0x4b1ee(%rip) =1.000000
 cmp %rax, %rdi =0.250000
@@ -36734,7 +36738,8 @@ mov %rax, %rsi =0.250000
 callq  0xfffffffffffd370d =2.000000
 nop %edi, %edx =0.250000
 mov $0xa, %eax =0.250000
-syscall cmp $0xfffffffffffff001, %rax =0.250000
+syscall 
+cmp $0xfffffffffffff001, %rax =0.250000
 jnb 0x3 =1.000000
 retq   =1.000000
 test %eax, %eax =0.250000
@@ -38944,7 +38949,8 @@ mov %rdx, %rsi =0.250000
 cmp $0x1, %r8d =0.250000
 jnbe 0x30 =1.000000
 mov $0x5, %eax =0.250000
-syscall cmp $0xfffffffffffff000, %rax =0.250000
+syscall 
+cmp $0xfffffffffffff000, %rax =0.250000
 jnbe 0x9 =1.000000
 retq   =1.000000
 test %eax, %eax =0.250000
@@ -39876,7 +39882,8 @@ movl  %fs:0x18, %eax =0.500000
 test %eax, %eax =0.250000
 jnz 0x12 =1.000000
 mov $0x1, %eax =0.250000
-syscall cmp $0xfffffffffffff000, %rax =0.250000
+syscall 
+cmp $0xfffffffffffff000, %rax =0.250000
 jnbe 0x53 =1.000000
 retq   =1.000000
 test %rax, %rax =0.250000
@@ -40927,7 +40934,8 @@ movl  %fs:0x18, %eax =0.500000
 test %eax, %eax =0.250000
 jnz 0x12 =1.000000
 mov $0x1, %eax =0.250000
-syscall cmp $0xfffffffffffff000, %rax =0.250000
+syscall 
+cmp $0xfffffffffffff000, %rax =0.250000
 jnbe 0x53 =1.000000
 retq   =1.000000
 test %rax, %rax =0.250000
