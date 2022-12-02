@@ -4,13 +4,13 @@
 #include <string.h>
 
 
-void raplA(char *path) {
+int main() {
     char *line = NULL;
     size_t len = 0;
     ssize_t read;
     unsigned long long int data;
 
-    FILE *fd = fopen(path, "r");
+    FILE *fd = fopen("/sys/class/powercap/intel-rapl/intel-rapl:0/intel-rapl:0:0/energy_uj", "r");
     //FILE *fd1 = fopen("rapl_rest.txt", "w");
 
     if (fd == NULL)
@@ -34,8 +34,8 @@ void raplA(char *path) {
       free(line);
 
     fclose(fd);
-    printf("%llu", data);
+    printf("%llu\n", data);
     //fclose(fd1);
 
-    return;  
+    return 0;  
 }

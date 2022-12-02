@@ -4,6 +4,7 @@
 # to a  folder called with the name of the exe
 
 clang -o general_rapl general_rapl.c
+
 rm rapl_original.txt 2> /dev/null
 touch rapl_original.txt
 
@@ -26,5 +27,3 @@ perf record -e intel_pt//u ./$1_folder/$1
 ./general_rapl >> rapl_last.txt #store finishing rapl value of the pass exe
 perf script --insn-trace --xed > trace.txt
 
-
-cp trace.txt $1_folder

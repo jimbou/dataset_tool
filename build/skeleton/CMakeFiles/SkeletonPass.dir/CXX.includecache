@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/bbrapl/runner/skeleton/Skeleton.cpp
+llvm/Pass.h
+/home/bbrapl/runner/skeleton/llvm/Pass.h
+llvm/IR/Module.h
+/home/bbrapl/runner/skeleton/llvm/IR/Module.h
+llvm/IR/Function.h
+/home/bbrapl/runner/skeleton/llvm/IR/Function.h
+llvm/Support/raw_ostream.h
+/home/bbrapl/runner/skeleton/llvm/Support/raw_ostream.h
+llvm/IR/Type.h
+/home/bbrapl/runner/skeleton/llvm/IR/Type.h
+llvm/IR/Instructions.h
+/home/bbrapl/runner/skeleton/llvm/IR/Instructions.h
+llvm/IR/Instruction.h
+/home/bbrapl/runner/skeleton/llvm/IR/Instruction.h
+llvm/IR/LLVMContext.h
+/home/bbrapl/runner/skeleton/llvm/IR/LLVMContext.h
+llvm/Support/raw_ostream.h
+/home/bbrapl/runner/skeleton/llvm/Support/raw_ostream.h
+llvm/IR/IRBuilder.h
+/home/bbrapl/runner/skeleton/llvm/IR/IRBuilder.h
+vector
+-
+
