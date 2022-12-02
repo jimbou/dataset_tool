@@ -553,12 +553,14 @@ int main(int argc, char *argv[]) {
                 {
                 count_ignore = true_length1; //poses entoles prepei na kanoume ignore
                 printf("+\nA___________ @%f", rapl_total_weight); //rapl read 1
+                printf("\n%s",temp_total);//ektiponoume tin proti entoli tou neu basic object
                 rapl_total_weight=0;
                 }
             //else if ((!strcmp(temp_first, addr2))|| (!strcmp(temp_second, addr2)) || (!strcmp(temp_third, addr2)) )
             else if (!strcmp(command_ad, addr2)) 
                 {
                 printf("+\nB__________ @%f", rapl_total_weight); //rapl read 2
+                printf("\n%s",temp_total);//ektiponoume tin proti entoli tou neu basic object
                 count_ignore = true_length2; //poses entoles prepei na kanoume ignore
                 rapl_total_weight=0;
                 }
@@ -566,6 +568,7 @@ int main(int argc, char *argv[]) {
             else if (!strcmp(command_ad, addr3)) 
                 {
                 printf("+\nC__________ @%f", rapl_total_weight); //rapl read 3
+                printf("\n%s",temp_total);//ektiponoume tin proti entoli tou neu basic object
                 count_ignore = true_length3; //poses entoles prepei na kanoume ignore
                 rapl_total_weight=0;
                 }

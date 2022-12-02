@@ -113,6 +113,7 @@ cmpq  $0x0, -0x8(%rdi) =0.500000
 jnz 0xfffffffffffffff7 =1.000000
 add $0x8, %rdi =0.250000
 A@ 1
+cmpq  $0x0, -0x8(%rdi)
 add $0x8, %rdi =0.250000
 cmpq  $0x0, -0x8(%rdi) =0.500000
 jnz 0xfffffffffffffff7 =1.000000
@@ -150,6 +151,7 @@ add $0x8, %rdi =0.250000
 cmpq  $0x0, -0x8(%rdi) =0.500000
 jnz 0xfffffffffffffff7 =1.000000
 B@ 2
+add $0x8, %rdi
 add $0x8, %rdi =0.250000
 cmpq  $0x0, -0x8(%rdi) =0.500000
 jnz 0xfffffffffffffff7 =1.000000
@@ -197,6 +199,7 @@ test %rax, %rax =0.250000
 jz 0x3ff =1.000000
 pushq  %r15 =1.000000
 C@ 3
+movq  0x6e2d0(%rip), %rsi
 lea 0x449ec(%rip), %rdx =1.000000
 movq  0x6eded(%rip), %r15 =1.000000
 movq  0x6edae(%rip), %r13 =1.000000

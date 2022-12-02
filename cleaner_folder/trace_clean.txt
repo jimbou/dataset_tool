@@ -114,6 +114,7 @@ jnz 0xfffffffffffffff7 =1.000000
 add $0x8, %rdi =0.250000
 callq  401200         =2.000000+
 A___________ @70.000000
+cmpq  $0x0, -0x8(%rdi)
 add $0x8, %rdi =0.250000
 cmpq  $0x0, -0x8(%rdi) =0.500000
 jnz 0xfffffffffffffff7 =1.000000
@@ -152,6 +153,7 @@ cmpq  $0x0, -0x8(%rdi) =0.500000
 jnz 0xfffffffffffffff7 =1.000000
 callq  401240         =2.000000+
 B__________ @23.000000
+add $0x8, %rdi
 add $0x8, %rdi =0.250000
 cmpq  $0x0, -0x8(%rdi) =0.500000
 jnz 0xfffffffffffffff7 =1.000000
@@ -200,6 +202,7 @@ jz 0x3ff =1.000000
 pushq  %r15 =1.000000
 callq 401260         =2.000000+
 C__________ @31.250000
+movq  0x6e2d0(%rip), %rsi
 lea 0x449ec(%rip), %rdx =1.000000
 movq  0x6eded(%rip), %r15 =1.000000
 movq  0x6edae(%rip), %r13 =1.000000
