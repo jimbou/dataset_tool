@@ -42,6 +42,7 @@ with open("values_file.txt", 'a') as f5:
         end_list.append(end)
         end_un_list.append(end_un)
 
+        
 
         num =len(lines_rest)
 
