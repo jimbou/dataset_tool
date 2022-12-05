@@ -63,7 +63,7 @@ struct SkeletonPass : public ModulePass{
         for(Module::iterator F = M.begin(), E = M.end(); F!= E; ++F)
         {
             //if((F->getName() == "print_1") || (F->getName() == "print_2") || (F->getName() == "print_3")) { // if this is one of the rapl read functions dont modify it
-            if((F->getName() == "rapl_A") || (F->getName() == "rapl_B") || (F->getName() == "rapl_C")) { // if this is one of the rapl read functions dont modify it
+            if((F->getName() == "rapl_A") || (F->getName() == "rapl_B") || (F->getName() == "rapl_D") || (F->getName() == "rapl_C")) { // if this is one of the rapl read functions dont modify it
 
 
                 continue;

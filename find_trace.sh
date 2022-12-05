@@ -14,12 +14,18 @@ touch rapl_last.txt
 rm first_last_rapl.txt 2> /dev/null
 touch first_last_rapl.txt
 
+rm rapl_rest.txt 2> /dev/null
+touch rapl_rest.txt
+
+rm rapl_beg_end.txt 2> /dev/null
+touch rapl_beg_end.txt
+
 rm $1_folder/trace.txt 2> /dev/null
 rm trace.txt 2> /dev/null
 touch trace.txt
 
 ./general_rapl >> first_last_rapl.txt #store starting rapl value  of original exe without rapl reads
-./$1_folder/$1_unchanged  
+./$1_folder/$1_unchanged   
 ./general_rapl >> first_last_rapl.txt #store finishing rapl value  of original exe without rapl reads
 
 ./general_rapl >> rapl_original.txt #store starting rapl value of the pass exe

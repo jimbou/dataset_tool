@@ -50,11 +50,51 @@ void hello() {
     return ;  
 }
 */
+void do_nothing(){
+  return;
+}
+void rapl_D() {
+	char *line = NULL;
+    size_t len = 0;
+    ssize_t read;
+    unsigned long long int data;
+
+    FILE *fd = fopen("/sys/class/powercap/intel-rapl/intel-rapl:0/intel-rapl:0:0/energy_uj", "r");
+    FILE *fd1 = fopen("rapl_beg_end.txt", "a");
+
+    if (fd == NULL)
+      exit(EXIT_FAILURE);
+
+    if (fd1 == NULL)
+      exit(EXIT_FAILURE);
+
+    while ((read = getline(&line, &len, fd)) != -1) {
+      //Do nothing.
+    }
+    data= strtoull(line, NULL, 10);
+    //printf("old %llu", old);
+    //while (data == old ){
+      //data = strtoull(line, NULL, 10);
+    //}
+
+
+
+    if (line)
+      free(line);
+
+    fclose(fd);
+    fprintf(fd1,"%llu\n", data);
+    fclose(fd1);
+
+    return;
+}
+
 int main() {
+    do_nothing();
     int a;
     a=9;
     //scanf("%d", &a);
-    for (int j=1; j<100;j++){
+    for (int j=1; j<10;j++){
     if (a>4){
     hello();   
     }
@@ -65,9 +105,9 @@ int main() {
     a = a % 5;
     a =a+3;
     }
+    do_nothing();
     return 0;
 }
-
 
 void rapl_A() {
 	char *line = NULL;
@@ -104,6 +144,7 @@ void rapl_A() {
 
     return;
 }
+
 
 void rapl_B() {
 	char *line = NULL;

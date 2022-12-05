@@ -7,7 +7,12 @@ clang -S -emit-llvm $1.c
 llvm-as $1.ll
 
 llc -filetype=obj $1.bc
-clang  -o $1_unchanged $1.o  -O0 -static 
+
+clang -S -emit-llvm $1_unchanged.c
+llvm-as $1_unchanged.ll
+
+llc -filetype=obj $1_unchanged.bc
+clang  -o $1_unchanged $1_unchanged.o  -O0 -static 
 
 opt -load build/skeleton/libSkeletonPass.* -skeleton < $1.bc > $1_inst.bc   2> code_ll_$1.txt # to enable new pm mono locally oxi ston server
 llc -filetype=obj  $1_inst.bc 

@@ -18,6 +18,16 @@ do
 
     rm $1_folder/trace_$i.txt 2> /dev/null
     rm trace_$i.txt 2> /dev/null
+
+    rm rapl_rest.txt 2> /dev/null
+    touch rapl_rest.txt
+
+    rm rapl_beg_end.txt 2> /dev/null
+    touch rapl_beg_end.txt
+
+   
+
+
     
 
     ./general_rapl >> first_last_rapl_$i.txt #store starting rapl value  of original exe without rapl reads
@@ -31,6 +41,7 @@ do
     mv perf.data perf_$i.data
 
     mv rapl_rest.txt rapl_rest_$i.txt
+    mv rapl_beg_end.txt rapl_beg_end_$i.txt
 done
 #perf script --insn-trace --xed > trace.txt
 

@@ -23,11 +23,14 @@ lines_unchanged = file_read_unchanged.readlines()
 
 original_value = float(lines_original[0][:-1])
 last_value = float(lines_last[0][:-1])
+rest_1= float(lines_rest[0][:-1])
+rest_2= float(lines_rest[-1][:-1])
 
 #for line in lines_last :
     #last_value = float(line[-1])
 
 num =len(lines_rest)
+diif_rest = (rest_2-rest_1)/(num-1)
 
 
 unchanged_first = float(lines_unchanged[0][:-1]) 

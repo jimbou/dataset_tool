@@ -2,29 +2,64 @@ import sys
 import statistics
 #pyhton script to give addresses of rapl functions
 energy =[]
+new_energy=[]
+new_unchanged_energy=[]
+energy_rest =[]
+energy_last=[]
 unchanged_energy =[]
+beg_list =[]
+end_list=[]
+beg_un_list =[]
+end_un_list=[]
 with open("values_file.txt", 'a') as f5:
     for i in range (1,12):
-
-        file_read_original = open("rapl_original_"+str(i)+".txt", "r")
+        file_write_original = open("best_rapl_original.txt", "w")
+        file_write_last = open("best_rapl_last.txt", "w")
+        file_write_first_last =open("best_first_last_rapl.txt", "w")
+        #file_read_original = open("rapl_original_"+str(i)+".txt", "r")
         file_read_rest = open("rapl_rest_"+str(i)+".txt", "r")
-        file_read_last = open("rapl_last_"+str(i)+".txt", "r")
-        file_read_unchanged = open("first_last_rapl_"+str(i)+".txt", "r")
+        #file_read_last = open("rapl_last_"+str(i)+".txt", "r")
+        #file_read_unchanged = open("first_last_rapl_"+str(i)+".txt", "r")
+        file_read_beg_end = open("rapl_beg_end_"+str(i)+".txt", "r")
 
-        lines_original = file_read_original.readlines()
+        #lines_original = file_read_original.readlines()
         lines_rest = file_read_rest.readlines()
-        lines_last = file_read_last.readlines()
-        lines_unchanged = file_read_unchanged.readlines()
+        #lines_last = file_read_last.readlines()
+        #lines_unchanged = file_read_unchanged.readlines()
+        lines_beg_end = file_read_beg_end.readlines()
 
-        original_value = float(lines_original[0][:-1])
-        last_value = float(lines_last[0][:-1])
+        #original_value = float(lines_original[0][:-1])
+        #last_value = float(lines_last[0][:-1])
+        #rest_1= float(lines_rest[0][:-1])
+        #rest_2= float(lines_rest[-1][:-1]) 
+        beg_un= float(lines_beg_end[0][:-1])
+        end_un= float(lines_beg_end[1][:-1]) 
+        beg=  float(lines_rest[0][:-1])
+        end= float(lines_rest[-1][:-1]) 
+
+        beg_list.append(beg)
+        beg_un_list.append(beg_un)
+        end_list.append(end)
+        end_un_list.append(end_un)
 
 
         num =len(lines_rest)
 
+        diff_beg_end = end -beg
+        diff_beg_end_un  = end_un - beg_un
 
-        unchanged_first = float(lines_unchanged[0][:-1]) 
-        unchanged_last = float(lines_unchanged[1][:-1]) 
+        diff_total = diff_beg_end- diff_beg_end_un
+        new_rapl_cost = diff_total/(num-1)
+
+
+        #diff_rest = (rest_2-rest_1)/(num-1) 
+        #diff_last =last_value-rest_2
+         
+       
+
+
+        #unchanged_first = float(lines_unchanged[0][:-1]) 
+        #unchanged_last = float(lines_unchanged[1][:-1]) 
 
         #print("original value is ", original_value)
         #print("last value is ", last_value)
@@ -32,29 +67,54 @@ with open("values_file.txt", 'a') as f5:
 
         #print("unchanged_first value is ", unchanged_first)
         #print("unchanged_last value is ", unchanged_last)
-        energy_passed = last_value-original_value
-        energy_unchanged=unchanged_last-unchanged_first
+        #energy_passed = last_value-original_value
+        #energy_unchanged=unchanged_last-unchanged_first
+        #energy_interm =  rest_2 - original_value
     
-        energy_diff =energy_passed-energy_unchanged
-        rapl_cost = energy_diff/(num+1)
+        #energy_diff =energy_passed-energy_unchanged
+        #rapl_cost = energy_diff/(num+1)
+        f5.write("Current " +str(i)+ " : "+str(new_rapl_cost)+"\n")
+        #f5.write("TOTAL : "+str(rapl_cost)+"\n")
+        #f5.write("REST : "+str(diff_rest)+"\n")
+        #f5.write("LAST : "+str(diff_last)+"\n")
+
         
-        f5.write(str(rapl_cost)+"\n")
-        
+        new_energy.append(diff_beg_end)
+        new_unchanged_energy.append(diff_beg_end_un)
+        #energy.append(energy_passed)
+        #energy_rest.append(diff_rest)
+        #energy_last.append(diff_last)
+
+        #unchanged_energy.append(energy_unchanged)
+    med_beg_end =  statistics.median(new_energy)
+    med_beg_end_un =  statistics.median(new_unchanged_energy)
     
-        energy.append(energy_passed)
-        unchanged_energy.append(energy_unchanged)
+    #med_last = statistics.median(energy_last)
+    #med_rest = statistics.median(energy_rest)
+    #med_energy =statistics.median(energy)
+    #med_unchanged_energy = statistics.median(unchanged_energy)
+    #energy_diff = med_energy-med_unchanged_energy
+    new_energy_diff = med_beg_end- med_beg_end_un
+    new_rapl_cost_1 = new_energy_diff/(num+1)
+    #rapl_cost = energy_diff/(num+1)
+    f5.write("total "+str(i)+ " : "+str(new_rapl_cost_1)+"\n")
+    #f5.write("Total Final :" + str(rapl_cost)+"\n")
+    #f5.write("REST Final : "+str(med_rest)+"\n")
+    #f5.write("Last Final : "+str(med_last)+"\n")
+    index=new_energy.index(med_beg_end)
+    index_un = new_unchanged_energy.index(med_beg_end_un)
 
+    best_beg = beg_list[index]
+    best_beg_un = beg_un_list[index_un]
+    best_end = end_list[index]
+    best_end_un = end_un_list[index_un]
 
+    file_write_original.write(str(best_beg)+"\n")
+    file_write_last.write(str(best_end)+"\n")
+    file_write_first_last.write(str(best_beg_un)+"\n"+str(best_end_un)+"\n")
 
-    med_energy =statistics.median(energy)
-    med_unchanged_energy = statistics.median(unchanged_energy)
-    energy_diff = med_energy-med_unchanged_energy
-    rapl_cost = energy_diff/(num+1)
-    f5.write("Final :" + str(rapl_cost)+"\n")
-
-
-    print("ENERGY=\""+ str(energy.index(med_energy)+1)+"\"")
-    print("ENERGY_UNCHANGED=\""+ str(unchanged_energy.index(med_unchanged_energy)+1)+"\"")
+    print("ENERGY=\""+ str(index+1)+"\"")
+    print("ENERGY_UNCHANGED=\""+ str(index_un+1)+"\"")
 
 
 
