@@ -30,13 +30,13 @@ do
 
     
 
-    ./general_rapl >> first_last_rapl_$i.txt #store starting rapl value  of original exe without rapl reads
+    #./general_rapl >> first_last_rapl_$i.txt #store starting rapl value  of original exe without rapl reads
     ./$1_folder/$1_unchanged  
-    ./general_rapl >> first_last_rapl_$i.txt #store finishing rapl value  of original exe without rapl reads
+    #./general_rapl >> first_last_rapl_$i.txt #store finishing rapl value  of original exe without rapl reads
 
-    ./general_rapl >> rapl_original_$i.txt #store starting rapl value of the pass exe
+    #./general_rapl >> rapl_original_$i.txt #store starting rapl value of the pass exe
     perf record -e intel_pt//u ./$1_folder/$1
-    ./general_rapl >> rapl_last_$i.txt #store finishing rapl value of the pass exe
+    #./general_rapl >> rapl_last_$i.txt #store finishing rapl value of the pass exe
 
     mv perf.data perf_$i.data
 
