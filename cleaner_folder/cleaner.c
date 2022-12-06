@@ -369,16 +369,17 @@ int main(int argc, char *argv[]) {
 
     
     char addr1[20] ="00000"; //address of first rapl function
-    char length1[20] ="0";  //length of first rapl function
+    char addr1_fin[20] ="0";  //length of first rapl function
     char addr2[20] ="00000";
-    char length2[20] ="0";
+    char addr2_fin[20] ="0";
     char addr3[20] ="00000";
-    char length3[20] ="0";
+    char addr3_fin[20] ="0";
 
     if (argc<5)
         {    //if an argument is not provided then error message and fail 
-        fprintf(stderr,"You have not given all the 3 arguments \n");
-        fprintf(stderr,"1) the name of the file where the addresses for rapl reads are stores \n 2) the name of executed file that has been traced command 3) the trace input file\n 4) opcode file txt \n 5)the file where misiing opcodes will be stored");
+         fprintf(stderr,"this is first %s \n", argv[1]);
+        fprintf(stderr,"You have not given all the 5 arguments \n");
+        fprintf(stderr,"1) the name of the file where the addresses for rapl reads are stores \n 2) the name of executed file that has been traced command \n 3) the trace input file\n 4) opcode file txt \n 5)the file where misiing opcodes will be stored");
         return 1;
         }
     fp2 = fopen(argv[2], "r"); //to deutero argument einai to onoma tou arxeiou me tis rapl addresses
@@ -396,7 +397,7 @@ int main(int argc, char *argv[]) {
             tempor1 = strtok(NULL, " ");
             strcpy(addr1, tempor1);
             tempor1 = strtok(NULL, "\n");
-            strcpy(length1, tempor1);
+            strcpy(addr1_fin, tempor1);
             }
         else if (strchr(line2, 'B') != NULL) //B einai to deutero rapl read
             { 
@@ -404,7 +405,7 @@ int main(int argc, char *argv[]) {
             tempor2 = strtok(NULL, " ");
             strcpy(addr2, tempor2);
             tempor2 = strtok(NULL, "\n");
-            strcpy(length2, tempor2);
+            strcpy(addr2_fin, tempor2);
             }
         else if (strchr(line2, 'C') != NULL) //C einai to trito rapl read
             { 
@@ -412,16 +413,14 @@ int main(int argc, char *argv[]) {
             tempor3 = strtok(NULL, " ");
             strcpy(addr3, tempor3);
             tempor3 = strtok(NULL, "\n");
-            strcpy(length3, tempor3);
+            strcpy(addr3_fin, tempor3);
             }
         }
-    int true_length1 =atoi(length1) ;
-    int true_length2 =atoi(length2) ;
-    int true_length3 =atoi(length3) ;
+    
 
-    fprintf(stderr,"Rapl1 is  %s with length %s  \n",  addr1 , length1  );
-    fprintf(stderr,"Rapl2 is  %s with length %s  \n",  addr2 , length2  );
-    fprintf(stderr,"Rapl3 is  %s with length %s  \n",  addr3 , length3  );
+    fprintf(stderr,"Rapl1 is  %s with last addr %s  \n",  addr1 , addr1_fin  );
+    fprintf(stderr,"Rapl2 is  %s with last addr %s  \n",  addr2 , addr2_fin );
+    fprintf(stderr,"Rapl3 is  %s with last addr %s  \n",  addr3 , addr3_fin  );
       
     
     fclose(fp2);
@@ -507,13 +506,25 @@ int main(int argc, char *argv[]) {
         }
 
     float rapl_total_weight =0; //total weight of BB so far
-    int count_ignore =0 ; // how many instructions we should ignore after rapl read
+    bool ignore =false ; // how many instructions we should ignore after rapl read
+    float temp_value =0;
 
     while ((read = getline(&line, &len, fp)) != -1) 
         {
-        if ( count_ignore >0) //ama auti einai entoli pou prepei na agnoisoume epeidi einai mesa se rapl read function
+        if ( ignore ) //ama auti einai entoli pou prepei na agnoisoume epeidi einai mesa se rapl read function
             {
-            count_ignore = count_ignore-1;            
+            char *ignore_address = NULL;
+            char ignore_address_helper[200] = "";
+            strcpy(ignore_address_helper,line);
+            ignore_address= strtok(ignore_address_helper, ":"); //split it there
+            ignore_address= strtok(NULL, " ");
+            //printf("Ignore addres is +%s+ vs +%s+\n", ignore_address ,addr1_fin );
+            if ((!strcmp(ignore_address, addr1_fin)) || (!strcmp(ignore_address, addr2_fin)) || (!strcmp(ignore_address, addr3_fin)))
+                {
+                    //printf("###############\n");
+                    ignore =false;
+                }
+                      
             }
         else{   //kanoniki entoli pou prepei na metrisoume
             struct Tuple result ;
@@ -551,25 +562,25 @@ int main(int argc, char *argv[]) {
             //if ((!strcmp(temp_first, addr1))|| (!strcmp(temp_second, addr1)) || (!strcmp(temp_third, addr1)) ) //if it contains the addr for rapl1 call then this is rapl instruction
             if (!strcmp(command_ad, addr1)) 
                 {
-                count_ignore = true_length1; //poses entoles prepei na kanoume ignore
-                printf("+\nA___________ @%f", rapl_total_weight); //rapl read 1
-                printf("\n%s",temp_total);//ektiponoume tin proti entoli tou neu basic object
+                ignore = true; //poses entoles prepei na kanoume ignore
+                printf("+\nA___________ @%f", rapl_total_weight-temp_value); //rapl read 1
+                //printf("\n%s",temp_total);//ektiponoume tin proti entoli tou neu basic object
                 rapl_total_weight=0;
                 }
             //else if ((!strcmp(temp_first, addr2))|| (!strcmp(temp_second, addr2)) || (!strcmp(temp_third, addr2)) )
             else if (!strcmp(command_ad, addr2)) 
                 {
-                printf("+\nB__________ @%f", rapl_total_weight); //rapl read 2
-                printf("\n%s",temp_total);//ektiponoume tin proti entoli tou neu basic object
-                count_ignore = true_length2; //poses entoles prepei na kanoume ignore
+                printf("+\nB__________ @%f", rapl_total_weight-temp_value); //rapl read 2
+                //printf("\n%s",temp_total);//ektiponoume tin proti entoli tou neu basic object
+                ignore = true;
                 rapl_total_weight=0;
                 }
             //else if ((!strcmp(temp_first, addr3))|| (!strcmp(temp_second, addr3)) || (!strcmp(temp_third, addr3)) )
             else if (!strcmp(command_ad, addr3)) 
                 {
-                printf("+\nC__________ @%f", rapl_total_weight); //rapl read 3
-                printf("\n%s",temp_total);//ektiponoume tin proti entoli tou neu basic object
-                count_ignore = true_length3; //poses entoles prepei na kanoume ignore
+                printf("+\nC__________ @%f", rapl_total_weight-temp_value); //rapl read 3
+                //printf("\n%s",temp_total);//ektiponoume tin proti entoli tou neu basic object
+                ignore = true;
                 rapl_total_weight=0;
                 }
             else{ //periptosi kanonikis entolis oxi rapl read
@@ -838,7 +849,8 @@ int main(int argc, char *argv[]) {
 
                 if ((char *)getItem(*dict, result000) != NULL ) {
                     value =(char *)getItem(*dict, result000) ;
-                    rapl_total_weight+=atof(value);
+                    temp_value = atof(value);
+                    rapl_total_weight+=temp_value;
                     printf(" =%f",  atof(value));
                     //printf("total is %f\n",rapl_total_weight);
                     //printf("VALUE IS XXXXXXXXXXXXXXXXXX=000 %s of %s \n", result000, value);
@@ -846,49 +858,56 @@ int main(int argc, char *argv[]) {
                 
                 else if ((char *)getItem(*dict, result001) != NULL ) {
                     value =(char *)getItem(*dict, result001) ;
-                    rapl_total_weight+=atof(value);
+                    temp_value = atof(value);
+                    rapl_total_weight+=temp_value;
                     printf(" =%f",  atof(value));
                     //printf("total is %f\n",rapl_total_weight);
                     //printf("VALUE IS XXXXXXXXXXXXXXXXXX=001 %s of %s \n", result001, value);
                 }
                 else if ((char *)getItem(*dict, result010) != NULL ) {
                     value =(char *)getItem(*dict, result010) ;
-                    rapl_total_weight+=atof(value);
+                    temp_value = atof(value);
+                    rapl_total_weight+=temp_value;
                     printf(" =%f",  atof(value));
                     //printf("total is %f\n",rapl_total_weight);
                     //printf("VALUE IS XXXXXXXXXXXXXXXXXX=010 %s of %s \n", result010, value);
                 }
                 else if ((char *)getItem(*dict, result011) != NULL ) {
                     value =(char *)getItem(*dict, result011) ;
-                    rapl_total_weight+=atof(value);
+                    temp_value = atof(value);
+                    rapl_total_weight+=temp_value;
                     printf(" =%f",  atof(value));
                     //printf("total is %f\n",rapl_total_weight);
                     //printf("VALUE IS XXXXXXXXXXXXXXXXXX=011 %s of %s \n", result011, value);
                 }
                 else if ((char *)getItem(*dict, result100) != NULL ) {
                     value =(char *)getItem(*dict, result100) ;
-                    rapl_total_weight+=atof(value);
+                    temp_value = atof(value);
+                    rapl_total_weight+=temp_value;
                     printf(" =%f",  atof(value));
                     //printf("total is %f\n",rapl_total_weight);
                     //printf("VALUE IS XXXXXXXXXXXXXXXXXX=100 %s of %s \n", result100, value);
                 }
                 else if ((char *)getItem(*dict, result101) != NULL ) {
                     value =(char *)getItem(*dict, result101) ;
-                    rapl_total_weight+=atof(value);
+                    temp_value = atof(value);
+                    rapl_total_weight+=temp_value;
                     printf(" =%f",  atof(value));
                     //printf("total is %f\n",rapl_total_weight);
                     //printf("VALUE IS XXXXXXXXXXXXXXXXXX=101 %s of %s \n", result101, value);
                 }
                 else if ((char *)getItem(*dict, result110) != NULL ) {
                     value =(char *)getItem(*dict, result110) ;
-                    rapl_total_weight+=atof(value);
+                    temp_value = atof(value);
+                    rapl_total_weight+=temp_value;
                     printf(" =%f",  atof(value));
                     //printf("total is %f\n",rapl_total_weight);
                     //printf("VALUE IS XXXXXXXXXXXXXXXXXX=110 %s of %s \n", result110, value);
                 }
                 else if ((char *)getItem(*dict, result111) != NULL ) {
                     value =(char *)getItem(*dict, result111) ;
-                    rapl_total_weight+=atof(value);
+                    temp_value = atof(value);
+                    rapl_total_weight+=temp_value;
                     printf(" =%f",  atof(value));
                     //printf("total is %f\n",rapl_total_weight);
                     //printf("VALUE IS XXXXXXXXXXXXXXXXXX=111 %s of %s \n", result111, value);
@@ -896,7 +915,8 @@ int main(int argc, char *argv[]) {
                 else{
                     if ((char *)getItem(*dict, result000_cut) != NULL ) {
                         value =(char *)getItem(*dict, result000_cut) ;
-                        rapl_total_weight+=atof(value);
+                        temp_value = atof(value);
+                        rapl_total_weight+=temp_value;
                         printf(" =%f",  atof(value));
                     //printf("total is %f\n",rapl_total_weight);
                     //printf("VALUE IS XXXXXXXXXXXXXXXXXX=000 %s of %s \n", result000_cut, value);
@@ -904,49 +924,56 @@ int main(int argc, char *argv[]) {
                     
                     else if ((char *)getItem(*dict, result001_cut) != NULL ) {
                         value =(char *)getItem(*dict, result001_cut) ;
-                        rapl_total_weight+=atof(value);
+                        temp_value = atof(value);
+                        rapl_total_weight+=temp_value;
                         printf(" =%f",  atof(value));
                         //printf("total is %f\n",rapl_total_weight);
                         //printf("VALUE IS XXXXXXXXXXXXXXXXXX=001 %s of %s \n", result001_cut, value);
                     }
                     else if ((char *)getItem(*dict, result010_cut) != NULL ) {
                         value =(char *)getItem(*dict, result010_cut) ;
-                        rapl_total_weight+=atof(value);
+                        temp_value = atof(value);
+                        rapl_total_weight+=temp_value;
                         printf(" =%f",  atof(value));
                         //printf("total is %f\n",rapl_total_weight);
                         //printf("VALUE IS XXXXXXXXXXXXXXXXXX=010 %s of %s \n", result010_cut, value);
                     }
                     else if ((char *)getItem(*dict, result011_cut) != NULL ) {
                         value =(char *)getItem(*dict, result011_cut) ;
-                        rapl_total_weight+=atof(value);
+                        temp_value = atof(value);
+                        rapl_total_weight+=temp_value;
                         printf(" =%f",  atof(value));
                         //printf("total is %f\n",rapl_total_weight);
                         //printf("VALUE IS XXXXXXXXXXXXXXXXXX=011 %s of %s \n", result011_cut, value);
                     }
                     else if ((char *)getItem(*dict, result100_cut) != NULL ) {
                         value =(char *)getItem(*dict, result100_cut) ;
-                        rapl_total_weight+=atof(value);
+                        temp_value = atof(value);
+                        rapl_total_weight+=temp_value;
                         printf(" =%f",  atof(value));
                         //printf("total is %f\n",rapl_total_weight);
                         //printf("VALUE IS XXXXXXXXXXXXXXXXXX=100 %s of %s \n", result100_cut, value);
                     }
                     else if ((char *)getItem(*dict, result101_cut) != NULL ) {
                         value =(char *)getItem(*dict, result101_cut) ;
-                        rapl_total_weight+=atof(value);
+                        temp_value = atof(value);
+                        rapl_total_weight+=temp_value;
                         printf(" =%f",  atof(value));
                         //printf("total is %f\n",rapl_total_weight);
                         //printf("VALUE IS XXXXXXXXXXXXXXXXXX=101 %s of %s \n", result101_cut, value);
                     }
                     else if ((char *)getItem(*dict, result110_cut) != NULL ) {
                         value =(char *)getItem(*dict, result110_cut) ;
-                        rapl_total_weight+=atof(value);
+                        temp_value = atof(value);
+                        rapl_total_weight+=temp_value;
                         printf(" =%f",  atof(value));
                         //printf("total is %f\n",rapl_total_weight);
                         //printf("VALUE IS XXXXXXXXXXXXXXXXXX=110 %s of %s \n", result110_cut, value);
                     }
                     else if ((char *)getItem(*dict, result111_cut) != NULL ) {
                         value =(char *)getItem(*dict, result111_cut) ;
-                        rapl_total_weight+=atof(value);
+                        temp_value = atof(value);
+                        rapl_total_weight+=temp_value;
                         printf(" =%f",  atof(value));
                         //printf("total is %f\n",rapl_total_weight);
                         //printf("VALUE IS XXXXXXXXXXXXXXXXXX=111 %s of %s \n", result111_cut, value);
@@ -954,7 +981,8 @@ int main(int argc, char *argv[]) {
                     else{
                         if ((char *)getItem(*dict, result000_cut2) != NULL ) {
                         value =(char *)getItem(*dict, result000_cut2) ;
-                        rapl_total_weight+=atof(value);
+                        temp_value = atof(value);
+                        rapl_total_weight+=temp_value;
                         printf(" =%f",  atof(value));
                         //printf("total is %f\n",rapl_total_weight);
                         //printf("VALUE IS XXXXXXXXXXXXXXXXXX=000 %s of %s \n", result000_cut2, value);
@@ -962,49 +990,56 @@ int main(int argc, char *argv[]) {
                 
                         else if ((char *)getItem(*dict, result001_cut2) != NULL ) {
                             value =(char *)getItem(*dict, result001_cut2) ;
-                            rapl_total_weight+=atof(value);
+                            temp_value = atof(value);
+                            rapl_total_weight+=temp_value;
                             printf(" =%f",  atof(value));
                             //printf("total is %f\n",rapl_total_weight);
                             //printf("VALUE IS XXXXXXXXXXXXXXXXXX=001 %s of %s \n", result001_cut2, value);
                         }
                         else if ((char *)getItem(*dict, result010_cut2) != NULL ) {
                             value =(char *)getItem(*dict, result010_cut2) ;
-                            rapl_total_weight+=atof(value);
+                            temp_value = atof(value);
+                            rapl_total_weight+=temp_value;
                             printf(" =%f",  atof(value));
                             //printf("total is %f\n",rapl_total_weight);
                             //printf("VALUE IS XXXXXXXXXXXXXXXXXX=010 %s of %s \n", result010_cut2, value);
                         }
                         else if ((char *)getItem(*dict, result011_cut2) != NULL ) {
                             value =(char *)getItem(*dict, result011_cut2) ;
-                            rapl_total_weight+=atof(value);
+                            temp_value = atof(value);
+                            rapl_total_weight+=temp_value;
                             printf(" =%f",  atof(value));
                             //printf("total is %f\n",rapl_total_weight);
                             //printf("VALUE IS XXXXXXXXXXXXXXXXXX=011 %s of %s \n", result011_cut2, value);
                         }
                         else if ((char *)getItem(*dict, result100_cut2) != NULL ) {
                             value =(char *)getItem(*dict, result100_cut2) ;
-                            rapl_total_weight+=atof(value);
+                            temp_value = atof(value);
+                            rapl_total_weight+=temp_value;
                             printf(" =%f",  atof(value));
                             //printf("total is %f\n",rapl_total_weight);
                             //printf("VALUE IS XXXXXXXXXXXXXXXXXX=100 %s of %s \n", result100_cut2, value);
                         }
                         else if ((char *)getItem(*dict, result101_cut2) != NULL ) {
                             value =(char *)getItem(*dict, result101_cut2) ;
-                            rapl_total_weight+=atof(value);
+                            temp_value = atof(value);
+                            rapl_total_weight+=temp_value;
                             printf(" =%f",  atof(value));
                             //printf("total is %f\n",rapl_total_weight);
                             //printf("VALUE IS XXXXXXXXXXXXXXXXXX=101 %s of %s \n", result101_cut2, value);
                         }
                         else if ((char *)getItem(*dict, result110_cut2) != NULL ) {
                             value =(char *)getItem(*dict, result110_cut2) ;
-                            rapl_total_weight+=atof(value);
+                            temp_value = atof(value);
+                            rapl_total_weight+=temp_value;
                             printf(" =%f",  atof(value));
                             //printf("total is %f\n",rapl_total_weight);
                             //printf("VALUE IS XXXXXXXXXXXXXXXXXX=110 %s of %s \n", result110_cut2, value);
                         }
                         else if ((char *)getItem(*dict, result111_cut2) != NULL ) {
                             value =(char *)getItem(*dict, result111_cut2) ;
-                            rapl_total_weight+=atof(value);
+                            temp_value = atof(value);
+                            rapl_total_weight+=temp_value;
                             printf(" =%f",  atof(value));
                             //printf("total is %f\n",rapl_total_weight);
                             //printf("VALUE IS XXXXXXXXXXXXXXXXXX=111 %s of %s \n", result111_cut2, value);
@@ -1013,7 +1048,8 @@ int main(int argc, char *argv[]) {
                             
                             if ((char *)getItem(*dict, result000_cut3) != NULL ) {
                             value =(char *)getItem(*dict, result000_cut3) ;
-                            rapl_total_weight+=atof(value);
+                            temp_value = atof(value);
+                            rapl_total_weight+=temp_value;
                             printf(" =%f",  atof(value));
                             //printf("total is %f\n",rapl_total_weight);
                             //printf("VALUE IS XXXXXXXXXXXXXXXXXX=000 %s of %s \n", result000_cut3, value);
@@ -1021,49 +1057,56 @@ int main(int argc, char *argv[]) {
                 
                             else if ((char *)getItem(*dict, result001_cut3) != NULL ) {
                                 value =(char *)getItem(*dict, result001_cut3) ;
-                                rapl_total_weight+=atof(value);
+                                temp_value = atof(value);
+                                rapl_total_weight+=temp_value;
                                 printf(" =%f",  atof(value));
                                 //printf("total is %f\n",rapl_total_weight);
                                 //printf("VALUE IS XXXXXXXXXXXXXXXXXX=001 %s of %s \n", result001_cut3, value);
                             }
                             else if ((char *)getItem(*dict, result010_cut3) != NULL ) {
                                 value =(char *)getItem(*dict, result010_cut3) ;
-                                rapl_total_weight+=atof(value);
+                                temp_value = atof(value);
+                                rapl_total_weight+=temp_value;
                                 printf(" =%f",  atof(value));
                                 //printf("total is %f\n",rapl_total_weight);
                                 //printf("VALUE IS XXXXXXXXXXXXXXXXXX=010 %s of %s \n", result010_cut3, value);
                             }
                             else if ((char *)getItem(*dict, result011_cut3) != NULL ) {
                                 value =(char *)getItem(*dict, result011_cut3) ;
-                                rapl_total_weight+=atof(value);
+                                temp_value = atof(value);
+                                rapl_total_weight+=temp_value;
                                 printf(" =%f",  atof(value));
                                 //printf("total is %f\n",rapl_total_weight);
                                 //printf("VALUE IS XXXXXXXXXXXXXXXXXX=011 %s of %s \n", result011_cut3, value);
                             }
                             else if ((char *)getItem(*dict, result100_cut3) != NULL ) {
                                 value =(char *)getItem(*dict, result100_cut3) ;
-                                rapl_total_weight+=atof(value);
+                                temp_value = atof(value);
+                                rapl_total_weight+=temp_value;
                                 printf(" =%f",  atof(value));
                                 //printf("total is %f\n",rapl_total_weight);
                                 //printf("VALUE IS XXXXXXXXXXXXXXXXXX=100 %s of %s \n", result100_cut3, value);
                             }
                             else if ((char *)getItem(*dict, result101_cut3) != NULL ) {
                                 value =(char *)getItem(*dict, result101_cut3) ;
-                                rapl_total_weight+=atof(value);
+                                temp_value = atof(value);
+                                rapl_total_weight+=temp_value;
                                 printf(" =%f",  atof(value));
                                 //printf("total is %f\n",rapl_total_weight);
                                 //printf("VALUE IS XXXXXXXXXXXXXXXXXX=101 %s of %s \n", result101_cut3, value);
                             }
                             else if ((char *)getItem(*dict, result110_cut3) != NULL ) {
                                 value =(char *)getItem(*dict, result110_cut3) ;
-                                rapl_total_weight+=atof(value);
+                                temp_value = atof(value);
+                                rapl_total_weight+=temp_value;
                                 printf(" =%f",  atof(value));
                                 //printf("total is %f\n",rapl_total_weight);
                                 //printf("VALUE IS XXXXXXXXXXXXXXXXXX=110 %s of %s \n", result110_cut3, value);
                             }
                             else if ((char *)getItem(*dict, result111_cut3) != NULL ) {
                                 value =(char *)getItem(*dict, result111_cut3) ;
-                                rapl_total_weight+=atof(value);
+                                temp_value = atof(value);
+                                rapl_total_weight+=temp_value;
                                 printf(" =%f",  atof(value));
                                 //printf("total is %f\n",rapl_total_weight);
                                 //printf("VALUE IS XXXXXXXXXXXXXXXXXX=111 %s of %s \n", result111_cut3, value);
@@ -1073,7 +1116,8 @@ int main(int argc, char *argv[]) {
                                     fprintf(stderr,"We had a Syscall \n");
                                     } // see what to add for these
                                 else{
-                                    rapl_total_weight+=5.0; //esto bazoume 5 san mystery value
+                                    temp_value = 5;
+                                    rapl_total_weight+=temp_value ;//bazoume 5 san mystery value
                                     printf(" =%f",  5.0);
                                     fprintf(fp3,"%s\n",result000);
                                     fprintf(stderr,"i cannot  find opcode %s or %s or %s or %s  \n",result000 ,result000_cut, result000_cut2, result000_cut3);}

@@ -23,12 +23,14 @@ with open(sys.argv[1]) as f1:
     for line1 in f1:
         pass
     last_line1 = float(line1)
+    
 
-with open(sys.argv[2]) as f2: #mporei na ginei pio grigoro googlare apla
-    for count, line2 in enumerate(f2):
-        pass
-    last_line2 = float(line2)
-    counter =count+2 #number of total rapl intervals
+rest_file = open(str(sys.argv[2]), "r")
+lines_rest = rest_file.readlines()
+counter = len(lines_rest)
+last_line2= float(lines_rest[0][:-1])
+
+
 
 with open(sys.argv[3]) as f3:
     for line3 in f3:
@@ -41,7 +43,7 @@ first_clean = float(content[0])
 last_clean = float(content[1])
 
 clean = last_clean - first_clean #kathari energeia tou ektelesimou
-dirty = last_line3 -last_line1 #energeia ektelesimou mazi me rapl reads
+dirty = last_line3 -last_line2 #energeia ektelesimou mazi me rapl reads
 overhead =dirty - clean #ekstra kostos rapl reads sunoliko
 cost = overhead /counter #kostos kathe rapl read
 

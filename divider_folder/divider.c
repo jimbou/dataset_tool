@@ -15,7 +15,7 @@
 
 
 typedef struct node {
-    float val;
+    long double val;
     struct node * next;
 } node_t;
 
@@ -23,12 +23,12 @@ void print_list(node_t * head) {
     node_t * current = head;
 
     while (current != NULL) {
-        printf("%f\n", current->val);
+        printf("%LF\n", current->val);
         current = current->next;
     }
 }
 
-void push_last(node_t * head, float val) {
+void push_last(node_t * head, long double val) {
     node_t * current = head;
     while (current->next != NULL) {
         current = current->next;
@@ -40,7 +40,7 @@ void push_last(node_t * head, float val) {
     current->next->next = NULL;
 }
 
-void push_first(node_t ** head, float val) {
+void push_first(node_t ** head, long double val) {
     node_t * new_node;
     new_node = (node_t *) malloc(sizeof(node_t));
 
@@ -49,8 +49,8 @@ void push_first(node_t ** head, float val) {
     *head = new_node;
 }
 
-float pop(node_t ** head) {
-    float retval = -1;
+long double pop(node_t ** head) {
+    long double retval = -1;
     node_t * next_node = NULL;
 
     if (*head == NULL) {
@@ -65,8 +65,8 @@ float pop(node_t ** head) {
     return retval;
 }
 
-float remove_last(node_t * head) {
-    float retval = 0;
+long double remove_last(node_t * head) {
+    long double retval = 0;
     /* if there is only one item in the list, remove it */
     if (head->next == NULL) {
         retval = head->val;
@@ -88,9 +88,9 @@ float remove_last(node_t * head) {
 
 }
 
-float remove_by_index(node_t ** head, int n) {
+long double remove_by_index(node_t ** head, int n) {
     int i = 0;
-    float retval = -1;
+    long double retval = -1;
     node_t * current = *head;
     node_t * temp_node = NULL;
 
@@ -152,7 +152,7 @@ int main(int argc, char *argv[]) {
     size_t len5 = 0;
     ssize_t read5;
 
-    float original_read,final_read, previous_read , current_read , current_energy , current_weight, current_total_weight , current_total_energy;
+    long double original_read,final_read, previous_read , current_read , current_energy , current_weight, current_total_weight , current_total_energy;
     const char s[2] = "\n";
     char* token;
 
@@ -254,15 +254,32 @@ total_energy->next = NULL;
 
     while ((read4 = getline(&line4, &len4, fp4)) != -1) 
         {
-        token = strtok(line4, s);
+        token = strtok(line4, s);  //here changes need to be made
         current_read= atof(token);
         current_energy = current_read-previous_read; 
-        push_last(head,current_energy);
-        previous_read=current_read; 
+        if (current_energy<0)
+            {
+            current_energy=0;
+           push_last(head,current_energy); 
+           //printf ("%LF\n", current_energy);
+            }
+        else
+            {
+            //printf ("%LF\n", current_energy);
+            push_last(head,current_energy);
+            previous_read=current_read; 
+            }
         }
     
     current_energy = pop(&head); 
-    push_last(head,final_read-previous_read);
+    if ((final_read-previous_read)>0)
+        {
+        push_last(head,final_read-previous_read);
+        }
+    else
+        {
+        push_last(head,0); 
+        }
     printf("LIST OF RAPL ENERGIES IS :\n");
     print_list(head);
     
@@ -289,7 +306,7 @@ total_energy->next = NULL;
 
     node_t * list_head = head ;
     node_t * list_weight = weight ;
-    float temp_head ,temp_weight ,total_temp_weight;
+    long double temp_head ,temp_weight ,total_temp_weight =0;
     
 
     while ((list_head != NULL) && (list_weight != NULL))
@@ -299,6 +316,7 @@ total_energy->next = NULL;
         total_temp_weight = total_temp_weight +temp_weight;
         if (temp_head != 0)
         {   push_last(total_energy,temp_head);
+            //printf("puting weight %LF \n", total_temp_weight);
             push_last(total_weight,total_temp_weight );
             total_temp_weight=0;
         }
@@ -308,7 +326,7 @@ total_energy->next = NULL;
 
     }
     printf("LIST OF TOTAL WEIGHT IS :\n");
-    float not_important = pop(&total_weight);
+    long double not_important = pop(&total_weight);
     print_list(total_weight);
 
      //Edo i lista total_weight exei simplirothei : auti perixei ta total weigths gia polla bb pou apoteloun ena rapl read interval
@@ -324,10 +342,11 @@ total_energy->next = NULL;
     current_total_energy = pop(&total_energy);
     
 
-    //fprintf(fp2, "%f %f \n", current_total_weight, current_total_energy);
-    float result;
+    //fprintf(fp2, "%LF %LF \n", current_total_weight, current_total_energy);
+    long double result;
     
-    char type_of_rapl_read= 'A'; 
+    char type_of_rapl_read= 'B'; 
+    char prev_type_of_rapl_read= 'B'; 
     fp  = fopen(argv[1], "r");
     fprintf(fp1,"B@ %d\n",counter);
     read = getline(&line, &len, fp); //gia na fugei i keni grammi pano pano 
@@ -360,9 +379,17 @@ total_energy->next = NULL;
             {
                 current_weight = pop(&weight);
                 current_energy = pop(&head);
-                result = (current_weight / current_total_weight ) * current_total_energy; 
-                fprintf(fp2,"%c@ %d %f %f %f \n",type_of_rapl_read, counter, current_weight , current_total_weight,  result);
+                if (current_total_weight != 0)
+                    {
+                    result = (current_weight / current_total_weight ) * current_total_energy; 
+                    }
+                else 
+                    {
+                    result =0;
+                    }
+                fprintf(fp2,"%c@ %d %LF %LF %LF \n",prev_type_of_rapl_read, counter, current_weight , current_total_weight,  result);
                 counter++;
+                prev_type_of_rapl_read = type_of_rapl_read;
                 if (strchr(line, 'L') == NULL) {//dn einai to teleutaio rapl read  
                 fprintf(fp1,"%c@ %d\n",type_of_rapl_read,counter);}
                 else {fprintf(fp1,"L@ %d\n",counter);}
@@ -370,7 +397,13 @@ total_energy->next = NULL;
                 if (current_energy != 0)
                 {
                 current_total_energy = pop(&total_energy);
+                if (current_total_energy == -1){
+                    current_total_energy =0;
+                }
                 current_total_weight = pop(&total_weight);
+                if (current_total_weight == -1){
+                    current_total_weight =0;
+                }
             }
             
             

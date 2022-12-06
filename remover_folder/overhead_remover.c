@@ -99,12 +99,12 @@ int main(int argc, char *argv[]) {
 
 
     
-    float cost =0;
+    long double cost =0;
     char *energy1 =NULL;
     char *energy_tmp =NULL,*original_temp =NULL , *last_temp=NULL ;
     int num_prv_reads =1;
-    float current_read =0, prev_read =0 ,last =0;
-    float result=0;
+    long double current_read =0, prev_read =0 ,last =0;
+    long double result=0;
 
     if((read0 = getline(&line0, &len0, fp0)) != -1)
     {
@@ -122,6 +122,7 @@ int main(int argc, char *argv[]) {
     {
         last_temp=strtok(line2, "\n");
         cost = atof(last_temp); //read the individual rapl cost
+        //fprintf(stderr,"%LF\n" ,cost);
     }
 
   
@@ -129,17 +130,18 @@ int main(int argc, char *argv[]) {
     {
         energy_tmp= strtok(line, "\n");
         current_read= atof(energy_tmp);
+        //fprintf(stderr,"%LF\n" ,current_read);
         if (prev_read != current_read) //rapl read energy read has changed
         {
             result = current_read - (num_prv_reads*cost);
             num_prv_reads++;
             prev_read =current_read;
-            fprintf(fp3,"%f\n",result);
+            fprintf(fp3,"%LF\n",result);
         }
         else  //rapl read energy has stayed the same
         {
             num_prv_reads++;
-            fprintf(fp3,"%f\n",result);
+            fprintf(fp3,"%LF\n",result);
 
         }
 
@@ -148,10 +150,10 @@ int main(int argc, char *argv[]) {
     {
         result = last - (num_prv_reads*cost);
         num_prv_reads++;
-        fprintf(fp4,"%f\n",result);
+        fprintf(fp4,"%LF\n",result);
     }
     else
     {
-        fprintf(fp4,"%f",result);
+        fprintf(fp4,"%LF",result);
     }
 }
