@@ -15,5 +15,7 @@ mv first_last_rapl.txt $1_results
 mv perf.data $1_results
 mv rapl_last.txt $1_results
 mv rapl_original.txt $1_results
+#mv rapl_original_unchanged.txt $1_results
 mv rapl_rest.txt  $1_results
 mv trace.txt $1_results
+mv trace_un.txt $1_results
