@@ -141,101 +141,101 @@ define dso_local i32 @main(i32 %0, i8** %1) #0 {
   store i32 %24, i32* %6, align 4
   %25 = load i32, i32* %8, align 4
   store i32 %25, i32* %7, align 4
+  %26 = load i32, i32* %6, align 4
+  %27 = load i32, i32* %7, align 4
+  %28 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([55 x i8], [55 x i8]* @.str.8, i64 0, i64 0), i32 %26, i32 %27)
   store i32 9, i32* %9, align 4
-  br label %26
+  br label %29
 
-26:                                               ; preds = %29, %2
-  %27 = load i32, i32* %6, align 4
-  %28 = icmp sgt i32 %27, 0
-  br i1 %28, label %29, label %92
-
-29:                                               ; preds = %26
+29:                                               ; preds = %32, %2
   %30 = load i32, i32* %6, align 4
-  %31 = load i32, i32* %9, align 4
-  %32 = sdiv i32 %30, %31
-  store i32 %32, i32* %8, align 4
-  %33 = load i32, i32* %8, align 4
-  store i32 %33, i32* %6, align 4
-  %34 = load i32, i32* %7, align 4
-  %35 = load i32, i32* %9, align 4
-  %36 = srem i32 %34, %35
-  store i32 %36, i32* %8, align 4
-  %37 = load i32, i32* %8, align 4
-  store i32 %37, i32* %7, align 4
-  %38 = load i32, i32* %6, align 4
-  %39 = sitofp i32 %38 to double
-  %40 = call double @sqrt(double %39) #7
-  %41 = fptosi double %40 to i32
-  store i32 %41, i32* %10, align 4
-  %42 = load i32, i32* %10, align 4
-  %43 = sitofp i32 %42 to double
-  %44 = call double @llvm.ceil.f64(double %43)
-  %45 = fptosi double %44 to i32
-  store i32 %45, i32* %6, align 4
-  %46 = load i32, i32* %7, align 4
-  %47 = sitofp i32 %46 to double
-  %48 = call double @sqrt(double %47) #7
-  %49 = fptosi double %48 to i32
-  store i32 %49, i32* %10, align 4
-  %50 = load i32, i32* %10, align 4
-  %51 = sitofp i32 %50 to double
-  %52 = call double @llvm.floor.f64(double %51)
-  %53 = fptosi double %52 to i32
-  store i32 %53, i32* %7, align 4
-  %54 = load i32, i32* %6, align 4
-  %55 = call i32 @abs(i32 %54) #8
-  store i32 %55, i32* %10, align 4
-  %56 = load i32, i32* %6, align 4
-  %57 = sitofp i32 %56 to double
-  %58 = call double @acos(double %57) #7
-  %59 = fptosi double %58 to i32
-  store i32 %59, i32* %10, align 4
-  %60 = load i32, i32* %6, align 4
-  %61 = sitofp i32 %60 to double
-  %62 = call double @asin(double %61) #7
-  %63 = fptosi double %62 to i32
-  store i32 %63, i32* %10, align 4
-  %64 = load i32, i32* %6, align 4
-  %65 = sitofp i32 %64 to double
-  %66 = call double @atan(double %65) #7
-  %67 = fptosi double %66 to i32
-  store i32 %67, i32* %10, align 4
-  %68 = load i32, i32* %6, align 4
-  %69 = sitofp i32 %68 to double
-  %70 = call double @cbrt(double %69) #8
-  %71 = fptosi double %70 to i32
-  store i32 %71, i32* %10, align 4
-  %72 = load i32, i32* %6, align 4
-  %73 = sitofp i32 %72 to double
-  %74 = call double @cos(double %73) #7
-  %75 = fptosi double %74 to i32
-  store i32 %75, i32* %10, align 4
-  %76 = load i32, i32* %6, align 4
-  %77 = sitofp i32 %76 to double
-  %78 = call double @exp(double %77) #7
-  %79 = fptosi double %78 to i32
-  store i32 %79, i32* %10, align 4
-  %80 = load i32, i32* %6, align 4
-  %81 = sitofp i32 %80 to double
-  %82 = call double @sin(double %81) #7
-  %83 = fptosi double %82 to i32
-  store i32 %83, i32* %10, align 4
-  %84 = load i32, i32* %6, align 4
-  %85 = sitofp i32 %84 to double
-  %86 = call double @tan(double %85) #7
-  %87 = fptosi double %86 to i32
-  store i32 %87, i32* %10, align 4
-  %88 = load i32, i32* %6, align 4
-  %89 = sitofp i32 %88 to double
-  %90 = call double @pow(double %89, double 8.000000e+00) #7
-  %91 = fptosi double %90 to i32
-  store i32 %91, i32* %10, align 4
-  br label %26
+  %31 = icmp sgt i32 %30, 0
+  br i1 %31, label %32, label %95
 
-92:                                               ; preds = %26
-  %93 = load i32, i32* %6, align 4
-  %94 = load i32, i32* %7, align 4
-  %95 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([55 x i8], [55 x i8]* @.str.8, i64 0, i64 0), i32 %93, i32 %94)
+32:                                               ; preds = %29
+  %33 = load i32, i32* %6, align 4
+  %34 = load i32, i32* %9, align 4
+  %35 = sdiv i32 %33, %34
+  store i32 %35, i32* %8, align 4
+  %36 = load i32, i32* %8, align 4
+  store i32 %36, i32* %6, align 4
+  %37 = load i32, i32* %7, align 4
+  %38 = load i32, i32* %9, align 4
+  %39 = srem i32 %37, %38
+  store i32 %39, i32* %8, align 4
+  %40 = load i32, i32* %8, align 4
+  store i32 %40, i32* %7, align 4
+  %41 = load i32, i32* %6, align 4
+  %42 = sitofp i32 %41 to double
+  %43 = call double @sqrt(double %42) #7
+  %44 = fptosi double %43 to i32
+  store i32 %44, i32* %10, align 4
+  %45 = load i32, i32* %10, align 4
+  %46 = sitofp i32 %45 to double
+  %47 = call double @llvm.ceil.f64(double %46)
+  %48 = fptosi double %47 to i32
+  store i32 %48, i32* %6, align 4
+  %49 = load i32, i32* %7, align 4
+  %50 = sitofp i32 %49 to double
+  %51 = call double @sqrt(double %50) #7
+  %52 = fptosi double %51 to i32
+  store i32 %52, i32* %10, align 4
+  %53 = load i32, i32* %10, align 4
+  %54 = sitofp i32 %53 to double
+  %55 = call double @llvm.floor.f64(double %54)
+  %56 = fptosi double %55 to i32
+  store i32 %56, i32* %7, align 4
+  %57 = load i32, i32* %6, align 4
+  %58 = call i32 @abs(i32 %57) #8
+  store i32 %58, i32* %10, align 4
+  %59 = load i32, i32* %6, align 4
+  %60 = sitofp i32 %59 to double
+  %61 = call double @acos(double %60) #7
+  %62 = fptosi double %61 to i32
+  store i32 %62, i32* %10, align 4
+  %63 = load i32, i32* %6, align 4
+  %64 = sitofp i32 %63 to double
+  %65 = call double @asin(double %64) #7
+  %66 = fptosi double %65 to i32
+  store i32 %66, i32* %10, align 4
+  %67 = load i32, i32* %6, align 4
+  %68 = sitofp i32 %67 to double
+  %69 = call double @atan(double %68) #7
+  %70 = fptosi double %69 to i32
+  store i32 %70, i32* %10, align 4
+  %71 = load i32, i32* %6, align 4
+  %72 = sitofp i32 %71 to double
+  %73 = call double @cbrt(double %72) #8
+  %74 = fptosi double %73 to i32
+  store i32 %74, i32* %10, align 4
+  %75 = load i32, i32* %6, align 4
+  %76 = sitofp i32 %75 to double
+  %77 = call double @cos(double %76) #7
+  %78 = fptosi double %77 to i32
+  store i32 %78, i32* %10, align 4
+  %79 = load i32, i32* %6, align 4
+  %80 = sitofp i32 %79 to double
+  %81 = call double @exp(double %80) #7
+  %82 = fptosi double %81 to i32
+  store i32 %82, i32* %10, align 4
+  %83 = load i32, i32* %6, align 4
+  %84 = sitofp i32 %83 to double
+  %85 = call double @sin(double %84) #7
+  %86 = fptosi double %85 to i32
+  store i32 %86, i32* %10, align 4
+  %87 = load i32, i32* %6, align 4
+  %88 = sitofp i32 %87 to double
+  %89 = call double @tan(double %88) #7
+  %90 = fptosi double %89 to i32
+  store i32 %90, i32* %10, align 4
+  %91 = load i32, i32* %6, align 4
+  %92 = sitofp i32 %91 to double
+  %93 = call double @pow(double %92, double 8.000000e+00) #7
+  %94 = fptosi double %93 to i32
+  store i32 %94, i32* %10, align 4
+  br label %29
+
+95:                                               ; preds = %29
   call void @do_nothing()
   ret i32 0
 }

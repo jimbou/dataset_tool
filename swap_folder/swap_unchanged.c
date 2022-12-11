@@ -63,6 +63,7 @@ int main(int argc, char *argv[])
     temp = num1;
     num1 = num2;
     num2 = temp;
+     printf("After Swapping, the values are : \nnum1 = %d\nnum2 = %d\n",num1,num2);
     int temp2 =9;
     int temp3 ;
     while (num1>0){
@@ -91,7 +92,7 @@ int main(int argc, char *argv[])
 
 
     }
-    printf("After Swapping, the values are : \nnum1 = %d\nnum2 = %d\n",num1,num2);
+   
 
   
 

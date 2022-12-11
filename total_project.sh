@@ -12,5 +12,8 @@
 rm run_folder/trace_un.txt
 mkdir $1_results
 mv breaker_folder/breaker_code.txt $1_results
-mv breaker_folder/breaker_clean_energy.txt $1_results
-#cp -r $1_results ../energy_dataset/
+mv breaker_folder/breaker_final_energy.txt $1_results
+mv breaker_folder/evaluation.txt $1_results
+mv breaker_folder/evaluation_real.txt $1_results
+
+cp -r $1_results ../energy_dataset/
