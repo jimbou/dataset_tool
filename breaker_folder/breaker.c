@@ -100,14 +100,14 @@ int main(int argc, char *argv[]) {
             {   
                 if (strchr(line, 'L') != NULL) //teleutaio rapl read 
                     {energy_temp = (weight/ weight_total)*energy_total;
-                    if ((counter ==0)&& (energy_temp>20)&& (weight <100))
+                    if ((counter ==0)&& (energy_temp/weight>1))
                         {
                             energy_lost += energy_temp;
-                            energy_temp =0;
+                            energy_temp =-1*energy_temp;
                             
                         }
                     fprintf(fp3, "@ %d_%d: %f ,%f ,%f , ------%f\n",energy_counter2,counter, weight , weight_total , energy_total ,energy_temp);
-                    fprintf(fp4, "@ %d_%d: %f \n",energy_counter2,counter,energy_temp);
+                    fprintf(fp4, "@ %d_%d: %f %f \n",energy_counter2,counter,weight ,energy_temp);
                     break;
                     }
 
@@ -123,14 +123,14 @@ int main(int argc, char *argv[]) {
                         energy_temp = (weight/ weight_total)*energy_total;
                         if(energy_counter2 != 0)
                         {
-                            if ((counter ==0)&& (energy_temp>20)&& (weight <100))
+                            if ((counter ==0)&& (energy_temp/weight>1))
                         {
                             energy_lost += energy_temp;
-                            energy_temp =0;
+                            energy_temp =-1*energy_temp;
                             
                         }
                         fprintf(fp3, "@ %d_%d: %f ,%f ,%f , ------%f\n",energy_counter2,counter, weight , weight_total , energy_total ,energy_temp);
-                        fprintf(fp4, "@ %d_%d: %f \n",energy_counter2,counter,energy_temp);
+                        fprintf(fp4, "@ %d_%d: %f %f \n",energy_counter2,counter,weight ,energy_temp);
                         }
                     }
                     inside_A=true;
@@ -158,14 +158,14 @@ int main(int argc, char *argv[]) {
                     {
                         fprintf(fp2, "@ %d_%d:\n", energy_counter2,counter); //ektipono gia to neo BB 
                         //fprintf(stderr,"Basic block number %d has energy %f\n", energy_counter1, weight_total );
-                        if ((counter ==0)&& (energy_total>20)&& (weight <100))
+                        if ((counter ==0)&& (energy_total/weight_total>1))
                         {
                             energy_lost += energy_total;
-                            energy_total =0;
+                            energy_total =-1*energy_total;
                             
                         }
                         fprintf(fp3, "@ %d_%d: %f ,%f ,%f , ------%f\n",energy_counter2,counter, weight_total , weight_total , energy_total ,energy_total);
-                        fprintf(fp4, "@ %d_%d: %f \n",energy_counter2,counter,energy_total);
+                        fprintf(fp4, "@ %d_%d: %f %f \n",energy_counter2,counter,weight_total ,energy_total);
                     }
                     just_printed =true;
                     
@@ -176,14 +176,14 @@ int main(int argc, char *argv[]) {
                         energy_temp = (weight/ weight_total)*energy_total;
                         if (energy_counter2!=0)
                         {
-                                if ((counter ==0)&& (energy_temp>20)&& (weight <100))
+                                if ((counter ==0)&& (energy_temp/weight>1))
                             {
                                 energy_lost += energy_temp;
-                                energy_temp =0;
+                                energy_temp =-1*energy_temp;
                                 
                             }
                             fprintf(fp3, "@ %d_%d: %f ,%f ,%f , ------%f\n",energy_counter2,counter, weight , weight_total , energy_total ,energy_temp);
-                            fprintf(fp4, "@ %d_%d: %f \n",energy_counter2,counter,energy_temp);
+                            fprintf(fp4, "@ %d_%d: %f %f \n",energy_counter2,counter,weight ,energy_temp);
                         }
                     }
                     inside_A=false;
@@ -259,16 +259,16 @@ int main(int argc, char *argv[]) {
                     {   energy_temp = (weight/ weight_total)*energy_total;
                         if (energy_counter2 !=0)
                         {
-                        if ((counter ==0)&& (energy_temp>20)&& (weight <100))
+                        if ((counter ==0)&& (energy_temp/weight>1))
                         {
                             energy_lost += energy_temp;
-                            energy_temp =0;
+                            energy_temp =-1*energy_temp;
                             
                         }
                         
                         fprintf(fp3, "@ %d_%d: %f ,%f ,%f , ------%f\n",energy_counter2,counter, weight , weight_total , energy_total ,energy_temp);
                         
-                        fprintf(fp4, "@ %d_%d: %f \n",energy_counter2,counter,energy_temp);
+                        fprintf(fp4, "@ %d_%d: %f %f \n",energy_counter2,counter,weight ,energy_temp);
                         }
                         weight =0;
                         counter++;
@@ -284,5 +284,5 @@ int main(int argc, char *argv[]) {
 
             }
     }
-    fprintf(fp3, "energy lost %f \n", energy_lost);
+    fprintf(fp4, "energy lost %f \n", energy_lost);
 }
