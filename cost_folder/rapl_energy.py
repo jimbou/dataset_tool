@@ -56,4 +56,5 @@ print("cost is ", cost , "\n")
 print("counter is ", counter , "\n")
 
 with open(sys.argv[5], 'w') as f5:
-    f5.write(str(cost))
+    f5.write(str(cost)+"\n")
+    f5.write(str(clean)+"\n")

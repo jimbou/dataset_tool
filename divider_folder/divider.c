@@ -152,7 +152,22 @@ int main(int argc, char *argv[]) {
     size_t len5 = 0;
     ssize_t read5;
 
-    long double original_read,final_read, previous_read , current_read , current_energy , current_weight, current_total_weight , current_total_energy;
+    FILE * fp6; //the output file for the sums
+    char * line6 = NULL;
+    size_t len6 = 0;
+    ssize_t read6;
+
+    FILE * fp7; //the input cost file
+    char * line7 = NULL;
+    size_t len7 = 0;
+    ssize_t read7;
+
+    FILE * fp8; //the input cost file
+    char * line8 = NULL;
+    size_t len8 = 0;
+    ssize_t read8;
+
+    long double original_read,final_read, previous_read , current_read , current_energy , current_weight, current_total_weight , current_total_energy , sum_of_weight =0 , sum_of_energy =0 ,total_streak=0,zero_streak=0 ,clean =0 ,cost=0;
     const char s[2] = "\n";
     char* token;
 
@@ -162,10 +177,10 @@ int main(int argc, char *argv[]) {
     char* temp2 =NULL;
 
 
-    if (argc<6)
+    if (argc<9)
         {    //if an argument is not provided then error message and fail 
         fprintf(stderr,"You have not given the name of one ore more argumets\n");
-        fprintf(stderr,"Arguments should be in that order :\n 1)cleaner script output file\n 2)output for BBs code\n 3)output for bb energy\n 4)input me energeia arxikou rapl read\n 5)input with the rest rapl energies\n 6)input me last rapl read energy\n");
+        fprintf(stderr,"Arguments should be in that order :\n 1)cleaner script output file\n 2)output for BBs code\n 3)output for bb energy\n 4)input me energeia arxikou rapl read\n 5)input with the rest rapl energies\n 6) input me last rapl read energy\n 7) output gia sums\n 8) the input cost file\n 9) the output for expected sum \n ");
         return 1;
         }
     fp  = fopen(argv[1], "r"); //to proto argument einai to onoma tou arxeiou me to apotelsma tou cleaner script
@@ -174,7 +189,9 @@ int main(int argc, char *argv[]) {
     fp3 = fopen(argv[4], "r"); //to tetarto einai input me enrgeia tou first rapl read
     fp4 = fopen(argv[5], "r"); //to pempto einai input me enrgeia apo rest of rapl reads
     fp5 = fopen(argv[6], "r"); //to pempto einai input me enrgeia apo last of rapl read
-    
+    fp6 = fopen(argv[7], "w"); //to output gia sums
+    fp7 = fopen(argv[8], "r"); //to input  gia costs
+    fp8 = fopen(argv[9], "w"); //to output gia expected energy sum
 
     if (fp == NULL)
         {
@@ -204,6 +221,16 @@ int main(int argc, char *argv[]) {
     if (fp5 == NULL)
         {
         fprintf(stderr,"Could not open file for input with the last rapl read\n");
+        exit(EXIT_FAILURE);
+        }
+    if (fp6 == NULL)
+        {
+        fprintf(stderr,"Could not open file for output of sums\n");
+        exit(EXIT_FAILURE);
+        }
+    if (fp7 == NULL)
+        {
+        fprintf(stderr,"Could not open file for input of cost\n");
         exit(EXIT_FAILURE);
         }
 
@@ -251,14 +278,29 @@ if (total_energy == NULL) {
 }
 total_energy->val = 0;
 total_energy->next = NULL;
+bool first_time=true;
+char *last_temp=NULL ;
+
+    while((read7 = getline(&line7, &len7, fp7)) != -1)
+    {
+        last_temp=strtok(line7, "\n");
+        cost =clean;
+        clean = atof(last_temp); //read the individual rapl cost
+        
+    }
+    fprintf(fp6,"cost = %LF\n" ,cost);
+    fprintf(fp6,"clean = %LF\n" ,clean);
+
 
     while ((read4 = getline(&line4, &len4, fp4)) != -1) 
         {
+        total_streak+=1;
         token = strtok(line4, s);  //here changes need to be made
         current_read= atof(token);
         current_energy = current_read-previous_read; 
-        if (current_energy<0)
+        if (current_energy<=0)
             {
+            zero_streak+=1;
             current_energy=0;
            push_last(head,current_energy); 
            //printf ("%LF\n", current_energy);
@@ -266,25 +308,41 @@ total_energy->next = NULL;
         else
             {
             //printf ("%LF\n", current_energy);
+            if (!first_time)
+            {
+            sum_of_energy=sum_of_energy +current_energy;
+            }
+            zero_streak=0;
             push_last(head,current_energy);
             previous_read=current_read; 
+            first_time=false;
             }
         }
     
     current_energy = pop(&head); 
+    
     if ((final_read-previous_read)>0)
         {
+            zero_streak=0;
+        sum_of_energy=sum_of_energy +(final_read-previous_read);
         push_last(head,final_read-previous_read);
+
         }
     else
         {
+        zero_streak+=1;
         push_last(head,0); 
         }
     printf("LIST OF RAPL ENERGIES IS :\n");
     print_list(head);
+    fprintf(fp6,"%LF\n",sum_of_energy);
+    
+    fprintf(fp6,"total streak:  %LF\n",total_streak);
+    fprintf(fp6,"zero streak: %LF\n",zero_streak);
     
     
     //edo i lista head periexei oles tis energeis anamesa se rapl reads
+    bool first = true;
     int counter = 0; //autos o counter tha antistoixizei kathe bb me tin eenrgeia tou
     while ((read = getline(&line, &len, fp)) != -1) 
         { 
@@ -294,19 +352,33 @@ total_energy->next = NULL;
         temp2= strtok(NULL,"\n");
         current_weight=atof(temp2);
         push_last(weight,current_weight);
+        if(!first){
+        sum_of_weight = sum_of_weight+ current_weight;
+        }
+        first=false;
 
         }
         }
         current_weight = pop(&weight);
         printf("LIST OF WEIGHT IS :\n");
         print_list(weight);
-
+        fprintf(fp6,"%LF\n",sum_of_weight);
 
     //edo i lasta weight periexei ola ta bari ton bb
-
+    node_t * list_important_weight = weight->next ;
+    
+    long double important_sum =0 , counter_important = total_streak -zero_streak;
+     while ((list_important_weight != NULL) && (counter_important >0))
+    {   
+        important_sum = important_sum +list_important_weight->val;
+        counter_important-=1;
+        list_important_weight =list_important_weight->next;
+    }
+    fprintf(fp6,"important weight %LF \n",important_sum);
+    fprintf(fp6,"sum of  weight %LF \n",sum_of_weight);
     node_t * list_head = head ;
     node_t * list_weight = weight ;
-    long double temp_head ,temp_weight ,total_temp_weight =0;
+    long double temp_head ,temp_weight ,total_temp_weight =0 ;
     
 
     while ((list_head != NULL) && (list_weight != NULL))
@@ -337,7 +409,22 @@ total_energy->next = NULL;
     
     //Edo i lista total_energy exei simplirothei :auti periexei tin energeia pou antistoixei se ena energy interval
     
-    
+    long double overhead= (clean * ((important_sum)/sum_of_weight))/sum_of_energy;
+    fprintf(fp6,"overhead = %LF \n", overhead);
+    long double total_amount=0;
+    node_t * list_total_energy = total_energy->next;
+    while ((list_total_energy != NULL))
+    {
+        temp_head = list_total_energy->val;
+        temp_head=temp_head*overhead;
+        total_amount +=temp_head;
+        list_total_energy->val = temp_head;
+        list_total_energy =list_total_energy->next;
+    }
+    fprintf(fp8,"expected amount = %LF \n", total_amount);
+    printf("UPDATED LIST OF TOTAL ENERGY IS :\n");
+    print_list(total_energy);
+
     current_total_weight = pop(&total_weight);
     current_total_energy = pop(&total_energy);
     

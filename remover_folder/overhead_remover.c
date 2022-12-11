@@ -99,7 +99,7 @@ int main(int argc, char *argv[]) {
 
 
     
-    long double cost =0;
+    long double cost =0 ,clean=0;
     char *energy1 =NULL;
     char *energy_tmp =NULL,*original_temp =NULL , *last_temp=NULL ;
     int num_prv_reads =1;
@@ -117,13 +117,16 @@ int main(int argc, char *argv[]) {
         last_temp= strtok(line1, "\n");
         last = atof(last_temp); //read the individual rapl cost
     }
-
-    if((read2 = getline(&line2, &len2, fp2)) != -1)
+    
+    while((read2 = getline(&line2, &len2, fp2)) != -1)
     {
         last_temp=strtok(line2, "\n");
-        cost = atof(last_temp); //read the individual rapl cost
-        //fprintf(stderr,"%LF\n" ,cost);
+        cost =clean;
+        clean = atof(last_temp); //read the individual rapl cost
+        
     }
+    //fprintf(stderr,"cost = %LF\n" ,cost);
+    //fprintf(stderr,"clean = %LF\n" ,clean);
 
   
     while ((read = getline(&line, &len, fp)) != -1)
