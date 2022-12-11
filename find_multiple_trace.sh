@@ -35,12 +35,12 @@ do
     #./general_rapl >> rapl_original_unchanged_new_f_$i.txt #store starting rapl value  of original exe without rapl reads
     #perf record -e intel_pt//u ./general_rapl >> rapl_original_unchanged_new_$i.txt
     #./general_rapl >> rapl_original_unchanged_$i.txt #store starting rapl value  of original exe without rapl reads
-    perf record -e intel_pt//u ./$1_folder/$1_unchanged 1234567 89765434
+    perf record -e intel_pt//u ./$1_folder/$1_unchanged 
     mv perf.data perf_un_$i.data 
     #./general_rapl >> first_last_rapl_$i.txt #store finishing rapl value  of original exe without rapl reads
     echo "whatsup"
     ./general_rapl >> rapl_original_$i.txt #store starting rapl value of the pass exe
-    perf record -e intel_pt//u ./$1_folder/$1 1234567 89765434
+    perf record -e intel_pt//u ./$1_folder/$1 
     #./general_rapl >> rapl_last_$i.txt #store finishing rapl value of the pass exe
 
     mv perf.data perf_$i.data

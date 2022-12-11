@@ -1,5 +1,5 @@
 #!/bin/bash
- 
+echo "starting.."
  ./total.sh $1
  cp -r $1_results/ ../cscripts/
  rm -r $1_results/
