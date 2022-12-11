@@ -7,4 +7,5 @@ if energy of bb =0 discard bb
 
 
 
-When we have a basic block that has a unique first number  for example basic block 6_0 when there is no other 6_x bb and the projected energy is too big > 30 then it is better to discard it
+The evaluation  txt is the sum of the computed energy
+The evaluation real  txt is the sum of the energy that the first-last rapl read
