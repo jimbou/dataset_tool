@@ -1,9 +1,9 @@
-cost = 1091.311338
-clean = 5677.000000
-20094.460052
-total streak:  1076.000000
-zero streak: 949.000000
-25561.468913
-important weight 12128.449257 
-sum of  weight 25561.468913 
-overhead = 0.134049 
+cost = 1141.864556
+clean = 3723.000000
+80826.667877
+total streak:  1927.000000
+zero streak: 726.000000
+38659.158761
+important weight 22654.648907 
+sum of  weight 38659.158761 
+overhead = 0.026993 
