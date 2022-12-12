@@ -3,7 +3,7 @@ echo "starting.."
  ./total.sh $1
  cp -r $1_results/ ../cscripts/
  rm -r $1_results/
- 
+ mv $1_folder results
  cd ../cscripts
  cp $1_results/* run_folder/
  ./total.sh $1
@@ -17,3 +17,4 @@ mv breaker_folder/evaluation.txt $1_results
 mv breaker_folder/evaluation_real.txt $1_results
 
 cp -r $1_results ../energy_dataset/
+mv $1_results results
