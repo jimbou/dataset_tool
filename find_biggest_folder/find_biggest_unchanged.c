@@ -1,11 +1,9 @@
-/*  Example Program For Print 1 to N In C Programming Language
-    little drops @ thiyagaraaj.com
-    Coded By:THIYAGARAAJ MP             */
 
 // Header Files
 #define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
+#define ARRAY_SIZE 300
 
 void rapl_D() {
 	char *line = NULL;
@@ -47,22 +45,29 @@ void rapl_D() {
 void do_nothing(){
   return;
 }
-int main(int argc, char *argv[])
+int main()
 {
     rapl_D();
-	int number,i;
-	
-	printf("Enter the Number:\n");
-	sscanf(argv[1], "%d", &number);
-	printf("Print Numbers Up to %d :\n",number);
+    int numbers[ARRAY_SIZE], i, largest;
 
-	for(i=1;i<=number;i++)
-		printf("%d\n", i);
+    for (i = 0; i < ARRAY_SIZE; i++)
+    {
+		printf("Enter the Number : %d  : ", (i+1));
+        numbers[i]=i*3/5;
+        if (numbers[i]%5>2){
+        numbers[i] =numbers[i]-9*7;
+        }
+    }
 
-    // Wait For Output Screen
-    //getch();
+    largest = numbers[0];
+    for (i = 1; i < ARRAY_SIZE; i++)
+    {
+        if (largest < numbers[i])
+            largest = numbers[i];
+    }
+    printf("\nLargest /Biggest Number Is : %d", largest);
+   
 
-    //Main Function return Statement
     rapl_D();
     return 0;
     
@@ -175,3 +180,4 @@ void rapl_C() {
 
     return;
 }
+
