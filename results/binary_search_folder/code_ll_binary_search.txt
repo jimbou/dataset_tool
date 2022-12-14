@@ -1,0 +1,211 @@
+new basic block
+Basic Block name: do_nothing
+Of function : do_nothing
+
+do_nothing:
+  ret void
+new basic block
+Basic Block name: binarySearch
+Of function : binarySearch
+
+binarySearch:
+  %4 = alloca i32, align 4
+  %5 = alloca i32*, align 8
+  %6 = alloca i32, align 4
+  %7 = alloca i32, align 4
+  %8 = alloca i32, align 4
+  %9 = alloca i32, align 4
+  store i32* %0, i32** %5, align 8
+  store i32 %1, i32* %6, align 4
+  store i32 %2, i32* %7, align 4
+  store i32 %3, i32* %8, align 4
+  br label %10
+new basic block
+Basic Block name: binarySearch1
+Of function : binarySearch
+
+binarySearch1:                                    ; preds = %43, %binarySearch
+  %10 = load i32, i32* %7, align 4
+  %11 = load i32, i32* %8, align 4
+  %12 = icmp sle i32 %10, %11
+  br i1 %12, label %13, label %44
+new basic block
+Basic Block name: binarySearch2
+Of function : binarySearch
+
+binarySearch2:                                    ; preds = %binarySearch1
+  %13 = load i32, i32* %7, align 4
+  %14 = load i32, i32* %8, align 4
+  %15 = load i32, i32* %7, align 4
+  %16 = sub nsw i32 %14, %15
+  %17 = sdiv i32 %16, 2
+  %18 = add nsw i32 %13, %17
+  store i32 %18, i32* %9, align 4
+  %19 = load i32*, i32** %5, align 8
+  %20 = load i32, i32* %9, align 4
+  %21 = sext i32 %20 to i64
+  %22 = getelementptr inbounds i32, i32* %19, i64 %21
+  %23 = load i32, i32* %22, align 4
+  %24 = load i32, i32* %6, align 4
+  %25 = icmp eq i32 %23, %24
+  br i1 %25, label %26, label %28
+new basic block
+Basic Block name: binarySearch3
+Of function : binarySearch
+
+binarySearch3:                                    ; preds = %binarySearch2
+  %26 = load i32, i32* %9, align 4
+  store i32 %26, i32* %4, align 4
+  br label %43
+new basic block
+Basic Block name: binarySearch4
+Of function : binarySearch
+
+binarySearch4:                                    ; preds = %binarySearch2
+  %27 = load i32*, i32** %5, align 8
+  %28 = load i32, i32* %9, align 4
+  %29 = sext i32 %28 to i64
+  %30 = getelementptr inbounds i32, i32* %27, i64 %29
+  %31 = load i32, i32* %30, align 4
+  %32 = load i32, i32* %6, align 4
+  %33 = icmp slt i32 %31, %32
+  br i1 %33, label %34, label %37
+new basic block
+Basic Block name: binarySearch5
+Of function : binarySearch
+
+binarySearch5:                                    ; preds = %binarySearch4
+  %34 = load i32, i32* %9, align 4
+  %35 = add nsw i32 %34, 1
+  store i32 %35, i32* %7, align 4
+  br label %39
+new basic block
+Basic Block name: binarySearch6
+Of function : binarySearch
+
+binarySearch6:                                    ; preds = %binarySearch4
+  %36 = load i32, i32* %9, align 4
+  %37 = sub nsw i32 %36, 1
+  store i32 %37, i32* %8, align 4
+  br label %38
+new basic block
+Basic Block name: binarySearch7
+Of function : binarySearch
+
+binarySearch7:                                    ; preds = %binarySearch6, %binarySearch5
+  br label %binarySearch1
+new basic block
+Basic Block name: binarySearch8
+Of function : binarySearch
+
+binarySearch8:                                    ; preds = %binarySearch1
+  store i32 -1, i32* %4, align 4
+  br label %38
+new basic block
+Basic Block name: binarySearch9
+Of function : binarySearch
+
+binarySearch9:                                    ; preds = %binarySearch8, %binarySearch3
+  %38 = load i32, i32* %4, align 4
+  ret i32 %38
+Case 1  
+new basic block
+Basic Block name: main
+Of function : main
+
+main:
+  %0 = alloca i32, align 4
+  %1 = alloca [100 x i32], align 16
+  %2 = alloca i32, align 4
+  %3 = alloca i32, align 4
+  %4 = alloca i32, align 4
+  %5 = alloca i32, align 4
+  store i32 0, i32* %0, align 4
+  call void @rapl_B()
+  call void @do_nothing()
+  call void @rapl_C()
+  store i32 0, i32* %2, align 4
+  br label %6
+new basic block
+Basic Block name: main1
+Of function : main
+
+main1:                                            ; preds = %16, %main
+  %6 = load i32, i32* %2, align 4
+  %7 = icmp slt i32 %6, 100
+  br i1 %7, label %8, label %19
+new basic block
+Basic Block name: main2
+Of function : main
+
+main2:                                            ; preds = %main1
+  %8 = load i32, i32* %2, align 4
+  %9 = load i32, i32* %2, align 4
+  %10 = mul nsw i32 %8, %9
+  %11 = add nsw i32 %10, 9
+  %12 = load i32, i32* %2, align 4
+  %13 = sext i32 %12 to i64
+  %14 = getelementptr inbounds [100 x i32], [100 x i32]* %1, i64 0, i64 %13
+  store i32 %11, i32* %14, align 4
+  br label %15
+new basic block
+Basic Block name: main3
+Of function : main
+
+main3:                                            ; preds = %main2
+  %15 = load i32, i32* %2, align 4
+  %16 = add nsw i32 %15, 1
+  store i32 %16, i32* %2, align 4
+  br label %main1
+Case 1  
+new basic block
+Basic Block name: main4
+Of function : main
+
+main4:                                            ; preds = %main1
+  store i32 100, i32* %3, align 4
+  %17 = getelementptr inbounds [100 x i32], [100 x i32]* %1, i64 0, i64 76
+  %18 = load i32, i32* %17, align 16
+  store i32 %18, i32* %4, align 4
+  %19 = getelementptr inbounds [100 x i32], [100 x i32]* %1, i64 0, i64 0
+  %20 = load i32, i32* %4, align 4
+  %21 = load i32, i32* %3, align 4
+  %22 = sub nsw i32 %21, 1
+  call void @rapl_B()
+  %23 = call i32 @binarySearch(i32* %19, i32 %20, i32 0, i32 %22)
+  call void @rapl_C()
+  store i32 %23, i32* %5, align 4
+  %24 = load i32, i32* %5, align 4
+  %25 = icmp eq i32 %24, -1
+  br i1 %25, label %26, label %28
+Case 1  
+new basic block
+Basic Block name: main5
+Of function : main
+
+main5:                                            ; preds = %main4
+  call void @rapl_B()
+  %26 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.5, i64 0, i64 0))
+  call void @rapl_C()
+  br label %30
+Case 1  
+new basic block
+Basic Block name: main6
+Of function : main
+
+main6:                                            ; preds = %main4
+  %27 = load i32, i32* %5, align 4
+  call void @rapl_B()
+  %28 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([29 x i8], [29 x i8]* @.str.6, i64 0, i64 0), i32 %27)
+  call void @rapl_C()
+  br label %29
+Case 1  
+new basic block
+Basic Block name: main7
+Of function : main
+
+main7:                                            ; preds = %main6, %main5
+  call void @rapl_B()
+  call void @do_nothing()
+  call void @rapl_C()
+  ret i32 0
