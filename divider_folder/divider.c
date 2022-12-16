@@ -28,6 +28,15 @@ void print_list(node_t * head) {
     }
 }
 
+int list_len(node_t * head) {
+    node_t * current = head;
+    int len =0;
+    while (current != NULL) {
+       len++;
+        current = current->next;
+    }
+    return len;
+}
 void push_last(node_t * head, long double val) {
     node_t * current = head;
     while (current->next != NULL) {
@@ -367,12 +376,21 @@ char *last_temp=NULL ;
     //edo i lasta weight periexei ola ta bari ton bb
     node_t * list_important_weight = weight->next ;
     
-    long double important_sum =0 , counter_important = total_streak -zero_streak;
-     while ((list_important_weight != NULL) && (counter_important >0))
+    long double important_sum =0 ,rest_sum=0, counter_important = total_streak -zero_streak;
+     while ((list_important_weight != NULL))
     {   
-        important_sum = important_sum +list_important_weight->val;
-        counter_important-=1;
-        list_important_weight =list_important_weight->next;
+        if(counter_important>0)
+        {
+            important_sum = important_sum +list_important_weight->val;
+            counter_important-=1;
+            list_important_weight =list_important_weight->next;
+        }
+        else 
+        {
+            rest_sum =rest_sum + list_important_weight->val;
+            list_important_weight =list_important_weight->next;
+
+        }
     }
     fprintf(fp6,"important weight %LF \n",important_sum);
     fprintf(fp6,"sum of  weight %LF \n",sum_of_weight);
@@ -408,7 +426,10 @@ char *last_temp=NULL ;
     print_list(total_energy);
     
     //Edo i lista total_energy exei simplirothei :auti periexei tin energeia pou antistoixei se ena energy interval
-    
+    fprintf(fp6,"11sum_of_weight = %LF \n", sum_of_weight);
+    fprintf(fp6,"important_sum = %LF \n", important_sum);
+    fprintf(fp6,"rest_sum = %LF \n", rest_sum);
+   
     long double overhead= (clean * ((important_sum)/sum_of_weight))/sum_of_energy;
     fprintf(fp6,"overhead = %LF \n", overhead);
     long double total_amount=0;
@@ -420,10 +441,22 @@ char *last_temp=NULL ;
         total_amount +=temp_head;
         list_total_energy->val = temp_head;
         list_total_energy =list_total_energy->next;
-    }
+    } 
+    push_last(total_energy,clean-total_amount); //prosteto tin energeia pou perisseuei sto telos
+    push_last(total_weight,rest_sum); //prostheto ton baros ton perisseuomenon sto telos
+     //fprintf(fp6,"list of total weight len = %d \n", list_len(total_weight));
+     //fprintf(fp6,"list of total energy len = %d \n", list_len(total_energy));
+    //fprintf(fp6,"total streak = %LF \n", total_streak);
+     //fprintf(fp6,"zeros streak = %LF \n", zero_streak);
+
     fprintf(fp8,"expected amount = %LF \n", total_amount);
+    //fprintf(fp8,"rest amount = %LF \n",clean - total_amount);
+    //fprintf(fp8,"sure rest amount = %LF \n",total_amount*(sum_of_weight-important_sum)/important_sum);
     printf("UPDATED LIST OF TOTAL ENERGY IS :\n");
     print_list(total_energy);
+
+    printf("UPDATED LIST OF TOTAL WEIGHT IS :\n");
+    print_list(total_weight);
 
     current_total_weight = pop(&total_weight);
     current_total_energy = pop(&total_energy);
