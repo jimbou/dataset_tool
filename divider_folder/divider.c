@@ -426,7 +426,7 @@ char *last_temp=NULL ;
     print_list(total_energy);
     
     //Edo i lista total_energy exei simplirothei :auti periexei tin energeia pou antistoixei se ena energy interval
-    fprintf(fp6,"11sum_of_weight = %LF \n", sum_of_weight);
+    fprintf(fp6,"sum_of_weight = %LF \n", sum_of_weight);
     fprintf(fp6,"important_sum = %LF \n", important_sum);
     fprintf(fp6,"rest_sum = %LF \n", rest_sum);
    
@@ -449,7 +449,7 @@ char *last_temp=NULL ;
     //fprintf(fp6,"total streak = %LF \n", total_streak);
      //fprintf(fp6,"zeros streak = %LF \n", zero_streak);
 
-    fprintf(fp8,"expected amount = %LF \n", total_amount);
+    fprintf(fp8,"expected amount = %LF \n", clean);
     //fprintf(fp8,"rest amount = %LF \n",clean - total_amount);
     //fprintf(fp8,"sure rest amount = %LF \n",total_amount*(sum_of_weight-important_sum)/important_sum);
     printf("UPDATED LIST OF TOTAL ENERGY IS :\n");

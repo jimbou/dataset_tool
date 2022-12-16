@@ -6,7 +6,7 @@ zero streak: 164.000000
 3406.880005
 important weight 473.250000 
 sum of  weight 3406.880005 
-11sum_of_weight = 3406.880005 
+sum_of_weight = 3406.880005 
 important_sum = 473.250000 
 rest_sum = 2933.630005 
 overhead = 0.021807 
