@@ -1,5 +1,5 @@
-; ModuleID = 'bubblesort_inst.bc'
-source_filename = "bubblesort.c"
+; ModuleID = 'binary_search_unchanged.c'
+source_filename = "binary_search_unchanged.c"
 target datalayout = "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
@@ -13,11 +13,9 @@ target triple = "x86_64-unknown-linux-gnu"
 @.str.2 = private unnamed_addr constant [17 x i8] c"rapl_beg_end.txt\00", align 1
 @.str.3 = private unnamed_addr constant [2 x i8] c"a\00", align 1
 @.str.4 = private unnamed_addr constant [6 x i8] c"%llu\0A\00", align 1
-@.str.5 = private unnamed_addr constant [5 x i8] c"%d  \00", align 1
-@.str.6 = private unnamed_addr constant [2 x i8] c"\0A\00", align 1
-@.str.7 = private unnamed_addr constant [26 x i8] c"Enter the Number : %d  : \00", align 1
-@.str.8 = private unnamed_addr constant [34 x i8] c"Sorted Array in Ascending Order:\0A\00", align 1
-@.str.9 = private unnamed_addr constant [14 x i8] c"rapl_rest.txt\00", align 1
+@.str.5 = private unnamed_addr constant [10 x i8] c"Not found\00", align 1
+@.str.6 = private unnamed_addr constant [29 x i8] c"Element is found at index %d\00", align 1
+@.str.7 = private unnamed_addr constant [14 x i8] c"rapl_rest.txt\00", align 1
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define dso_local void @rapl_D() #0 {
@@ -106,268 +104,150 @@ declare dso_local i32 @fprintf(%struct._IO_FILE*, i8*, ...) #1
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define dso_local void @do_nothing() #0 {
-do_nothing:
-  call void @rapl_A()
   ret void
 }
 
 ; Function Attrs: noinline nounwind optnone uwtable
-define dso_local void @bubbleSort(i32* %0, i32 %1) #0 {
-bubbleSort:
-  call void @rapl_A()
-  %2 = alloca i32*, align 8
+define dso_local i32 @binarySearch(i32* %0, i32 %1, i32 %2, i32 %3) #0 {
+  %5 = alloca i32, align 4
+  %6 = alloca i32*, align 8
+  %7 = alloca i32, align 4
+  %8 = alloca i32, align 4
+  %9 = alloca i32, align 4
+  %10 = alloca i32, align 4
+  store i32* %0, i32** %6, align 8
+  store i32 %1, i32* %7, align 4
+  store i32 %2, i32* %8, align 4
+  store i32 %3, i32* %9, align 4
+  br label %11
+
+11:                                               ; preds = %45, %4
+  %12 = load i32, i32* %8, align 4
+  %13 = load i32, i32* %9, align 4
+  %14 = icmp sle i32 %12, %13
+  br i1 %14, label %15, label %46
+
+15:                                               ; preds = %11
+  %16 = load i32, i32* %8, align 4
+  %17 = load i32, i32* %9, align 4
+  %18 = load i32, i32* %8, align 4
+  %19 = sub nsw i32 %17, %18
+  %20 = sdiv i32 %19, 2
+  %21 = add nsw i32 %16, %20
+  store i32 %21, i32* %10, align 4
+  %22 = load i32*, i32** %6, align 8
+  %23 = load i32, i32* %10, align 4
+  %24 = sext i32 %23 to i64
+  %25 = getelementptr inbounds i32, i32* %22, i64 %24
+  %26 = load i32, i32* %25, align 4
+  %27 = load i32, i32* %7, align 4
+  %28 = icmp eq i32 %26, %27
+  br i1 %28, label %29, label %31
+
+29:                                               ; preds = %15
+  %30 = load i32, i32* %10, align 4
+  store i32 %30, i32* %5, align 4
+  br label %47
+
+31:                                               ; preds = %15
+  %32 = load i32*, i32** %6, align 8
+  %33 = load i32, i32* %10, align 4
+  %34 = sext i32 %33 to i64
+  %35 = getelementptr inbounds i32, i32* %32, i64 %34
+  %36 = load i32, i32* %35, align 4
+  %37 = load i32, i32* %7, align 4
+  %38 = icmp slt i32 %36, %37
+  br i1 %38, label %39, label %42
+
+39:                                               ; preds = %31
+  %40 = load i32, i32* %10, align 4
+  %41 = add nsw i32 %40, 1
+  store i32 %41, i32* %8, align 4
+  br label %45
+
+42:                                               ; preds = %31
+  %43 = load i32, i32* %10, align 4
+  %44 = sub nsw i32 %43, 1
+  store i32 %44, i32* %9, align 4
+  br label %45
+
+45:                                               ; preds = %42, %39
+  br label %11
+
+46:                                               ; preds = %11
+  store i32 -1, i32* %5, align 4
+  br label %47
+
+47:                                               ; preds = %46, %29
+  %48 = load i32, i32* %5, align 4
+  ret i32 %48
+}
+
+; Function Attrs: noinline nounwind optnone uwtable
+define dso_local i32 @main() #0 {
+  %1 = alloca i32, align 4
+  %2 = alloca [100 x i32], align 16
   %3 = alloca i32, align 4
   %4 = alloca i32, align 4
   %5 = alloca i32, align 4
   %6 = alloca i32, align 4
-  %7 = alloca i32, align 4
-  store i32* %0, i32** %2, align 8
-  store i32 %1, i32* %3, align 4
-  store i32 0, i32* %4, align 4
-  br label %bubbleSort1
+  store i32 0, i32* %1, align 4
+  call void @rapl_D()
+  store i32 0, i32* %3, align 4
+  br label %7
 
-bubbleSort1:                                      ; preds = %bubbleSort11, %bubbleSort
-  call void @rapl_A()
-  %8 = load i32, i32* %4, align 4
-  %9 = load i32, i32* %3, align 4
-  %10 = sub nsw i32 %9, 1
-  %11 = icmp slt i32 %8, %10
-  br i1 %11, label %bubbleSort2, label %bubbleSort12
+7:                                                ; preds = %18, %0
+  %8 = load i32, i32* %3, align 4
+  %9 = icmp slt i32 %8, 100
+  br i1 %9, label %10, label %21
 
-bubbleSort2:                                      ; preds = %bubbleSort1
-  call void @rapl_A()
-  store i32 0, i32* %5, align 4
-  store i32 0, i32* %6, align 4
-  br label %bubbleSort3
+10:                                               ; preds = %7
+  %11 = load i32, i32* %3, align 4
+  %12 = load i32, i32* %3, align 4
+  %13 = mul nsw i32 %11, %12
+  %14 = add nsw i32 %13, 9
+  %15 = load i32, i32* %3, align 4
+  %16 = sext i32 %15 to i64
+  %17 = getelementptr inbounds [100 x i32], [100 x i32]* %2, i64 0, i64 %16
+  store i32 %14, i32* %17, align 4
+  br label %18
 
-bubbleSort3:                                      ; preds = %bubbleSort7, %bubbleSort2
-  call void @rapl_A()
-  %12 = load i32, i32* %6, align 4
-  %13 = load i32, i32* %3, align 4
-  %14 = load i32, i32* %4, align 4
-  %15 = sub nsw i32 %13, %14
-  %16 = sub nsw i32 %15, 1
-  %17 = icmp slt i32 %12, %16
-  br i1 %17, label %bubbleSort4, label %bubbleSort8
+18:                                               ; preds = %10
+  %19 = load i32, i32* %3, align 4
+  %20 = add nsw i32 %19, 1
+  store i32 %20, i32* %3, align 4
+  br label %7
 
-bubbleSort4:                                      ; preds = %bubbleSort3
-  call void @rapl_A()
-  %18 = load i32*, i32** %2, align 8
-  %19 = load i32, i32* %6, align 4
-  %20 = sext i32 %19 to i64
-  %21 = getelementptr inbounds i32, i32* %18, i64 %20
-  %22 = load i32, i32* %21, align 4
-  %23 = load i32*, i32** %2, align 8
-  %24 = load i32, i32* %6, align 4
-  %25 = add nsw i32 %24, 1
-  %26 = sext i32 %25 to i64
-  %27 = getelementptr inbounds i32, i32* %23, i64 %26
-  %28 = load i32, i32* %27, align 4
-  %29 = icmp sgt i32 %22, %28
-  br i1 %29, label %bubbleSort5, label %bubbleSort6
+21:                                               ; preds = %7
+  store i32 100, i32* %4, align 4
+  %22 = getelementptr inbounds [100 x i32], [100 x i32]* %2, i64 0, i64 76
+  %23 = load i32, i32* %22, align 16
+  store i32 %23, i32* %5, align 4
+  %24 = getelementptr inbounds [100 x i32], [100 x i32]* %2, i64 0, i64 0
+  %25 = load i32, i32* %5, align 4
+  %26 = load i32, i32* %4, align 4
+  %27 = sub nsw i32 %26, 1
+  %28 = call i32 @binarySearch(i32* %24, i32 %25, i32 0, i32 %27)
+  store i32 %28, i32* %6, align 4
+  %29 = load i32, i32* %6, align 4
+  %30 = icmp eq i32 %29, -1
+  br i1 %30, label %31, label %33
 
-bubbleSort5:                                      ; preds = %bubbleSort4
-  call void @rapl_A()
-  %30 = load i32*, i32** %2, align 8
-  %31 = load i32, i32* %6, align 4
-  %32 = sext i32 %31 to i64
-  %33 = getelementptr inbounds i32, i32* %30, i64 %32
-  %34 = load i32, i32* %33, align 4
-  store i32 %34, i32* %7, align 4
-  %35 = load i32*, i32** %2, align 8
-  %36 = load i32, i32* %6, align 4
-  %37 = add nsw i32 %36, 1
-  %38 = sext i32 %37 to i64
-  %39 = getelementptr inbounds i32, i32* %35, i64 %38
-  %40 = load i32, i32* %39, align 4
-  %41 = load i32*, i32** %2, align 8
-  %42 = load i32, i32* %6, align 4
-  %43 = sext i32 %42 to i64
-  %44 = getelementptr inbounds i32, i32* %41, i64 %43
-  store i32 %40, i32* %44, align 4
-  %45 = load i32, i32* %7, align 4
-  %46 = load i32*, i32** %2, align 8
-  %47 = load i32, i32* %6, align 4
-  %48 = add nsw i32 %47, 1
-  %49 = sext i32 %48 to i64
-  %50 = getelementptr inbounds i32, i32* %46, i64 %49
-  store i32 %45, i32* %50, align 4
-  store i32 1, i32* %5, align 4
-  br label %bubbleSort6
+31:                                               ; preds = %21
+  %32 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([10 x i8], [10 x i8]* @.str.5, i64 0, i64 0))
+  br label %36
 
-bubbleSort6:                                      ; preds = %bubbleSort5, %bubbleSort4
-  call void @rapl_A()
-  br label %bubbleSort7
+33:                                               ; preds = %21
+  %34 = load i32, i32* %6, align 4
+  %35 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([29 x i8], [29 x i8]* @.str.6, i64 0, i64 0), i32 %34)
+  br label %36
 
-bubbleSort7:                                      ; preds = %bubbleSort6
-  call void @rapl_A()
-  %51 = load i32, i32* %6, align 4
-  %52 = add nsw i32 %51, 1
-  store i32 %52, i32* %6, align 4
-  br label %bubbleSort3
-
-bubbleSort8:                                      ; preds = %bubbleSort3
-  call void @rapl_A()
-  %53 = load i32, i32* %5, align 4
-  %54 = icmp eq i32 %53, 0
-  br i1 %54, label %bubbleSort9, label %bubbleSort10
-
-bubbleSort9:                                      ; preds = %bubbleSort8
-  call void @rapl_A()
-  br label %bubbleSort12
-
-bubbleSort10:                                     ; preds = %bubbleSort8
-  call void @rapl_A()
-  br label %bubbleSort11
-
-bubbleSort11:                                     ; preds = %bubbleSort10
-  call void @rapl_A()
-  %55 = load i32, i32* %4, align 4
-  %56 = add nsw i32 %55, 1
-  store i32 %56, i32* %4, align 4
-  br label %bubbleSort1
-
-bubbleSort12:                                     ; preds = %bubbleSort9, %bubbleSort1
-  call void @rapl_A()
-  ret void
-}
-
-; Function Attrs: noinline nounwind optnone uwtable
-define dso_local void @printArray(i32* %0, i32 %1) #0 {
-printArray:
-  call void @rapl_A()
-  %2 = alloca i32*, align 8
-  %3 = alloca i32, align 4
-  %4 = alloca i32, align 4
-  store i32* %0, i32** %2, align 8
-  store i32 %1, i32* %3, align 4
-  store i32 0, i32* %4, align 4
-  br label %printArray1
-
-printArray1:                                      ; preds = %printArray3, %printArray
-  call void @rapl_A()
-  %5 = load i32, i32* %4, align 4
-  %6 = load i32, i32* %3, align 4
-  %7 = icmp slt i32 %5, %6
-  br i1 %7, label %printArray2, label %printArray4
-
-printArray2:                                      ; preds = %printArray1
-  call void @rapl_A()
-  %8 = load i32*, i32** %2, align 8
-  %9 = load i32, i32* %4, align 4
-  %10 = sext i32 %9 to i64
-  %11 = getelementptr inbounds i32, i32* %8, i64 %10
-  %12 = load i32, i32* %11, align 4
-  call void @rapl_B()
-  %13 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.5, i64 0, i64 0), i32 %12)
-  call void @rapl_C()
-  br label %printArray3
-
-printArray3:                                      ; preds = %printArray2
-  call void @rapl_A()
-  %14 = load i32, i32* %4, align 4
-  %15 = add nsw i32 %14, 1
-  store i32 %15, i32* %4, align 4
-  br label %printArray1
-
-printArray4:                                      ; preds = %printArray1
-  call void @rapl_A()
-  call void @rapl_B()
-  %16 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.6, i64 0, i64 0))
-  call void @rapl_C()
-  ret void
+36:                                               ; preds = %33, %31
+  call void @rapl_D()
+  ret i32 0
 }
 
 declare dso_local i32 @printf(i8*, ...) #1
-
-; Function Attrs: noinline nounwind optnone uwtable
-define dso_local i32 @main() #0 {
-main:
-  call void @rapl_A()
-  %0 = alloca i32, align 4
-  %1 = alloca [30 x i32], align 16
-  %2 = alloca i32, align 4
-  %3 = alloca i32, align 4
-  store i32 0, i32* %0, align 4
-  call void @rapl_B()
-  call void @do_nothing()
-  call void @rapl_C()
-  store i32 0, i32* %2, align 4
-  br label %main1
-
-main1:                                            ; preds = %main5, %main
-  call void @rapl_A()
-  %4 = load i32, i32* %2, align 4
-  %5 = icmp slt i32 %4, 30
-  br i1 %5, label %main2, label %main6
-
-main2:                                            ; preds = %main1
-  call void @rapl_A()
-  %6 = load i32, i32* %2, align 4
-  %7 = add nsw i32 %6, 1
-  call void @rapl_B()
-  %8 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([26 x i8], [26 x i8]* @.str.7, i64 0, i64 0), i32 %7)
-  call void @rapl_C()
-  %9 = load i32, i32* %2, align 4
-  %10 = mul nsw i32 %9, 3
-  %11 = sdiv i32 %10, 5
-  %12 = load i32, i32* %2, align 4
-  %13 = sext i32 %12 to i64
-  %14 = getelementptr inbounds [30 x i32], [30 x i32]* %1, i64 0, i64 %13
-  store i32 %11, i32* %14, align 4
-  %15 = load i32, i32* %2, align 4
-  %16 = sext i32 %15 to i64
-  %17 = getelementptr inbounds [30 x i32], [30 x i32]* %1, i64 0, i64 %16
-  %18 = load i32, i32* %17, align 4
-  %19 = srem i32 %18, 5
-  %20 = icmp sgt i32 %19, 2
-  br i1 %20, label %main3, label %main4
-
-main3:                                            ; preds = %main2
-  call void @rapl_A()
-  %21 = load i32, i32* %2, align 4
-  %22 = sext i32 %21 to i64
-  %23 = getelementptr inbounds [30 x i32], [30 x i32]* %1, i64 0, i64 %22
-  %24 = load i32, i32* %23, align 4
-  %25 = sub nsw i32 %24, 63
-  %26 = load i32, i32* %2, align 4
-  %27 = sext i32 %26 to i64
-  %28 = getelementptr inbounds [30 x i32], [30 x i32]* %1, i64 0, i64 %27
-  store i32 %25, i32* %28, align 4
-  br label %main4
-
-main4:                                            ; preds = %main3, %main2
-  call void @rapl_A()
-  br label %main5
-
-main5:                                            ; preds = %main4
-  call void @rapl_A()
-  %29 = load i32, i32* %2, align 4
-  %30 = add nsw i32 %29, 1
-  store i32 %30, i32* %2, align 4
-  br label %main1
-
-main6:                                            ; preds = %main1
-  call void @rapl_A()
-  store i32 30, i32* %3, align 4
-  %31 = getelementptr inbounds [30 x i32], [30 x i32]* %1, i64 0, i64 0
-  %32 = load i32, i32* %3, align 4
-  call void @rapl_B()
-  call void @bubbleSort(i32* %31, i32 %32)
-  call void @rapl_C()
-  call void @rapl_B()
-  %33 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([34 x i8], [34 x i8]* @.str.8, i64 0, i64 0))
-  call void @rapl_C()
-  %34 = getelementptr inbounds [30 x i32], [30 x i32]* %1, i64 0, i64 0
-  %35 = load i32, i32* %3, align 4
-  call void @rapl_B()
-  call void @printArray(i32* %34, i32 %35)
-  call void @rapl_C()
-  call void @rapl_B()
-  call void @do_nothing()
-  call void @rapl_C()
-  ret i32 0
-}
 
 ; Function Attrs: noinline nounwind optnone uwtable
 define dso_local void @rapl_A() #0 {
@@ -381,7 +261,7 @@ define dso_local void @rapl_A() #0 {
   store i64 0, i64* %2, align 8
   %7 = call %struct._IO_FILE* @fopen(i8* getelementptr inbounds ([69 x i8], [69 x i8]* @.str, i64 0, i64 0), i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.1, i64 0, i64 0))
   store %struct._IO_FILE* %7, %struct._IO_FILE** %5, align 8
-  %8 = call %struct._IO_FILE* @fopen(i8* getelementptr inbounds ([14 x i8], [14 x i8]* @.str.9, i64 0, i64 0), i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.3, i64 0, i64 0))
+  %8 = call %struct._IO_FILE* @fopen(i8* getelementptr inbounds ([14 x i8], [14 x i8]* @.str.7, i64 0, i64 0), i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.3, i64 0, i64 0))
   store %struct._IO_FILE* %8, %struct._IO_FILE** %6, align 8
   %9 = load %struct._IO_FILE*, %struct._IO_FILE** %5, align 8
   %10 = icmp eq %struct._IO_FILE* %9, null
@@ -449,7 +329,7 @@ define dso_local void @rapl_B() #0 {
   store i64 0, i64* %2, align 8
   %7 = call %struct._IO_FILE* @fopen(i8* getelementptr inbounds ([69 x i8], [69 x i8]* @.str, i64 0, i64 0), i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.1, i64 0, i64 0))
   store %struct._IO_FILE* %7, %struct._IO_FILE** %5, align 8
-  %8 = call %struct._IO_FILE* @fopen(i8* getelementptr inbounds ([14 x i8], [14 x i8]* @.str.9, i64 0, i64 0), i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.3, i64 0, i64 0))
+  %8 = call %struct._IO_FILE* @fopen(i8* getelementptr inbounds ([14 x i8], [14 x i8]* @.str.7, i64 0, i64 0), i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.3, i64 0, i64 0))
   store %struct._IO_FILE* %8, %struct._IO_FILE** %6, align 8
   %9 = load %struct._IO_FILE*, %struct._IO_FILE** %5, align 8
   %10 = icmp eq %struct._IO_FILE* %9, null
@@ -517,7 +397,7 @@ define dso_local void @rapl_C() #0 {
   store i64 0, i64* %2, align 8
   %7 = call %struct._IO_FILE* @fopen(i8* getelementptr inbounds ([69 x i8], [69 x i8]* @.str, i64 0, i64 0), i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.1, i64 0, i64 0))
   store %struct._IO_FILE* %7, %struct._IO_FILE** %5, align 8
-  %8 = call %struct._IO_FILE* @fopen(i8* getelementptr inbounds ([14 x i8], [14 x i8]* @.str.9, i64 0, i64 0), i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.3, i64 0, i64 0))
+  %8 = call %struct._IO_FILE* @fopen(i8* getelementptr inbounds ([14 x i8], [14 x i8]* @.str.7, i64 0, i64 0), i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.3, i64 0, i64 0))
   store %struct._IO_FILE* %8, %struct._IO_FILE** %6, align 8
   %9 = load %struct._IO_FILE*, %struct._IO_FILE** %5, align 8
   %10 = icmp eq %struct._IO_FILE* %9, null
