@@ -20,3 +20,6 @@ mv breaker_folder/evaluation_real.txt $1_results
 cp -r $1_results ../energy_dataset/
 cp -r $1_results results
 rm -r $1_results
+
+cd ../energy_dataset
+./clean_data.sh $1
