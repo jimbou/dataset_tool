@@ -92,6 +92,7 @@ plt.savefig(path5)
 file_write = open(path4, "w")
 file_write.write("Calculated energy sum : "+str(total_val)+"\n")
 file_write.write("Difference from real: "+str(((total_val-val)/val )*100)+" %" +"\n")
+file_write.write("Number of commands "+ str(len(clean_energies.index))+"\n")
 
 
 
