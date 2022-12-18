@@ -115,7 +115,7 @@ for subdir, dirs, files in os.walk(cur_dir):
             file_write.write("Total unique basic blocks : "+ str(total_count)+"\n")
             file_write.write("Non Zero unique basic blocks : "+ str(non_zero_count)+"\n")
             file_write.write("Zero unique basic blocks : "+ str(total_count - non_zero_count)+"\n")
-            useful_count+=total_count - non_zero_count
+            useful_count+= non_zero_count
 
 print("Usable non zero dataset so far = " ,useful_count)
 
