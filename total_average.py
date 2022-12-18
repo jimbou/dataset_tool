@@ -81,7 +81,7 @@ for subdir, dirs, files in os.walk(cur_dir):
             lines = file_read.readlines()
             line =lines[0].split()
             val =0
-            val= float(line[1])
+            val= float(line[3])
             print("actual val is", val)
             total_val=0
 
