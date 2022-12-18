@@ -60,8 +60,8 @@ with open(sys.argv[2], 'w') as f5:
 #print("sum: "+str(sum))
 #print("sum1: "+str(sum1))
 #print("total: "+ str(sum+sum1))
-with open(sys.argv[3], 'w') as f4:
-   f4.write("total_real: "+str(total_clean_energy+total_dirty_energy)+"\n")
+#with open(sys.argv[3], 'w') as f4:
+#   f4.write("total_real: "+str(total_clean_energy+total_dirty_energy)+"\n")
 
 
    

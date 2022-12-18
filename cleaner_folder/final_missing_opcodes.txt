@@ -1,0 +1,12 @@
+vxorps
+vfmsub132sd
+vfmadd231sdq
+vaddsd
+vmulsdq
+vsubsd
+vaddsdq
+vfmadd132sd
+vcvtsi2sd
+vfmadd213sdq
+vfmadd132sdq
+vmulsd
