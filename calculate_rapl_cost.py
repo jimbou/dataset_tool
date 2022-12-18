@@ -2,6 +2,7 @@ import sys
 #pyhton script to give addresses of rapl functions
 if (len(sys.argv) <5) :
     print("Did not provide enough arguments for python script find_missing.py")
+
 file_read_original = open(str(sys.argv[1]), "r")
 file_read_rest = open(str(sys.argv[2]), "r")
 file_read_last = open(str(sys.argv[3]), "r")
