@@ -176,6 +176,12 @@ int main(int argc, char *argv[]) {
     size_t len8 = 0;
     ssize_t read8;
 
+
+    FILE * fp9; //the input cost file
+    char * line9 = NULL;
+    size_t len9 = 0;
+    ssize_t read9;
+
     long double original_read,final_read, previous_read , current_read , current_energy , current_weight, current_total_weight , current_total_energy , sum_of_weight =0 , sum_of_energy =0 ,total_streak=0,zero_streak=0 ,clean =0 ,cost=0;
     const char s[2] = "\n";
     char* token;
@@ -186,10 +192,10 @@ int main(int argc, char *argv[]) {
     char* temp2 =NULL;
 
 
-    if (argc<9)
+    if (argc<10)
         {    //if an argument is not provided then error message and fail 
         fprintf(stderr,"You have not given the name of one ore more argumets\n");
-        fprintf(stderr,"Arguments should be in that order :\n 1)cleaner script output file\n 2)output for BBs code\n 3)output for bb energy\n 4)input me energeia arxikou rapl read\n 5)input with the rest rapl energies\n 6) input me last rapl read energy\n 7) output gia sums\n 8) the input cost file\n 9) the output for expected sum \n ");
+        fprintf(stderr,"Arguments should be in that order :\n 1)cleaner script output file\n 2)output for BBs code\n 3)output for bb energy\n 4)input me energeia arxikou rapl read\n 5)input with the rest rapl energies\n 6) input me last rapl read energy\n 7) output gia sums\n 8) the input cost file\n 9) the output for expected sum \n 9)lost energy file to write\n ");
         return 1;
         }
     fp  = fopen(argv[1], "r"); //to proto argument einai to onoma tou arxeiou me to apotelsma tou cleaner script
@@ -201,6 +207,7 @@ int main(int argc, char *argv[]) {
     fp6 = fopen(argv[7], "w"); //to output gia sums
     fp7 = fopen(argv[8], "r"); //to input  gia costs
     fp8 = fopen(argv[9], "w"); //to output gia expected energy sum
+    fp9 = fopen(argv[10], "w"); //to output gia lost energy
 
     if (fp == NULL)
         {
@@ -240,6 +247,17 @@ int main(int argc, char *argv[]) {
     if (fp7 == NULL)
         {
         fprintf(stderr,"Could not open file for input of cost\n");
+        exit(EXIT_FAILURE);
+        }
+
+    if (fp8 == NULL)
+        {
+        fprintf(stderr,"Could not open file for input of cost\n");
+        exit(EXIT_FAILURE);
+        }
+    if (fp9 == NULL)
+        {
+        fprintf(stderr,"Could not open file for write lost energy\n");
         exit(EXIT_FAILURE);
         }
 
@@ -444,10 +462,36 @@ char *last_temp=NULL ;
     } 
     push_last(total_energy,clean-total_amount); //prosteto tin energeia pou perisseuei sto telos
     push_last(total_weight,rest_sum); //prostheto ton baros ton perisseuomenon sto telos
+    long double temp_total =0;
+    node_t * temp_help = total_energy->next;
+    while ((temp_help != NULL))
+    {
+        temp_total = temp_total + temp_help->val;
+        temp_help =temp_help->next;
+    }
+    long double temp_total_w2 =0;
+    node_t * temp_help1 = total_weight;
+    while ((temp_help1 != NULL))
+    {
+        temp_total_w2 = temp_total_w2 + temp_help1->val;
+        temp_help1 =temp_help1->next;
+    }
+    long double temp_weight1 =0;
+    node_t * temp_help2 = weight;
+    while ((temp_help2 != NULL))
+    {
+        temp_weight1 = temp_weight1 + temp_help2->val;
+        temp_help2 =temp_help2->next;
+    }
      //fprintf(fp6,"list of total weight len = %d \n", list_len(total_weight));
      //fprintf(fp6,"list of total energy len = %d \n", list_len(total_energy));
     //fprintf(fp6,"total streak = %LF \n", total_streak);
      //fprintf(fp6,"zeros streak = %LF \n", zero_streak);
+    printf("clean is %LF \n",clean);
+    printf("total is %LF \n",temp_total);
+     printf("total weight sum is %LF \n",temp_total_w2);
+      printf("weight is %LF \n",temp_weight1);
+
 
     fprintf(fp8,"expected amount = %LF \n", clean);
     //fprintf(fp8,"rest amount = %LF \n",clean - total_amount);
@@ -469,6 +513,16 @@ char *last_temp=NULL ;
     char prev_type_of_rapl_read= 'B'; 
     fp  = fopen(argv[1], "r");
     fprintf(fp1,"B@ %d\n",counter);
+
+    printf("UPDATED LIST OF TOTAL ENERGY IS :\n");
+    print_list(total_energy);
+
+    printf("UPDATED LIST OF TOTAL WEIGHT IS :\n");
+    print_list(total_weight);
+    long double temporary_sum=0 ,temporary_sum1=0;
+    bool first_time1=true;
+    long double weightsum =0, tmpsum1=0,tmpsum2=0 ,tmpsum3=0,tmpsum4=0;
+
     read = getline(&line, &len, fp); //gia na fugei i keni grammi pano pano 
      while ((read = getline(&line, &len, fp)) != -1)  
         {
@@ -493,15 +547,26 @@ char *last_temp=NULL ;
                 type_of_rapl_read = 'L';
             }
 
-
-
+            
+            
             if((strchr(line, '@') != NULL))
-            {
+            {   
+                
+                
                 current_weight = pop(&weight);
+                weightsum+=current_weight;
                 current_energy = pop(&head);
                 if (current_total_weight != 0)
                     {
                     result = (current_weight / current_total_weight ) * current_total_energy; 
+                    if (first_time1){ 
+                        printf("I AM HEREEEEEEEEEEEEEEEEEEEEEE %LF\n", result);
+                        tmpsum4=result;}
+                    temporary_sum1+=current_weight / current_total_weight;
+                    if(!first_time1){
+                    temporary_sum+=result;
+                    }
+                    first_time1=false;
                     }
                 else 
                     {
@@ -516,10 +581,17 @@ char *last_temp=NULL ;
 
                 if (current_energy != 0)
                 {
+                tmpsum3 += current_total_energy;
                 current_total_energy = pop(&total_energy);
                 if (current_total_energy == -1){
                     current_total_energy =0;
                 }
+                printf("\ntotal %LF vs sum %LF   \n", current_total_weight, weightsum);
+                printf ("close to 1 is %LF\n", temporary_sum1);
+                temporary_sum1=0;
+                tmpsum1+=current_total_weight;
+                tmpsum2+=weightsum;
+                weightsum =0;
                 current_total_weight = pop(&total_weight);
                 if (current_total_weight == -1){
                     current_total_weight =0;
@@ -546,6 +618,13 @@ char *last_temp=NULL ;
             }
         
         }
+     printf("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA %LF \n",temporary_sum)   ;
+     fprintf(fp9,"%LF",clean-temporary_sum );
+     printf("length of weight is %d \n", list_len(weight));
+     printf("length of total_weight is %d \n", list_len(total_weight));
+     printf("length of total_energy is %d \n", list_len(total_energy));
+     printf("\ntotal sum %LF vs sum sum %LF   \n", tmpsum1, tmpsum2);
+     printf("\ntotal energy sum %LF vs first energy  sum %LF  vs rest energy sum %LF  \n", tmpsum3, tmpsum4, tmpsum3-tmpsum4);
 
     
 }
