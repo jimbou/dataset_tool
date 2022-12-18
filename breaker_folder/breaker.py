@@ -22,7 +22,7 @@ zeroed={}
 lost_prev = float(((lines_lost[0]).split())[0])
 
 total_weight =0
-total_dirty_weight = lost_prev
+total_dirty_weight = 0
 total_dirty_energy=0
 total_clean_energy=0
 total_energy=0
@@ -39,6 +39,8 @@ for line in lines_dirty[:-1]:
         zeroed[data[1]] = float(data[2])
 
 #print(total_clean_energy,total_dirty_energy)
+total_dirty_energy += lost_prev
+print("TOTALLLLLLLLLLLLLLLLL" ,total_dirty_energy + total_clean_energy)
 overhead = ((total_clean_energy+total_dirty_energy)/total_clean_energy)*(total_weight -total_dirty_weight)/total_weight
 remaining =  ((total_clean_energy+total_dirty_energy)/total_clean_energy)*(total_dirty_weight)/total_weight
 remaining=remaining*total_clean_energy
