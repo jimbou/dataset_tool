@@ -1,0 +1,194 @@
+,index,BB,average_energy,occurences
+0,3,"('add $0x18, %rsp', 'mov %r13, %rax', 'popq  %rbx', 'popq  %rbp', 'popq  %r12', 'popq  %r13', 'popq  %r14', 'popq  %r15', 'retq')",0.022337909773571484,7.0
+1,11,"('add $0x8, %rsp', 'mov %r13, %rax', 'popq  %rbx', 'popq  %rbp', 'popq  %r12', 'popq  %r13', 'popq  %r14', 'popq  %r15', 'retq')",0.03127307368300008,5.0
+2,14,"('add $0x88, %rsp', 'mov %r8, %rax', 'popq  %rbx', 'popq  %rbp', 'popq  %r12', 'popq  %r13', 'popq  %r14', 'popq  %r15', 'retq')",0.1563653684150004,1.0
+3,15,"('add $0xa0, %rsp', 'popq  %rbx', 'popq  %rbp', 'popq  %r12', 'retq')",0.09555773527731198,1.0
+4,16,"('add $0xd8, %rsp', 'retq')",0.008331760799146902,102.0
+5,18,"('add %r13, %r12', 'sub %r13, %r14', 'movq  %rax, 0x28(%rbp)', 'add %r14, %r15', 'jnz 0x44')",0.01819604953741891,303.0
+6,19,"('add %r15d, %r9d', 'cmpb  $0x0, (%rbx)', 'jnz 0xfffffffffffffad6')",0.011664532393561033,102.0
+7,20,"('add %r8d, %ebx', 'test %ebx, %ebx', 'jnle 0xa21')",0.01019809943706774,100.0
+8,21,"('addl  $0x1, -0x514(%rbp)', 'cmpq  $0x0, -0x4e0(%rbp)', 'jnz 0x1519')",0.01666354138498656,102.0
+9,22,"('addl  -0x4f0(%rbp), %r9d', 'jmp 0xfffffffffffff3d0')",0.016996812212686292,100.0
+10,24,"('and $0x1f, %ecx', 'and $0xffffffffffffffe0, %rdi', 'vmovdquy  (%rdi), %ymm8', 'vpcmpeqb %ymm8, %ymm0, %ymm1', 'vpcmpeqb %ymm8, %ymm9, %ymm2', 'vpor %ymm1, %ymm2, %ymm1', 'vpmovmskb %ymm1, %eax', 'sar %cl, %eax', 'test %eax, %eax', 'jz 0x1f')",0.032674485157254046,201.0
+11,25,"('and $0x8000, %r15d', 'movq  %rax, -0x4c0(%rbp)', 'movl  %r15d, -0x4b4(%rbp)', 'jnz 0x9e')",0.021662570163104845,102.0
+12,29,"('and $0xfffffffffffffff0, %rax', 'lea -0x11(%rax), %rbx', 'shr $0x4, %rbx', 'jmp 0xffffffffffffff78')",0.13030581917427442,1.0
+13,30,"('and $0xfffffffffffffff0, %rax', 'mov %rax, %r13', 'test %rdi, %rdi', 'jz 0x504')",0.06080965138034955,1.0
+14,36,"('callq  0xffffffffffffffc5', 'pushq  %rbp', 'mov %rsp, %rbp')",0.02494632022874688,1.0
+15,37,"('cmp $0x1, %dl', 'jnbe 0x3d')",0.008017354731254566,106.0
+16,38,"('cmp $0x10, %dl', 'jnb 0x19')",0.008084142594285207,310.0
+17,42,"('cmp $0x20, %rdx', 'jb 0x4b')",0.008216669522060373,305.0
+18,43,"('cmp $0x2f, %eax', 'jnbe 0x7b4')",0.00849839601512984,100.0
+19,45,"('cmp $0x3ff, %r13', 'jbe 0x25')",0.04343460031053775,1.0
+20,46,"('cmp $0x3ff, %rax', 'jbe 0x1f6')",0.04343460031053775,1.0
+21,47,"('cmp $0x4, %dl', 'jnb 0x35')",0.008211010642637526,207.0
+22,49,"('cmp $0x7fffffff, %r15', 'jnle 0x348')",0.008331760799146902,102.0
+23,50,"('cmp $0x8, %dl', 'jnb 0x29')",0.008171534629932538,208.0
+24,51,"('cmp $0xa, %ebx', 'jz 0xa3')",0.007239100051756293,114.0
+25,52,"('cmp $0xffffffff, %eax', 'jnz 0x36')",0.04343460031053775,1.0
+26,54,"('cmp $0xffffffff, %eax', 'jz 0x150')",0.0062049429015053935,7.0
+27,55,"('cmp $0xffffffff, %eax', 'jz 0x42')",0.00842099393775732,98.0
+28,57,"('cmp $0xffffffff, %eax', 'jz 0xffffffffffffff1b')",0.007984207932697487,101.0
+29,60,"('cmp %rax, %r12', 'jb 0xfffffffffffffff0')",0.00799691210005932,2792.0
+30,62,"('cmp %rax, %r15', 'jnz 0x285')",0.008331760799146902,102.0
+31,63,"('cmp %rax, %r15', 'jnz 0xfffffffffffffce0')",0.008331760799146902,102.0
+32,66,"('cmp %rdx, %rbx', 'mov %r12, %rsi', 'mov %rbx, %r14', 'cmovbe %rbx, %rdx', 'mov %rdx, %r13', 'callq  0xfffffffffffe47eb', 'jmpq  0xc0ff2(%rip)', 'nop %edi, %edx', 'mov %rdi, %rax', 'add %rdx, %rax', 'jmp 0xd')",0.05458805536012057,303.0
+33,68,"('cmpb  $0x20, -0x508(%rbp)', 'jnz 0xfffffffffffff718')",0.01019809943706774,100.0
+34,71,"('cmpl  $0x10, -0x510(%rbp)', 'jnz 0x62')",0.01019809943706774,100.0
+35,72,"('cmpl  $0x10, -0x510(%rbp)', 'jnz 0xa')",0.01019809943706774,100.0
+36,74,"('cmpl  $0x64, -0x14(%rbp)', 'jnl 0x54')",0.01876851850904905,101.0
+37,75,"('cmpl  $0xa, -0x510(%rbp)', 'jnz 0x3d')",0.01019809943706774,100.0
+38,77,"('cmpq  $0x0, -0x500(%rbp)', 'jz 0x670')",0.01019809943706774,100.0
+39,78,"('cmpq  $0x0, -0x500(%rbp)', 'jz 0x6b')",0.01019809943706774,100.0
+40,81,"('cmpq  $0x0, 0xade98(%rip)', 'jz 0x3f8')",0.009998136703007589,102.0
+41,82,"('cmpq  $0x0, 0xb1710(%rip)', 'jnz 0x120')",0.009998136703007589,102.0
+42,83,"('cmpq  $0x0, 0xb1722(%rip)', 'jnz 0x112')",0.009998136703007589,102.0
+43,84,"('cmpq  %r15, 0x9e31e(%rip)', 'cmovnbe %r13, %rax', 'movq  %rax, 0x10(%rsp)', 'movq  $0x0, 0x8(%rsp)', 'lea 0x60(%rbx), %r11', 'movl  %r14d, 0x48(%rsp)', 'movq  %rbp, 0x20(%rsp)', 'movq  0x78(%rbx), %r10', 'cmp %r11, %r10', 'jz 0x337')",0.2866711875892748,1.0
+44,86,"('cmpq  %rdx, 0x40(%rbp)', 'jz 0xf6')",0.00868685278735218,114.0
+45,88,"('cmpq  0x9c1a3(%rip), %rbx', 'jb 0xb3')",0.04343460031053775,1.0
+46,93,"('jb 0x7',)",0.03197017469816014,15.0
+47,99,"('jmp 0xfffffffffffffbfc',)",0.013330848937343454,102.0
+48,107,"('lea (%r12,%r8,1), %rsi', 'mov %r14, %rdx', 'mov %rbp, %rdi', 'callq  0x260b', 'nop %edi, %edx', 'test %rdx, %rdx', 'jz 0x149')",0.034748083896962434,5.0
+49,108,"('lea (%rax,%rbx,1), %rdx', 'mov $0x1, %ecx', 'mov %rbp, %rdi', 'callq  0xfffffffffffaafe8', 'nop %edi, %edx', 'pushq  %rbp', 'mov %ecx, %ebp', 'pushq  %rbx', 'mov %rdi, %rbx', 'sub $0x18, %rsp', 'movq  0x38(%rdi), %rdi', 'movl  (%rbx), %eax', 'movq  %rsi, (%rsp)', 'movq  %rdx, 0x8(%rsp)', 'test %rdi, %rdi', 'jz 0x6')",0.3909154392801621,1.0
+50,109,"('lea (%rax,%rbx,2), %rcx', 'movzxw  (%rcx), %edx', 'test %dx, %dx', 'jz 0xffffffffffffff49')",0.09555773527731198,1.0
+51,114,"('lea -0x11(%r13), %rax', 'shr $0x4, %rax', 'mov %rax, %r15', 'xor %eax, %eax', 'movq  %rax, 0x10(%rsp)', 'cmpq  $0x0, %fs:0xffffffffffffffc8', 'jz 0x12')",0.1563653684150004,1.0
+52,116,"('lea -0x28(%rbp), %rsp', 'mov %r9d, %eax', 'popq  %rbx', 'popq  %r12', 'popq  %r13', 'popq  %r14', 'popq  %r15', 'popq  %rbp', 'retq')",0.03499347846052656,102.0
+53,120,"('lea 0x1(%rbx), %rax', 'xor %r10d, %r10d', 'xor %r11d, %r11d', 'mov $0xffffffff, %r8d', 'movq  %rax, -0x4c8(%rbp)', 'movsx %r15b, %eax', 'lea 0x81791(%rip), %rbx', 'lea 0xab44a(%rip), %rsi', 'sub $0x20, %eax', 'movl  $0x0, -0x520(%rbp)', 'cdqe', 'movl  $0x0, -0x53c(%rbp)', 'movzxb  (%rbx,%rax,1), %eax', 'movl  $0x0, -0x4e8(%rbp)', 'movl  $0x0, -0x500(%rbp)', 'movq  (%rsi,%rax,8), %rax', 'lea -0x38(%rbp), %rsi', 'movl  $0x0, -0x530(%rbp)', 'movl  $0x0, -0x4d8(%rbp)', 'movl  $0x0, -0x4f0(%rbp)', 'movl  $0x0, -0x518(%rbp)', 'movl  $0x0, -0x51c(%rbp)', 'movq  $0x0, -0x4e0(%rbp)', 'movb  $0x20, -0x508(%rbp)', 'movq  %rsi, -0x4f8(%rbp)', 'jmp %rax')",0.1499719713983428,102.0
+54,121,"('lea 0x1(%rdi), %eax', 'cmp $0x3, %edi', 'jz 0x3f')",0.0781826842075002,1.0
+55,122,"('lea 0x1(%rdx), %rax', 'movq  %rax, 0x28(%rbp)', 'movb  %bl, (%rdx)', 'movl  (%rbp), %eax', 'test $0x2, %al', 'jnz 0xb1')",0.027508647471429285,114.0
+56,124,"('lea 0x17(%rdi), %rax', 'xor %ebx, %ebx', 'cmp $0x1f, %rax', 'jnbe 0x82')",0.0868692006210755,1.0
+57,125,"('lea 0x2(%rdi), %eax', 'cmp $0x2, %edi', 'jz 0x26')",0.0781826842075002,1.0
+58,126,"('lea 0x20(%r13), %rdx', 'cmp %rax, %rdx', 'jbe 0x262')",0.0781826842075002,1.0
+59,129,"('lea 0x9db42(%rip), %rdx', 'sub %r13, %rax', 'lea (%r8,%r13,1), %rcx', 'movq  0x20(%rsp), %rbp', 'cmp %rdx, %rbx', 'movq  %rcx, 0x60(%rbx)', 'setnz %dl', 'or $0x1, %rax', 'add $0x10, %r8', 'movzx %dl, %edx', 'shl $0x2, %rdx', 'or %r13, %rdx', 'or $0x1, %rdx', 'movq  %rdx, -0x8(%r8)', 'movq  %rax, 0x8(%rcx)', 'movl  0xa001c(%rip), %eax', 'test %eax, %eax', 'jz 0xfffffffffffff6e8')",0.3752780951415976,1.0
+60,130,"('mov $0x0, %edx', 'sub %rcx, %rbx', 'cmovs %rdx, %rbx', 'movl  -0x4f0(%rbp), %edx', 'mov %ebx, %r8d', 'test %edx, %edx', 'jnz 0xfffffffffffffd9e')",0.02039619887413548,100.0
+61,133,"('mov $0x1, %eax', 'movq  0x98(%rsp), %rcx', 'xorq  %fs:0x28, %rcx', 'jnz 0x97')",0.09555773527731198,1.0
+62,135,"('mov $0x1, %ebx', 'jmp 0xfffffffffffff58c')",0.015297149155601613,100.0
+63,138,"('mov $0x1, %edx', 'cmpxchgl  %edx, (%rdi)', 'movq  0x88(%r12), %rdi', 'movq  %r15, 0x8(%rdi)', 'addl  $0x1, 0x4(%rdi)', 'jmp 0x2b')",0.07498602527255692,102.0
+64,144,"('mov $0x46d0b0, %rax', 'movq  %r12, -0x468(%rbp)', 'movq  %rax, -0x470(%rbp)', 'jmp 0xfffffffffffffc23')",0.02832805399185484,102.0
+65,146,"('mov $0x495064, %rdi', 'mov %ebx, %esi', 'mov $0x0, %al', 'callq  0xf103', 'nop %edi, %edx', 'sub $0xd8, %rsp', 'mov %rdi, %r10', 'movq  %rsi, 0x28(%rsp)', 'movq  %rdx, 0x30(%rsp)', 'movq  %rcx, 0x38(%rsp)', 'movq  %r8, 0x40(%rsp)', 'movq  %r9, 0x48(%rsp)', 'test %al, %al', 'jz 0x39')",0.0662876059760871,100.0
+66,151,"('mov $0x5, %eax', 'syscall', 'cmp $0xfffffffffffff000, %rax', 'jnbe 0x9')",0.05212111672411308,1.0
+67,155,"('mov $0xcccccccccccccccd, %rcx', 'nopw  %ax, (%rax,%rax,1)', 'mov %rdi, %rax', 'mov %rdi, %r9', 'sub $0x1, %r8', 'mul %rcx', 'shr $0x3, %rdx', 'lea (%rdx,%rdx,4), %rax', 'add %rax, %rax', 'sub %rax, %r9', 'movzxb  (%rsi,%r9,1), %eax', 'movb  %al, (%r8)', 'mov %rdi, %rax', 'mov %rdx, %rdi', 'cmp $0x9, %rax', 'jnbe 0xffffffffffffffd3')",0.04929081394582742,100.0
+68,156,"('mov $0xffffffff, %esi', 'mov %rbp, %rdi', 'callq  0x18(%rax)', 'nop %edi, %edx', 'pushq  %r12', 'pushq  %rbp', 'mov %rdi, %rbp', 'pushq  %rbx', 'movl  (%rdi), %eax', 'test $0x8, %al', 'jnz 0x201')",0.03847087664563757,7.0
+69,160,"('mov %eax, %edx', 'add $0x8, %eax', 'addq  0x10(%r14), %rdx', 'movl  %eax, (%r14)', 'movsxdl  (%rdx), %r11', 'jmp 0xfffffffffffff036')",0.030594298311203225,100.0
+70,161,"('mov %eax, %edx', 'movl  0x860(%rbx,%rdx,4), %esi', 'test %esi, %esi', 'jnz 0x244')",0.06080965138034955,1.0
+71,162,"('mov %eax, %edx', 'movqq  (%rsp), %xmm0', 'or $0x1, %eax', 'and $0xfffffffe, %edx', 'test %ebp, %ebp', 'cmovnz %edx, %eax', 'movhpsq  0x8(%rsp), %xmm0', 'movupsx  %xmm0, 0x38(%rbx)', 'movl  %eax, (%rbx)', 'add $0x18, %rsp', 'popq  %rbx', 'popq  %rbp', 'retq')",0.25192310369231236,1.0
+72,165,"('mov %eax, %r14d', 'shr $0x4, %r14d', 'cmpq  0xa0b8a(%rip), %rax', 'jbe 0x272')",0.06949616779392487,1.0
+73,169,"('mov %esi, %ebx', 'movq  0x20(%rdi), %rsi', 'test $0x8, %ah', 'jz 0x52')",0.014358545557202562,121.0
+74,170,"('mov %r10d, %edx', 'movl  %ecx, -0x4f0(%rbp)', 'sub %ecx, %edx', 'sub %ebx, %edx', 'mov %edx, %ebx', 'jmp 0xfffffffffffff824')",0.027194871284900807,100.0
+75,180,"('mov %r14, %rax', 'xor %edx, %edx', 'div %rcx', 'sub %rdx, %r8', 'test %r8, %r8', 'jnz 0x4b')",0.18366786681461256,7.0
+76,182,"('mov %r15d, %ebx', 'and $0x2, %ebx', 'jnz 0x425')",0.009998136703007589,102.0
+77,183,"('mov %r8, %rax', 'retq')",0.00849839601512984,100.0
+78,185,"('mov %rax, %r8', 'test %rax, %rax', 'jz 0xc8')",0.05212111672411308,1.0
+79,186,"('mov %rax, %rcx', 'mov %rax, %rdi', 'mov %rax, %rsi', 'mov %rax, %r15', 'shr $0xc, %rsi', 'shr $0xf, %r15', 'mov $0x2, %edx', 'shr $0x6, %rcx', 'shr $0x9, %rdi', 'lea 0x77(%r15), %r10d', 'movq  %rsi, 0x58(%rsp)', 'shr $0x12, %rax', 'cmp $0xbffff, %r13', 'movq  %r15, 0x60(%rsp)', 'lea 0x30(%rcx), %r11d', 'cmovnbe %rdx, %rax', 'mov %r15, %rdx', 'lea 0x6e(%rsi), %r15d', 'movq  %rcx, 0x40(%rsp)', 'movq  %rdi, 0x50(%rsp)', 'lea 0x7c(%rax), %r9d', 'mov %rsi, %rax', 'mov %edi, %esi', 'movl  %r11d, 0x4c(%rsp)', 'add $0x5b, %esi', 'movl  %r9d, 0x68(%rsp)', 'movl  %r10d, 0x6c(%rsp)', 'movl  %r15d, 0x70(%rsp)', 'movl  %esi, 0x74(%rsp)', 'movl  %r11d, 0x28(%rsp)', 'cmp $0x30, %rcx', 'jbe 0x20')",0.7210212271799746,1.0
+80,189,"('mov %rax, %rsi', 'test %rax, %rax', 'jz 0x53')",0.05212111672411308,1.0
+81,190,"('mov %rbp, %rdi', 'callq  0x1025', 'nop %edi, %edx', 'cmpq  $0x0, 0x38(%rdi)', 'jz 0x7')",0.13899233558784974,1.0
+82,192,"('mov %rbp, %rsi', 'lea 0x9c1d3(%rip), %rdi', 'callq  0xffffffffffffda13', 'test %rsi, %rsi', 'js 0x60d')",0.1563653684150004,1.0
+83,193,"('mov %rbx, %r13', 'test %r14, %r14', 'jz 0xffffffffffffff62')",0.007445873817730439,7.0
+84,194,"('mov %rbx, %r14', 'movq  0xd8(%rbp), %rax', 'mov $0x4c3b60, %r15', 'mov $0x4c4208, %r13', 'mov %rax, %rdx', 'sub %r15, %r13', 'sub %r15, %rdx', 'cmp %rdx, %r13', 'jbe 0x1ac')",0.13030581917427442,1.0
+85,195,"('mov %rbx, %r15', 'movl  %r9d, -0x4c8(%rbp)', 'mov %r8, %rsi', 'mov %r12, %rdi', 'sub %r8, %r15', 'mov %r15, %rdx', 'callq  0x38(%rax)', 'nop %edi, %edx', 'pushq  %r15', 'pushq  %r14', 'pushq  %r13', 'xor %r13d, %r13d', 'pushq  %r12', 'pushq  %rbp', 'pushq  %rbx', 'sub $0x18, %rsp', 'test %rdx, %rdx', 'jz 0x5f')",0.08165144974122866,102.0
+86,197,"('mov %rbx, %rdi', 'callq  0x68(%rbp)', 'nop %edi, %edx', 'pushq  %r12', 'pushq  %rbp', 'mov %rdi, %rbp', 'pushq  %rbx', 'sub $0xa0, %rsp', 'movq  %fs:0x28, %rax', 'movq  %rax, 0x98(%rsp)', 'xor %eax, %eax', 'movl  0x70(%rdi), %eax', 'test %eax, %eax', 'js 0xae')",0.3474788207269632,1.0
+87,198,"('mov %rbx, %rdi', 'callq  0xfffffffffffb2751', 'nop %edi, %edx', 'pushq  %r12', 'movq  0x9c223(%rip), %rax', 'pushq  %rbp', 'mov %rdi, %rbp', 'pushq  %rbx', 'test %rax, %rax', 'jnz 0x15b')",0.27798467117569947,1.0
+88,199,"('mov %rdi, %rax', 'mov %rdi, %r9', 'sub $0x1, %r8', 'mul %rcx', 'shr $0x3, %rdx', 'lea (%rdx,%rdx,4), %rax', 'add %rax, %rax', 'sub %rax, %r9', 'movzxb  (%rsi,%r9,1), %eax', 'movb  %al, (%r8)', 'mov %rdi, %rax', 'mov %rdx, %rdi', 'cmp $0x9, %rax', 'jnbe 0xffffffffffffffd3')",0.014697479243656806,92.0
+89,200,"('mov %rdi, %rbp', 'mov %rsi, %r12', 'movq  0x28(%rdi), %rdi', 'mov %rdx, %rbx', 'movl  (%rbp), %eax', 'and $0xa00, %eax', 'cmp $0xa00, %eax', 'jz 0x5c')",0.025159784795397388,304.0
+90,203,"('mov %rsp, %rsi', 'mov %rbp, %rdi', 'callq  0x90(%rbx)', 'nop %edi, %edx', 'mov %rsi, %rdx', 'movl  0x70(%rdi), %esi', 'mov $0x1, %edi', 'jmp 0x35261')",0.19979996872553815,1.0
+91,209,"('movdqux  (%r14), %xmm1', 'movq  0x10(%r14), %rax', 'mov $0x25, %esi', 'mov %r13, %rdi', 'movq  %rax, -0x438(%rbp)', 'movupsx  %xmm1, -0x448(%rbp)', 'callq  0xfffffffffffecf70', 'jmpq  0xc0ff2(%rip)', 'nop %edi, %edx', 'mov %edi, %ecx', 'vmovd %esi, %xmm0', 'vpxor %xmm9, %xmm9, %xmm9', 'vpbroadcastb %xmm0, %ymm0', 'and $0x3f, %ecx', 'cmp $0x20, %ecx', 'jnbe 0x36')",0.0771855931861227,102.0
+92,211,"('movl  $0x0, -0x38(%rbp)', 'movl  %ebx, -0x34(%rbp)', 'movq  %r14, -0x40(%rbp)')",0.023027372518843275,1.0
+93,215,"('movl  $0xffffffff, 0xc0(%rdi)', 'movl  (%r12), %r15d', 'test $0x8, %r15b', 'jnz 0x249b')",0.09555773527731198,1.0
+94,220,"('movl  %fs:0x18, %eax', 'test %eax, %eax', 'jnz 0x123')",0.06080965138034955,1.0
+95,221,"('movl  %fs:0x18, %eax', 'test %eax, %eax', 'jnz 0x1d3f')",0.011664532393561033,102.0
+96,227,"('movl  (%r12), %r15d', 'test $0x8, %r15b', 'jnz 0x249b')",0.011177947057058176,101.0
+97,236,"('movl  -0x14(%rbp), %eax', 'add $0x1, %eax', 'movl  %eax, -0x14(%rbp)', 'jmp 0xffffffffffffffa5')",0.051125417871694764,100.0
+98,238,"('movl  -0x14(%rbp), %eax', 'imull  -0x14(%rbp), %eax', 'cdq', 'mov $0x41, %ecx', 'idiv %ecx', 'movsxdl  -0x14(%rbp), %rcx', 'movl  %eax, -0x1d0(%rbp,%rcx,4)')",1.2916986138366129,100.0
+99,239,"('movl  -0x14(%rbp), %ebx', 'add $0x1, %ebx')",0.004739148924749791,100.0
+100,240,"('movl  -0x4(%rsi,%rdx,1), %ecx', 'movl  (%rsi), %esi', 'movl  %ecx, -0x4(%rdi,%rdx,1)', 'movl  %esi, (%rdi)', 'retq')",0.020194256311025227,101.0
+101,241,"('movl  -0x4b4(%rbp), %ecx', 'test %ecx, %ecx', 'jnz 0x9f')",0.011664532393561033,102.0
+102,242,"('movl  -0x4b8(%rbp), %eax', 'mov %rdi, %rbx', 'movl  $0x0, -0x540(%rbp)', 'movl  $0x0, -0x514(%rbp)', 'movq  $0xffffffffffffffff, -0x528(%rbp)', 'mov %eax, %esi', 'and $0x2, %esi', 'movl  %esi, -0x550(%rbp)', 'mov %eax, %esi', 'and $0x8, %eax', 'and $0x1, %esi', 'movl  %eax, -0x54c(%rbp)', 'movb  %sil, -0x545(%rbp)', 'movzxb  0x1(%rbx), %r15d', 'lea -0x20(%r15), %eax', 'cmp $0x5a, %al', 'jnbe 0x239')",0.0716532932515283,102.0
+103,243,"('movl  -0x4c8(%rbp), %r9d', 'mov $0x7fffffff, %eax', 'sub %r9d, %eax', 'cdqe', 'cmp %rax, %r15', 'jnle 0xfffffffffffffd96')",0.021662570163104845,102.0
+104,244,"('movl  -0x4d8(%rbp), %eax', 'orl  -0x518(%rbp), %eax', 'orl  -0x4e8(%rbp), %eax', 'jz 0x932')",0.016996812212686292,100.0
+105,245,"('movl  -0x4e0(%rbp), %r9d', 'movq  -0x4c8(%rbp), %r8', 'mov %rax, %rbx', 'test %r9d, %r9d', 'js 0x2a7a')",0.019996273406015178,102.0
+106,247,"('movl  -0x4f8(%rbp), %r9d', 'mov $0x7fffffff, %eax', 'sub %r9d, %eax', 'cdqe', 'cmp %rcx, %rax', 'jl 0xfffffffffffffc35')",0.02209582156636694,100.0
+107,248,"('movl  -0x500(%rbp), %r11d', 'test %r11d, %r11d', 'jnz 0x52e')",0.011897823041432254,100.0
+108,249,"('movl  -0x520(%rbp), %eax', 'test %eax, %eax', 'jz 0x33')",0.011897823041432254,100.0
+109,250,"('movl  -0x530(%rbp), %eax', 'test %eax, %eax', 'jz 0x3e')",0.011897823041432254,100.0
+110,251,"('movl  -0x53c(%rbp), %ebx', 'test %ebx, %ebx', 'jz 0x5d7')",0.011897823041432254,100.0
+111,264,"('movl  0x18(%rsp), %eax', 'and $0xf000, %eax', 'cmp $0x2000, %eax', 'jz 0x83')",0.06949616779392487,1.0
+112,265,"('movl  0x28(%rsp), %eax', 'lea -0x2(%rax,%rax,1), %eax', 'lea 0x70(%rbx,%rax,8), %rax', 'movq  (%rax), %rdx', 'lea -0x10(%rax), %rcx', 'cmp %rcx, %rdx', 'jz 0xc')",0.19979996872553815,1.0
+113,266,"('movl  0x28(%rsp), %eax', 'lea 0x1(%rax), %ecx', 'add %eax, %eax', 'mov %ecx, %edi', 'lea 0x60(%rbx,%rax,8), %rdx', 'shr $0x5, %edi', 'mov %edi, %eax', 'movl  0x860(%rbx,%rax,4), %esi', 'mov $0x1, %eax', 'shl %cl, %eax', 'nop', 'cmp %esi, %eax', 'jnbe 0x1ae')",0.21717501979534992,1.0
+114,270,"('movl  0x8(%rbx), %eax', 'test %eax, %eax', 'jz 0x228')",0.06080965138034955,1.0
+115,278,"('movq  $0x0, 0x8(%rdi)', 'movl  %fs:0x18, %edx', 'test %edx, %edx', 'jnz 0x1ad6')",0.018329937075540002,102.0
+116,290,"('movq  %fs:0x28, %rax', 'movq  %rax, 0x18(%rsp)', 'xor %eax, %eax', 'movq  0xb17e7(%rip), %rdi', 'xor %ecx, %ecx', 'mov %rsp, %rdx', 'lea 0xe0(%rsp), %rax', 'mov %r10, %rsi', 'movl  $0x8, (%rsp)', 'movq  %rax, 0x8(%rsp)', 'lea 0x20(%rsp), %rax', 'movl  $0x30, 0x4(%rsp)', 'movq  %rax, 0x10(%rsp)', 'callq  0x3139', 'nop %edi, %edx', 'pushq  %rbp', 'mov %rsp, %rbp', 'pushq  %r15', 'pushq  %r14', 'mov %rdx, %r14', 'pushq  %r13', 'mov %rsi, %r13', 'pushq  %r12', 'mov %rdi, %r12', 'pushq  %rbx', 'sub $0x538, %rsp', 'movl  %ecx, -0x4b8(%rbp)', 'movq  %fs:0x28, %rax', 'movq  %rax, -0x38(%rbp)', 'xor %eax, %eax', 'mov $0xffffffffffffffc0, %rax', 'movl  %fs:(%rax), %eax', 'movl  %eax, -0x4d4(%rbp)', 'movl  0xc0(%rdi), %eax', 'test %eax, %eax', 'jnz 0xf2')",0.17846669978383226,100.0
+117,291,"('movq  %fs:0xffffffffffffffc8, %rax', 'test %rax, %rax', 'jz 0x88')",0.0781826842075002,1.0
+118,293,"('movq  %r11, -0x500(%rbp)', 'movl  $0x0, -0x4e8(%rbp)', 'movl  $0xa, -0x510(%rbp)', 'jmp 0xfffffffffffff967')",0.03399368497265242,100.0
+119,301,"('movq  %rcx, -0x4e8(%rbp)', 'mov %rcx, %rdx', 'mov %r11, %rsi', 'mov %r12, %rdi', 'movl  %r9d, -0x4f8(%rbp)', 'callq  0x38(%rbx)', 'nop %edi, %edx', 'pushq  %r15', 'pushq  %r14', 'pushq  %r13', 'xor %r13d, %r13d', 'pushq  %r12', 'pushq  %rbp', 'pushq  %rbx', 'sub $0x18, %rsp', 'test %rdx, %rdx', 'jz 0x5f')",0.08668380485022258,100.0
+120,303,"('movq  %rdx, 0x30(%rbp)', 'cmp $0xffffffff, %ebx', 'jnz 0xffffffffffffff4f')",0.0781826842075002,1.0
+121,317,"('movq  -0x38(%rbp), %rax', 'xorq  %fs:0x28, %rax', 'jnz 0x2d5c')",0.01666354138498656,102.0
+122,319,"('movq  -0x4c0(%rbp), %r15', 'mov %r13, %rsi', 'mov %r12, %rdi', 'sub %r13, %r15', 'mov %r15, %rdx', 'callq  0x38(%rax)', 'nop %edi, %edx', 'pushq  %r15', 'pushq  %r14', 'pushq  %r13', 'xor %r13d, %r13d', 'pushq  %r12', 'pushq  %rbp', 'pushq  %rbx', 'sub $0x18, %rsp', 'test %rdx, %rdx', 'jz 0x5f')",0.07998501447728969,102.0
+123,320,"('movq  -0x4c0(%rbp), %rdi', 'mov %r15d, %r9d', 'cmpb  $0x0, (%rdi)', 'jz 0x1ad')",0.018329937075540002,102.0
+124,321,"('movq  -0x4c8(%rbp), %r8', 'mov $0x25, %esi', 'movl  %r9d, -0x4e0(%rbp)', 'add $0x1, %r8', 'mov %r8, %rdi', 'movq  %r8, -0x4c8(%rbp)', 'callq  0xfffffffffffec91a', 'jmpq  0xc0ff2(%rip)', 'nop %edi, %edx', 'mov %edi, %ecx', 'vmovd %esi, %xmm0', 'vpxor %xmm9, %xmm9, %xmm9', 'vpbroadcastb %xmm0, %ymm0', 'and $0x3f, %ecx', 'cmp $0x20, %ecx', 'jnbe 0x36')",0.08051832520715133,102.0
+125,323,"('movq  -0x4e8(%rbp), %rcx', 'cmp %rax, %rcx', 'jnz 0xfffffffffffff14f')",0.015297149155601613,100.0
+126,324,"('movq  -0x4f8(%rbp), %rcx', 'sub %r11, %rcx', 'cmp %rbx, %rcx', 'jnl 0x7bb')",0.016996812212686292,100.0
+127,325,"('movq  -0x528(%rbp), %rcx', 'movl  -0x53c(%rbp), %r10d', 'movl  -0x544(%rbp), %r9d', 'mov %rax, %r11', 'test %rcx, %rcx', 'jz 0x48')",0.02379550480587823,100.0
+128,333,"('movq  -0x8(%rax), %rax', 'test $0x2, %al', 'jnz 0x20')",0.0781826842075002,1.0
+129,359,"('movq  0x18(%rsp), %rcx', 'xorq  %fs:0x28, %rcx', 'jnz 0xa')",0.01666354138498656,102.0
+130,361,"('movq  0x28(%r12), %rdi', 'movq  0x30(%r12), %rbx', 'cmp %rbx, %rdi', 'jnb 0xffffffffffffffb0')",0.022586153620892523,5.0
+131,363,"('movq  0x28(%rdi), %rdx', 'cmp $0xffffffff, %ebx', 'jz 0xbd')",0.012378924999520865,120.0
+132,364,"('movq  0x28(%rsp), %rax', 'mov %rax, %rdx', 'shr $0x20, %rax', 'shr $0x8, %rdx', 'and $0xfffff000, %eax', 'and $0xfff, %edx', 'or %edx, %eax', 'sub $0x88, %eax', 'cmp $0x7, %eax', 'jnbe 0x13')",0.1563653684150004,1.0
+133,367,"('movq  0x30(%rbp), %rax', 'cmp %rdi, %rax', 'jbe 0x73')",0.0781826842075002,1.0
+134,371,"('movq  0x38(%rbp), %rdx', 'movl  (%rbp), %eax', 'movq  %rdx, 0x18(%rbp)', 'movq  %rdx, 0x8(%rbp)', 'movq  %rdx, 0x10(%rbp)', 'jmp 0xfffffffffffffeba')",0.22586153620892524,1.0
+135,373,"('movq  0x38(%rsp), %rbx', 'lea -0x1(%rbx), %rax', 'cmp $0x1ffe, %rax', 'jnbe 0x4e')",0.11293076810446262,1.0
+136,374,"('movq  0x40(%rbp), %rcx', 'cmp %rdx, %rcx', 'jz 0xe3')",0.0781826842075002,1.0
+137,375,"('movq  0x40(%rbp), %rcx', 'subq  0x38(%rbp), %rcx', 'mov %r14, %r8', 'cmp $0x7f, %rcx', 'jbe 0xd')",0.014892035955841043,7.0
+138,376,"('movq  0x40(%rbp), %rdx', 'lea (%rsi,%rbx,1), %rax', 'sub %rdi, %rdx', 'cmp %rdx, %rbx', 'jbe 0xa7')",0.0231585285717671,303.0
+139,378,"('movq  0x60(%rbx), %r8', 'movq  0x8(%r8), %rax', 'and $0xfffffffffffffff8, %rax', 'cmpq  %rax, 0x888(%rbx)', 'jb 0x218')",0.13030581917427442,1.0
+140,385,"('movq  0x88(%r12), %rdi', 'movl  0x4(%rdi), %eax', 'sub $0x1, %eax', 'movl  %eax, 0x4(%rdi)', 'jz 0xd5')",0.024995341757518972,102.0
+141,386,"('movq  0x88(%r12), %rdi', 'movq  %fs:0x10, %r15', 'cmpq  %r15, 0x8(%rdi)', 'jz 0x26')",0.023328926280272774,102.0
+142,391,"('movq  0xb1720(%rip), %rax', 'movq  %rax, -0x538(%rbp)', 'test %rax, %rax', 'jnz 0x1d16')",0.021662570163104845,102.0
+143,392,"('movq  0xd8(%r12), %rax', 'mov $0x4c4208, %rcx', 'sub $0x4c3b60, %rcx', 'mov %rax, %rdx', 'sub $0x4c3b60, %rdx', 'movq  %rcx, -0x4d0(%rbp)', 'cmp %rdx, %rcx', 'jbe 0x354')",0.02832805399185484,102.0
+144,393,"('movq  0xd8(%r12), %rax', 'mov %rax, %rdx', 'sub $0x4c3b60, %rdx', 'cmpq  %rdx, -0x4d0(%rbp)', 'jbe 0x1482')",0.019996273406015178,102.0
+145,394,"('movq  0xd8(%r12), %rbx', 'mov $0x4c3b60, %rdx', 'mov $0x4c4208, %rax', 'mov %rbx, %rcx', 'sub %rdx, %rax', 'sub %rdx, %rcx', 'cmp %rcx, %rax', 'jbe 0x6d')",0.023578861284109395,98.0
+146,395,"('movq  0xd8(%r12), %rbx', 'mov %rbx, %rax', 'sub $0x4c3b60, %rax', 'cmpq  %rax, -0x4d0(%rbp)', 'jbe 0x1555')",0.02039619887413548,100.0
+147,398,"('movq  0xd8(%rbx), %rbp', 'mov $0x4c3b60, %rdx', 'mov $0x4c4208, %rax', 'mov %rbp, %rcx', 'sub %rdx, %rax', 'sub %rdx, %rcx', 'cmp %rcx, %rax', 'jbe 0x68')",0.12161728451803795,1.0
+148,400,"('movq  0xd8(%rdi), %rbx', 'mov $0x4c3b60, %rdx', 'mov $0x4c4208, %rax', 'mov %rbx, %rcx', 'sub %rdx, %rax', 'sub %rdx, %rcx', 'cmp %rcx, %rax', 'jbe 0xff')",0.12161728451803795,1.0
+149,402,"('movqq  0x10(%rbp), %xmm0', 'movq %rcx, %xmm2', 'movq %rdx, %xmm1', 'mov %eax, %ecx', 'movqq  %xmm0, 0x8(%rbp)', 'or $0x8, %ch', 'punpcklqdq %xmm1, %xmm0', 'mov %rdx, %rsi', 'movl  %ecx, (%rbp)', 'movl  0xc0(%rbp), %ecx', 'movupsx  %xmm0, 0x18(%rbp)', 'movq %rdx, %xmm0', 'punpcklqdq %xmm2, %xmm0', 'movupsx  %xmm0, 0x28(%rbp)', 'test %ecx, %ecx', 'jnle 0xffffffffffffff5e')",0.3996019556937374,1.0
+150,412,"('movzx %bl, %eax', 'popq  %rbx', 'popq  %rbp', 'popq  %r12', 'retq')",0.01592628921288533,114.0
+151,413,"('movzxb  (%r14), %esi', 'lea 0x1(%r14), %r15', 'mov %r12, %rdi', 'callq  0x18(%rbx)', 'nop %edi, %edx', 'pushq  %r12', 'pushq  %rbp', 'mov %rdi, %rbp', 'pushq  %rbx', 'movl  (%rdi), %eax', 'test $0x8, %al', 'jnz 0x201')",0.060631860677352815,98.0
+152,414,"('movzxb  (%rsi), %ecx', 'movb  %cl, (%rdi)', 'retq')",0.07992523492113426,15.0
+153,415,"('movzxb  -0x51c(%rbp), %eax', 'and $0x1, %eax', 'cmpl  $0x8, -0x510(%rbp)', 'jnz 0x1c')",0.015297149155601613,100.0
+154,417,"('movzxw  -0x2(%rsi,%rdx,1), %ecx', 'movzxw  (%rsi), %esi', 'movw  %cx, -0x2(%rdi,%rdx,1)', 'movw  %si, (%rdi)', 'retq')",0.006604000486142892,91.0
+155,420,"('nop %edi, %edx', 'mov %edi, %r8d', 'mov %esi, %edi', 'mov %rdx, %rsi', 'cmp $0x1, %r8d', 'jnbe 0x30')",0.0781826842075002,1.0
+156,421,"('nop %edi, %edx', 'movl  -0x4e8(%rbp), %edx', 'movl  (%r14), %eax', 'test %edx, %edx', 'jz 0x9e1')",0.016996812212686292,100.0
+157,427,"('nop %edi, %edx', 'xor %eax, %eax', 'test %rdx, %rdx', 'jnz 0x7')",0.00868709305433565,7.0
+158,429,"('orl  $0x200, (%rbp)', 'jmp 0xffffffffffffff55')",0.1042442516908873,1.0
+159,435,"('popq  %rbp', 'retq')",0.005756843129710819,2.0
+160,436,"('popq  %rbx', 'mov %r8, %rax', 'popq  %rbp', 'popq  %r12', 'retq')",0.09555773527731198,1.0
+161,437,"('popq  %rbx', 'mov %rbp, %rdi', 'sub %rsi, %rdx', 'popq  %rbp', 'popq  %r12', 'jmp 0xfffffffffffff479')",0.01985604794112139,7.0
+162,438,"('popq  %rbx', 'popq  %rbp', 'popq  %r12', 'retq')",0.0868692006210755,1.0
+163,439,"('pushq  %r12', 'pushq  %rbp', 'pushq  %rbx', 'movl  (%rdi), %eax', 'mov %rdi, %rbx', 'test $0x2, %al', 'jz 0xc')",0.17374041948481217,1.0
+164,440,"('pushq  %r15', 'lea 0x17(%rsi), %rax', 'pushq  %r14', 'pushq  %r13', 'pushq  %r12', 'pushq  %rbp', 'mov %rsi, %rbp', 'pushq  %rbx', 'mov %rdi, %rbx', 'sub $0x88, %rsp', 'cmp $0x1f, %rax', 'jnbe 0x108')",0.3127327550726619,1.0
+165,441,"('pushq  %r15', 'pushq  %r14', 'mov %rsi, %r14', 'pushq  %r13', 'mov %rdx, %r13', 'pushq  %r12', 'mov %rdi, %r12', 'pushq  %rbp', 'mov %rdx, %rbp', 'pushq  %rbx', 'sub $0x8, %rsp', 'jmp 0x58')",0.06428385429724745,5.0
+166,445,"('retq',)",0.006949616779392487,10.0
+167,452,"('sub $0x1, %rax', 'cmpb  $0xa, (%rax)', 'jz 0x111')",0.011122226300089764,2495.0
+168,454,"('sub $0x1, %rbp', 'mov %r15, %r14', 'movq  0x28(%r12), %rdi', 'movq  0x30(%r12), %rbx', 'cmp %rbx, %rdi', 'jnb 0xffffffffffffffb0')",0.025263373105216466,98.0
+169,460,"('sub %r14, %rax', 'add %rax, %r13', 'jmp 0xffffffffffffff47')",0.0173738401242151,5.0
+170,461,"('sub %r14, %rbx', 'mov %rbx, %r13', 'add $0x18, %rsp', 'mov %r13, %rax', 'popq  %rbx', 'popq  %rbp', 'popq  %r12', 'popq  %r13', 'popq  %r14', 'popq  %r15', 'retq')",0.0337520709505418,297.0
+171,464,"('subl  $0x1, (%rdi)', 'jmp 0xffffffffffffff16')",0.019996273406015178,102.0
+172,470,"('test $0x1, %ah', 'jnz 0x150')",0.04343460031053775,1.0
+173,473,"('test $0x2, %ah', 'jz 0xb')",0.007239100051756293,114.0
+174,475,"('test $0x202, %eax', 'jz 0xffffffffffffff53')",0.04343460031053775,1.0
+175,476,"('test $0x4, %al', 'jz 0x1c')",0.04343460031053775,1.0
+176,480,"('test %eax, %eax', 'js 0x73')",0.04343460031053775,1.0
+177,482,"('test %ebx, %ebx', 'jle 0x17e0')",0.00849839601512984,100.0
+178,486,"('test %r11, %r11', 'js 0xb40')",0.00849839601512984,100.0
+179,487,"('test %r13, %r13', 'jz 0x2a99')",0.008331760799146902,102.0
+180,490,"('test %r8d, %r8d', 'js 0xa85')",0.00849839601512984,100.0
+181,491,"('test %r9d, %r9d', 'js 0x1eea')",0.00849839601512984,100.0
+182,495,"('test %rbp, %rbp', 'jz 0x7c')",0.008433902972919951,103.0
+183,496,"('test %rdi, %rdi', 'js 0x132')",0.04343460031053775,1.0
+184,498,"('test %rsi, %rsi', 'jz 0x135')",0.04343460031053775,1.0
+185,499,"('test %rsi, %rsi', 'jz 0x185')",0.006877145049168478,120.0
+186,503,"('testl  $0x8000, (%r12)', 'jnz 0x19')",0.009998136703007589,102.0
+187,504,"('tzcnt %eax, %eax', 'add %rcx, %rax', 'add %rdi, %rax', 'vzeroupper', 'retq')",0.02379550480587823,200.0
+188,508,"('vmovdqux  (%rsi), %xmm0', 'vmovdqux  -0x10(%rsi,%rdx,1), %xmm1', 'vmovdqux  %xmm0, (%rdi)', 'vmovdqux  %xmm1, -0x10(%rdi,%rdx,1)', 'retq')",0.012649513958971641,102.0
+189,514,"('xor %ebx, %ebx', 'jmp 0xffffffffffffdf2e')",0.015297149155601613,100.0
+190,516,"('xor %ecx, %ecx', 'movl  -0x510(%rbp), %edx', 'cmp $0x58, %r15b', 'movq  -0x4f8(%rbp), %rsi', 'movq  -0x500(%rbp), %rdi', 'setz %cl', 'movl  %r9d, -0x544(%rbp)', 'movl  %r10d, -0x53c(%rbp)', 'callq  0x52634', 'nop %edi, %edx', 'mov %rsi, %r8', 'test %ecx, %ecx', 'lea 0x41a00(%rip), %rsi', 'lea 0x419b9(%rip), %rax', 'cmovz %rax, %rsi', 'cmp $0xa, %edx', 'jz 0x72')",0.08362439116504355,100.0
+191,520,"('xor %r15d, %r15d', 'jmp 0xffffffffffffff00')",0.015188424452770988,297.0
+192,524,"('xorps %xmm0, %xmm0', 'movssl  %xmm0, -0x18(%rbp)', 'movl  $0x0, -0x14(%rbp)')",0.017884592656301608,1.0

@@ -10,17 +10,22 @@ from numpy import mean
 values_true=[]
 values_predicted =[]
 names=[]
-for subdir, dirs, files in os.walk("/home/bbrapl/energy_dataset"):
+
+cur_dir = os.getcwd()
+useful_count =0
+
+for subdir, dirs, files in os.walk(cur_dir):
     for dir in dirs:
-        print(dir)
-        print(dir+"/evaluation.txt")
         if( os.path.isfile(dir+"/evaluation.txt") ) :
-            path =dir +"_results/breaker_code.txt"
-            path2=dir +"_results/breaker_final_energy.txt"
-            path3=dir +"_results/evaluation.txt"
-            path4=dir +"_results/evaluation_predicted.txt"
-            path5=dir +"_results/evaluation.png"
-            path6=dir +"_results/clean_data.csv"
+            print(dir)
+            path =dir +"/breaker_code.txt"
+            path2=dir +"/breaker_final_energy.txt"
+            path3=dir +"/evaluation.txt"
+            path4=dir +"/evaluation_predicted.txt"
+            path5=dir +"/evaluation.png"
+            path6=dir +"/clean_data.csv"
+
+            bbs = {}
 
             with open(path) as fIn:
                 for line in tqdm.tqdm(fIn, desc='Read file'):
@@ -41,12 +46,16 @@ for subdir, dirs, files in os.walk("/home/bbrapl/energy_dataset"):
                     bb_name = line[0].split()[-1]
                     bbs_energy[bb_name] = float(line[-1].strip())
 
+            bbs_df = pd.DataFrame()
             bbs_df = pd.DataFrame({"bb_name": bbs.keys(), "bb": bbs.values()})
+            bbs_energy_df = pd.DataFrame()
             bbs_energy_df = pd.DataFrame({"bb_name": bbs_energy.keys(), "energy": bbs_energy.values()})
 
+            df = pd.DataFrame()
             df = bbs_df.merge(bbs_energy_df, on="bb_name", how="inner")
             print(f"Number of basic blocks with energies for program: {len(df)}")
 
+            grouped_df= pd.DataFrame()
             grouped_df = df.groupby(df["bb"].map(tuple))["energy"].apply(list).reset_index()
 
 
@@ -54,32 +63,42 @@ for subdir, dirs, files in os.walk("/home/bbrapl/energy_dataset"):
                     'average_energy': [],
                     'occurences':[]
                     }
-
+            
+            averaged_energies =  pd.DataFrame()
             averaged_energies = pd.DataFrame(data)
             for index, row in grouped_df.iterrows():
                     new_df = pd.DataFrame({'BB':[row['bb']],'average_energy':mean(row['energy']),'occurences':len(row['energy'])})
                     averaged_energies= pd.concat([averaged_energies, new_df], axis=0, ignore_index=True)
 
+            total_count =len(averaged_energies.index)
+
+            clean_energies = pd.DataFrame()
             clean_energies =averaged_energies[averaged_energies['average_energy']>0].reset_index()
+            non_zero_count = len(clean_energies.index)
             clean_energies.to_csv(path6)
 
             file_read = open(path3, "r")
             lines = file_read.readlines()
             line =lines[0].split()
+            val =0
             val= float(line[1])
-            print("val is", val)
+            print("actual val is", val)
             total_val=0
 
             for index, row in clean_energies.iterrows():
                 total_val=total_val+ row['occurences']*row['average_energy']
-            print("total_val is", total_val)
+            print("total calculated val is", total_val)
 
             X = ['Actual vs Predicted']
+            actual =[]
             actual = [val]
+            
+            predicted =[]
             predicted = [total_val]
             
-            X_axis = np.arange(len(X))
             
+            X_axis = np.arange(len(X))
+            plt.figure()
             plt.bar(X_axis - 0.2, actual, 0.4, label = 'Actual')
             plt.bar(X_axis + 0.2, predicted, 0.4, label = 'Predicted')
             
@@ -93,7 +112,13 @@ for subdir, dirs, files in os.walk("/home/bbrapl/energy_dataset"):
             file_write = open(path4, "w")
             file_write.write("Calculated energy sum : "+str(total_val)+"\n")
             file_write.write("Difference from real: "+str(((total_val-val)/val )*100)+" %" +"\n")
-            file_write.write("Number of commands "+ str(len(clean_energies.index))+"\n")
+            file_write.write("Total unique basic blocks : "+ str(total_count)+"\n")
+            file_write.write("Non Zero unique basic blocks : "+ str(non_zero_count)+"\n")
+            file_write.write("Zero unique basic blocks : "+ str(total_count - non_zero_count)+"\n")
+            useful_count+=total_count - non_zero_count
+
+print("Usable non zero dataset so far = " ,useful_count)
+
 
 
 
