@@ -9,9 +9,9 @@ names=[]
 for subdir, dirs, files in os.walk("/home/bbrapl/energy_dataset"):
     for dir in dirs:
         print(dir)
-        print(dir+"/evaluation.txt")
-        if( os.path.isfile(dir+"/evaluation.txt") ) and ( os.path.isfile(dir+"/evaluation_predicted.txt") ):
-            f=open(dir+"/evaluation.txt",'r')
+        print(dir+"/evaluation_real.txt")
+        if( os.path.isfile(dir+"/evaluation_real.txt") ) and ( os.path.isfile(dir+"/evaluation_predicted.txt") ):
+            f=open(dir+"/evaluation_real.txt",'r')
             lines=f.readlines()
             f.close()
             f=open(dir+"/evaluation_predicted.txt",'r')

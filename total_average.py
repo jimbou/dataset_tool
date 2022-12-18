@@ -16,11 +16,11 @@ useful_count =0
 
 for subdir, dirs, files in os.walk(cur_dir):
     for dir in dirs:
-        if( os.path.isfile(dir+"/evaluation.txt") ) :
+        if( os.path.isfile(dir+"/evaluation_real.txt") ) :
             print(dir)
             path =dir +"/breaker_code.txt"
             path2=dir +"/breaker_final_energy.txt"
-            path3=dir +"/evaluation.txt"
+            path3=dir +"/evaluation_real.txt"
             path4=dir +"/evaluation_predicted.txt"
             path5=dir +"/evaluation.png"
             path6=dir +"/clean_data.csv"

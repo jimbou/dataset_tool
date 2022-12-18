@@ -16,7 +16,7 @@ bbs = {}
 #Reading basic block data
 path =str(sys.argv[1]) +"_results/breaker_code.txt"
 path2=str(sys.argv[1]) +"_results/breaker_final_energy.txt"
-path3=str(sys.argv[1]) +"_results/evaluation.txt"
+path3=str(sys.argv[1]) +"_results/evaluation_real.txt"
 path4=str(sys.argv[1]) +"_results/evaluation_predicted.txt"
 path5=str(sys.argv[1]) +"_results/evaluation.png"
 path6=str(sys.argv[1]) +"_results/clean_data.csv"
