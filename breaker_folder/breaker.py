@@ -12,12 +12,17 @@ if(n<2):
 
 dirty_file = open(str(sys.argv[1]), "r")
 clean_file= open(str(sys.argv[2]), "w")
+lost_file= open(str(sys.argv[3]), "r")
 
 lines_dirty = dirty_file.readlines()
+lines_lost = lost_file.readlines()
 zeroed={}
 
+
+lost_prev = float(((lines_lost[0]).split())[0])
+
 total_weight =0
-total_dirty_weight =0
+total_dirty_weight = lost_prev
 total_dirty_energy=0
 total_clean_energy=0
 total_energy=0
@@ -32,6 +37,7 @@ for line in lines_dirty[:-1]:
         total_dirty_weight+= float(data[2])
         total_dirty_energy-= temp
         zeroed[data[1]] = float(data[2])
+
 #print(total_clean_energy,total_dirty_energy)
 overhead = ((total_clean_energy+total_dirty_energy)/total_clean_energy)*(total_weight -total_dirty_weight)/total_weight
 remaining =  ((total_clean_energy+total_dirty_energy)/total_clean_energy)*(total_dirty_weight)/total_weight

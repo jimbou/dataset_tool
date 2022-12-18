@@ -15,5 +15,5 @@ touch breaker_final_energy.txt
 touch evaluation.txt
 
 ./breaker  ../divider_folder/divider_code.txt ../divider_folder/divider_energy.txt breaker_code.txt breaker_energy.txt breaker_clean_energy.txt  2>breaker_log.txt
-python3 breaker.py breaker_clean_energy.txt breaker_final_energy.txt #evaluation.txt
+python3 breaker.py breaker_clean_energy.txt breaker_final_energy.txt  ../divider_folder/divider_lost.txt #evaluation.txt
 mv ../divider_folder/evaluation_real.txt .
