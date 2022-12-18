@@ -1,7 +1,7 @@
 #!/bin/bash
 
-./total_specific binary_search
-./total_specific bubblesort
+./total_specific.sh binary_search
+./total_specific.sh bubblesort
 ./total_specific.sh faa
 ./total_specific.sh find_biggest
 ./total_specific.sh game_of_life
