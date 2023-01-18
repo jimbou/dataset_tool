@@ -17,7 +17,7 @@ overhead_list=[]
 
 with open("values_file.txt", 'a') as f5:
     for i in range (1,22):
-        
+        file_write_average = open("average_value.txt", "w")
         file_write_last = open("best_rapl_last.txt", "w")
         file_write_first_last =open("best_first_last_rapl.txt", "w")
         file_read_original = open("rapl_original_"+str(i)+".txt", "r")
@@ -114,6 +114,7 @@ with open("values_file.txt", 'a') as f5:
         #unchanged_energy.append(energy_unchanged)
     med_beg_end =  statistics.median(new_energy)
     med_beg_end_un =  statistics.median(new_unchanged_energy)
+    av_beg_end_un = statistics.mean(new_unchanged_energy)
     #med_overhead =statistics.median(overhead_list)
     #med_orig =statistics.median(orig_diff_list)
     
@@ -129,6 +130,7 @@ with open("values_file.txt", 'a') as f5:
     #rapl_cost = energy_diff/(num+1)
     f5.write("total "+str(i)+ " : "+str(new_rapl_cost_1)+"\n")
     f5.write("num "+str(i)+ " : "+str(num-1)+"\n")
+    f5.write("AVERAGE :"+ av_beg_end_un +" \n")
     #f5.write("Total Final :" + str(rapl_cost)+"\n")
     #f5.write("REST Final : "+str(med_rest)+"\n")
     #f5.write("Last Final : "+str(med_last)+"\n")

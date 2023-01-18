@@ -10,6 +10,8 @@
 rm -r $1_results 2> /dev/null
 
 mkdir $1_results
+mv average_value.txt average_value_$1.txt
+mv average_value_$1.txt $1_results
 mv $1_folder/code_assembly_$1.txt $1_results
 mv first_last_rapl.txt $1_results
 mv perf.data $1_results
