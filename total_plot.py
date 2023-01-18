@@ -28,7 +28,7 @@ for subdir, dirs, files in os.walk(cur_dir):
             val2= float(line2[4])
             values_predicted.append(val2)
             val3= float(line3[3])
-            percentages.append(val3)
+            percentages.append(abs(val3))
             names.append(dir[:-8])
 
 print (values_true)
