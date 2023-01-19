@@ -1,12 +1,12 @@
-cost = 1056.428439
-clean = 4638.000000
-15175.449799
-total streak:  1076.000000
-zero streak: 916.000000
-25561.468913
-important weight 12194.199257 
-sum of  weight 25561.468913 
-sum_of_weight = 25561.468913 
-important_sum = 12194.199257 
-rest_sum = 13367.269656 
-overhead = 0.145800 
+cost = 1356.846154
+clean = 4456.000000
+5671.384613
+total streak:  104.000000
+zero streak: 69.000000
+5292.150178
+important weight 1772.929993 
+sum of  weight 5292.150178 
+sum_of_weight = 5292.150178 
+important_sum = 1772.929993 
+rest_sum = 3519.220185 
+overhead = 0.263218 
