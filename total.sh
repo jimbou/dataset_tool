@@ -4,6 +4,8 @@
 #should have created pass first
 
 ./run_pass.sh $1
+rm average_value.txt 2> /dev/null
+touch average_value.txt
 ./find_multiple_trace.sh $1
 ./calculate_multiple_rapl_cost.sh $1
 
@@ -22,3 +24,5 @@ mv rapl_original.txt $1_results
 mv rapl_rest.txt  $1_results
 mv trace.txt $1_results
 mv trace_un.txt $1_results
+
+echo "finished total sh"

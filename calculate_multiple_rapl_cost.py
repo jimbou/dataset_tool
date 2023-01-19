@@ -130,7 +130,13 @@ with open("values_file.txt", 'a') as f5:
     #rapl_cost = energy_diff/(num+1)
     f5.write("total "+str(i)+ " : "+str(new_rapl_cost_1)+"\n")
     f5.write("num "+str(i)+ " : "+str(num-1)+"\n")
-    f5.write("AVERAGE :"+ av_beg_end_un +" \n")
+    file_write_average.write("AVERAGE :"+ str(av_beg_end_un) +" \n")
+    file_write_average.write("Our energy :"+ str(med_beg_end_un) +" \n")
+    real_diff = abs(av_beg_end_un -med_beg_end_un)
+    perc_diff = real_diff/av_beg_end_un
+    file_write_average.write("Real difference :"+ str(real_diff) +" \n")
+    file_write_average.write("Percentage difference :"+ str(perc_diff) +" \n")
+
     #f5.write("Total Final :" + str(rapl_cost)+"\n")
     #f5.write("REST Final : "+str(med_rest)+"\n")
     #f5.write("Last Final : "+str(med_last)+"\n")

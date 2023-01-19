@@ -1,0 +1,103 @@
+Case 1  
+new basic block
+Basic Block name: hello
+Of function : hello
+
+hello:
+  call void @rapl_B()
+  %0 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([13 x i8], [13 x i8]* @.str, i64 0, i64 0))
+  call void @rapl_C()
+  ret void
+new basic block
+Basic Block name: do_nothing
+Of function : do_nothing
+
+do_nothing:
+  ret void
+Case 1  
+new basic block
+Basic Block name: main
+Of function : main
+
+main:
+  %0 = alloca i32, align 4
+  %1 = alloca i32, align 4
+  %2 = alloca i32, align 4
+  store i32 0, i32* %0, align 4
+  call void @rapl_B()
+  call void @do_nothing()
+  call void @rapl_C()
+  store i32 9, i32* %1, align 4
+  store i32 1, i32* %2, align 4
+  br label %3
+new basic block
+Basic Block name: main1
+Of function : main
+
+main1:                                            ; preds = %16, %main
+  %3 = load i32, i32* %2, align 4
+  %4 = icmp slt i32 %3, 10
+  br i1 %4, label %5, label %19
+new basic block
+Basic Block name: main2
+Of function : main
+
+main2:                                            ; preds = %main1
+  %5 = load i32, i32* %1, align 4
+  %6 = icmp sgt i32 %5, 4
+  br i1 %6, label %7, label %8
+Case 1  
+new basic block
+Basic Block name: main3
+Of function : main
+
+main3:                                            ; preds = %main2
+  call void @rapl_B()
+  call void @hello()
+  call void @rapl_C()
+  br label %9
+Case 1  
+Case 1  
+new basic block
+Basic Block name: main4
+Of function : main
+
+main4:                                            ; preds = %main2
+  call void @rapl_B()
+  call void @hello()
+  call void @rapl_C()
+  call void @rapl_B()
+  %7 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.6, i64 0, i64 0))
+  call void @rapl_C()
+  br label %8
+new basic block
+Basic Block name: main5
+Of function : main
+
+main5:                                            ; preds = %main4, %main3
+  %8 = load i32, i32* %1, align 4
+  %9 = srem i32 %8, 5
+  store i32 %9, i32* %1, align 4
+  %10 = load i32, i32* %1, align 4
+  %11 = add nsw i32 %10, 3
+  store i32 %11, i32* %1, align 4
+  br label %12
+new basic block
+Basic Block name: main6
+Of function : main
+
+main6:                                            ; preds = %main5
+  %12 = load i32, i32* %2, align 4
+  %13 = add nsw i32 %12, 1
+  store i32 %13, i32* %2, align 4
+  br label %main1
+Case 1  
+new basic block
+Basic Block name: main7
+Of function : main
+
+main7:                                            ; preds = %main1
+  call void @rapl_B()
+  call void @do_nothing()
+  call void @rapl_C()
+  ret i32 0

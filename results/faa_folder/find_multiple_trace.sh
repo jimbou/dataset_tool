@@ -2,11 +2,14 @@
 
 #this script traces  the executable created and stores the result as well as the 
 # to a  folder called with the name of the exe
-
+ echo "Inside multiple trace"
 clang -o general_rapl general_rapl.c
+    echo "before for"
+
 
 for i in {1..21}
 do
+    echo "Inside for"
     rm rapl_original_$i.txt 2> /dev/null
     touch rapl_original_$i.txt
 
@@ -35,6 +38,7 @@ do
     #./general_rapl >> rapl_original_unchanged_new_f_$i.txt #store starting rapl value  of original exe without rapl reads
     #perf record -e intel_pt//u ./general_rapl >> rapl_original_unchanged_new_$i.txt
     #./general_rapl >> rapl_original_unchanged_$i.txt #store starting rapl value  of original exe without rapl reads
+    echo "before perf"
     perf record -e intel_pt//u ./$1_folder/$1_unchanged 
     mv perf.data perf_un_$i.data 
     #./general_rapl >> first_last_rapl_$i.txt #store finishing rapl value  of original exe without rapl reads
@@ -51,4 +55,4 @@ do
 done
 #perf script --insn-trace --xed > trace.txt
 
-
+ echo "finished multiple trace"

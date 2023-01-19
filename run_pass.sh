@@ -28,3 +28,4 @@ mkdir $1_folder
 mv code_assembly_$1.txt $1_folder
 mv code_ll_$1.txt $1_folder
 mv -t $1_folder $1.ll $1.bc $1 $1_inst.bc $1_inst.o $1_unchanged $1-debug.ll $1.o  
+ echo "finished_run_pass"

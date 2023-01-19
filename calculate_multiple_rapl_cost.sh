@@ -1,7 +1,7 @@
 #!/bin/bash
+echo "inside calculate multiple rapl cost"
 rm best_rapl.txt 2> /dev/null
-rm average_value.txt 2> /dev/null
-touch average_value.txt
+
 python3 calculate_multiple_rapl_cost.py >>best_rapl.txt
 
 source best_rapl.txt
@@ -37,3 +37,5 @@ perf script --insn-trace --xed > trace.txt
 mv  best_perf_un.data perf.data
 perf script --insn-trace --xed > trace_un.txt
 rm best_rapl.txt 2> /dev/null
+
+echo "finished calculate multiple rapl cost"
