@@ -24,6 +24,8 @@ for subdir, dirs, files in os.walk(cur_dir):
             path4=dir +"/evaluation_predicted.txt"
             path5=dir +"/evaluation.png"
             path6=dir +"/clean_data.csv"
+            path7=dir +"/average_value.txt"
+            
 
             bbs = {}
 
@@ -85,13 +87,21 @@ for subdir, dirs, files in os.walk(cur_dir):
             print("actual val is", val)
             total_val=0
 
+            file_read = open(path7, "r")
+            lines = file_read.readlines()
+            line =lines[3].split(":")
+            average_value =0
+            average_value= float(line[1])
+            print("average val is", average_value)
+            
+
             for index, row in clean_energies.iterrows():
                 total_val=total_val+ row['occurences']*row['average_energy']
             print("total calculated val is", total_val)
 
             X = ['Actual vs Predicted']
             actual =[]
-            actual = [val]
+            actual = [average_value]
             
             predicted =[]
             predicted = [total_val]

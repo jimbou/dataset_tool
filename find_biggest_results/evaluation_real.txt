@@ -1,1 +1,1 @@
-expected amount = 6043.000000 
+expected amount = 6592.000000 

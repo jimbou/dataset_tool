@@ -2028,17 +2028,13 @@ and $0x3f, %ecx =0.250000
 cmp $0x20, %ecx =0.250000
 jnbe 0x2b =1.000000
 @ 9_7:
-and $0x1f, %ecx =0.250000
-and $0xffffffffffffffe0, %rdi =0.250000
 vpcmpeqby  (%rdi), %ymm0, %ymm1 =0.500000
 vpmovmskb %ymm1, %eax =1.000000
-sar %cl, %eax =0.500000
 test %eax, %eax =0.250000
-jz 0x1d =1.000000
+jnz 0xcf =1.000000
 @ 9_8:
 tzcnt %eax, %eax =1.000000
 add %rdi, %rax =0.250000
-add %rcx, %rax =0.250000
 vzeroupper =1.000000
 retq   =1.000000
 @ 9_9:
@@ -5348,17 +5344,13 @@ and $0x3f, %ecx =0.250000
 cmp $0x20, %ecx =0.250000
 jnbe 0x2b =1.000000
 @ 46_7:
-and $0x1f, %ecx =0.250000
-and $0xffffffffffffffe0, %rdi =0.250000
 vpcmpeqby  (%rdi), %ymm0, %ymm1 =0.500000
 vpmovmskb %ymm1, %eax =1.000000
-sar %cl, %eax =0.500000
 test %eax, %eax =0.250000
-jz 0x1d =1.000000
+jnz 0xcf =1.000000
 @ 46_8:
 tzcnt %eax, %eax =1.000000
 add %rdi, %rax =0.250000
-add %rcx, %rax =0.250000
 vzeroupper =1.000000
 retq   =1.000000
 @ 46_9:
@@ -8797,17 +8789,13 @@ and $0x3f, %ecx =0.250000
 cmp $0x20, %ecx =0.250000
 jnbe 0x2b =1.000000
 @ 83_7:
-and $0x1f, %ecx =0.250000
-and $0xffffffffffffffe0, %rdi =0.250000
 vpcmpeqby  (%rdi), %ymm0, %ymm1 =0.500000
 vpmovmskb %ymm1, %eax =1.000000
-sar %cl, %eax =0.500000
 test %eax, %eax =0.250000
-jz 0x1d =1.000000
+jnz 0xcf =1.000000
 @ 83_8:
 tzcnt %eax, %eax =1.000000
 add %rdi, %rax =0.250000
-add %rcx, %rax =0.250000
 vzeroupper =1.000000
 retq   =1.000000
 @ 83_9:
@@ -12338,17 +12326,13 @@ and $0x3f, %ecx =0.250000
 cmp $0x20, %ecx =0.250000
 jnbe 0x2b =1.000000
 @ 120_7:
-and $0x1f, %ecx =0.250000
-and $0xffffffffffffffe0, %rdi =0.250000
 vpcmpeqby  (%rdi), %ymm0, %ymm1 =0.500000
 vpmovmskb %ymm1, %eax =1.000000
-sar %cl, %eax =0.500000
 test %eax, %eax =0.250000
-jz 0x1d =1.000000
+jnz 0xcf =1.000000
 @ 120_8:
 tzcnt %eax, %eax =1.000000
 add %rdi, %rax =0.250000
-add %rcx, %rax =0.250000
 vzeroupper =1.000000
 retq   =1.000000
 @ 120_9:
@@ -15787,17 +15771,13 @@ and $0x3f, %ecx =0.250000
 cmp $0x20, %ecx =0.250000
 jnbe 0x2b =1.000000
 @ 157_7:
-and $0x1f, %ecx =0.250000
-and $0xffffffffffffffe0, %rdi =0.250000
 vpcmpeqby  (%rdi), %ymm0, %ymm1 =0.500000
 vpmovmskb %ymm1, %eax =1.000000
-sar %cl, %eax =0.500000
 test %eax, %eax =0.250000
-jz 0x1d =1.000000
+jnz 0xcf =1.000000
 @ 157_8:
 tzcnt %eax, %eax =1.000000
 add %rdi, %rax =0.250000
-add %rcx, %rax =0.250000
 vzeroupper =1.000000
 retq   =1.000000
 @ 157_9:
@@ -19306,17 +19286,13 @@ and $0x3f, %ecx =0.250000
 cmp $0x20, %ecx =0.250000
 jnbe 0x2b =1.000000
 @ 194_7:
-and $0x1f, %ecx =0.250000
-and $0xffffffffffffffe0, %rdi =0.250000
 vpcmpeqby  (%rdi), %ymm0, %ymm1 =0.500000
 vpmovmskb %ymm1, %eax =1.000000
-sar %cl, %eax =0.500000
 test %eax, %eax =0.250000
-jz 0x1d =1.000000
+jnz 0xcf =1.000000
 @ 194_8:
 tzcnt %eax, %eax =1.000000
 add %rdi, %rax =0.250000
-add %rcx, %rax =0.250000
 vzeroupper =1.000000
 retq   =1.000000
 @ 194_9:
@@ -22825,17 +22801,13 @@ and $0x3f, %ecx =0.250000
 cmp $0x20, %ecx =0.250000
 jnbe 0x2b =1.000000
 @ 231_7:
-and $0x1f, %ecx =0.250000
-and $0xffffffffffffffe0, %rdi =0.250000
 vpcmpeqby  (%rdi), %ymm0, %ymm1 =0.500000
 vpmovmskb %ymm1, %eax =1.000000
-sar %cl, %eax =0.500000
 test %eax, %eax =0.250000
-jz 0x1d =1.000000
+jnz 0xcf =1.000000
 @ 231_8:
 tzcnt %eax, %eax =1.000000
 add %rdi, %rax =0.250000
-add %rcx, %rax =0.250000
 vzeroupper =1.000000
 retq   =1.000000
 @ 231_9:
@@ -26344,17 +26316,13 @@ and $0x3f, %ecx =0.250000
 cmp $0x20, %ecx =0.250000
 jnbe 0x2b =1.000000
 @ 268_7:
-and $0x1f, %ecx =0.250000
-and $0xffffffffffffffe0, %rdi =0.250000
 vpcmpeqby  (%rdi), %ymm0, %ymm1 =0.500000
 vpmovmskb %ymm1, %eax =1.000000
-sar %cl, %eax =0.500000
 test %eax, %eax =0.250000
-jz 0x1d =1.000000
+jnz 0xcf =1.000000
 @ 268_8:
 tzcnt %eax, %eax =1.000000
 add %rdi, %rax =0.250000
-add %rcx, %rax =0.250000
 vzeroupper =1.000000
 retq   =1.000000
 @ 268_9:
@@ -29863,17 +29831,13 @@ and $0x3f, %ecx =0.250000
 cmp $0x20, %ecx =0.250000
 jnbe 0x2b =1.000000
 @ 305_7:
-and $0x1f, %ecx =0.250000
-and $0xffffffffffffffe0, %rdi =0.250000
 vpcmpeqby  (%rdi), %ymm0, %ymm1 =0.500000
 vpmovmskb %ymm1, %eax =1.000000
-sar %cl, %eax =0.500000
 test %eax, %eax =0.250000
-jz 0x1d =1.000000
+jnz 0xcf =1.000000
 @ 305_8:
 tzcnt %eax, %eax =1.000000
 add %rdi, %rax =0.250000
-add %rcx, %rax =0.250000
 vzeroupper =1.000000
 retq   =1.000000
 @ 305_9:
@@ -33382,17 +33346,13 @@ and $0x3f, %ecx =0.250000
 cmp $0x20, %ecx =0.250000
 jnbe 0x2b =1.000000
 @ 342_7:
-and $0x1f, %ecx =0.250000
-and $0xffffffffffffffe0, %rdi =0.250000
 vpcmpeqby  (%rdi), %ymm0, %ymm1 =0.500000
 vpmovmskb %ymm1, %eax =1.000000
-sar %cl, %eax =0.500000
 test %eax, %eax =0.250000
-jz 0x1d =1.000000
+jnz 0xcf =1.000000
 @ 342_8:
 tzcnt %eax, %eax =1.000000
 add %rdi, %rax =0.250000
-add %rcx, %rax =0.250000
 vzeroupper =1.000000
 retq   =1.000000
 @ 342_9:

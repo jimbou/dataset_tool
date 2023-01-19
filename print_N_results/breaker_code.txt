@@ -2022,13 +2022,17 @@ and $0x3f, %ecx =0.250000
 cmp $0x20, %ecx =0.250000
 jnbe 0x2b =1.000000
 @ 7_7:
+and $0x1f, %ecx =0.250000
+and $0xffffffffffffffe0, %rdi =0.250000
 vpcmpeqby  (%rdi), %ymm0, %ymm1 =0.500000
 vpmovmskb %ymm1, %eax =1.000000
+sar %cl, %eax =0.500000
 test %eax, %eax =0.250000
-jnz 0xcf =1.000000
+jz 0x1d =1.000000
 @ 7_8:
 tzcnt %eax, %eax =1.000000
 add %rdi, %rax =0.250000
+add %rcx, %rax =0.250000
 vzeroupper =1.000000
 retq   =1.000000
 @ 7_9:
