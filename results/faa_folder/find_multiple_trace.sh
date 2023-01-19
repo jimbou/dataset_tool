@@ -30,6 +30,8 @@ do
     rm rapl_beg_end.txt 2> /dev/null
     touch rapl_beg_end.txt
 
+    
+
    
 
 
