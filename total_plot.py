@@ -11,16 +11,16 @@ cur_dir = os.getcwd()
 for subdir, dirs, files in os.walk(cur_dir):
     for dir in dirs:
         print(dir)
-        print(dir+"/evaluation_real.txt")
-        if( os.path.isfile(dir+"/evaluation_real.txt") ) and ( os.path.isfile(dir+"/evaluation_predicted.txt") ):
-            f=open(dir+"/evaluation_real.txt",'r')
+        print(dir+"/average_value.txt")
+        if( os.path.isfile(dir+"/average_value.txt") ) and ( os.path.isfile(dir+"/evaluation_predicted.txt") ):
+            f=open(dir+"/average_value.txt",'r')
             lines=f.readlines()
             f.close()
             f=open(dir+"/evaluation_predicted.txt",'r')
             lines2=f.readlines()
             f.close()
-            line =lines[0].split()
-            val= float(line[3])
+            line =lines[0].split(":")
+            val= float(line[1])
             values_true.append(val)
             line2 =lines2[0].split()
             line3 =lines2[1].split()

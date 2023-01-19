@@ -89,7 +89,7 @@ for subdir, dirs, files in os.walk(cur_dir):
 
             file_read = open(path7, "r")
             lines = file_read.readlines()
-            line =lines[3].split(":")
+            line =lines[0].split(":")
             average_value =0
             average_value= float(line[1])
             print("average val is", average_value)
@@ -121,7 +121,7 @@ for subdir, dirs, files in os.walk(cur_dir):
 
             file_write = open(path4, "w")
             file_write.write("Calculated energy sum : "+str(total_val)+"\n")
-            file_write.write("Difference from real: "+str(((total_val-val)/val )*100)+" %" +"\n")
+            file_write.write("Difference from real: "+str(((total_val-average_value)/average_value )*100)+" %" +"\n")
             file_write.write("Total unique basic blocks : "+ str(total_count)+"\n")
             file_write.write("Non Zero unique basic blocks : "+ str(non_zero_count)+"\n")
             file_write.write("Zero unique basic blocks : "+ str(total_count - non_zero_count)+"\n")
