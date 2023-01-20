@@ -2,6 +2,7 @@ import os
 import os.path
 import numpy as np
 import matplotlib.pyplot as plt
+from statistics import mean
 
 values_true=[]
 values_predicted =[]
@@ -36,6 +37,12 @@ print(values_predicted)
 print(names)
 print(percentages)
 
+av_true = mean(values_true)
+av_pred = mean(values_predicted)
+av_perc = mean(percentages)
+
+
+
 
   
 X_axis = np.arange(len(names))
@@ -64,3 +71,40 @@ plt.ylabel("Energy Sum")
 plt.title("Percentage difference of predicted vs Actual")
 plt.legend()
 plt.savefig("plot_total_perc.png")
+
+
+X = ['Actual vs Predicted Averages']
+actual =[]
+actual = [av_true]
+
+predicted =[]
+predicted = [av_pred]
+
+
+X_axis = np.arange(len(X))
+plt.figure()
+plt.bar(X_axis - 0.2, actual, 0.4, label = 'Actual')
+plt.bar(X_axis + 0.2, predicted, 0.4, label = 'Predicted')
+
+plt.xticks(X_axis, X)
+plt.xlabel("Groups")
+plt.ylabel("Energy Sum")
+plt.title("Average of Actual energy sum vs Average of Predicted energy sum")
+plt.legend()
+plt.savefig("plot_total_average.png")
+
+X = ['Actual vs Predicted average percentage change']
+actual =[]
+actual = [av_perc]
+
+
+X_axis = np.arange(len(X))
+plt.figure()
+plt.bar(X_axis - 0.2, actual, 0.4, label = 'Percentage change')
+
+plt.xticks(X_axis, X)
+plt.xlabel("Groups")
+plt.ylabel("Energy Percentage diff average")
+plt.title("Average difference percentage of  Actual energy  vs  Predicted energy ")
+plt.legend()
+plt.savefig("plot_total_average_perc.png")
