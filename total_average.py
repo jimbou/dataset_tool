@@ -25,7 +25,7 @@ for subdir, dirs, files in os.walk(cur_dir):
             path5=dir +"/evaluation.png"
             path6=dir +"/clean_data.csv"
             path7=dir +"/average_value.txt"
-            path8=cur_dir+"csv_files/"+dir+".csv"
+            path8=cur_dir+"/csv_files/"+dir+".csv"
             
 
             bbs = {}
