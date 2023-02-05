@@ -1,0 +1,92 @@
+new basic block
+Basic Block name: do_nothing
+Of function : do_nothing
+
+do_nothing:
+  ret void
+Case 1  
+new basic block
+Basic Block name: main
+Of function : main
+
+main:
+  %0 = alloca i32, align 4
+  %1 = alloca i32, align 4
+  %2 = alloca i64, align 8
+  %3 = alloca %struct.tm, align 8
+  store i32 0, i32* %0, align 4
+  call void @rapl_B()
+  call void @do_nothing()
+  call void @rapl_C()
+  store i32 0, i32* %1, align 4
+  br label %4
+new basic block
+Basic Block name: main1
+Of function : main
+
+main1:                                            ; preds = %27, %main
+  %4 = load i32, i32* %1, align 4
+  %5 = icmp slt i32 %4, 20
+  br i1 %5, label %6, label %30
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+new basic block
+Basic Block name: main2
+Of function : main
+
+main2:                                            ; preds = %main1
+  call void @rapl_B()
+  %6 = call i64 @time(i64* null) #5
+  call void @rapl_C()
+  store i64 %6, i64* %2, align 8
+  call void @rapl_B()
+  %7 = call %struct.tm* @localtime(i64* %2) #5
+  call void @rapl_C()
+  %8 = bitcast %struct.tm* %3 to i8*
+  %9 = bitcast %struct.tm* %7 to i8*
+  call void @rapl_B()
+  call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 8 %8, i8* align 8 %9, i64 56, i1 false)
+  call void @rapl_C()
+  %10 = getelementptr inbounds %struct.tm, %struct.tm* %3, i32 0, i32 3
+  %11 = load i32, i32* %10, align 4
+  %12 = getelementptr inbounds %struct.tm, %struct.tm* %3, i32 0, i32 4
+  %13 = load i32, i32* %12, align 8
+  %14 = add nsw i32 %13, 1
+  %15 = getelementptr inbounds %struct.tm, %struct.tm* %3, i32 0, i32 5
+  %16 = load i32, i32* %15, align 4
+  %17 = add nsw i32 %16, 1900
+  call void @rapl_B()
+  %18 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([32 x i8], [32 x i8]* @.str.5, i64 0, i64 0), i32 %11, i32 %14, i32 %17)
+  call void @rapl_C()
+  %19 = getelementptr inbounds %struct.tm, %struct.tm* %3, i32 0, i32 2
+  %20 = load i32, i32* %19, align 8
+  %21 = getelementptr inbounds %struct.tm, %struct.tm* %3, i32 0, i32 1
+  %22 = load i32, i32* %21, align 4
+  %23 = getelementptr inbounds %struct.tm, %struct.tm* %3, i32 0, i32 0
+  %24 = load i32, i32* %23, align 8
+  call void @rapl_B()
+  %25 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([32 x i8], [32 x i8]* @.str.6, i64 0, i64 0), i32 %20, i32 %22, i32 %24)
+  call void @rapl_C()
+  br label %26
+new basic block
+Basic Block name: main3
+Of function : main
+
+main3:                                            ; preds = %main2
+  %26 = load i32, i32* %1, align 4
+  %27 = add nsw i32 %26, 1
+  store i32 %27, i32* %1, align 4
+  br label %main1
+Case 1  
+new basic block
+Basic Block name: main4
+Of function : main
+
+main4:                                            ; preds = %main1
+  call void @rapl_B()
+  call void @do_nothing()
+  call void @rapl_C()
+  ret i32 0
