@@ -1,0 +1,12 @@
+pshufd_0_0_0
+pshufd_0_0_0
+pshufd_0_0_0
+pshufd_0_0_0
+pshufd_0_0_0
+pshufd_0_0_0
+pshufd_0_0_0
+pshufd_0_0_0
+pshufd_0_0_0
+pshufd_0_0_0
+pshufd_0_0_0
+pshufd_0_0_0
