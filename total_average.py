@@ -25,6 +25,7 @@ for subdir, dirs, files in os.walk(cur_dir):
             path5=dir +"/evaluation.png"
             path6=dir +"/clean_data.csv"
             path7=dir +"/average_value.txt"
+            path8=cur_dir+"csv_files/"+dir+".csv"
             
 
             bbs = {}
@@ -78,6 +79,7 @@ for subdir, dirs, files in os.walk(cur_dir):
             clean_energies =averaged_energies[averaged_energies['average_energy']>0].reset_index()
             non_zero_count = len(clean_energies.index)
             clean_energies.to_csv(path6)
+            clean_energies.to_csv(path8)
 
             file_read = open(path3, "r")
             lines = file_read.readlines()
