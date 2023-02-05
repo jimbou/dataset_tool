@@ -7,7 +7,7 @@ clang -o general_rapl general_rapl.c
     echo "before for"
 
 
-for i in {1..91}
+for i in {1..121}
 do
     echo "Inside for"
     rm rapl_original_$i.txt 2> /dev/null
