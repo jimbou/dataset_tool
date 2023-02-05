@@ -1,6 +1,6 @@
-Rapl1 is  401dd0 with last addr 401eb7  
-Rapl2 is  401ec0 with last addr 401fa7  
-Rapl3 is  401fb0 with last addr 402097  
+Rapl1 is  402140 with last addr 402227  
+Rapl2 is  402230 with last addr 402317  
+Rapl3 is  402320 with last addr 402407  
 You entered 74  with key xsaveopt_0_0_0 
 You entered 122  with key xrstor_0_0_0 
 You entered 107  with key xsave_0_0_0 
@@ -1105,19 +1105,6 @@ We had a Syscall
 We had a Syscall 
 We had a Syscall 
 We had a Syscall 
-i cannot  find opcode pshufd_0_0_0 or pshuf_0_0_0 or pshu_0_0_0 or psh_0_0_0  
-i cannot  find opcode pshufd_0_0_0 or pshuf_0_0_0 or pshu_0_0_0 or psh_0_0_0  
-We had a Syscall 
-i cannot  find opcode pshufd_0_0_0 or pshuf_0_0_0 or pshu_0_0_0 or psh_0_0_0  
-i cannot  find opcode pshufd_0_0_0 or pshuf_0_0_0 or pshu_0_0_0 or psh_0_0_0  
-We had a Syscall 
-We had a Syscall 
-i cannot  find opcode pshufd_0_0_0 or pshuf_0_0_0 or pshu_0_0_0 or psh_0_0_0  
-i cannot  find opcode pshufd_0_0_0 or pshuf_0_0_0 or pshu_0_0_0 or psh_0_0_0  
-We had a Syscall 
-We had a Syscall 
-i cannot  find opcode pshufd_0_0_0 or pshuf_0_0_0 or pshu_0_0_0 or psh_0_0_0  
-i cannot  find opcode pshufd_0_0_0 or pshuf_0_0_0 or pshu_0_0_0 or psh_0_0_0  
 We had a Syscall 
 We had a Syscall 
 We had a Syscall 
@@ -1130,14 +1117,48 @@ We had a Syscall
 We had a Syscall 
 We had a Syscall 
 We had a Syscall 
-i cannot  find opcode pshufd_0_0_0 or pshuf_0_0_0 or pshu_0_0_0 or psh_0_0_0  
-i cannot  find opcode pshufd_0_0_0 or pshuf_0_0_0 or pshu_0_0_0 or psh_0_0_0  
 We had a Syscall 
 We had a Syscall 
 We had a Syscall 
 We had a Syscall 
-i cannot  find opcode pshufd_0_0_0 or pshuf_0_0_0 or pshu_0_0_0 or psh_0_0_0  
-i cannot  find opcode pshufd_0_0_0 or pshuf_0_0_0 or pshu_0_0_0 or psh_0_0_0  
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
+We had a Syscall 
 We had a Syscall 
 We had a Syscall 
 We had a Syscall 
