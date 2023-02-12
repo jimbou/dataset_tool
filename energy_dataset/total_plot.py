@@ -46,10 +46,10 @@ av_perc = mean(percentages)
 
   
 X_axis = np.arange(len(names))
-  
+plt.subplots_adjust(top =0.94, bottom =0.30) 
 plt.bar(X_axis - 0.2, values_true, 0.4, label = 'Actual')
 plt.bar(X_axis + 0.2, values_predicted, 0.4, label = 'Predicted')
-  
+plt.xticks(rotation = 90)
 plt.xticks(X_axis, names)
 plt.xlabel("Benchmarks")
 plt.ylabel("Energy Sum")
@@ -60,12 +60,13 @@ plt.savefig("plot_total.png")
 
 
 plt.figure()
-
+plt.subplots_adjust(top =0.94, bottom =0.30)
 new_X_axis = np.arange(len(names))
   
 plt.bar(new_X_axis , percentages, 0.4, label = 'Percentages')
   
 plt.xticks(new_X_axis, names)
+plt.xticks(rotation = 90)
 plt.xlabel("Benchmarks")
 plt.ylabel("Energy Sum")
 plt.title("Percentage difference of predicted vs Actual")
