@@ -1,0 +1,176 @@
+Case 1  
+new basic block
+Basic Block name: findSize
+Of function : findSize
+
+findSize:
+  %1 = alloca i64, align 8
+  %2 = alloca i8*, align 8
+  %3 = alloca %struct.stat, align 8
+  store i8* %0, i8** %2, align 8
+  %4 = load i8*, i8** %2, align 8
+  call void @rapl_B()
+  %5 = call i32 @stat(i8* %4, %struct.stat* %3) #4
+  call void @rapl_C()
+  %6 = icmp eq i32 %5, 0
+  br i1 %6, label %7, label %10
+new basic block
+Basic Block name: findSize1
+Of function : findSize
+
+findSize1:                                        ; preds = %findSize
+  %7 = getelementptr inbounds %struct.stat, %struct.stat* %3, i32 0, i32 8
+  %8 = load i64, i64* %7, align 8
+  store i64 %8, i64* %1, align 8
+  br label %10
+new basic block
+Basic Block name: findSize2
+Of function : findSize
+
+findSize2:                                        ; preds = %findSize
+  store i64 -1, i64* %1, align 8
+  br label %9
+new basic block
+Basic Block name: findSize3
+Of function : findSize
+
+findSize3:                                        ; preds = %findSize2, %findSize1
+  %9 = load i64, i64* %1, align 8
+  ret i64 %9
+new basic block
+Basic Block name: do_nothing
+Of function : do_nothing
+
+do_nothing:
+  ret void
+Case 1  
+Case 1  
+new basic block
+Basic Block name: main
+Of function : main
+
+main:
+  %0 = alloca i32, align 4
+  %1 = alloca i8, align 1
+  %2 = alloca %struct._IO_FILE*, align 8
+  %3 = alloca i64, align 8
+  %4 = alloca i32, align 4
+  store i32 0, i32* %0, align 4
+  call void @rapl_B()
+  call void @do_nothing()
+  call void @rapl_C()
+  store i64 0, i64* %3, align 8
+  call void @rapl_B()
+  %5 = call %struct._IO_FILE* @fopen(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.5, i64 0, i64 0), i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.3, i64 0, i64 0))
+  call void @rapl_C()
+  store %struct._IO_FILE* %5, %struct._IO_FILE** %2, align 8
+  store i32 0, i32* %4, align 4
+  br label %6
+new basic block
+Basic Block name: main1
+Of function : main
+
+main1:                                            ; preds = %20, %main
+  %6 = load i32, i32* %4, align 4
+  %7 = icmp slt i32 %6, 3
+  br i1 %7, label %8, label %23
+new basic block
+Basic Block name: main2
+Of function : main
+
+main2:                                            ; preds = %main1
+  store i32 65, i32* %4, align 4
+  br label %8
+new basic block
+Basic Block name: main3
+Of function : main
+
+main3:                                            ; preds = %14, %main2
+  %8 = load i32, i32* %4, align 4
+  %9 = icmp sle i32 %8, 90
+  br i1 %9, label %10, label %17
+Case 1  
+new basic block
+Basic Block name: main4
+Of function : main
+
+main4:                                            ; preds = %main3
+  %10 = load i32, i32* %4, align 4
+  %11 = load %struct._IO_FILE*, %struct._IO_FILE** %2, align 8
+  call void @rapl_B()
+  %12 = call i32 @fputc(i32 %10, %struct._IO_FILE* %11)
+  call void @rapl_C()
+  br label %13
+new basic block
+Basic Block name: main5
+Of function : main
+
+main5:                                            ; preds = %main4
+  %13 = load i32, i32* %4, align 4
+  %14 = add nsw i32 %13, 1
+  store i32 %14, i32* %4, align 4
+  br label %main3
+new basic block
+Basic Block name: main6
+Of function : main
+
+main6:                                            ; preds = %main3
+  br label %15
+new basic block
+Basic Block name: main7
+Of function : main
+
+main7:                                            ; preds = %main6
+  %15 = load i32, i32* %4, align 4
+  %16 = add nsw i32 %15, 1
+  store i32 %16, i32* %4, align 4
+  br label %main1
+Case 1  
+Case 1  
+new basic block
+Basic Block name: main8
+Of function : main
+
+main8:                                            ; preds = %main1
+  %17 = load %struct._IO_FILE*, %struct._IO_FILE** %2, align 8
+  call void @rapl_B()
+  %18 = call i32 @fclose(%struct._IO_FILE* %17)
+  call void @rapl_C()
+  call void @rapl_B()
+  %19 = call i64 @findSize(i8* getelementptr inbounds ([16 x i8], [16 x i8]* @.str.5, i64 0, i64 0))
+  call void @rapl_C()
+  store i64 %19, i64* %3, align 8
+  %20 = load i64, i64* %3, align 8
+  %21 = icmp ne i64 %20, -1
+  br i1 %21, label %22, label %25
+Case 1  
+new basic block
+Basic Block name: main9
+Of function : main
+
+main9:                                            ; preds = %main8
+  %22 = load i64, i64* %3, align 8
+  call void @rapl_B()
+  %23 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([19 x i8], [19 x i8]* @.str.6, i64 0, i64 0), i64 %22)
+  call void @rapl_C()
+  br label %26
+Case 1  
+new basic block
+Basic Block name: main10
+Of function : main
+
+main10:                                           ; preds = %main8
+  call void @rapl_B()
+  %24 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([22 x i8], [22 x i8]* @.str.7, i64 0, i64 0))
+  call void @rapl_C()
+  br label %25
+Case 1  
+new basic block
+Basic Block name: main11
+Of function : main
+
+main11:                                           ; preds = %main10, %main9
+  call void @rapl_B()
+  call void @do_nothing()
+  call void @rapl_C()
+  ret i32 0

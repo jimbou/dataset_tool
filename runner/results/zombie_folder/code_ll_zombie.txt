@@ -1,0 +1,73 @@
+new basic block
+Basic Block name: do_nothing
+Of function : do_nothing
+
+do_nothing:
+  ret void
+Case 1  
+new basic block
+Basic Block name: main
+Of function : main
+
+main:
+  %0 = alloca i32, align 4
+  %1 = alloca i32, align 4
+  %2 = alloca i32, align 4
+  %3 = alloca i32, align 4
+  store i32 0, i32* %0, align 4
+  call void @rapl_B()
+  call void @do_nothing()
+  call void @rapl_C()
+  store i32 0, i32* %1, align 4
+  br label %4
+new basic block
+Basic Block name: main1
+Of function : main
+
+main1:                                            ; preds = %11, %main
+  %4 = load i32, i32* %1, align 4
+  %5 = icmp slt i32 %4, 2
+  br i1 %5, label %6, label %14
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+new basic block
+Basic Block name: main2
+Of function : main
+
+main2:                                            ; preds = %main1
+  call void @rapl_B()
+  %6 = call i32 @fork() #4
+  call void @rapl_C()
+  store i32 %6, i32* %2, align 4
+  call void @rapl_B()
+  %7 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([15 x i8], [15 x i8]* @.str.5, i64 0, i64 0))
+  call void @rapl_C()
+  call void @rapl_B()
+  %8 = call i32 @getpid() #4
+  call void @rapl_C()
+  call void @rapl_B()
+  %9 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([30 x i8], [30 x i8]* @.str.6, i64 0, i64 0), i32 %8)
+  call void @rapl_C()
+  store i32 5, i32* %3, align 4
+  br label %10
+new basic block
+Basic Block name: main3
+Of function : main
+
+main3:                                            ; preds = %main2
+  %10 = load i32, i32* %1, align 4
+  %11 = add nsw i32 %10, 1
+  store i32 %11, i32* %1, align 4
+  br label %main1
+Case 1  
+new basic block
+Basic Block name: main4
+Of function : main
+
+main4:                                            ; preds = %main1
+  call void @rapl_B()
+  call void @do_nothing()
+  call void @rapl_C()
+  ret i32 0

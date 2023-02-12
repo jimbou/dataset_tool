@@ -1,0 +1,151 @@
+new basic block
+Basic Block name: do_nothing
+Of function : do_nothing
+
+do_nothing:
+  ret void
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+new basic block
+Basic Block name: main
+Of function : main
+
+main:
+  %2 = alloca i32, align 4
+  %3 = alloca i32, align 4
+  %4 = alloca i8**, align 8
+  %5 = alloca i64, align 8
+  %6 = alloca i64, align 8
+  %7 = alloca i64, align 8
+  %8 = alloca i64, align 8
+  store i32 0, i32* %2, align 4
+  store i32 %0, i32* %3, align 4
+  store i8** %1, i8*** %4, align 8
+  call void @rapl_B()
+  call void @do_nothing()
+  call void @rapl_C()
+  call void @rapl_B()
+  %9 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([25 x i8], [25 x i8]* @.str, i64 0, i64 0))
+  call void @rapl_C()
+  %10 = load i8**, i8*** %4, align 8
+  %11 = getelementptr inbounds i8*, i8** %10, i64 1
+  %12 = load i8*, i8** %11, align 8
+  call void @rapl_B()
+  %13 = call i32 (i8*, i8*, ...) @__isoc99_sscanf(i8* %12, i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str.1, i64 0, i64 0), i64* %5) #4
+  call void @rapl_C()
+  %14 = load i8**, i8*** %4, align 8
+  %15 = getelementptr inbounds i8*, i8** %14, i64 2
+  %16 = load i8*, i8** %15, align 8
+  call void @rapl_B()
+  %17 = call i32 (i8*, i8*, ...) @__isoc99_sscanf(i8* %16, i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str.1, i64 0, i64 0), i64* %6) #4
+  call void @rapl_C()
+  %18 = load i8**, i8*** %4, align 8
+  %19 = getelementptr inbounds i8*, i8** %18, i64 3
+  %20 = load i8*, i8** %19, align 8
+  call void @rapl_B()
+  %21 = call i32 (i8*, i8*, ...) @__isoc99_sscanf(i8* %20, i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str.1, i64 0, i64 0), i64* %7) #4
+  call void @rapl_C()
+  %22 = load i8**, i8*** %4, align 8
+  %23 = getelementptr inbounds i8*, i8** %22, i64 4
+  %24 = load i8*, i8** %23, align 8
+  call void @rapl_B()
+  %25 = call i32 (i8*, i8*, ...) @__isoc99_sscanf(i8* %24, i8* getelementptr inbounds ([4 x i8], [4 x i8]* @.str.1, i64 0, i64 0), i64* %8) #4
+  call void @rapl_C()
+  %26 = load i64, i64* %5, align 8
+  call void @rapl_B()
+  %27 = call i64 @to_decimal(i64 %26)
+  call void @rapl_C()
+  call void @rapl_B()
+  %28 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([22 x i8], [22 x i8]* @.str.2, i64 0, i64 0), i64 %27)
+  call void @rapl_C()
+  %29 = load i64, i64* %6, align 8
+  call void @rapl_B()
+  %30 = call i64 @to_decimal(i64 %29)
+  call void @rapl_C()
+  call void @rapl_B()
+  %31 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([22 x i8], [22 x i8]* @.str.2, i64 0, i64 0), i64 %30)
+  call void @rapl_C()
+  %32 = load i64, i64* %7, align 8
+  call void @rapl_B()
+  %33 = call i64 @to_decimal(i64 %32)
+  call void @rapl_C()
+  call void @rapl_B()
+  %34 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([22 x i8], [22 x i8]* @.str.2, i64 0, i64 0), i64 %33)
+  call void @rapl_C()
+  %35 = load i64, i64* %8, align 8
+  call void @rapl_B()
+  %36 = call i64 @to_decimal(i64 %35)
+  call void @rapl_C()
+  call void @rapl_B()
+  %37 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([22 x i8], [22 x i8]* @.str.2, i64 0, i64 0), i64 %36)
+  call void @rapl_C()
+  call void @rapl_B()
+  call void @do_nothing()
+  call void @rapl_C()
+  ret i32 0
+new basic block
+Basic Block name: to_decimal
+Of function : to_decimal
+
+to_decimal:
+  %1 = alloca i64, align 8
+  %2 = alloca i64, align 8
+  %3 = alloca i64, align 8
+  store i64 %0, i64* %1, align 8
+  store i64 0, i64* %2, align 8
+  store i64 0, i64* %3, align 8
+  br label %4
+new basic block
+Basic Block name: to_decimal1
+Of function : to_decimal
+
+to_decimal1:                                      ; preds = %6, %to_decimal
+  %4 = load i64, i64* %1, align 8
+  %5 = icmp ne i64 %4, 0
+  br i1 %5, label %6, label %21
+Case 1  
+new basic block
+Basic Block name: to_decimal2
+Of function : to_decimal
+
+to_decimal2:                                      ; preds = %to_decimal1
+  %6 = load i64, i64* %2, align 8
+  %7 = sitofp i64 %6 to double
+  %8 = load i64, i64* %1, align 8
+  %9 = srem i64 %8, 10
+  %10 = sitofp i64 %9 to double
+  %11 = load i64, i64* %3, align 8
+  %12 = add nsw i64 %11, 1
+  store i64 %12, i64* %3, align 8
+  %13 = sitofp i64 %11 to double
+  call void @rapl_B()
+  %14 = call double @pow(double 2.000000e+00, double %13) #4
+  call void @rapl_C()
+  %15 = fmul double %10, %14
+  %16 = fadd double %7, %15
+  %17 = fptosi double %16 to i64
+  store i64 %17, i64* %2, align 8
+  %18 = load i64, i64* %1, align 8
+  %19 = sdiv i64 %18, 10
+  store i64 %19, i64* %1, align 8
+  br label %to_decimal1
+new basic block
+Basic Block name: to_decimal3
+Of function : to_decimal
+
+to_decimal3:                                      ; preds = %to_decimal1
+  %20 = load i64, i64* %2, align 8
+  ret i64 %20

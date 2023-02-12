@@ -1,0 +1,210 @@
+new basic block
+Basic Block name: do_nothing
+Of function : do_nothing
+
+do_nothing:
+  ret void
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+new basic block
+Basic Block name: main
+Of function : main
+
+main:
+  %2 = alloca i32, align 4
+  %3 = alloca i32, align 4
+  %4 = alloca i8**, align 8
+  %5 = alloca i32, align 4
+  %6 = alloca i32, align 4
+  %7 = alloca i32, align 4
+  %8 = alloca i32, align 4
+  %9 = alloca i32, align 4
+  store i32 0, i32* %2, align 4
+  store i32 %0, i32* %3, align 4
+  store i8** %1, i8*** %4, align 8
+  call void @rapl_B()
+  call void @do_nothing()
+  call void @rapl_C()
+  call void @rapl_B()
+  %10 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([38 x i8], [38 x i8]* @.str.5, i64 0, i64 0))
+  call void @rapl_C()
+  %11 = load i8**, i8*** %4, align 8
+  %12 = getelementptr inbounds i8*, i8** %11, i64 1
+  %13 = load i8*, i8** %12, align 8
+  call void @rapl_B()
+  %14 = call i32 (i8*, i8*, ...) @__isoc99_sscanf(i8* %13, i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.6, i64 0, i64 0), i32* %5) #6
+  call void @rapl_C()
+  %15 = load i8**, i8*** %4, align 8
+  %16 = getelementptr inbounds i8*, i8** %15, i64 2
+  %17 = load i8*, i8** %16, align 8
+  call void @rapl_B()
+  %18 = call i32 (i8*, i8*, ...) @__isoc99_sscanf(i8* %17, i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.6, i64 0, i64 0), i32* %6) #6
+  call void @rapl_C()
+  %19 = load i32, i32* %5, align 4
+  %20 = load i32, i32* %6, align 4
+  call void @rapl_B()
+  %21 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([56 x i8], [56 x i8]* @.str.7, i64 0, i64 0), i32 %19, i32 %20)
+  call void @rapl_C()
+  %22 = load i32, i32* %5, align 4
+  store i32 %22, i32* %7, align 4
+  %23 = load i32, i32* %6, align 4
+  store i32 %23, i32* %5, align 4
+  %24 = load i32, i32* %7, align 4
+  store i32 %24, i32* %6, align 4
+  %25 = load i32, i32* %5, align 4
+  %26 = load i32, i32* %6, align 4
+  call void @rapl_B()
+  %27 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([55 x i8], [55 x i8]* @.str.8, i64 0, i64 0), i32 %25, i32 %26)
+  call void @rapl_C()
+  store i32 9, i32* %8, align 4
+  br label %28
+new basic block
+Basic Block name: main1
+Of function : main
+
+main1:                                            ; preds = %30, %main
+  %28 = load i32, i32* %5, align 4
+  %29 = icmp sgt i32 %28, 0
+  br i1 %29, label %30, label %93
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+new basic block
+Basic Block name: main2
+Of function : main
+
+main2:                                            ; preds = %main1
+  %30 = load i32, i32* %5, align 4
+  %31 = load i32, i32* %8, align 4
+  %32 = sdiv i32 %30, %31
+  store i32 %32, i32* %7, align 4
+  %33 = load i32, i32* %7, align 4
+  store i32 %33, i32* %5, align 4
+  %34 = load i32, i32* %6, align 4
+  %35 = load i32, i32* %8, align 4
+  %36 = srem i32 %34, %35
+  store i32 %36, i32* %7, align 4
+  %37 = load i32, i32* %7, align 4
+  store i32 %37, i32* %6, align 4
+  %38 = load i32, i32* %5, align 4
+  %39 = sitofp i32 %38 to double
+  call void @rapl_B()
+  %40 = call double @sqrt(double %39) #6
+  call void @rapl_C()
+  %41 = fptosi double %40 to i32
+  store i32 %41, i32* %9, align 4
+  %42 = load i32, i32* %9, align 4
+  %43 = sitofp i32 %42 to double
+  call void @rapl_B()
+  %44 = call double @llvm.ceil.f64(double %43)
+  call void @rapl_C()
+  %45 = fptosi double %44 to i32
+  store i32 %45, i32* %5, align 4
+  %46 = load i32, i32* %6, align 4
+  %47 = sitofp i32 %46 to double
+  call void @rapl_B()
+  %48 = call double @sqrt(double %47) #6
+  call void @rapl_C()
+  %49 = fptosi double %48 to i32
+  store i32 %49, i32* %9, align 4
+  %50 = load i32, i32* %9, align 4
+  %51 = sitofp i32 %50 to double
+  call void @rapl_B()
+  %52 = call double @llvm.floor.f64(double %51)
+  call void @rapl_C()
+  %53 = fptosi double %52 to i32
+  store i32 %53, i32* %6, align 4
+  %54 = load i32, i32* %5, align 4
+  call void @rapl_B()
+  %55 = call i32 @abs(i32 %54) #7
+  call void @rapl_C()
+  store i32 %55, i32* %9, align 4
+  %56 = load i32, i32* %5, align 4
+  %57 = sitofp i32 %56 to double
+  call void @rapl_B()
+  %58 = call double @acos(double %57) #6
+  call void @rapl_C()
+  %59 = fptosi double %58 to i32
+  store i32 %59, i32* %9, align 4
+  %60 = load i32, i32* %5, align 4
+  %61 = sitofp i32 %60 to double
+  call void @rapl_B()
+  %62 = call double @asin(double %61) #6
+  call void @rapl_C()
+  %63 = fptosi double %62 to i32
+  store i32 %63, i32* %9, align 4
+  %64 = load i32, i32* %5, align 4
+  %65 = sitofp i32 %64 to double
+  call void @rapl_B()
+  %66 = call double @atan(double %65) #6
+  call void @rapl_C()
+  %67 = fptosi double %66 to i32
+  store i32 %67, i32* %9, align 4
+  %68 = load i32, i32* %5, align 4
+  %69 = sitofp i32 %68 to double
+  call void @rapl_B()
+  %70 = call double @cbrt(double %69) #7
+  call void @rapl_C()
+  %71 = fptosi double %70 to i32
+  store i32 %71, i32* %9, align 4
+  %72 = load i32, i32* %5, align 4
+  %73 = sitofp i32 %72 to double
+  call void @rapl_B()
+  %74 = call double @cos(double %73) #6
+  call void @rapl_C()
+  %75 = fptosi double %74 to i32
+  store i32 %75, i32* %9, align 4
+  %76 = load i32, i32* %5, align 4
+  %77 = sitofp i32 %76 to double
+  call void @rapl_B()
+  %78 = call double @exp(double %77) #6
+  call void @rapl_C()
+  %79 = fptosi double %78 to i32
+  store i32 %79, i32* %9, align 4
+  %80 = load i32, i32* %5, align 4
+  %81 = sitofp i32 %80 to double
+  call void @rapl_B()
+  %82 = call double @sin(double %81) #6
+  call void @rapl_C()
+  %83 = fptosi double %82 to i32
+  store i32 %83, i32* %9, align 4
+  %84 = load i32, i32* %5, align 4
+  %85 = sitofp i32 %84 to double
+  call void @rapl_B()
+  %86 = call double @tan(double %85) #6
+  call void @rapl_C()
+  %87 = fptosi double %86 to i32
+  store i32 %87, i32* %9, align 4
+  %88 = load i32, i32* %5, align 4
+  %89 = sitofp i32 %88 to double
+  call void @rapl_B()
+  %90 = call double @pow(double %89, double 8.000000e+00) #6
+  call void @rapl_C()
+  %91 = fptosi double %90 to i32
+  store i32 %91, i32* %9, align 4
+  br label %main1
+Case 1  
+new basic block
+Basic Block name: main3
+Of function : main
+
+main3:                                            ; preds = %main1
+  call void @rapl_B()
+  call void @do_nothing()
+  call void @rapl_C()
+  ret i32 0
