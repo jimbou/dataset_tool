@@ -13,6 +13,8 @@ names=[]
 
 cur_dir = os.getcwd()
 useful_count =0
+total_number=0
+df_total = pd.DataFrame()
 
 for subdir, dirs, files in os.walk(cur_dir):
     for dir in dirs:
@@ -26,6 +28,7 @@ for subdir, dirs, files in os.walk(cur_dir):
             path6=dir +"/clean_data.csv"
             path7=dir +"/average_value.txt"
             path8=cur_dir+"/csv_files/"+dir+".csv"
+            path9=cur_dir+"/dirty_csv_files/"+dir+".csv"
             
 
             bbs = {}
@@ -52,15 +55,31 @@ for subdir, dirs, files in os.walk(cur_dir):
             bbs_df = pd.DataFrame()
             bbs_df = pd.DataFrame({"bb_name": bbs.keys(), "bb": bbs.values()})
             bbs_energy_df = pd.DataFrame()
+            
             bbs_energy_df = pd.DataFrame({"bb_name": bbs_energy.keys(), "energy": bbs_energy.values()})
+            #bbs_energy_df_new= pd.DataFrame()
+            
+            
+           
+
 
             df = pd.DataFrame()
             df = bbs_df.merge(bbs_energy_df, on="bb_name", how="inner")
+            print(df)
+            df_total=pd.concat([df_total,df])
+            print(len(df_total))
+            #result = df.dtypes
+            df.to_csv(path9)
+            #print("Output:")
+            #print(result)
+            #df_new = bbs_df.merge(bbs_energy_df_new, on="bb_name", how="inner")
+            total_number += len(df)
             print(f"Number of basic blocks with energies for program: {len(df)}")
 
             grouped_df= pd.DataFrame()
             grouped_df = df.groupby(df["bb"].map(tuple))["energy"].apply(list).reset_index()
-
+            #grouped_df_new = df_new.groupby(df["bb"].map(tuple))["energy"].apply(list).reset_index()
+            grouped_df.to_csv(path9)
 
             data = {'BB': [],
                     'average_energy': [],
@@ -69,13 +88,16 @@ for subdir, dirs, files in os.walk(cur_dir):
             
             averaged_energies =  pd.DataFrame()
             averaged_energies = pd.DataFrame(data)
+           
             for index, row in grouped_df.iterrows():
                     new_df = pd.DataFrame({'BB':[row['bb']],'average_energy':mean(row['energy']),'occurences':len(row['energy'])})
+
                     averaged_energies= pd.concat([averaged_energies, new_df], axis=0, ignore_index=True)
 
             total_count =len(averaged_energies.index)
 
             clean_energies = pd.DataFrame()
+
             clean_energies =averaged_energies[averaged_energies['average_energy']>0].reset_index()
             non_zero_count = len(clean_energies.index)
             clean_energies.to_csv(path6)
@@ -129,7 +151,21 @@ for subdir, dirs, files in os.walk(cur_dir):
             file_write.write("Zero unique basic blocks : "+ str(total_count - non_zero_count)+"\n")
             useful_count+= non_zero_count
 
+#df1 = df_total.groupby(['bb']).mean()
+#df1.to_csv('final_clean-dataset.csv')
+grouped_df= pd.DataFrame()
+grouped_df = df_total.groupby(df_total["bb"].map(tuple))["energy"].apply(list).reset_index()
+
+for index, row in grouped_df.iterrows():
+        new_df = pd.DataFrame({'BB':[row['bb']],'average_energy':mean(row['energy']),'occurences':len(row['energy'])})
+        averaged_energies= pd.concat([averaged_energies, new_df], axis=0, ignore_index=True)
+total_count =len(averaged_energies.index)
+clean_energies = pd.DataFrame()
+clean_energies =averaged_energies[averaged_energies['average_energy']>0].reset_index()
+non_zero_count = len(clean_energies.index)
+clean_energies.to_csv('final_clean_dataset')
 print("Usable non zero dataset so far = " ,useful_count)
+print("number of bbs including duplicates is ", total_number)
 
 
 

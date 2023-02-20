@@ -1,7 +1,7 @@
 import os
 import glob
 import pandas as pd
-os.chdir("/home/jim/diploma/energy_dataset/csv_files")
+os.chdir("/home/jim/dataset_tool/energy_dataset/csv_files")
 
 extension = 'csv'
 all_filenames = [i for i in glob.glob('*.{}'.format(extension))]
