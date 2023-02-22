@@ -16,7 +16,7 @@ useful_count =0
 total_number=0
 df_total = pd.DataFrame()
 
-for subdir, dirs, files in os.walk(cur_dir):
+for subdir, dirs, files in os.walk(cur_dir+"/results_core"):
     for dir in dirs:
         if( os.path.isfile(dir+"/evaluation_real.txt") ) :
             print(dir)

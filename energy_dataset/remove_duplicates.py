@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Read the input CSV file into a pandas DataFrame
-df = pd.read_csv('dirty_csv_files/final_dataset.csv')
+df = pd.read_csv('results_core/dirty_csv_files/final_dataset.csv')
 print(df)
 res = df.set_index(['bb'])['energy'].apply(pd.Series).stack()
 res = res.reset_index()
@@ -24,6 +24,6 @@ print("size of non unique dataset is : ",len(df))
 # Write the unique rows to a new CSV file
 
 df1 = df.groupby(['bb']).mean()
-df1.to_csv('dirty_csv_files/cleaned_dataset.csv')
+df1.to_csv('results_core/dirty_csv_files/cleaned_dataset.csv')
 print(df1)
 print(len(df1))

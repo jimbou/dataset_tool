@@ -9,7 +9,7 @@ values_predicted =[]
 names=[]
 percentages =[]
 cur_dir = os.getcwd()
-for subdir, dirs, files in os.walk(cur_dir):
+for subdir, dirs, files in os.walk(cur_dir+"/results_core"):
     for dir in dirs:
         print(dir)
         print(dir+"/average_value.txt")

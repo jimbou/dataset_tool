@@ -2,7 +2,7 @@ import os
 import pandas as pd
 #THIS IS THE NEW ONE
 # Set the directory where the CSV files are located
-dir_path = '/home/jim/dataset_tool/energy_dataset/csv_files'
+dir_path = '/home/jim/dataset_tool/energy_dataset/results_core/csv_files'
 
 # Create an empty list to store the CSV file paths
 csv_files = []
@@ -22,9 +22,9 @@ for f in csv_files:
     df=pd.concat([df,temp])
 
 # Save the concatenated DataFrame to a new CSV file
-df.to_csv('/home/jim/dataset_tool/energy_dataset/csv_files/final_dataset.csv', index=False)
+df.to_csv('/home/jim/dataset_tool/energy_dataset/results_core/csv_files/final_dataset.csv', index=False)
 
-dir_path = '/home/jim/dataset_tool/energy_dataset/dirty_csv_files'
+dir_path = '/home/jim/dataset_tool/energy_dataset/results_core/dirty_csv_files'
 
 # Create an empty list to store the CSV file paths
 csv_files = []
@@ -44,4 +44,4 @@ for f in csv_files:
     df=pd.concat([df,temp])
 
 # Save the concatenated DataFrame to a new CSV file
-df.to_csv('/home/jim/dataset_tool/energy_dataset/dirty_csv_files/final_dataset.csv', index=False)
+df.to_csv('/home/jim/dataset_tool/energy_dataset/results_core/dirty_csv_files/final_dataset.csv', index=False)

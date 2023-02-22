@@ -5,7 +5,7 @@
 
 clang -o general_rapl_ram general_rapl_ram.c
 
-for i in {1..21}
+for i in {1..51}
 do
     rm rapl_original_$i.txt 2> /dev/null
     touch rapl_original_$i.txt
