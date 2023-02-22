@@ -16,7 +16,7 @@ orig_un_diff_list =[]
 overhead_list=[]
 
 with open("values_file.txt", 'a') as f5:
-    for i in range (1,12):
+    for i in range (1,52):
         file_write_average = open("average_value.txt", "w")
         file_write_last = open("best_rapl_last.txt", "w")
         file_write_first_last =open("best_first_last_rapl.txt", "w")

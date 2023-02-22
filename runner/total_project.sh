@@ -18,9 +18,9 @@ mv breaker_folder/breaker_final_energy.txt $1_results
 mv breaker_folder/evaluation.txt $1_results
 mv breaker_folder/evaluation_real.txt $1_results
 mv run_folder/average_value.txt $1_results
-cp -r $1_results ../energy_dataset/
+cp -r $1_results ../energy_dataset/results_core
 cp -r $1_results results
 rm -r $1_results
 
 cd ../energy_dataset
-#./clean_data.sh $1
+results_core#./clean_data.sh $1

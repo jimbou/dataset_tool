@@ -15,7 +15,7 @@ target triple = "x86_64-unknown-linux-gnu"
 %struct.sockaddr_in = type { i16, i16, %struct.in_addr, [8 x i8] }
 %struct.in_addr = type { i32 }
 
-@.str = private unnamed_addr constant [69 x i8] c"/sys/class/powercap/intel-rapl/intel-rapl:0/intel-rapl:0:0/energy_uj\00", align 1
+@.str = private unnamed_addr constant [69 x i8] c"/sys/class/powercap/intel-rapl/intel-rapl:0/intel-rapl:0:2/energy_uj\00", align 1
 @.str.1 = private unnamed_addr constant [2 x i8] c"r\00", align 1
 @.str.2 = private unnamed_addr constant [17 x i8] c"rapl_beg_end.txt\00", align 1
 @.str.3 = private unnamed_addr constant [2 x i8] c"a\00", align 1

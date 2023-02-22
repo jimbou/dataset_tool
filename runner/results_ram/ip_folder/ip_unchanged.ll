@@ -9,7 +9,7 @@ target triple = "x86_64-unknown-linux-gnu"
 %struct._IO_wide_data = type opaque
 
 @.str = private unnamed_addr constant [13 x i8] c"hello world\0A\00", align 1
-@.str.1 = private unnamed_addr constant [69 x i8] c"/sys/class/powercap/intel-rapl/intel-rapl:0/intel-rapl:0:0/energy_uj\00", align 1
+@.str.1 = private unnamed_addr constant [69 x i8] c"/sys/class/powercap/intel-rapl/intel-rapl:0/intel-rapl:0:2/energy_uj\00", align 1
 @.str.2 = private unnamed_addr constant [2 x i8] c"r\00", align 1
 @.str.3 = private unnamed_addr constant [17 x i8] c"rapl_beg_end.txt\00", align 1
 @.str.4 = private unnamed_addr constant [2 x i8] c"a\00", align 1
