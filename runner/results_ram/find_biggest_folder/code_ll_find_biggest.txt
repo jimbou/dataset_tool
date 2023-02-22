@@ -1,0 +1,156 @@
+new basic block
+Basic Block name: do_nothing
+Of function : do_nothing
+
+do_nothing:
+  ret void
+Case 1  
+new basic block
+Basic Block name: main
+Of function : main
+
+main:
+  %0 = alloca i32, align 4
+  %1 = alloca [300 x i32], align 16
+  %2 = alloca i32, align 4
+  %3 = alloca i32, align 4
+  store i32 0, i32* %0, align 4
+  call void @rapl_B()
+  call void @do_nothing()
+  call void @rapl_C()
+  store i32 0, i32* %2, align 4
+  br label %4
+new basic block
+Basic Block name: main1
+Of function : main
+
+main1:                                            ; preds = %32, %main
+  %4 = load i32, i32* %2, align 4
+  %5 = icmp slt i32 %4, 300
+  br i1 %5, label %6, label %35
+Case 1  
+new basic block
+Basic Block name: main2
+Of function : main
+
+main2:                                            ; preds = %main1
+  %6 = load i32, i32* %2, align 4
+  %7 = add nsw i32 %6, 1
+  call void @rapl_B()
+  %8 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([26 x i8], [26 x i8]* @.str.5, i64 0, i64 0), i32 %7)
+  call void @rapl_C()
+  %9 = load i32, i32* %2, align 4
+  %10 = mul nsw i32 %9, 3
+  %11 = sdiv i32 %10, 5
+  %12 = load i32, i32* %2, align 4
+  %13 = sext i32 %12 to i64
+  %14 = getelementptr inbounds [300 x i32], [300 x i32]* %1, i64 0, i64 %13
+  store i32 %11, i32* %14, align 4
+  %15 = load i32, i32* %2, align 4
+  %16 = sext i32 %15 to i64
+  %17 = getelementptr inbounds [300 x i32], [300 x i32]* %1, i64 0, i64 %16
+  %18 = load i32, i32* %17, align 4
+  %19 = srem i32 %18, 5
+  %20 = icmp sgt i32 %19, 2
+  br i1 %20, label %21, label %30
+new basic block
+Basic Block name: main3
+Of function : main
+
+main3:                                            ; preds = %main2
+  %21 = load i32, i32* %2, align 4
+  %22 = sext i32 %21 to i64
+  %23 = getelementptr inbounds [300 x i32], [300 x i32]* %1, i64 0, i64 %22
+  %24 = load i32, i32* %23, align 4
+  %25 = sub nsw i32 %24, 63
+  %26 = load i32, i32* %2, align 4
+  %27 = sext i32 %26 to i64
+  %28 = getelementptr inbounds [300 x i32], [300 x i32]* %1, i64 0, i64 %27
+  store i32 %25, i32* %28, align 4
+  br label %29
+new basic block
+Basic Block name: main4
+Of function : main
+
+main4:                                            ; preds = %main3, %main2
+  br label %29
+new basic block
+Basic Block name: main5
+Of function : main
+
+main5:                                            ; preds = %main4
+  %29 = load i32, i32* %2, align 4
+  %30 = add nsw i32 %29, 1
+  store i32 %30, i32* %2, align 4
+  br label %main1
+new basic block
+Basic Block name: main6
+Of function : main
+
+main6:                                            ; preds = %main1
+  %31 = getelementptr inbounds [300 x i32], [300 x i32]* %1, i64 0, i64 0
+  %32 = load i32, i32* %31, align 16
+  store i32 %32, i32* %3, align 4
+  store i32 1, i32* %2, align 4
+  br label %33
+new basic block
+Basic Block name: main7
+Of function : main
+
+main7:                                            ; preds = %48, %main6
+  %33 = load i32, i32* %2, align 4
+  %34 = icmp slt i32 %33, 300
+  br i1 %34, label %35, label %51
+new basic block
+Basic Block name: main8
+Of function : main
+
+main8:                                            ; preds = %main7
+  %35 = load i32, i32* %3, align 4
+  %36 = load i32, i32* %2, align 4
+  %37 = sext i32 %36 to i64
+  %38 = getelementptr inbounds [300 x i32], [300 x i32]* %1, i64 0, i64 %37
+  %39 = load i32, i32* %38, align 4
+  %40 = icmp slt i32 %35, %39
+  br i1 %40, label %41, label %46
+new basic block
+Basic Block name: main9
+Of function : main
+
+main9:                                            ; preds = %main8
+  %41 = load i32, i32* %2, align 4
+  %42 = sext i32 %41 to i64
+  %43 = getelementptr inbounds [300 x i32], [300 x i32]* %1, i64 0, i64 %42
+  %44 = load i32, i32* %43, align 4
+  store i32 %44, i32* %3, align 4
+  br label %45
+new basic block
+Basic Block name: main10
+Of function : main
+
+main10:                                           ; preds = %main9, %main8
+  br label %45
+new basic block
+Basic Block name: main11
+Of function : main
+
+main11:                                           ; preds = %main10
+  %45 = load i32, i32* %2, align 4
+  %46 = add nsw i32 %45, 1
+  store i32 %46, i32* %2, align 4
+  br label %main7
+Case 1  
+Case 1  
+new basic block
+Basic Block name: main12
+Of function : main
+
+main12:                                           ; preds = %main7
+  %47 = load i32, i32* %3, align 4
+  call void @rapl_B()
+  %48 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([33 x i8], [33 x i8]* @.str.6, i64 0, i64 0), i32 %47)
+  call void @rapl_C()
+  call void @rapl_B()
+  call void @do_nothing()
+  call void @rapl_C()
+  ret i32 0

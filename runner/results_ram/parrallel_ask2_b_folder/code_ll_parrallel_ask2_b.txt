@@ -1,0 +1,473 @@
+new basic block
+Basic Block name: min
+Of function : min
+
+min:
+  %2 = alloca i32, align 4
+  %3 = alloca i32, align 4
+  %4 = alloca i32, align 4
+  store i32 %0, i32* %3, align 4
+  store i32 %1, i32* %4, align 4
+  %5 = load i32, i32* %3, align 4
+  %6 = load i32, i32* %4, align 4
+  %7 = icmp sle i32 %5, %6
+  br i1 %7, label %8, label %10
+new basic block
+Basic Block name: min1
+Of function : min
+
+min1:                                             ; preds = %min
+  %8 = load i32, i32* %3, align 4
+  store i32 %8, i32* %2, align 4
+  br label %11
+new basic block
+Basic Block name: min2
+Of function : min
+
+min2:                                             ; preds = %min
+  %9 = load i32, i32* %4, align 4
+  store i32 %9, i32* %2, align 4
+  br label %10
+new basic block
+Basic Block name: min3
+Of function : min
+
+min3:                                             ; preds = %min2, %min1
+  %10 = load i32, i32* %2, align 4
+  ret i32 %10
+Case 1  
+new basic block
+Basic Block name: graph_init_random
+Of function : graph_init_random
+
+graph_init_random:
+  %4 = alloca i32**, align 8
+  %5 = alloca i32, align 4
+  %6 = alloca i32, align 4
+  %7 = alloca i32, align 4
+  %8 = alloca i32, align 4
+  %9 = alloca i32, align 4
+  store i32** %0, i32*** %4, align 8
+  store i32 %1, i32* %5, align 4
+  store i32 %2, i32* %6, align 4
+  store i32 %3, i32* %7, align 4
+  %10 = load i32, i32* %5, align 4
+  %11 = sext i32 %10 to i64
+  call void @rapl_B()
+  call void @srand48(i64 %11) #6
+  call void @rapl_C()
+  store i32 0, i32* %8, align 4
+  br label %12
+new basic block
+Basic Block name: graph_init_random1
+Of function : graph_init_random
+
+graph_init_random1:                               ; preds = %37, %graph_init_random
+  %12 = load i32, i32* %8, align 4
+  %13 = load i32, i32* %6, align 4
+  %14 = icmp ult i32 %12, %13
+  br i1 %14, label %15, label %40
+new basic block
+Basic Block name: graph_init_random2
+Of function : graph_init_random
+
+graph_init_random2:                               ; preds = %graph_init_random1
+  store i32 0, i32* %9, align 4
+  br label %15
+new basic block
+Basic Block name: graph_init_random3
+Of function : graph_init_random
+
+graph_init_random3:                               ; preds = %31, %graph_init_random2
+  %15 = load i32, i32* %9, align 4
+  %16 = load i32, i32* %6, align 4
+  %17 = icmp ult i32 %15, %16
+  br i1 %17, label %18, label %34
+Case 1  
+Case 1  
+new basic block
+Basic Block name: graph_init_random4
+Of function : graph_init_random
+
+graph_init_random4:                               ; preds = %graph_init_random3
+  call void @rapl_B()
+  %18 = call i64 @lrand48() #6
+  call void @rapl_C()
+  %19 = trunc i64 %18 to i32
+  %20 = srem i32 %19, 1048576
+  call void @rapl_B()
+  %21 = call i32 @abs(i32 %20) #7
+  call void @rapl_C()
+  %22 = load i32**, i32*** %4, align 8
+  %23 = load i32, i32* %8, align 4
+  %24 = zext i32 %23 to i64
+  %25 = getelementptr inbounds i32*, i32** %22, i64 %24
+  %26 = load i32*, i32** %25, align 8
+  %27 = load i32, i32* %9, align 4
+  %28 = zext i32 %27 to i64
+  %29 = getelementptr inbounds i32, i32* %26, i64 %28
+  store i32 %21, i32* %29, align 4
+  br label %30
+new basic block
+Basic Block name: graph_init_random5
+Of function : graph_init_random
+
+graph_init_random5:                               ; preds = %graph_init_random4
+  %30 = load i32, i32* %9, align 4
+  %31 = add i32 %30, 1
+  store i32 %31, i32* %9, align 4
+  br label %graph_init_random3
+new basic block
+Basic Block name: graph_init_random6
+Of function : graph_init_random
+
+graph_init_random6:                               ; preds = %graph_init_random3
+  br label %32
+new basic block
+Basic Block name: graph_init_random7
+Of function : graph_init_random
+
+graph_init_random7:                               ; preds = %graph_init_random6
+  %32 = load i32, i32* %8, align 4
+  %33 = add i32 %32, 1
+  store i32 %33, i32* %8, align 4
+  br label %graph_init_random1
+new basic block
+Basic Block name: graph_init_random8
+Of function : graph_init_random
+
+graph_init_random8:                               ; preds = %graph_init_random1
+  store i32 0, i32* %8, align 4
+  br label %34
+new basic block
+Basic Block name: graph_init_random9
+Of function : graph_init_random
+
+graph_init_random9:                               ; preds = %46, %graph_init_random8
+  %34 = load i32, i32* %8, align 4
+  %35 = load i32, i32* %6, align 4
+  %36 = icmp ult i32 %34, %35
+  br i1 %36, label %37, label %49
+new basic block
+Basic Block name: graph_init_random10
+Of function : graph_init_random
+
+graph_init_random10:                              ; preds = %graph_init_random9
+  %37 = load i32**, i32*** %4, align 8
+  %38 = load i32, i32* %8, align 4
+  %39 = zext i32 %38 to i64
+  %40 = getelementptr inbounds i32*, i32** %37, i64 %39
+  %41 = load i32*, i32** %40, align 8
+  %42 = load i32, i32* %8, align 4
+  %43 = zext i32 %42 to i64
+  %44 = getelementptr inbounds i32, i32* %41, i64 %43
+  store i32 0, i32* %44, align 4
+  br label %45
+new basic block
+Basic Block name: graph_init_random11
+Of function : graph_init_random
+
+graph_init_random11:                              ; preds = %graph_init_random10
+  %45 = load i32, i32* %8, align 4
+  %46 = add i32 %45, 1
+  store i32 %46, i32* %8, align 4
+  br label %graph_init_random9
+new basic block
+Basic Block name: graph_init_random12
+Of function : graph_init_random
+
+graph_init_random12:                              ; preds = %graph_init_random9
+  ret void
+new basic block
+Basic Block name: do_nothing
+Of function : do_nothing
+
+do_nothing:
+  ret void
+Case 1  
+new basic block
+Basic Block name: main
+Of function : main
+
+main:
+  %2 = alloca i32, align 4
+  %3 = alloca i32, align 4
+  %4 = alloca i8**, align 8
+  %5 = alloca i32**, align 8
+  %6 = alloca i32, align 4
+  %7 = alloca i32, align 4
+  %8 = alloca i32, align 4
+  %9 = alloca %struct.timeval, align 8
+  %10 = alloca %struct.timeval, align 8
+  %11 = alloca double, align 8
+  %12 = alloca i32, align 4
+  store i32 0, i32* %2, align 4
+  store i32 %0, i32* %3, align 4
+  store i8** %1, i8*** %4, align 8
+  call void @rapl_B()
+  call void @do_nothing()
+  call void @rapl_C()
+  store i32 1024, i32* %12, align 4
+  %13 = load i32, i32* %3, align 4
+  %14 = icmp ne i32 %13, 2
+  br i1 %14, label %15, label %21
+Case 1  
+Case 1  
+new basic block
+Basic Block name: main1
+Of function : main
+
+main1:                                            ; preds = %main
+  %15 = load %struct._IO_FILE*, %struct._IO_FILE** @stdout, align 8
+  %16 = load i8**, i8*** %4, align 8
+  %17 = getelementptr inbounds i8*, i8** %16, i64 0
+  %18 = load i8*, i8** %17, align 8
+  call void @rapl_B()
+  %19 = call i32 (%struct._IO_FILE*, i8*, ...) @fprintf(%struct._IO_FILE* %15, i8* getelementptr inbounds ([13 x i8], [13 x i8]* @.str.5, i64 0, i64 0), i8* %18)
+  call void @rapl_C()
+  call void @rapl_B()
+  call void @exit(i32 0) #6
+  call void @rapl_C()
+  unreachable
+Case 1  
+Case 1  
+new basic block
+Basic Block name: main2
+Of function : main
+
+main2:                                            ; preds = %main
+  %20 = load i8**, i8*** %4, align 8
+  %21 = getelementptr inbounds i8*, i8** %20, i64 1
+  %22 = load i8*, i8** %21, align 8
+  call void @rapl_B()
+  %23 = call i32 @atoi(i8* %22) #7
+  call void @rapl_C()
+  store i32 %23, i32* %12, align 4
+  %24 = load i32, i32* %12, align 4
+  %25 = sext i32 %24 to i64
+  %26 = mul i64 %25, 8
+  call void @rapl_B()
+  %27 = call noalias i8* @malloc(i64 %26) #8
+  call void @rapl_C()
+  %28 = bitcast i8* %27 to i32**
+  store i32** %28, i32*** %5, align 8
+  store i32 0, i32* %6, align 4
+  br label %29
+new basic block
+Basic Block name: main3
+Of function : main
+
+main3:                                            ; preds = %42, %main2
+  %29 = load i32, i32* %6, align 4
+  %30 = load i32, i32* %12, align 4
+  %31 = icmp slt i32 %29, %30
+  br i1 %31, label %32, label %45
+Case 1  
+new basic block
+Basic Block name: main4
+Of function : main
+
+main4:                                            ; preds = %main3
+  %32 = load i32, i32* %12, align 4
+  %33 = sext i32 %32 to i64
+  %34 = mul i64 %33, 4
+  call void @rapl_B()
+  %35 = call noalias i8* @malloc(i64 %34) #8
+  call void @rapl_C()
+  %36 = bitcast i8* %35 to i32*
+  %37 = load i32**, i32*** %5, align 8
+  %38 = load i32, i32* %6, align 4
+  %39 = sext i32 %38 to i64
+  %40 = getelementptr inbounds i32*, i32** %37, i64 %39
+  store i32* %36, i32** %40, align 8
+  br label %41
+new basic block
+Basic Block name: main5
+Of function : main
+
+main5:                                            ; preds = %main4
+  %41 = load i32, i32* %6, align 4
+  %42 = add nsw i32 %41, 1
+  store i32 %42, i32* %6, align 4
+  br label %main3
+Case 1  
+Case 1  
+new basic block
+Basic Block name: main6
+Of function : main
+
+main6:                                            ; preds = %main3
+  %43 = load i32**, i32*** %5, align 8
+  %44 = load i32, i32* %12, align 4
+  %45 = load i32, i32* %12, align 4
+  %46 = mul nsw i32 128, %45
+  call void @rapl_B()
+  call void @graph_init_random(i32** %43, i32 -1, i32 %44, i32 %46)
+  call void @rapl_C()
+  call void @rapl_B()
+  %47 = call i32 @gettimeofday(%struct.timeval* %9, i8* null) #8
+  call void @rapl_C()
+  store i32 0, i32* %8, align 4
+  br label %48
+new basic block
+Basic Block name: main7
+Of function : main
+
+main7:                                            ; preds = %107, %main6
+  %48 = load i32, i32* %8, align 4
+  %49 = load i32, i32* %12, align 4
+  %50 = icmp slt i32 %48, %49
+  br i1 %50, label %51, label %110
+new basic block
+Basic Block name: main8
+Of function : main
+
+main8:                                            ; preds = %main7
+  store i32 0, i32* %6, align 4
+  br label %51
+new basic block
+Basic Block name: main9
+Of function : main
+
+main9:                                            ; preds = %101, %main8
+  %51 = load i32, i32* %6, align 4
+  %52 = load i32, i32* %12, align 4
+  %53 = icmp slt i32 %51, %52
+  br i1 %53, label %54, label %104
+new basic block
+Basic Block name: main10
+Of function : main
+
+main10:                                           ; preds = %main9
+  store i32 0, i32* %7, align 4
+  br label %54
+new basic block
+Basic Block name: main11
+Of function : main
+
+main11:                                           ; preds = %95, %main10
+  %54 = load i32, i32* %7, align 4
+  %55 = load i32, i32* %12, align 4
+  %56 = icmp slt i32 %54, %55
+  br i1 %56, label %57, label %98
+Case 1  
+new basic block
+Basic Block name: main12
+Of function : main
+
+main12:                                           ; preds = %main11
+  %57 = load i32**, i32*** %5, align 8
+  %58 = load i32, i32* %6, align 4
+  %59 = sext i32 %58 to i64
+  %60 = getelementptr inbounds i32*, i32** %57, i64 %59
+  %61 = load i32*, i32** %60, align 8
+  %62 = load i32, i32* %7, align 4
+  %63 = sext i32 %62 to i64
+  %64 = getelementptr inbounds i32, i32* %61, i64 %63
+  %65 = load i32, i32* %64, align 4
+  %66 = load i32**, i32*** %5, align 8
+  %67 = load i32, i32* %6, align 4
+  %68 = sext i32 %67 to i64
+  %69 = getelementptr inbounds i32*, i32** %66, i64 %68
+  %70 = load i32*, i32** %69, align 8
+  %71 = load i32, i32* %8, align 4
+  %72 = sext i32 %71 to i64
+  %73 = getelementptr inbounds i32, i32* %70, i64 %72
+  %74 = load i32, i32* %73, align 4
+  %75 = load i32**, i32*** %5, align 8
+  %76 = load i32, i32* %8, align 4
+  %77 = sext i32 %76 to i64
+  %78 = getelementptr inbounds i32*, i32** %75, i64 %77
+  %79 = load i32*, i32** %78, align 8
+  %80 = load i32, i32* %7, align 4
+  %81 = sext i32 %80 to i64
+  %82 = getelementptr inbounds i32, i32* %79, i64 %81
+  %83 = load i32, i32* %82, align 4
+  %84 = add nsw i32 %74, %83
+  call void @rapl_B()
+  %85 = call i32 @min(i32 %65, i32 %84)
+  call void @rapl_C()
+  %86 = load i32**, i32*** %5, align 8
+  %87 = load i32, i32* %6, align 4
+  %88 = sext i32 %87 to i64
+  %89 = getelementptr inbounds i32*, i32** %86, i64 %88
+  %90 = load i32*, i32** %89, align 8
+  %91 = load i32, i32* %7, align 4
+  %92 = sext i32 %91 to i64
+  %93 = getelementptr inbounds i32, i32* %90, i64 %92
+  store i32 %85, i32* %93, align 4
+  br label %94
+new basic block
+Basic Block name: main13
+Of function : main
+
+main13:                                           ; preds = %main12
+  %94 = load i32, i32* %7, align 4
+  %95 = add nsw i32 %94, 1
+  store i32 %95, i32* %7, align 4
+  br label %main11
+new basic block
+Basic Block name: main14
+Of function : main
+
+main14:                                           ; preds = %main11
+  br label %96
+new basic block
+Basic Block name: main15
+Of function : main
+
+main15:                                           ; preds = %main14
+  %96 = load i32, i32* %6, align 4
+  %97 = add nsw i32 %96, 1
+  store i32 %97, i32* %6, align 4
+  br label %main9
+new basic block
+Basic Block name: main16
+Of function : main
+
+main16:                                           ; preds = %main9
+  br label %98
+new basic block
+Basic Block name: main17
+Of function : main
+
+main17:                                           ; preds = %main16
+  %98 = load i32, i32* %8, align 4
+  %99 = add nsw i32 %98, 1
+  store i32 %99, i32* %8, align 4
+  br label %main7
+Case 1  
+Case 1  
+Case 1  
+new basic block
+Basic Block name: main18
+Of function : main
+
+main18:                                           ; preds = %main7
+  call void @rapl_B()
+  %100 = call i32 @gettimeofday(%struct.timeval* %10, i8* null) #8
+  call void @rapl_C()
+  %101 = getelementptr inbounds %struct.timeval, %struct.timeval* %10, i32 0, i32 0
+  %102 = load i64, i64* %101, align 8
+  %103 = getelementptr inbounds %struct.timeval, %struct.timeval* %9, i32 0, i32 0
+  %104 = load i64, i64* %103, align 8
+  %105 = sub nsw i64 %102, %104
+  %106 = mul nsw i64 %105, 1000000
+  %107 = getelementptr inbounds %struct.timeval, %struct.timeval* %10, i32 0, i32 1
+  %108 = load i64, i64* %107, align 8
+  %109 = add nsw i64 %106, %108
+  %110 = getelementptr inbounds %struct.timeval, %struct.timeval* %9, i32 0, i32 1
+  %111 = load i64, i64* %110, align 8
+  %112 = sub nsw i64 %109, %111
+  %113 = sitofp i64 %112 to double
+  %114 = fdiv double %113, 1.000000e+06
+  store double %114, double* %11, align 8
+  %115 = load i32, i32* %12, align 4
+  %116 = load double, double* %11, align 8
+  call void @rapl_B()
+  %117 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([12 x i8], [12 x i8]* @.str.6, i64 0, i64 0), i32 %115, double %116)
+  call void @rapl_C()
+  call void @rapl_B()
+  call void @do_nothing()
+  call void @rapl_C()
+  ret i32 0

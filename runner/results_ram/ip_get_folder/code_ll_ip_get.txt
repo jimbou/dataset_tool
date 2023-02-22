@@ -1,0 +1,96 @@
+new basic block
+Basic Block name: do_nothing
+Of function : do_nothing
+
+do_nothing:
+  ret void
+Case 1  
+new basic block
+Basic Block name: main
+Of function : main
+
+main:
+  %0 = alloca i32, align 4
+  %1 = alloca [15 x i8], align 1
+  %2 = alloca i32, align 4
+  %3 = alloca %struct.ifreq, align 8
+  %4 = alloca i32, align 4
+  store i32 0, i32* %0, align 4
+  call void @rapl_B()
+  call void @do_nothing()
+  call void @rapl_C()
+  store i32 0, i32* %4, align 4
+  br label %5
+new basic block
+Basic Block name: main1
+Of function : main
+
+main1:                                            ; preds = %7, %main
+  %5 = load i32, i32* %4, align 4
+  %6 = icmp slt i32 %5, 80
+  br i1 %6, label %7, label %32
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+new basic block
+Basic Block name: main2
+Of function : main
+
+main2:                                            ; preds = %main1
+  call void @rapl_B()
+  %7 = call i32 @socket(i32 2, i32 2, i32 0) #5
+  call void @rapl_C()
+  store i32 %7, i32* %2, align 4
+  %8 = getelementptr inbounds %struct.ifreq, %struct.ifreq* %3, i32 0, i32 1
+  %9 = bitcast %union.anon.0* %8 to %struct.sockaddr*
+  %10 = getelementptr inbounds %struct.sockaddr, %struct.sockaddr* %9, i32 0, i32 0
+  store i16 2, i16* %10, align 8
+  %11 = getelementptr inbounds %struct.ifreq, %struct.ifreq* %3, i32 0, i32 0
+  %12 = bitcast %union.anon* %11 to [16 x i8]*
+  %13 = getelementptr inbounds [16 x i8], [16 x i8]* %12, i64 0, i64 0
+  call void @rapl_B()
+  call void @llvm.memcpy.p0i8.p0i8.i64(i8* align 8 %13, i8* align 1 getelementptr inbounds ([5 x i8], [5 x i8]* @.str.5, i64 0, i64 0), i64 15, i1 false)
+  call void @rapl_C()
+  %14 = load i32, i32* %2, align 4
+  call void @rapl_B()
+  %15 = call i32 (i32, i64, ...) @ioctl(i32 %14, i64 35093, %struct.ifreq* %3) #5
+  call void @rapl_C()
+  %16 = load i32, i32* %2, align 4
+  call void @rapl_B()
+  %17 = call i32 @close(i32 %16)
+  call void @rapl_C()
+  %18 = getelementptr inbounds [15 x i8], [15 x i8]* %1, i64 0, i64 0
+  %19 = getelementptr inbounds %struct.ifreq, %struct.ifreq* %3, i32 0, i32 1
+  %20 = bitcast %union.anon.0* %19 to %struct.sockaddr*
+  %21 = bitcast %struct.sockaddr* %20 to %struct.sockaddr_in*
+  %22 = getelementptr inbounds %struct.sockaddr_in, %struct.sockaddr_in* %21, i32 0, i32 2
+  %23 = getelementptr inbounds %struct.in_addr, %struct.in_addr* %22, i32 0, i32 0
+  %24 = load i32, i32* %23, align 4
+  call void @rapl_B()
+  %25 = call i8* @inet_ntoa(i32 %24) #5
+  call void @rapl_C()
+  call void @rapl_B()
+  %26 = call i8* @strcpy(i8* %18, i8* %25) #5
+  call void @rapl_C()
+  %27 = getelementptr inbounds [15 x i8], [15 x i8]* %1, i64 0, i64 0
+  call void @rapl_B()
+  %28 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([26 x i8], [26 x i8]* @.str.6, i64 0, i64 0), i8* %27)
+  call void @rapl_C()
+  %29 = load i32, i32* %4, align 4
+  %30 = add nsw i32 %29, 1
+  store i32 %30, i32* %4, align 4
+  br label %main1
+Case 1  
+new basic block
+Basic Block name: main3
+Of function : main
+
+main3:                                            ; preds = %main1
+  call void @rapl_B()
+  call void @do_nothing()
+  call void @rapl_C()
+  ret i32 0
