@@ -156,7 +156,7 @@ define dso_local i32 @main() #0 {
 
 7:                                                ; preds = %22, %0
   %8 = load i32, i32* %5, align 4
-  %9 = icmp slt i32 %8, 3
+  %9 = icmp slt i32 %8, 70
   br i1 %9, label %10, label %25
 
 10:                                               ; preds = %7

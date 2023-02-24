@@ -8,7 +8,7 @@ echo "starting.."
  rm -r $1_folder/
  cd ../cscripts
  cp $1_results_ram/* run_folder/
- ./total_ram.sh $1 #allo total apo to cscripts
+ ./total.sh $1 #allo total apo to cscripts
  rm -r $1_results_ram/
  rm run_folder/trace.txt
 rm run_folder/trace_un.txt

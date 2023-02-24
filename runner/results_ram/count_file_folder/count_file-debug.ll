@@ -10,7 +10,7 @@ target triple = "x86_64-unknown-linux-gnu"
 %struct._IO_codecvt = type opaque
 %struct._IO_wide_data = type opaque
 
-@.str = private unnamed_addr constant [69 x i8] c"/sys/class/powercap/intel-rapl/intel-rapl:0/intel-rapl:0:2/energy_uj\00", align 1
+@.str = private unnamed_addr constant [68 x i8] c"/sys/class/powercap/intel-rapl/intel-rapl:0/intel-rapl:0:/energy_uj\00", align 1
 @.str.1 = private unnamed_addr constant [2 x i8] c"r\00", align 1
 @.str.2 = private unnamed_addr constant [17 x i8] c"rapl_beg_end.txt\00", align 1
 @.str.3 = private unnamed_addr constant [2 x i8] c"a\00", align 1
@@ -73,7 +73,7 @@ define dso_local void @rapl_D() #0 {
   %6 = alloca %struct._IO_FILE*, align 8
   store i8* null, i8** %1, align 8
   store i64 0, i64* %2, align 8
-  %7 = call %struct._IO_FILE* @fopen(i8* getelementptr inbounds ([69 x i8], [69 x i8]* @.str, i64 0, i64 0), i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.1, i64 0, i64 0))
+  %7 = call %struct._IO_FILE* @fopen(i8* getelementptr inbounds ([68 x i8], [68 x i8]* @.str, i64 0, i64 0), i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.1, i64 0, i64 0))
   store %struct._IO_FILE* %7, %struct._IO_FILE** %5, align 8
   %8 = call %struct._IO_FILE* @fopen(i8* getelementptr inbounds ([17 x i8], [17 x i8]* @.str.2, i64 0, i64 0), i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.3, i64 0, i64 0))
   store %struct._IO_FILE* %8, %struct._IO_FILE** %6, align 8
@@ -172,7 +172,7 @@ main:
 main1:                                            ; preds = %main7, %main
   call void @rapl_A()
   %6 = load i32, i32* %4, align 4
-  %7 = icmp slt i32 %6, 3
+  %7 = icmp slt i32 %6, 70
   br i1 %7, label %main2, label %main8
 
 main2:                                            ; preds = %main1
@@ -264,7 +264,7 @@ define dso_local void @rapl_A() #0 {
   %6 = alloca %struct._IO_FILE*, align 8
   store i8* null, i8** %1, align 8
   store i64 0, i64* %2, align 8
-  %7 = call %struct._IO_FILE* @fopen(i8* getelementptr inbounds ([69 x i8], [69 x i8]* @.str, i64 0, i64 0), i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.1, i64 0, i64 0))
+  %7 = call %struct._IO_FILE* @fopen(i8* getelementptr inbounds ([68 x i8], [68 x i8]* @.str, i64 0, i64 0), i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.1, i64 0, i64 0))
   store %struct._IO_FILE* %7, %struct._IO_FILE** %5, align 8
   %8 = call %struct._IO_FILE* @fopen(i8* getelementptr inbounds ([14 x i8], [14 x i8]* @.str.8, i64 0, i64 0), i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.3, i64 0, i64 0))
   store %struct._IO_FILE* %8, %struct._IO_FILE** %6, align 8
@@ -332,7 +332,7 @@ define dso_local void @rapl_B() #0 {
   %6 = alloca %struct._IO_FILE*, align 8
   store i8* null, i8** %1, align 8
   store i64 0, i64* %2, align 8
-  %7 = call %struct._IO_FILE* @fopen(i8* getelementptr inbounds ([69 x i8], [69 x i8]* @.str, i64 0, i64 0), i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.1, i64 0, i64 0))
+  %7 = call %struct._IO_FILE* @fopen(i8* getelementptr inbounds ([68 x i8], [68 x i8]* @.str, i64 0, i64 0), i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.1, i64 0, i64 0))
   store %struct._IO_FILE* %7, %struct._IO_FILE** %5, align 8
   %8 = call %struct._IO_FILE* @fopen(i8* getelementptr inbounds ([14 x i8], [14 x i8]* @.str.8, i64 0, i64 0), i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.3, i64 0, i64 0))
   store %struct._IO_FILE* %8, %struct._IO_FILE** %6, align 8
@@ -400,7 +400,7 @@ define dso_local void @rapl_C() #0 {
   %6 = alloca %struct._IO_FILE*, align 8
   store i8* null, i8** %1, align 8
   store i64 0, i64* %2, align 8
-  %7 = call %struct._IO_FILE* @fopen(i8* getelementptr inbounds ([69 x i8], [69 x i8]* @.str, i64 0, i64 0), i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.1, i64 0, i64 0))
+  %7 = call %struct._IO_FILE* @fopen(i8* getelementptr inbounds ([68 x i8], [68 x i8]* @.str, i64 0, i64 0), i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.1, i64 0, i64 0))
   store %struct._IO_FILE* %7, %struct._IO_FILE** %5, align 8
   %8 = call %struct._IO_FILE* @fopen(i8* getelementptr inbounds ([14 x i8], [14 x i8]* @.str.8, i64 0, i64 0), i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.3, i64 0, i64 0))
   store %struct._IO_FILE* %8, %struct._IO_FILE** %6, align 8

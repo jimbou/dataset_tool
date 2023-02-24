@@ -72,7 +72,7 @@ Of function : main
 
 main1:                                            ; preds = %20, %main
   %6 = load i32, i32* %4, align 4
-  %7 = icmp slt i32 %6, 3
+  %7 = icmp slt i32 %6, 70
   br i1 %7, label %8, label %23
 new basic block
 Basic Block name: main2

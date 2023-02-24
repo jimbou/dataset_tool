@@ -1,0 +1,4 @@
+AVERAGE :562.4705882352941 
+Our energy :0.0 
+Real difference :562.4705882352941 
+Percentage difference :1.0 

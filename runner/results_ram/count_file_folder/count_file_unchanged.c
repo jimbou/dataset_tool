@@ -107,7 +107,7 @@ int main() {
     fp = fopen("trace_clean.txt", "a");
 
     /*writing A to Z characters into file*/
-    for (int i=0;i<3;i++){
+    for (int i=0;i<70;i++){
 
     
     for (i = 'A'; i <= 'Z'; i++)

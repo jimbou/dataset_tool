@@ -1,0 +1,15 @@
+Case 1  
+Stack dump:
+0.	Program arguments: opt -load build/skeleton/libSkeletonPass.so -skeleton 
+1.	Running pass 'LLVM IR Instrumentation Pass' on module '<stdin>'.
+ #0 0x000055bebb1f60ae llvm::sys::PrintStackTrace(llvm::raw_ostream&) (/usr/local/bin/opt+0x25480ae)
+ #1 0x000055bebb1f3df4 llvm::sys::RunSignalHandlers() (/usr/local/bin/opt+0x2545df4)
+ #2 0x000055bebb1f3f38 SignalHandler(int) (/usr/local/bin/opt+0x2545f38)
+ #3 0x00007f2548f1b420 __restore_rt (/lib/x86_64-linux-gnu/libpthread.so.0+0x14420)
+ #4 0x00007f2548f461c8 llvm::Value::getType() const (build/skeleton/libSkeletonPass.so+0xc1c8)
+ #5 0x00007f2548f4680c llvm::CallInst::Create(llvm::Value*, llvm::Twine const&, llvm::Instruction*) (build/skeleton/libSkeletonPass.so+0xc80c)
+ #6 0x00007f2548f45184 (anonymous namespace)::SkeletonPass::runOnModule(llvm::Module&) (build/skeleton/libSkeletonPass.so+0xb184)
+ #7 0x000055bebaa493e0 llvm::legacy::PassManagerImpl::run(llvm::Module&) (/usr/local/bin/opt+0x1d9b3e0)
+ #8 0x000055beb9304277 main (/usr/local/bin/opt+0x656277)
+ #9 0x00007f2548999083 __libc_start_main /build/glibc-SzIz7B/glibc-2.31/csu/../csu/libc-start.c:342:3
+#10 0x000055beb938926e _start (/usr/local/bin/opt+0x6db26e)
