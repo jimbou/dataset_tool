@@ -1,0 +1,416 @@
+Case 1  
+new basic block
+Basic Block name: hello
+Of function : hello
+
+hello:
+  call void @rapl_B()
+  %0 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([13 x i8], [13 x i8]* @.str, i64 0, i64 0))
+  call void @rapl_C()
+  ret void
+new basic block
+Basic Block name: do_nothing
+Of function : do_nothing
+
+do_nothing:
+  ret void
+Case 1  
+Case 1  
+new basic block
+Basic Block name: extractIpAddress
+Of function : extractIpAddress
+
+extractIpAddress:
+  %2 = alloca i8*, align 8
+  %3 = alloca i16*, align 8
+  %4 = alloca i16, align 2
+  %5 = alloca [4 x i8], align 1
+  %6 = alloca i8, align 1
+  %7 = alloca i8, align 1
+  %8 = alloca i8, align 1
+  %9 = alloca [5 x i8], align 1
+  store i8* %0, i8** %2, align 8
+  store i16* %1, i16** %3, align 8
+  store i16 0, i16* %4, align 2
+  %10 = bitcast [4 x i8]* %5 to i8*
+  call void @rapl_B()
+  call void @llvm.memset.p0i8.i64(i8* align 1 %10, i8 0, i64 4, i1 false)
+  call void @rapl_C()
+  store i8 0, i8* %6, align 1
+  store i8 0, i8* %7, align 1
+  %11 = load i8*, i8** %2, align 8
+  call void @rapl_B()
+  %12 = call i64 @strlen(i8* %11) #6
+  call void @rapl_C()
+  %13 = trunc i64 %12 to i16
+  store i16 %13, i16* %4, align 2
+  store i8 0, i8* %8, align 1
+  br label %14
+new basic block
+Basic Block name: extractIpAddress1
+Of function : extractIpAddress
+
+extractIpAddress1:                                ; preds = %64, %extractIpAddress
+  %14 = load i8, i8* %8, align 1
+  %15 = zext i8 %14 to i32
+  %16 = load i16, i16* %4, align 2
+  %17 = zext i16 %16 to i32
+  %18 = icmp slt i32 %15, %17
+  br i1 %18, label %19, label %67
+new basic block
+Basic Block name: extractIpAddress2
+Of function : extractIpAddress
+
+extractIpAddress2:                                ; preds = %extractIpAddress1
+  %19 = load i8*, i8** %2, align 8
+  %20 = load i8, i8* %8, align 1
+  %21 = zext i8 %20 to i64
+  %22 = getelementptr inbounds i8, i8* %19, i64 %21
+  %23 = load i8, i8* %22, align 1
+  %24 = zext i8 %23 to i32
+  %25 = icmp ne i32 %24, 46
+  br i1 %25, label %26, label %36
+new basic block
+Basic Block name: extractIpAddress3
+Of function : extractIpAddress
+
+extractIpAddress3:                                ; preds = %extractIpAddress2
+  %26 = load i8*, i8** %2, align 8
+  %27 = load i8, i8* %8, align 1
+  %28 = zext i8 %27 to i64
+  %29 = getelementptr inbounds i8, i8* %26, i64 %28
+  %30 = load i8, i8* %29, align 1
+  %31 = load i8, i8* %6, align 1
+  %32 = add i8 %31, 1
+  store i8 %32, i8* %6, align 1
+  %33 = zext i8 %31 to i64
+  %34 = getelementptr inbounds [5 x i8], [5 x i8]* %9, i64 0, i64 %33
+  store i8 %30, i8* %34, align 1
+  br label %35
+new basic block
+Basic Block name: extractIpAddress4
+Of function : extractIpAddress
+
+extractIpAddress4:                                ; preds = %extractIpAddress3, %extractIpAddress2
+  %35 = load i8*, i8** %2, align 8
+  %36 = load i8, i8* %8, align 1
+  %37 = zext i8 %36 to i64
+  %38 = getelementptr inbounds i8, i8* %35, i64 %37
+  %39 = load i8, i8* %38, align 1
+  %40 = zext i8 %39 to i32
+  %41 = icmp eq i32 %40, 46
+  br i1 %41, label %49, label %42
+new basic block
+Basic Block name: extractIpAddress5
+Of function : extractIpAddress
+
+extractIpAddress5:                                ; preds = %extractIpAddress4
+  %42 = load i8, i8* %8, align 1
+  %43 = zext i8 %42 to i32
+  %44 = load i16, i16* %4, align 2
+  %45 = zext i16 %44 to i32
+  %46 = sub nsw i32 %45, 1
+  %47 = icmp eq i32 %43, %46
+  br i1 %47, label %48, label %59
+Case 1  
+new basic block
+Basic Block name: extractIpAddress6
+Of function : extractIpAddress
+
+extractIpAddress6:                                ; preds = %extractIpAddress5, %extractIpAddress4
+  %48 = load i8, i8* %6, align 1
+  %49 = zext i8 %48 to i64
+  %50 = getelementptr inbounds [5 x i8], [5 x i8]* %9, i64 0, i64 %49
+  store i8 0, i8* %50, align 1
+  store i8 0, i8* %6, align 1
+  %51 = getelementptr inbounds [5 x i8], [5 x i8]* %9, i64 0, i64 0
+  call void @rapl_B()
+  %52 = call i32 @atoi(i8* %51) #6
+  call void @rapl_C()
+  %53 = trunc i32 %52 to i8
+  %54 = load i8, i8* %7, align 1
+  %55 = add i8 %54, 1
+  store i8 %55, i8* %7, align 1
+  %56 = zext i8 %54 to i64
+  %57 = getelementptr inbounds [4 x i8], [4 x i8]* %5, i64 0, i64 %56
+  store i8 %53, i8* %57, align 1
+  br label %58
+new basic block
+Basic Block name: extractIpAddress7
+Of function : extractIpAddress
+
+extractIpAddress7:                                ; preds = %extractIpAddress6, %extractIpAddress5
+  br label %58
+new basic block
+Basic Block name: extractIpAddress8
+Of function : extractIpAddress
+
+extractIpAddress8:                                ; preds = %extractIpAddress7
+  %58 = load i8, i8* %8, align 1
+  %59 = add i8 %58, 1
+  store i8 %59, i8* %8, align 1
+  br label %extractIpAddress1
+new basic block
+Basic Block name: extractIpAddress9
+Of function : extractIpAddress
+
+extractIpAddress9:                                ; preds = %extractIpAddress1
+  %60 = getelementptr inbounds [4 x i8], [4 x i8]* %5, i64 0, i64 0
+  %61 = load i8, i8* %60, align 1
+  %62 = zext i8 %61 to i16
+  %63 = load i16*, i16** %3, align 8
+  %64 = getelementptr inbounds i16, i16* %63, i64 0
+  store i16 %62, i16* %64, align 2
+  %65 = getelementptr inbounds [4 x i8], [4 x i8]* %5, i64 0, i64 1
+  %66 = load i8, i8* %65, align 1
+  %67 = zext i8 %66 to i16
+  %68 = load i16*, i16** %3, align 8
+  %69 = getelementptr inbounds i16, i16* %68, i64 1
+  store i16 %67, i16* %69, align 2
+  %70 = getelementptr inbounds [4 x i8], [4 x i8]* %5, i64 0, i64 2
+  %71 = load i8, i8* %70, align 1
+  %72 = zext i8 %71 to i16
+  %73 = load i16*, i16** %3, align 8
+  %74 = getelementptr inbounds i16, i16* %73, i64 2
+  store i16 %72, i16* %74, align 2
+  %75 = getelementptr inbounds [4 x i8], [4 x i8]* %5, i64 0, i64 3
+  %76 = load i8, i8* %75, align 1
+  %77 = zext i8 %76 to i16
+  %78 = load i16*, i16** %3, align 8
+  %79 = getelementptr inbounds i16, i16* %78, i64 3
+  store i16 %77, i16* %79, align 2
+  ret void
+Case 1  
+new basic block
+Basic Block name: main
+Of function : main
+
+main:
+  %2 = alloca i32, align 4
+  %3 = alloca i32, align 4
+  %4 = alloca i8**, align 8
+  %5 = alloca i32, align 4
+  %6 = alloca [20 x i8], align 16
+  %7 = alloca [4 x i16], align 2
+  store i32 0, i32* %2, align 4
+  store i32 %0, i32* %3, align 4
+  store i8** %1, i8*** %4, align 8
+  call void @rapl_B()
+  call void @do_nothing()
+  call void @rapl_C()
+  store i32 1, i32* %5, align 4
+  br label %8
+new basic block
+Basic Block name: main1
+Of function : main
+
+main1:                                            ; preds = %90, %main
+  %8 = load i32, i32* %5, align 4
+  %9 = icmp slt i32 %8, 30
+  br i1 %9, label %10, label %93
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+new basic block
+Basic Block name: main2
+Of function : main
+
+main2:                                            ; preds = %main1
+  %10 = bitcast [20 x i8]* %6 to i8*
+  call void @rapl_B()
+  call void @llvm.memset.p0i8.i64(i8* align 16 %10, i8 0, i64 20, i1 false)
+  call void @rapl_C()
+  call void @rapl_B()
+  %11 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([44 x i8], [44 x i8]* @.str.6, i64 0, i64 0))
+  call void @rapl_C()
+  %12 = load i8**, i8*** %4, align 8
+  %13 = load i32, i32* %5, align 4
+  %14 = sext i32 %13 to i64
+  %15 = getelementptr inbounds i8*, i8** %12, i64 %14
+  %16 = load i8*, i8** %15, align 8
+  %17 = getelementptr inbounds [20 x i8], [20 x i8]* %6, i64 0, i64 0
+  call void @rapl_B()
+  %18 = call i32 (i8*, i8*, ...) @__isoc99_sscanf(i8* %16, i8* getelementptr inbounds ([3 x i8], [3 x i8]* @.str.7, i64 0, i64 0), i8* %17) #6
+  call void @rapl_C()
+  %19 = getelementptr inbounds [20 x i8], [20 x i8]* %6, i64 0, i64 0
+  %20 = getelementptr inbounds [4 x i16], [4 x i16]* %7, i64 0, i64 0
+  call void @rapl_B()
+  call void @extractIpAddress(i8* %19, i16* %20)
+  call void @rapl_C()
+  %21 = getelementptr inbounds [4 x i16], [4 x i16]* %7, i64 0, i64 0
+  %22 = load i16, i16* %21, align 2
+  %23 = sext i16 %22 to i32
+  %24 = getelementptr inbounds [4 x i16], [4 x i16]* %7, i64 0, i64 1
+  %25 = load i16, i16* %24, align 2
+  %26 = sext i16 %25 to i32
+  %27 = getelementptr inbounds [4 x i16], [4 x i16]* %7, i64 0, i64 2
+  %28 = load i16, i16* %27, align 2
+  %29 = sext i16 %28 to i32
+  %30 = getelementptr inbounds [4 x i16], [4 x i16]* %7, i64 0, i64 3
+  %31 = load i16, i16* %30, align 2
+  %32 = sext i16 %31 to i32
+  call void @rapl_B()
+  %33 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([37 x i8], [37 x i8]* @.str.8, i64 0, i64 0), i32 %23, i32 %26, i32 %29, i32 %32)
+  call void @rapl_C()
+  %34 = getelementptr inbounds [4 x i16], [4 x i16]* %7, i64 0, i64 0
+  %35 = load i16, i16* %34, align 2
+  %36 = sext i16 %35 to i32
+  %37 = icmp sge i32 %36, 0
+  br i1 %37, label %38, label %45
+new basic block
+Basic Block name: main3
+Of function : main
+
+main3:                                            ; preds = %main2
+  %38 = getelementptr inbounds [4 x i16], [4 x i16]* %7, i64 0, i64 0
+  %39 = load i16, i16* %38, align 2
+  %40 = sext i16 %39 to i32
+  %41 = icmp sle i32 %40, 127
+  br i1 %41, label %42, label %44
+Case 1  
+new basic block
+Basic Block name: main4
+Of function : main
+
+main4:                                            ; preds = %main3
+  call void @rapl_B()
+  %42 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([21 x i8], [21 x i8]* @.str.9, i64 0, i64 0))
+  call void @rapl_C()
+  br label %43
+new basic block
+Basic Block name: main5
+Of function : main
+
+main5:                                            ; preds = %main4, %main3, %main2
+  %43 = getelementptr inbounds [4 x i16], [4 x i16]* %7, i64 0, i64 0
+  %44 = load i16, i16* %43, align 2
+  %45 = sext i16 %44 to i32
+  %46 = icmp sgt i32 %45, 127
+  br i1 %46, label %47, label %54
+new basic block
+Basic Block name: main6
+Of function : main
+
+main6:                                            ; preds = %main5
+  %47 = getelementptr inbounds [4 x i16], [4 x i16]* %7, i64 0, i64 0
+  %48 = load i16, i16* %47, align 2
+  %49 = sext i16 %48 to i32
+  %50 = icmp slt i32 %49, 191
+  br i1 %50, label %51, label %53
+Case 1  
+new basic block
+Basic Block name: main7
+Of function : main
+
+main7:                                            ; preds = %main6
+  call void @rapl_B()
+  %51 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([21 x i8], [21 x i8]* @.str.10, i64 0, i64 0))
+  call void @rapl_C()
+  br label %52
+new basic block
+Basic Block name: main8
+Of function : main
+
+main8:                                            ; preds = %main7, %main6, %main5
+  %52 = getelementptr inbounds [4 x i16], [4 x i16]* %7, i64 0, i64 0
+  %53 = load i16, i16* %52, align 2
+  %54 = sext i16 %53 to i32
+  %55 = icmp sgt i32 %54, 191
+  br i1 %55, label %56, label %63
+new basic block
+Basic Block name: main9
+Of function : main
+
+main9:                                            ; preds = %main8
+  %56 = getelementptr inbounds [4 x i16], [4 x i16]* %7, i64 0, i64 0
+  %57 = load i16, i16* %56, align 2
+  %58 = sext i16 %57 to i32
+  %59 = icmp slt i32 %58, 224
+  br i1 %59, label %60, label %62
+Case 1  
+new basic block
+Basic Block name: main10
+Of function : main
+
+main10:                                           ; preds = %main9
+  call void @rapl_B()
+  %60 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([21 x i8], [21 x i8]* @.str.11, i64 0, i64 0))
+  call void @rapl_C()
+  br label %61
+new basic block
+Basic Block name: main11
+Of function : main
+
+main11:                                           ; preds = %main10, %main9, %main8
+  %61 = getelementptr inbounds [4 x i16], [4 x i16]* %7, i64 0, i64 0
+  %62 = load i16, i16* %61, align 2
+  %63 = sext i16 %62 to i32
+  %64 = icmp sgt i32 %63, 224
+  br i1 %64, label %65, label %72
+new basic block
+Basic Block name: main12
+Of function : main
+
+main12:                                           ; preds = %main11
+  %65 = getelementptr inbounds [4 x i16], [4 x i16]* %7, i64 0, i64 0
+  %66 = load i16, i16* %65, align 2
+  %67 = sext i16 %66 to i32
+  %68 = icmp sle i32 %67, 239
+  br i1 %68, label %69, label %71
+Case 1  
+new basic block
+Basic Block name: main13
+Of function : main
+
+main13:                                           ; preds = %main12
+  call void @rapl_B()
+  %69 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([21 x i8], [21 x i8]* @.str.12, i64 0, i64 0))
+  call void @rapl_C()
+  br label %70
+new basic block
+Basic Block name: main14
+Of function : main
+
+main14:                                           ; preds = %main13, %main12, %main11
+  %70 = getelementptr inbounds [4 x i16], [4 x i16]* %7, i64 0, i64 0
+  %71 = load i16, i16* %70, align 2
+  %72 = sext i16 %71 to i32
+  %73 = icmp sgt i32 %72, 239
+  br i1 %73, label %74, label %76
+Case 1  
+new basic block
+Basic Block name: main15
+Of function : main
+
+main15:                                           ; preds = %main14
+  call void @rapl_B()
+  %74 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([21 x i8], [21 x i8]* @.str.13, i64 0, i64 0))
+  call void @rapl_C()
+  br label %75
+new basic block
+Basic Block name: main16
+Of function : main
+
+main16:                                           ; preds = %main15, %main14
+  br label %75
+new basic block
+Basic Block name: main17
+Of function : main
+
+main17:                                           ; preds = %main16
+  %75 = load i32, i32* %5, align 4
+  %76 = add nsw i32 %75, 1
+  store i32 %76, i32* %5, align 4
+  br label %main1
+Case 1  
+new basic block
+Basic Block name: main18
+Of function : main
+
+main18:                                           ; preds = %main1
+  call void @rapl_B()
+  call void @do_nothing()
+  call void @rapl_C()
+  ret i32 0

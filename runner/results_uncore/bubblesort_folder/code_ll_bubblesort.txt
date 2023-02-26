@@ -1,0 +1,311 @@
+new basic block
+Basic Block name: do_nothing
+Of function : do_nothing
+
+do_nothing:
+  ret void
+new basic block
+Basic Block name: bubbleSort
+Of function : bubbleSort
+
+bubbleSort:
+  %2 = alloca i32*, align 8
+  %3 = alloca i32, align 4
+  %4 = alloca i32, align 4
+  %5 = alloca i32, align 4
+  %6 = alloca i32, align 4
+  %7 = alloca i32, align 4
+  store i32* %0, i32** %2, align 8
+  store i32 %1, i32* %3, align 4
+  store i32 0, i32* %4, align 4
+  br label %8
+new basic block
+Basic Block name: bubbleSort1
+Of function : bubbleSort
+
+bubbleSort1:                                      ; preds = %64, %bubbleSort
+  %8 = load i32, i32* %4, align 4
+  %9 = load i32, i32* %3, align 4
+  %10 = sub nsw i32 %9, 1
+  %11 = icmp slt i32 %8, %10
+  br i1 %11, label %12, label %67
+new basic block
+Basic Block name: bubbleSort2
+Of function : bubbleSort
+
+bubbleSort2:                                      ; preds = %bubbleSort1
+  store i32 0, i32* %5, align 4
+  store i32 0, i32* %6, align 4
+  br label %12
+new basic block
+Basic Block name: bubbleSort3
+Of function : bubbleSort
+
+bubbleSort3:                                      ; preds = %54, %bubbleSort2
+  %12 = load i32, i32* %6, align 4
+  %13 = load i32, i32* %3, align 4
+  %14 = load i32, i32* %4, align 4
+  %15 = sub nsw i32 %13, %14
+  %16 = sub nsw i32 %15, 1
+  %17 = icmp slt i32 %12, %16
+  br i1 %17, label %18, label %57
+new basic block
+Basic Block name: bubbleSort4
+Of function : bubbleSort
+
+bubbleSort4:                                      ; preds = %bubbleSort3
+  %18 = load i32*, i32** %2, align 8
+  %19 = load i32, i32* %6, align 4
+  %20 = sext i32 %19 to i64
+  %21 = getelementptr inbounds i32, i32* %18, i64 %20
+  %22 = load i32, i32* %21, align 4
+  %23 = load i32*, i32** %2, align 8
+  %24 = load i32, i32* %6, align 4
+  %25 = add nsw i32 %24, 1
+  %26 = sext i32 %25 to i64
+  %27 = getelementptr inbounds i32, i32* %23, i64 %26
+  %28 = load i32, i32* %27, align 4
+  %29 = icmp sgt i32 %22, %28
+  br i1 %29, label %30, label %52
+new basic block
+Basic Block name: bubbleSort5
+Of function : bubbleSort
+
+bubbleSort5:                                      ; preds = %bubbleSort4
+  %30 = load i32*, i32** %2, align 8
+  %31 = load i32, i32* %6, align 4
+  %32 = sext i32 %31 to i64
+  %33 = getelementptr inbounds i32, i32* %30, i64 %32
+  %34 = load i32, i32* %33, align 4
+  store i32 %34, i32* %7, align 4
+  %35 = load i32*, i32** %2, align 8
+  %36 = load i32, i32* %6, align 4
+  %37 = add nsw i32 %36, 1
+  %38 = sext i32 %37 to i64
+  %39 = getelementptr inbounds i32, i32* %35, i64 %38
+  %40 = load i32, i32* %39, align 4
+  %41 = load i32*, i32** %2, align 8
+  %42 = load i32, i32* %6, align 4
+  %43 = sext i32 %42 to i64
+  %44 = getelementptr inbounds i32, i32* %41, i64 %43
+  store i32 %40, i32* %44, align 4
+  %45 = load i32, i32* %7, align 4
+  %46 = load i32*, i32** %2, align 8
+  %47 = load i32, i32* %6, align 4
+  %48 = add nsw i32 %47, 1
+  %49 = sext i32 %48 to i64
+  %50 = getelementptr inbounds i32, i32* %46, i64 %49
+  store i32 %45, i32* %50, align 4
+  store i32 1, i32* %5, align 4
+  br label %51
+new basic block
+Basic Block name: bubbleSort6
+Of function : bubbleSort
+
+bubbleSort6:                                      ; preds = %bubbleSort5, %bubbleSort4
+  br label %51
+new basic block
+Basic Block name: bubbleSort7
+Of function : bubbleSort
+
+bubbleSort7:                                      ; preds = %bubbleSort6
+  %51 = load i32, i32* %6, align 4
+  %52 = add nsw i32 %51, 1
+  store i32 %52, i32* %6, align 4
+  br label %bubbleSort3
+new basic block
+Basic Block name: bubbleSort8
+Of function : bubbleSort
+
+bubbleSort8:                                      ; preds = %bubbleSort3
+  %53 = load i32, i32* %5, align 4
+  %54 = icmp eq i32 %53, 0
+  br i1 %54, label %55, label %56
+new basic block
+Basic Block name: bubbleSort9
+Of function : bubbleSort
+
+bubbleSort9:                                      ; preds = %bubbleSort8
+  br label %59
+new basic block
+Basic Block name: bubbleSort10
+Of function : bubbleSort
+
+bubbleSort10:                                     ; preds = %bubbleSort8
+  br label %55
+new basic block
+Basic Block name: bubbleSort11
+Of function : bubbleSort
+
+bubbleSort11:                                     ; preds = %bubbleSort10
+  %55 = load i32, i32* %4, align 4
+  %56 = add nsw i32 %55, 1
+  store i32 %56, i32* %4, align 4
+  br label %bubbleSort1
+new basic block
+Basic Block name: bubbleSort12
+Of function : bubbleSort
+
+bubbleSort12:                                     ; preds = %bubbleSort9, %bubbleSort1
+  ret void
+new basic block
+Basic Block name: printArray
+Of function : printArray
+
+printArray:
+  %2 = alloca i32*, align 8
+  %3 = alloca i32, align 4
+  %4 = alloca i32, align 4
+  store i32* %0, i32** %2, align 8
+  store i32 %1, i32* %3, align 4
+  store i32 0, i32* %4, align 4
+  br label %5
+new basic block
+Basic Block name: printArray1
+Of function : printArray
+
+printArray1:                                      ; preds = %15, %printArray
+  %5 = load i32, i32* %4, align 4
+  %6 = load i32, i32* %3, align 4
+  %7 = icmp slt i32 %5, %6
+  br i1 %7, label %8, label %18
+Case 1  
+new basic block
+Basic Block name: printArray2
+Of function : printArray
+
+printArray2:                                      ; preds = %printArray1
+  %8 = load i32*, i32** %2, align 8
+  %9 = load i32, i32* %4, align 4
+  %10 = sext i32 %9 to i64
+  %11 = getelementptr inbounds i32, i32* %8, i64 %10
+  %12 = load i32, i32* %11, align 4
+  call void @rapl_B()
+  %13 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([5 x i8], [5 x i8]* @.str.5, i64 0, i64 0), i32 %12)
+  call void @rapl_C()
+  br label %14
+new basic block
+Basic Block name: printArray3
+Of function : printArray
+
+printArray3:                                      ; preds = %printArray2
+  %14 = load i32, i32* %4, align 4
+  %15 = add nsw i32 %14, 1
+  store i32 %15, i32* %4, align 4
+  br label %printArray1
+Case 1  
+new basic block
+Basic Block name: printArray4
+Of function : printArray
+
+printArray4:                                      ; preds = %printArray1
+  call void @rapl_B()
+  %16 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([2 x i8], [2 x i8]* @.str.6, i64 0, i64 0))
+  call void @rapl_C()
+  ret void
+Case 1  
+new basic block
+Basic Block name: main
+Of function : main
+
+main:
+  %0 = alloca i32, align 4
+  %1 = alloca [30 x i32], align 16
+  %2 = alloca i32, align 4
+  %3 = alloca i32, align 4
+  store i32 0, i32* %0, align 4
+  call void @rapl_B()
+  call void @do_nothing()
+  call void @rapl_C()
+  store i32 0, i32* %2, align 4
+  br label %4
+new basic block
+Basic Block name: main1
+Of function : main
+
+main1:                                            ; preds = %32, %main
+  %4 = load i32, i32* %2, align 4
+  %5 = icmp slt i32 %4, 30
+  br i1 %5, label %6, label %35
+Case 1  
+new basic block
+Basic Block name: main2
+Of function : main
+
+main2:                                            ; preds = %main1
+  %6 = load i32, i32* %2, align 4
+  %7 = add nsw i32 %6, 1
+  call void @rapl_B()
+  %8 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([26 x i8], [26 x i8]* @.str.7, i64 0, i64 0), i32 %7)
+  call void @rapl_C()
+  %9 = load i32, i32* %2, align 4
+  %10 = mul nsw i32 %9, 3
+  %11 = sdiv i32 %10, 5
+  %12 = load i32, i32* %2, align 4
+  %13 = sext i32 %12 to i64
+  %14 = getelementptr inbounds [30 x i32], [30 x i32]* %1, i64 0, i64 %13
+  store i32 %11, i32* %14, align 4
+  %15 = load i32, i32* %2, align 4
+  %16 = sext i32 %15 to i64
+  %17 = getelementptr inbounds [30 x i32], [30 x i32]* %1, i64 0, i64 %16
+  %18 = load i32, i32* %17, align 4
+  %19 = srem i32 %18, 5
+  %20 = icmp sgt i32 %19, 2
+  br i1 %20, label %21, label %30
+new basic block
+Basic Block name: main3
+Of function : main
+
+main3:                                            ; preds = %main2
+  %21 = load i32, i32* %2, align 4
+  %22 = sext i32 %21 to i64
+  %23 = getelementptr inbounds [30 x i32], [30 x i32]* %1, i64 0, i64 %22
+  %24 = load i32, i32* %23, align 4
+  %25 = sub nsw i32 %24, 63
+  %26 = load i32, i32* %2, align 4
+  %27 = sext i32 %26 to i64
+  %28 = getelementptr inbounds [30 x i32], [30 x i32]* %1, i64 0, i64 %27
+  store i32 %25, i32* %28, align 4
+  br label %29
+new basic block
+Basic Block name: main4
+Of function : main
+
+main4:                                            ; preds = %main3, %main2
+  br label %29
+new basic block
+Basic Block name: main5
+Of function : main
+
+main5:                                            ; preds = %main4
+  %29 = load i32, i32* %2, align 4
+  %30 = add nsw i32 %29, 1
+  store i32 %30, i32* %2, align 4
+  br label %main1
+Case 1  
+Case 1  
+Case 1  
+Case 1  
+new basic block
+Basic Block name: main6
+Of function : main
+
+main6:                                            ; preds = %main1
+  store i32 30, i32* %3, align 4
+  %31 = getelementptr inbounds [30 x i32], [30 x i32]* %1, i64 0, i64 0
+  %32 = load i32, i32* %3, align 4
+  call void @rapl_B()
+  call void @bubbleSort(i32* %31, i32 %32)
+  call void @rapl_C()
+  call void @rapl_B()
+  %33 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([34 x i8], [34 x i8]* @.str.8, i64 0, i64 0))
+  call void @rapl_C()
+  %34 = getelementptr inbounds [30 x i32], [30 x i32]* %1, i64 0, i64 0
+  %35 = load i32, i32* %3, align 4
+  call void @rapl_B()
+  call void @printArray(i32* %34, i32 %35)
+  call void @rapl_C()
+  call void @rapl_B()
+  call void @do_nothing()
+  call void @rapl_C()
+  ret i32 0

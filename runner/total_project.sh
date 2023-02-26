@@ -23,4 +23,4 @@ cp -r $1_results results
 rm -r $1_results
 
 cd ../energy_dataset
-results_core#./clean_data.sh $1
+#./results_core/clean_data.sh $1
