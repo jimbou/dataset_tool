@@ -1,0 +1,1 @@
+expected amount = 7690.000000 

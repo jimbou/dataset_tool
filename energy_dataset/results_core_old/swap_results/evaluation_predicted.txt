@@ -1,0 +1,5 @@
+Calculated energy sum : 4454.999987999989
+Difference from real: -3.955527525460173 %
+Total unique basic blocks : 665
+Non Zero unique basic blocks : 664
+Zero unique basic blocks : 1

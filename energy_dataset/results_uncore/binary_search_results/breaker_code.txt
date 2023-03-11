@@ -1,0 +1,5500 @@
+@ 1_0:
+movl  $0x0, -0x2c(%rbp) =1.000000
+@ 2_0:
+callq  0xfffffffffffffeff =2.000000
+pushq  %rbp =1.000000
+mov %rsp, %rbp =0.250000
+@ 3_0:
+popq  %rbp =0.500000
+retq   =1.000000
+@ 4_0:
+movl  $0x0, -0x1c(%rbp) =1.000000
+@ 5_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 6_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 7_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 8_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 9_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 10_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 11_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 12_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 13_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 14_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 15_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 16_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 17_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 18_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 19_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 20_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 21_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 22_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 23_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 24_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 25_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 26_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 27_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 28_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 29_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 30_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 31_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 32_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 33_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 34_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 35_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 36_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 37_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 38_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 39_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 40_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 41_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 42_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 43_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 44_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 45_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 46_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 47_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 48_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 49_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 50_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 51_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 52_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 53_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 54_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 55_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 56_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 57_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 58_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 59_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 60_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 61_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 62_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 63_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 64_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 65_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 66_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 67_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 68_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 69_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 70_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 71_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 72_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 73_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 74_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 75_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 76_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 77_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 78_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 79_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 80_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 81_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 82_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 83_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 84_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 85_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 86_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 87_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 88_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 89_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 90_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 91_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 92_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 93_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 94_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 95_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 96_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 97_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 98_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 99_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 100_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 101_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 102_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 103_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 104_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 105_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 106_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 107_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 108_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 109_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 110_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 111_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 112_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 113_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 114_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 115_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 116_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 117_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 118_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 119_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 120_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 121_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 122_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 123_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 124_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 125_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 126_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 127_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 128_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 129_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 130_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 131_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 132_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 133_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 134_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 135_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 136_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 137_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 138_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 139_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 140_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 141_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 142_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 143_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 144_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 145_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 146_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 147_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 148_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 149_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 150_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 151_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 152_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 153_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 154_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 155_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 156_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 157_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 158_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 159_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 160_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 161_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 162_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 163_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 164_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 165_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 166_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 167_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 168_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 169_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 170_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 171_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 172_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 173_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 174_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 175_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 176_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 177_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 178_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 179_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 180_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 181_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 182_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 183_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 184_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 185_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 186_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 187_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 188_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 189_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 190_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 191_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 192_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 193_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 194_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 195_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 196_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 197_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 198_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 199_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 200_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 201_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 202_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 203_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 204_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 205_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 206_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 207_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 208_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 209_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 210_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 211_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 212_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 213_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 214_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 215_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 216_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 217_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 218_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 219_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 220_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 221_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 222_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 223_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 224_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 225_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 226_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 227_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 228_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 229_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 230_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 231_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 232_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 233_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 234_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 235_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 236_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 237_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 238_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 239_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 240_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 241_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 242_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 243_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 244_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 245_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 246_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 247_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 248_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 249_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 250_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 251_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 252_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 253_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 254_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 255_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 256_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 257_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 258_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 259_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 260_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 261_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 262_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 263_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 264_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 265_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 266_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 267_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 268_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 269_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 270_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 271_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 272_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 273_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 274_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 275_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 276_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 277_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 278_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 279_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 280_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 281_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 282_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 283_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 284_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 285_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 286_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 287_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 288_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 289_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 290_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 291_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 292_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 293_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 294_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 295_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 296_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 297_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 298_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 299_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 300_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 301_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 302_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 303_0:
+movl  -0x1c(%rbp), %eax =0.500000
+imull  -0x1c(%rbp), %eax =1.000000
+add $0x9, %eax =0.250000
+movsxdl  -0x1c(%rbp), %rcx =0.500000
+movl  %eax, -0x1c0(%rbp,%rcx,4) =0.250000
+@ 304_0:
+movl  -0x1c(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x1c(%rbp) =1.000000
+jmp 0xffffffffffffffcd =2.000000
+@ 305_0:
+cmpl  $0x64, -0x1c(%rbp) =0.500000
+jnl 0x2c =1.000000
+@ 306_0:
+lea -0x1c0(%rbp), %r14 =1.000000
+movl  $0x64, -0x28(%rbp) =1.000000
+movl  -0x90(%rbp), %eax =0.500000
+movl  %eax, -0x24(%rbp) =1.000000
+movl  -0x24(%rbp), %r15d =0.500000
+movl  -0x28(%rbp), %ebx =0.500000
+sub $0x1, %ebx =0.250000
+@ 307_0:
+mov %r14, %rdi =0.250000
+mov %r15d, %esi =0.250000
+xor %edx, %edx =0.250000
+mov %ebx, %ecx =0.250000
+callq  0xfffffffffffffe94 =2.000000
+pushq  %rbp =1.000000
+mov %rsp, %rbp =0.250000
+pushq  %r15 =1.000000
+pushq  %r14 =1.000000
+pushq  %r12 =1.000000
+pushq  %rbx =1.000000
+sub $0x20, %rsp =0.250000
+mov %ecx, %r14d =0.250000
+mov %edx, %r15d =0.250000
+mov %esi, %r12d =0.250000
+mov %rdi, %rbx =0.250000
+@ 308_0:
+movq  %rbx, -0x40(%rbp) =1.000000
+movl  %r12d, -0x30(%rbp) =1.000000
+movl  %r15d, -0x28(%rbp) =1.000000
+movl  %r14d, -0x2c(%rbp) =1.000000
+@ 309_0:
+movl  -0x28(%rbp), %eax =0.500000
+cmpl  -0x2c(%rbp), %eax =0.250000
+jnle 0x74 =1.000000
+@ 310_0:
+movl  -0x28(%rbp), %ecx =0.500000
+movl  -0x2c(%rbp), %eax =0.500000
+subl  -0x28(%rbp), %eax =0.500000
+cdq  =1.000000
+mov $0x2, %esi =0.250000
+idiv %esi =45.000000
+add %eax, %ecx =0.250000
+movl  %ecx, -0x24(%rbp) =1.000000
+movq  -0x40(%rbp), %rax =1.000000
+movsxdl  -0x24(%rbp), %rcx =0.500000
+movl  (%rax,%rcx,4), %eax =0.250000
+cmpl  -0x30(%rbp), %eax =0.250000
+jnz 0xf =1.000000
+@ 311_0:
+movq  -0x40(%rbp), %rax =1.000000
+movsxdl  -0x24(%rbp), %rcx =0.500000
+movl  (%rax,%rcx,4), %eax =0.250000
+cmpl  -0x30(%rbp), %eax =0.250000
+jnl 0x12 =1.000000
+@ 312_0:
+movl  -0x24(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x28(%rbp) =1.000000
+jmp 0x10 =2.000000
+@ 313_0:
+jmp 0xffffffffffffff83 =2.000000
+@ 314_0:
+movl  -0x28(%rbp), %eax =0.500000
+cmpl  -0x2c(%rbp), %eax =0.250000
+jnle 0x74 =1.000000
+@ 315_0:
+movl  -0x28(%rbp), %ecx =0.500000
+movl  -0x2c(%rbp), %eax =0.500000
+subl  -0x28(%rbp), %eax =0.500000
+cdq  =1.000000
+mov $0x2, %esi =0.250000
+idiv %esi =45.000000
+add %eax, %ecx =0.250000
+movl  %ecx, -0x24(%rbp) =1.000000
+movq  -0x40(%rbp), %rax =1.000000
+movsxdl  -0x24(%rbp), %rcx =0.500000
+movl  (%rax,%rcx,4), %eax =0.250000
+cmpl  -0x30(%rbp), %eax =0.250000
+jnz 0xf =1.000000
+@ 316_0:
+movq  -0x40(%rbp), %rax =1.000000
+movsxdl  -0x24(%rbp), %rcx =0.500000
+movl  (%rax,%rcx,4), %eax =0.250000
+cmpl  -0x30(%rbp), %eax =0.250000
+jnl 0x12 =1.000000
+@ 317_0:
+movl  -0x24(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x28(%rbp) =1.000000
+jmp 0x10 =2.000000
+@ 318_0:
+jmp 0xffffffffffffff83 =2.000000
+@ 319_0:
+movl  -0x28(%rbp), %eax =0.500000
+cmpl  -0x2c(%rbp), %eax =0.250000
+jnle 0x74 =1.000000
+@ 320_0:
+movl  -0x28(%rbp), %ecx =0.500000
+movl  -0x2c(%rbp), %eax =0.500000
+subl  -0x28(%rbp), %eax =0.500000
+cdq  =1.000000
+mov $0x2, %esi =0.250000
+idiv %esi =45.000000
+add %eax, %ecx =0.250000
+movl  %ecx, -0x24(%rbp) =1.000000
+movq  -0x40(%rbp), %rax =1.000000
+movsxdl  -0x24(%rbp), %rcx =0.500000
+movl  (%rax,%rcx,4), %eax =0.250000
+cmpl  -0x30(%rbp), %eax =0.250000
+jnz 0xf =1.000000
+@ 321_0:
+movq  -0x40(%rbp), %rax =1.000000
+movsxdl  -0x24(%rbp), %rcx =0.500000
+movl  (%rax,%rcx,4), %eax =0.250000
+cmpl  -0x30(%rbp), %eax =0.250000
+jnl 0x12 =1.000000
+@ 322_0:
+movl  -0x24(%rbp), %eax =0.500000
+sub $0x1, %eax =0.250000
+movl  %eax, -0x2c(%rbp) =1.000000
+@ 323_0:
+jmp 0xffffffffffffff83 =2.000000
+@ 324_0:
+movl  -0x28(%rbp), %eax =0.500000
+cmpl  -0x2c(%rbp), %eax =0.250000
+jnle 0x74 =1.000000
+@ 325_0:
+movl  -0x28(%rbp), %ecx =0.500000
+movl  -0x2c(%rbp), %eax =0.500000
+subl  -0x28(%rbp), %eax =0.500000
+cdq  =1.000000
+mov $0x2, %esi =0.250000
+idiv %esi =45.000000
+add %eax, %ecx =0.250000
+movl  %ecx, -0x24(%rbp) =1.000000
+movq  -0x40(%rbp), %rax =1.000000
+movsxdl  -0x24(%rbp), %rcx =0.500000
+movl  (%rax,%rcx,4), %eax =0.250000
+cmpl  -0x30(%rbp), %eax =0.250000
+jnz 0xf =1.000000
+@ 326_0:
+movq  -0x40(%rbp), %rax =1.000000
+movsxdl  -0x24(%rbp), %rcx =0.500000
+movl  (%rax,%rcx,4), %eax =0.250000
+cmpl  -0x30(%rbp), %eax =0.250000
+jnl 0x12 =1.000000
+@ 327_0:
+movl  -0x24(%rbp), %eax =0.500000
+sub $0x1, %eax =0.250000
+movl  %eax, -0x2c(%rbp) =1.000000
+@ 328_0:
+jmp 0xffffffffffffff83 =2.000000
+@ 329_0:
+movl  -0x28(%rbp), %eax =0.500000
+cmpl  -0x2c(%rbp), %eax =0.250000
+jnle 0x74 =1.000000
+@ 330_0:
+movl  -0x28(%rbp), %ecx =0.500000
+movl  -0x2c(%rbp), %eax =0.500000
+subl  -0x28(%rbp), %eax =0.500000
+cdq  =1.000000
+mov $0x2, %esi =0.250000
+idiv %esi =45.000000
+add %eax, %ecx =0.250000
+movl  %ecx, -0x24(%rbp) =1.000000
+movq  -0x40(%rbp), %rax =1.000000
+movsxdl  -0x24(%rbp), %rcx =0.500000
+movl  (%rax,%rcx,4), %eax =0.250000
+cmpl  -0x30(%rbp), %eax =0.250000
+jnz 0xf =1.000000
+@ 331_0:
+movq  -0x40(%rbp), %rax =1.000000
+movsxdl  -0x24(%rbp), %rcx =0.500000
+movl  (%rax,%rcx,4), %eax =0.250000
+cmpl  -0x30(%rbp), %eax =0.250000
+jnl 0x12 =1.000000
+@ 332_0:
+movl  -0x24(%rbp), %eax =0.500000
+sub $0x1, %eax =0.250000
+movl  %eax, -0x2c(%rbp) =1.000000
+@ 333_0:
+jmp 0xffffffffffffff83 =2.000000
+@ 334_0:
+movl  -0x28(%rbp), %eax =0.500000
+cmpl  -0x2c(%rbp), %eax =0.250000
+jnle 0x74 =1.000000
+@ 335_0:
+movl  -0x28(%rbp), %ecx =0.500000
+movl  -0x2c(%rbp), %eax =0.500000
+subl  -0x28(%rbp), %eax =0.500000
+cdq  =1.000000
+mov $0x2, %esi =0.250000
+idiv %esi =45.000000
+add %eax, %ecx =0.250000
+movl  %ecx, -0x24(%rbp) =1.000000
+movq  -0x40(%rbp), %rax =1.000000
+movsxdl  -0x24(%rbp), %rcx =0.500000
+movl  (%rax,%rcx,4), %eax =0.250000
+cmpl  -0x30(%rbp), %eax =0.250000
+jnz 0xf =1.000000
+@ 336_0:
+movq  -0x40(%rbp), %rax =1.000000
+movsxdl  -0x24(%rbp), %rcx =0.500000
+movl  (%rax,%rcx,4), %eax =0.250000
+cmpl  -0x30(%rbp), %eax =0.250000
+jnl 0x12 =1.000000
+@ 337_0:
+movl  -0x24(%rbp), %eax =0.500000
+add $0x1, %eax =0.250000
+movl  %eax, -0x28(%rbp) =1.000000
+jmp 0x10 =2.000000
+@ 338_0:
+jmp 0xffffffffffffff83 =2.000000
+@ 339_0:
+movl  -0x28(%rbp), %eax =0.500000
+cmpl  -0x2c(%rbp), %eax =0.250000
+jnle 0x74 =1.000000
+@ 340_0:
+movl  -0x28(%rbp), %ecx =0.500000
+movl  -0x2c(%rbp), %eax =0.500000
+subl  -0x28(%rbp), %eax =0.500000
+cdq  =1.000000
+mov $0x2, %esi =0.250000
+idiv %esi =45.000000
+add %eax, %ecx =0.250000
+movl  %ecx, -0x24(%rbp) =1.000000
+movq  -0x40(%rbp), %rax =1.000000
+movsxdl  -0x24(%rbp), %rcx =0.500000
+movl  (%rax,%rcx,4), %eax =0.250000
+cmpl  -0x30(%rbp), %eax =0.250000
+jnz 0xf =1.000000
+@ 341_0:
+movl  -0x24(%rbp), %eax =0.500000
+movl  %eax, -0x34(%rbp) =1.000000
+jmp 0x48 =2.000000
+@ 342_0:
+movl  -0x34(%rbp), %eax =0.500000
+add $0x20, %rsp =0.250000
+popq  %rbx =0.500000
+popq  %r12 =0.500000
+popq  %r14 =0.500000
+popq  %r15 =0.500000
+popq  %rbp =0.500000
+retq   =1.000000
+mov %eax, %ebx =0.250000
+@ 343_0:
+movl  %ebx, -0x20(%rbp) =1.000000
+cmpl  $0xffffffff, -0x20(%rbp) =0.500000
+jnz 0x24 =1.000000
+@ 343_1:
+@ 344_0:
+movl  -0x20(%rbp), %ebx =0.500000
+@ 345_0:
+mov $0x49506a, %rdi =0.250000
+mov %ebx, %esi =0.250000
+mov $0x0, %al =0.250000
+callq  0xf022 =2.000000
+nop %edi, %edx =0.250000
+sub $0xd8, %rsp =0.250000
+mov %rdi, %r10 =0.250000
+movq  %rsi, 0x28(%rsp) =1.000000
+movq  %rdx, 0x30(%rsp) =1.000000
+movq  %rcx, 0x38(%rsp) =1.000000
+movq  %r8, 0x40(%rsp) =1.000000
+movq  %r9, 0x48(%rsp) =1.000000
+test %al, %al =0.250000
+jz 0x39 =1.000000
+@ 345_1:
+movq  %fs:0x28, %rax =1.000000
+movq  %rax, 0x18(%rsp) =1.000000
+xor %eax, %eax =0.250000
+movq  0xb1777(%rip), %rdi =1.000000
+xor %ecx, %ecx =0.250000
+mov %rsp, %rdx =0.250000
+lea 0xe0(%rsp), %rax =1.000000
+mov %r10, %rsi =0.250000
+movl  $0x8, (%rsp) =1.000000
+movq  %rax, 0x8(%rsp) =1.000000
+lea 0x20(%rsp), %rax =1.000000
+movl  $0x30, 0x4(%rsp) =1.000000
+movq  %rax, 0x10(%rsp) =1.000000
+callq  0x3139 =2.000000
+nop %edi, %edx =0.250000
+pushq  %rbp =1.000000
+mov %rsp, %rbp =0.250000
+pushq  %r15 =1.000000
+pushq  %r14 =1.000000
+mov %rdx, %r14 =0.250000
+pushq  %r13 =1.000000
+mov %rsi, %r13 =0.250000
+pushq  %r12 =1.000000
+mov %rdi, %r12 =0.250000
+pushq  %rbx =1.000000
+sub $0x538, %rsp =0.250000
+movl  %ecx, -0x4b8(%rbp) =1.000000
+movq  %fs:0x28, %rax =1.000000
+movq  %rax, -0x38(%rbp) =1.000000
+xor %eax, %eax =0.250000
+mov $0xffffffffffffffc0, %rax =0.250000
+movl  %fs:(%rax), %eax =0.500000
+movl  %eax, -0x4d4(%rbp) =1.000000
+movl  0xc0(%rdi), %eax =0.500000
+test %eax, %eax =0.250000
+jnz 0xf2 =1.000000
+@ 345_2:
+movl  $0xffffffff, 0xc0(%rdi) =1.000000
+movl  (%r12), %r15d =0.500000
+test $0x8, %r15b =0.250000
+jnz 0x249b =1.000000
+@ 345_3:
+test %r13, %r13 =0.250000
+jz 0x2a99 =1.000000
+@ 345_4:
+mov %r15d, %ebx =0.250000
+and $0x2, %ebx =0.250000
+jnz 0x425 =1.000000
+@ 345_5:
+movdqux  (%r14), %xmm1 =0.250000
+movq  0x10(%r14), %rax =1.000000
+mov $0x25, %esi =0.250000
+mov %r13, %rdi =0.250000
+movq  %rax, -0x438(%rbp) =1.000000
+movupsx  %xmm1, -0x448(%rbp) =0.500000
+callq  0xfffffffffffecf00 =2.000000
+jmpq  0xc0ff2(%rip) =2.000000
+nop %edi, %edx =0.250000
+mov %edi, %ecx =0.250000
+vmovd %esi, %xmm0 =1.000000
+vpxor %xmm9, %xmm9, %xmm9 =0.330000
+vpbroadcastb %xmm0, %ymm0 =1.000000
+and $0x3f, %ecx =0.250000
+cmp $0x20, %ecx =0.250000
+jnbe 0x36 =1.000000
+@ 345_6:
+and $0x1f, %ecx =0.250000
+and $0xffffffffffffffe0, %rdi =0.250000
+vmovdquy  (%rdi), %ymm8 =0.250000
+vpcmpeqb %ymm8, %ymm0, %ymm1 =0.500000
+vpcmpeqb %ymm8, %ymm9, %ymm2 =0.500000
+vpor %ymm1, %ymm2, %ymm1 =0.330000
+vpmovmskb %ymm1, %eax =1.000000
+sar %cl, %eax =0.500000
+test %eax, %eax =0.250000
+jz 0x1f =1.000000
+@ 345_7:
+add $0x20, %rdi =0.250000
+vmovdqay  (%rdi), %ymm8 =0.250000
+vpcmpeqb %ymm8, %ymm0, %ymm1 =0.500000
+vpcmpeqb %ymm8, %ymm9, %ymm2 =0.500000
+vpor %ymm1, %ymm2, %ymm1 =0.330000
+vpmovmskb %ymm1, %eax =1.000000
+test %eax, %eax =0.250000
+jnz 0xe4 =1.000000
+@ 345_8:
+tzcnt %eax, %eax =1.000000
+add %rdi, %rax =0.250000
+vzeroupper =1.000000
+retq   =1.000000
+@ 345_9:
+and $0x8000, %r15d =0.250000
+movq  %rax, -0x4c0(%rbp) =1.000000
+movl  %r15d, -0x4b4(%rbp) =1.000000
+jnz 0x9e =1.000000
+@ 345_10:
+cmpq  $0x0, 0xade28(%rip) =0.500000
+jz 0x3f8 =1.000000
+@ 345_11:
+mov $0x46d120, %rax =0.250000
+movq  %r12, -0x468(%rbp) =1.000000
+movq  %rax, -0x470(%rbp) =1.000000
+jmp 0xfffffffffffffc23 =2.000000
+@ 345_12:
+movq  0x88(%r12), %rdi =1.000000
+movq  %fs:0x10, %r15 =1.000000
+cmpq  %r15, 0x8(%rdi) =0.500000
+jz 0x26 =1.000000
+@ 345_13:
+movl  %fs:0x18, %eax =0.500000
+test %eax, %eax =0.250000
+jnz 0x1d3f =1.000000
+@ 345_14:
+mov $0x1, %edx =0.250000
+cmpxchgl  %edx, (%rdi) =6.000000
+movq  0x88(%r12), %rdi =1.000000
+movq  %r15, 0x8(%rdi) =1.000000
+addl  $0x1, 0x4(%rdi) =1.000000
+jmp 0x2b =2.000000
+@ 345_15:
+movq  0xd8(%r12), %rax =1.000000
+mov $0x4c4208, %rcx =0.250000
+sub $0x4c3b60, %rcx =0.250000
+mov %rax, %rdx =0.250000
+sub $0x4c3b60, %rdx =0.250000
+movq  %rcx, -0x4d0(%rbp) =1.000000
+cmp %rdx, %rcx =0.250000
+jbe 0x354 =1.000000
+@ 345_16:
+movq  -0x4c0(%rbp), %r15 =1.000000
+mov %r13, %rsi =0.250000
+mov %r12, %rdi =0.250000
+sub %r13, %r15 =0.250000
+mov %r15, %rdx =0.250000
+callq  0x38(%rax) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r15 =1.000000
+pushq  %r14 =1.000000
+pushq  %r13 =1.000000
+xor %r13d, %r13d =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+pushq  %rbx =1.000000
+sub $0x18, %rsp =0.250000
+test %rdx, %rdx =0.250000
+jz 0x5f =1.000000
+@ 345_17:
+mov %rdi, %rbp =0.250000
+mov %rsi, %r12 =0.250000
+movq  0x28(%rdi), %rdi =1.000000
+mov %rdx, %rbx =0.250000
+movl  (%rbp), %eax =0.500000
+and $0xa00, %eax =0.250000
+cmp $0xa00, %eax =0.250000
+jz 0x5c =1.000000
+@ 345_18:
+movq  0x30(%rbp), %rax =1.000000
+cmp %rdi, %rax =0.250000
+jbe 0x73 =1.000000
+@ 345_19:
+mov %rbx, %r14 =0.250000
+movq  0xd8(%rbp), %rax =1.000000
+mov $0x4c3b60, %r15 =0.250000
+mov $0x4c4208, %r13 =0.250000
+mov %rax, %rdx =0.250000
+sub %r15, %r13 =0.250000
+sub %r15, %rdx =0.250000
+cmp %rdx, %r13 =0.250000
+jbe 0x1ac =1.000000
+@ 345_20:
+mov $0xffffffff, %esi =0.250000
+mov %rbp, %rdi =0.250000
+callq  0x18(%rax) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+mov %rdi, %rbp =0.250000
+pushq  %rbx =1.000000
+movl  (%rdi), %eax =0.500000
+test $0x8, %al =0.250000
+jnz 0x201 =1.000000
+@ 345_21:
+mov %esi, %ebx =0.250000
+movq  0x20(%rdi), %rsi =1.000000
+test $0x8, %ah =0.250000
+jz 0x52 =1.000000
+@ 345_22:
+test %rsi, %rsi =0.250000
+jz 0x135 =1.000000
+@ 345_23:
+mov %rbp, %rdi =0.250000
+callq  0x1025 =2.000000
+nop %edi, %edx =0.250000
+cmpq  $0x0, 0x38(%rdi) =0.500000
+jz 0x7 =1.000000
+@ 345_24:
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+pushq  %rbx =1.000000
+movl  (%rdi), %eax =0.500000
+mov %rdi, %rbx =0.250000
+test $0x2, %al =0.250000
+jz 0xc =1.000000
+@ 345_25:
+movq  0xd8(%rbx), %rbp =1.000000
+mov $0x4c3b60, %rdx =0.250000
+mov $0x4c4208, %rax =0.250000
+mov %rbp, %rcx =0.250000
+sub %rdx, %rax =0.250000
+sub %rdx, %rcx =0.250000
+cmp %rcx, %rax =0.250000
+jbe 0x68 =1.000000
+@ 345_26:
+mov %rbx, %rdi =0.250000
+callq  0x68(%rbp) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+mov %rdi, %rbp =0.250000
+pushq  %rbx =1.000000
+sub $0xa0, %rsp =0.250000
+movq  %fs:0x28, %rax =1.000000
+movq  %rax, 0x98(%rsp) =1.000000
+xor %eax, %eax =0.250000
+movl  0x70(%rdi), %eax =0.500000
+test %eax, %eax =0.250000
+js 0xae =1.000000
+@ 345_27:
+movq  0xd8(%rdi), %rbx =1.000000
+mov $0x4c3b60, %rdx =0.250000
+mov $0x4c4208, %rax =0.250000
+mov %rbx, %rcx =0.250000
+sub %rdx, %rax =0.250000
+sub %rdx, %rcx =0.250000
+cmp %rcx, %rax =0.250000
+jbe 0xff =1.000000
+@ 345_28:
+mov %rsp, %rsi =0.250000
+mov %rbp, %rdi =0.250000
+callq  0x90(%rbx) =2.000000
+nop %edi, %edx =0.250000
+mov %rsi, %rdx =0.250000
+movl  0x70(%rdi), %esi =0.500000
+mov $0x1, %edi =0.250000
+jmp 0x35261 =2.000000
+@ 345_29:
+nop %edi, %edx =0.250000
+mov %edi, %r8d =0.250000
+mov %esi, %edi =0.250000
+mov %rdx, %rsi =0.250000
+cmp $0x1, %r8d =0.250000
+jnbe 0x30 =1.000000
+@ 345_30:
+mov $0x5, %eax =0.250000
+syscall 
+cmp $0xfffffffffffff000, %rax =0.250000
+jnbe 0x9 =1.000000
+@ 345_31:
+retq   =1.000000
+@ 345_32:
+test %eax, %eax =0.250000
+js 0x73 =1.000000
+@ 345_33:
+movl  0x18(%rsp), %eax =0.500000
+and $0xf000, %eax =0.250000
+cmp $0x2000, %eax =0.250000
+jz 0x83 =1.000000
+@ 345_34:
+movq  0x28(%rsp), %rax =1.000000
+mov %rax, %rdx =0.250000
+shr $0x20, %rax =0.500000
+shr $0x8, %rdx =0.500000
+and $0xfffff000, %eax =0.250000
+and $0xfff, %edx =0.250000
+or %edx, %eax =0.250000
+sub $0x88, %eax =0.250000
+cmp $0x7, %eax =0.250000
+jnbe 0x13 =1.000000
+@ 345_35:
+orl  $0x200, (%rbp) =1.000000
+jmp 0xffffffffffffff55 =2.000000
+@ 345_36:
+movq  0x38(%rsp), %rbx =1.000000
+lea -0x1(%rbx), %rax =1.000000
+cmp $0x1ffe, %rax =0.250000
+jnbe 0x4e =1.000000
+@ 345_37:
+mov %rbx, %rdi =0.250000
+callq  0xfffffffffffb2751 =2.000000
+nop %edi, %edx =0.250000
+pushq  %r12 =1.000000
+movq  0x9c1b3(%rip), %rax =1.000000
+pushq  %rbp =1.000000
+mov %rdi, %rbp =0.250000
+pushq  %rbx =1.000000
+test %rax, %rax =0.250000
+jnz 0x15b =1.000000
+@ 345_38:
+test %rdi, %rdi =0.250000
+js 0x132 =1.000000
+@ 345_39:
+lea 0x17(%rdi), %rax =1.000000
+xor %ebx, %ebx =0.250000
+cmp $0x1f, %rax =0.250000
+jnbe 0x82 =1.000000
+@ 345_40:
+and $0xfffffffffffffff0, %rax =0.250000
+lea -0x11(%rax), %rbx =1.000000
+shr $0x4, %rbx =0.500000
+jmp 0xffffffffffffff78 =2.000000
+@ 345_41:
+movq  %fs:0xffffffffffffffc8, %rax =1.000000
+test %rax, %rax =0.250000
+jz 0x88 =1.000000
+@ 345_42:
+cmpq  0x9c133(%rip), %rbx =0.250000
+jb 0xb3 =1.000000
+@ 345_43:
+lea (%rax,%rbx,2), %rcx =1.000000
+movzxw  (%rcx), %edx =0.500000
+test %dx, %dx =0.250000
+jz 0xffffffffffffff49 =1.000000
+@ 345_44:
+movl  %fs:0x18, %eax =0.500000
+test %eax, %eax =0.250000
+jnz 0x123 =1.000000
+@ 345_45:
+mov %rbp, %rsi =0.250000
+lea 0x9c163(%rip), %rdi =1.000000
+callq  0xffffffffffffda13 =2.000000
+test %rsi, %rsi =0.250000
+js 0x60d =1.000000
+@ 345_46:
+pushq  %r15 =1.000000
+lea 0x17(%rsi), %rax =1.000000
+pushq  %r14 =1.000000
+pushq  %r13 =1.000000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+mov %rsi, %rbp =0.250000
+pushq  %rbx =1.000000
+mov %rdi, %rbx =0.250000
+sub $0x88, %rsp =0.250000
+cmp $0x1f, %rax =0.250000
+jnbe 0x108 =1.000000
+@ 345_47:
+and $0xfffffffffffffff0, %rax =0.250000
+mov %rax, %r13 =0.250000
+test %rdi, %rdi =0.250000
+jz 0x504 =1.000000
+@ 345_48:
+mov %eax, %r14d =0.250000
+shr $0x4, %r14d =0.500000
+cmpq  0xa0b1a(%rip), %rax =0.250000
+jbe 0x272 =1.000000
+@ 345_49:
+cmp $0x3ff, %rax =0.250000
+jbe 0x1f6 =1.000000
+@ 345_50:
+mov %rax, %rcx =0.250000
+mov %rax, %rdi =0.250000
+mov %rax, %rsi =0.250000
+mov %rax, %r15 =0.250000
+shr $0xc, %rsi =0.500000
+shr $0xf, %r15 =0.500000
+mov $0x2, %edx =0.250000
+shr $0x6, %rcx =0.500000
+shr $0x9, %rdi =0.500000
+lea 0x77(%r15), %r10d =1.000000
+movq  %rsi, 0x58(%rsp) =1.000000
+shr $0x12, %rax =0.500000
+cmp $0xbffff, %r13 =0.250000
+movq  %r15, 0x60(%rsp) =1.000000
+lea 0x30(%rcx), %r11d =1.000000
+cmovnbe %rdx, %rax =0.500000
+mov %r15, %rdx =0.250000
+lea 0x6e(%rsi), %r15d =1.000000
+movq  %rcx, 0x40(%rsp) =1.000000
+movq  %rdi, 0x50(%rsp) =1.000000
+lea 0x7c(%rax), %r9d =1.000000
+mov %rsi, %rax =0.250000
+mov %edi, %esi =0.250000
+movl  %r11d, 0x4c(%rsp) =1.000000
+add $0x5b, %esi =0.250000
+movl  %r9d, 0x68(%rsp) =1.000000
+movl  %r10d, 0x6c(%rsp) =1.000000
+movl  %r15d, 0x70(%rsp) =1.000000
+movl  %esi, 0x74(%rsp) =1.000000
+movl  %r11d, 0x28(%rsp) =1.000000
+cmp $0x30, %rcx =0.250000
+jbe 0x20 =1.000000
+@ 345_51:
+movl  0x8(%rbx), %eax =0.500000
+test %eax, %eax =0.250000
+jz 0x228 =1.000000
+@ 345_52:
+lea -0x11(%r13), %rax =1.000000
+shr $0x4, %rax =0.500000
+mov %rax, %r15 =0.250000
+xor %eax, %eax =0.250000
+movq  %rax, 0x10(%rsp) =1.000000
+cmpq  $0x0, %fs:0xffffffffffffffc8 =0.500000
+jz 0x12 =1.000000
+@ 345_53:
+cmpq  %r15, 0x9e2ae(%rip) =0.500000
+cmovnbe %r13, %rax =0.500000
+movq  %rax, 0x10(%rsp) =1.000000
+movq  $0x0, 0x8(%rsp) =1.000000
+lea 0x60(%rbx), %r11 =1.000000
+movl  %r14d, 0x48(%rsp) =1.000000
+movq  %rbp, 0x20(%rsp) =1.000000
+movq  0x78(%rbx), %r10 =1.000000
+cmp %r11, %r10 =0.250000
+jz 0x337 =1.000000
+@ 345_54:
+cmp $0x3ff, %r13 =0.250000
+jbe 0x25 =1.000000
+@ 345_55:
+movl  0x28(%rsp), %eax =0.500000
+lea -0x2(%rax,%rax,1), %eax =1.000000
+lea 0x70(%rbx,%rax,8), %rax =1.000000
+movq  (%rax), %rdx =1.000000
+lea -0x10(%rax), %rcx =1.000000
+cmp %rcx, %rdx =0.250000
+jz 0xc =1.000000
+@ 345_56:
+movl  0x28(%rsp), %eax =0.500000
+lea 0x1(%rax), %ecx =1.000000
+add %eax, %eax =0.250000
+mov %ecx, %edi =0.250000
+lea 0x60(%rbx,%rax,8), %rdx =1.000000
+shr $0x5, %edi =0.500000
+mov %edi, %eax =0.250000
+movl  0x860(%rbx,%rax,4), %esi =0.250000
+mov $0x1, %eax =0.250000
+shl %cl, %eax =0.500000
+nop =0.250000
+cmp %esi, %eax =0.250000
+jnbe 0x1ae =1.000000
+@ 345_57:
+lea 0x1(%rdi), %eax =1.000000
+cmp $0x3, %edi =0.250000
+jz 0x3f =1.000000
+@ 345_58:
+mov %eax, %edx =0.250000
+movl  0x860(%rbx,%rdx,4), %esi =0.250000
+test %esi, %esi =0.250000
+jnz 0x244 =1.000000
+@ 345_59:
+lea 0x2(%rdi), %eax =1.000000
+cmp $0x2, %edi =0.250000
+jz 0x26 =1.000000
+@ 345_60:
+movq  0x60(%rbx), %r8 =1.000000
+movq  0x8(%r8), %rax =1.000000
+and $0xfffffffffffffff8, %rax =0.250000
+cmpq  %rax, 0x888(%rbx) =0.500000
+jb 0x218 =1.000000
+@ 345_61:
+lea 0x20(%r13), %rdx =1.000000
+cmp %rax, %rdx =0.250000
+jbe 0x262 =1.000000
+@ 345_62:
+lea 0x9dad2(%rip), %rdx =1.000000
+sub %r13, %rax =0.250000
+lea (%r8,%r13,1), %rcx =1.000000
+movq  0x20(%rsp), %rbp =1.000000
+cmp %rdx, %rbx =0.250000
+movq  %rcx, 0x60(%rbx) =1.000000
+setnz %dl =0.800000
+or $0x1, %rax =0.250000
+add $0x10, %r8 =0.250000
+movzx %dl, %edx =0.250000
+shl $0x2, %rdx =0.500000
+or %r13, %rdx =0.250000
+or $0x1, %rdx =0.250000
+movq  %rdx, -0x8(%r8) =1.000000
+movq  %rax, 0x8(%rcx) =1.000000
+movl  0x9ffac(%rip), %eax =0.500000
+test %eax, %eax =0.250000
+jz 0xfffffffffffff6e8 =1.000000
+@ 345_63:
+add $0x88, %rsp =0.250000
+mov %r8, %rax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+popq  %r13 =0.500000
+popq  %r14 =0.500000
+popq  %r15 =0.500000
+retq   =1.000000
+@ 345_64:
+mov %rax, %r8 =0.250000
+test %rax, %rax =0.250000
+jz 0xc8 =1.000000
+@ 345_65:
+movq  -0x8(%rax), %rax =1.000000
+test $0x2, %al =0.250000
+jnz 0x20 =1.000000
+@ 345_66:
+test $0x4, %al =0.250000
+jz 0x1c =1.000000
+@ 345_67:
+popq  %rbx =0.500000
+mov %r8, %rax =0.250000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+retq   =1.000000
+@ 345_68:
+mov %rax, %rsi =0.250000
+test %rax, %rax =0.250000
+jz 0x53 =1.000000
+@ 345_69:
+lea (%rax,%rbx,1), %rdx =1.000000
+mov $0x1, %ecx =0.250000
+mov %rbp, %rdi =0.250000
+callq  0xfffffffffffaafe8 =2.000000
+nop %edi, %edx =0.250000
+pushq  %rbp =1.000000
+mov %ecx, %ebp =0.250000
+pushq  %rbx =1.000000
+mov %rdi, %rbx =0.250000
+sub $0x18, %rsp =0.250000
+movq  0x38(%rdi), %rdi =1.000000
+movl  (%rbx), %eax =0.500000
+movq  %rsi, (%rsp) =1.000000
+movq  %rdx, 0x8(%rsp) =1.000000
+test %rdi, %rdi =0.250000
+jz 0x6 =1.000000
+@ 345_70:
+mov %eax, %edx =0.250000
+movqq  (%rsp), %xmm0 =1.000000
+or $0x1, %eax =0.250000
+and $0xfffffffe, %edx =0.250000
+test %ebp, %ebp =0.250000
+cmovnz %edx, %eax =0.500000
+movhpsq  0x8(%rsp), %xmm0 =1.000000
+movupsx  %xmm0, 0x38(%rbx) =0.500000
+movl  %eax, (%rbx) =1.000000
+add $0x18, %rsp =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+retq   =1.000000
+@ 345_71:
+mov $0x1, %eax =0.250000
+movq  0x98(%rsp), %rcx =1.000000
+xorq  %fs:0x28, %rcx =0.500000
+jnz 0x97 =1.000000
+@ 345_72:
+add $0xa0, %rsp =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+retq   =1.000000
+@ 345_73:
+cmp $0xffffffff, %eax =0.250000
+jnz 0x36 =1.000000
+@ 345_74:
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+retq   =1.000000
+@ 345_75:
+movq  0x38(%rbp), %rdx =1.000000
+movl  (%rbp), %eax =0.500000
+movq  %rdx, 0x18(%rbp) =1.000000
+movq  %rdx, 0x8(%rbp) =1.000000
+movq  %rdx, 0x10(%rbp) =1.000000
+jmp 0xfffffffffffffeba =2.000000
+@ 345_76:
+test $0x1, %ah =0.250000
+jnz 0x150 =1.000000
+@ 345_77:
+movq  0x40(%rbp), %rcx =1.000000
+cmp %rdx, %rcx =0.250000
+jz 0xe3 =1.000000
+@ 345_78:
+movqq  0x10(%rbp), %xmm0 =1.000000
+movq %rcx, %xmm2 =1.000000
+movq %rdx, %xmm1 =1.000000
+mov %eax, %ecx =0.250000
+movqq  %xmm0, 0x8(%rbp) =1.000000
+or $0x8, %ch =0.250000
+punpcklqdq %xmm1, %xmm0 =1.000000
+mov %rdx, %rsi =0.250000
+movl  %ecx, (%rbp) =1.000000
+movl  0xc0(%rbp), %ecx =0.500000
+movupsx  %xmm0, 0x18(%rbp) =0.500000
+movq %rdx, %xmm0 =1.000000
+punpcklqdq %xmm2, %xmm0 =1.000000
+movupsx  %xmm0, 0x28(%rbp) =0.500000
+test %ecx, %ecx =0.250000
+jnle 0xffffffffffffff5e =1.000000
+@ 345_79:
+test $0x202, %eax =0.250000
+jz 0xffffffffffffff53 =1.000000
+@ 345_80:
+movq  %rdx, 0x30(%rbp) =1.000000
+cmp $0xffffffff, %ebx =0.250000
+jnz 0xffffffffffffff4f =1.000000
+@ 345_81:
+popq  %rbx =0.500000
+mov %rbp, %rdi =0.250000
+sub %rsi, %rdx =0.250000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+jmp 0xfffffffffffff479 =2.000000
+@ 345_82:
+nop %edi, %edx =0.250000
+xor %eax, %eax =0.250000
+test %rdx, %rdx =0.250000
+jnz 0x7 =1.000000
+@ 345_83:
+retq   =1.000000
+@ 345_84:
+cmp $0xffffffff, %eax =0.250000
+jz 0x150 =1.000000
+@ 345_85:
+movq  0x40(%rbp), %rcx =1.000000
+subq  0x38(%rbp), %rcx =0.500000
+mov %r14, %r8 =0.250000
+cmp $0x7f, %rcx =0.250000
+jbe 0xd =1.000000
+@ 345_86:
+mov %r14, %rax =0.250000
+xor %edx, %edx =0.250000
+div %rcx =35.000000
+sub %rdx, %r8 =0.250000
+test %r8, %r8 =0.250000
+jnz 0x4b =1.000000
+@ 345_87:
+mov %rbx, %r13 =0.250000
+test %r14, %r14 =0.250000
+jz 0xffffffffffffff62 =1.000000
+@ 345_88:
+lea (%r12,%r8,1), %rsi =1.000000
+mov %r14, %rdx =0.250000
+mov %rbp, %rdi =0.250000
+callq  0x260b =2.000000
+nop %edi, %edx =0.250000
+test %rdx, %rdx =0.250000
+jz 0x149 =1.000000
+@ 345_89:
+pushq  %r15 =1.000000
+pushq  %r14 =1.000000
+mov %rsi, %r14 =0.250000
+pushq  %r13 =1.000000
+mov %rdx, %r13 =0.250000
+pushq  %r12 =1.000000
+mov %rdi, %r12 =0.250000
+pushq  %rbp =1.000000
+mov %rdx, %rbp =0.250000
+pushq  %rbx =1.000000
+sub $0x8, %rsp =0.250000
+jmp 0x58 =2.000000
+@ 345_90:
+movq  0x28(%r12), %rdi =1.000000
+movq  0x30(%r12), %rbx =1.000000
+cmp %rbx, %rdi =0.250000
+jnb 0xffffffffffffffb0 =1.000000
+@ 345_91:
+test %rbp, %rbp =0.250000
+jz 0x7c =1.000000
+@ 345_92:
+movq  0xd8(%r12), %rbx =1.000000
+mov $0x4c3b60, %rdx =0.250000
+mov $0x4c4208, %rax =0.250000
+mov %rbx, %rcx =0.250000
+sub %rdx, %rax =0.250000
+sub %rdx, %rcx =0.250000
+cmp %rcx, %rax =0.250000
+jbe 0x6d =1.000000
+@ 345_93:
+movzxb  (%r14), %esi =0.500000
+lea 0x1(%r14), %r15 =1.000000
+mov %r12, %rdi =0.250000
+callq  0x18(%rbx) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+mov %rdi, %rbp =0.250000
+pushq  %rbx =1.000000
+movl  (%rdi), %eax =0.500000
+test $0x8, %al =0.250000
+jnz 0x201 =1.000000
+@ 345_94:
+mov %esi, %ebx =0.250000
+movq  0x20(%rdi), %rsi =1.000000
+test $0x8, %ah =0.250000
+jz 0x52 =1.000000
+@ 345_95:
+test %rsi, %rsi =0.250000
+jz 0x185 =1.000000
+@ 345_96:
+movq  0x28(%rdi), %rdx =1.000000
+cmp $0xffffffff, %ebx =0.250000
+jz 0xbd =1.000000
+@ 345_97:
+cmpq  %rdx, 0x40(%rbp) =0.500000
+jz 0xf6 =1.000000
+@ 345_98:
+lea 0x1(%rdx), %rax =1.000000
+movq  %rax, 0x28(%rbp) =1.000000
+movb  %bl, (%rdx) =1.000000
+movl  (%rbp), %eax =0.500000
+test $0x2, %al =0.250000
+jnz 0xb1 =1.000000
+@ 345_99:
+test $0x2, %ah =0.250000
+jz 0xb =1.000000
+@ 345_100:
+cmp $0xa, %ebx =0.250000
+jz 0xa3 =1.000000
+@ 345_101:
+movzx %bl, %eax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+retq   =1.000000
+@ 345_102:
+cmp $0xffffffff, %eax =0.250000
+jz 0x42 =1.000000
+@ 345_103:
+sub $0x1, %rbp =0.250000
+mov %r15, %r14 =0.250000
+movq  0x28(%r12), %rdi =1.000000
+movq  0x30(%r12), %rbx =1.000000
+cmp %rbx, %rdi =0.250000
+jnb 0xffffffffffffffb0 =1.000000
+@ 345_104:
+test %rbp, %rbp =0.250000
+jz 0x7c =1.000000
+@ 345_105:
+movq  0xd8(%r12), %rbx =1.000000
+mov $0x4c3b60, %rdx =0.250000
+mov $0x4c4208, %rax =0.250000
+mov %rbx, %rcx =0.250000
+sub %rdx, %rax =0.250000
+sub %rdx, %rcx =0.250000
+cmp %rcx, %rax =0.250000
+jbe 0x6d =1.000000
+@ 345_106:
+movzxb  (%r14), %esi =0.500000
+lea 0x1(%r14), %r15 =1.000000
+mov %r12, %rdi =0.250000
+callq  0x18(%rbx) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+mov %rdi, %rbp =0.250000
+pushq  %rbx =1.000000
+movl  (%rdi), %eax =0.500000
+test $0x8, %al =0.250000
+jnz 0x201 =1.000000
+@ 345_107:
+mov %esi, %ebx =0.250000
+movq  0x20(%rdi), %rsi =1.000000
+test $0x8, %ah =0.250000
+jz 0x52 =1.000000
+@ 345_108:
+test %rsi, %rsi =0.250000
+jz 0x185 =1.000000
+@ 345_109:
+movq  0x28(%rdi), %rdx =1.000000
+cmp $0xffffffff, %ebx =0.250000
+jz 0xbd =1.000000
+@ 345_110:
+cmpq  %rdx, 0x40(%rbp) =0.500000
+jz 0xf6 =1.000000
+@ 345_111:
+lea 0x1(%rdx), %rax =1.000000
+movq  %rax, 0x28(%rbp) =1.000000
+movb  %bl, (%rdx) =1.000000
+movl  (%rbp), %eax =0.500000
+test $0x2, %al =0.250000
+jnz 0xb1 =1.000000
+@ 345_112:
+test $0x2, %ah =0.250000
+jz 0xb =1.000000
+@ 345_113:
+cmp $0xa, %ebx =0.250000
+jz 0xa3 =1.000000
+@ 345_114:
+movzx %bl, %eax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+retq   =1.000000
+@ 345_115:
+cmp $0xffffffff, %eax =0.250000
+jz 0x42 =1.000000
+@ 345_116:
+sub $0x1, %rbp =0.250000
+mov %r15, %r14 =0.250000
+movq  0x28(%r12), %rdi =1.000000
+movq  0x30(%r12), %rbx =1.000000
+cmp %rbx, %rdi =0.250000
+jnb 0xffffffffffffffb0 =1.000000
+@ 345_117:
+test %rbp, %rbp =0.250000
+jz 0x7c =1.000000
+@ 345_118:
+movq  0xd8(%r12), %rbx =1.000000
+mov $0x4c3b60, %rdx =0.250000
+mov $0x4c4208, %rax =0.250000
+mov %rbx, %rcx =0.250000
+sub %rdx, %rax =0.250000
+sub %rdx, %rcx =0.250000
+cmp %rcx, %rax =0.250000
+jbe 0x6d =1.000000
+@ 345_119:
+movzxb  (%r14), %esi =0.500000
+lea 0x1(%r14), %r15 =1.000000
+mov %r12, %rdi =0.250000
+callq  0x18(%rbx) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+mov %rdi, %rbp =0.250000
+pushq  %rbx =1.000000
+movl  (%rdi), %eax =0.500000
+test $0x8, %al =0.250000
+jnz 0x201 =1.000000
+@ 345_120:
+mov %esi, %ebx =0.250000
+movq  0x20(%rdi), %rsi =1.000000
+test $0x8, %ah =0.250000
+jz 0x52 =1.000000
+@ 345_121:
+test %rsi, %rsi =0.250000
+jz 0x185 =1.000000
+@ 345_122:
+movq  0x28(%rdi), %rdx =1.000000
+cmp $0xffffffff, %ebx =0.250000
+jz 0xbd =1.000000
+@ 345_123:
+cmpq  %rdx, 0x40(%rbp) =0.500000
+jz 0xf6 =1.000000
+@ 345_124:
+lea 0x1(%rdx), %rax =1.000000
+movq  %rax, 0x28(%rbp) =1.000000
+movb  %bl, (%rdx) =1.000000
+movl  (%rbp), %eax =0.500000
+test $0x2, %al =0.250000
+jnz 0xb1 =1.000000
+@ 345_125:
+test $0x2, %ah =0.250000
+jz 0xb =1.000000
+@ 345_126:
+cmp $0xa, %ebx =0.250000
+jz 0xa3 =1.000000
+@ 345_127:
+movzx %bl, %eax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+retq   =1.000000
+@ 345_128:
+cmp $0xffffffff, %eax =0.250000
+jz 0x42 =1.000000
+@ 345_129:
+sub $0x1, %rbp =0.250000
+mov %r15, %r14 =0.250000
+movq  0x28(%r12), %rdi =1.000000
+movq  0x30(%r12), %rbx =1.000000
+cmp %rbx, %rdi =0.250000
+jnb 0xffffffffffffffb0 =1.000000
+@ 345_130:
+test %rbp, %rbp =0.250000
+jz 0x7c =1.000000
+@ 345_131:
+movq  0xd8(%r12), %rbx =1.000000
+mov $0x4c3b60, %rdx =0.250000
+mov $0x4c4208, %rax =0.250000
+mov %rbx, %rcx =0.250000
+sub %rdx, %rax =0.250000
+sub %rdx, %rcx =0.250000
+cmp %rcx, %rax =0.250000
+jbe 0x6d =1.000000
+@ 345_132:
+movzxb  (%r14), %esi =0.500000
+lea 0x1(%r14), %r15 =1.000000
+mov %r12, %rdi =0.250000
+callq  0x18(%rbx) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+mov %rdi, %rbp =0.250000
+pushq  %rbx =1.000000
+movl  (%rdi), %eax =0.500000
+test $0x8, %al =0.250000
+jnz 0x201 =1.000000
+@ 345_133:
+mov %esi, %ebx =0.250000
+movq  0x20(%rdi), %rsi =1.000000
+test $0x8, %ah =0.250000
+jz 0x52 =1.000000
+@ 345_134:
+test %rsi, %rsi =0.250000
+jz 0x185 =1.000000
+@ 345_135:
+movq  0x28(%rdi), %rdx =1.000000
+cmp $0xffffffff, %ebx =0.250000
+jz 0xbd =1.000000
+@ 345_136:
+cmpq  %rdx, 0x40(%rbp) =0.500000
+jz 0xf6 =1.000000
+@ 345_137:
+lea 0x1(%rdx), %rax =1.000000
+movq  %rax, 0x28(%rbp) =1.000000
+movb  %bl, (%rdx) =1.000000
+movl  (%rbp), %eax =0.500000
+test $0x2, %al =0.250000
+jnz 0xb1 =1.000000
+@ 345_138:
+test $0x2, %ah =0.250000
+jz 0xb =1.000000
+@ 345_139:
+cmp $0xa, %ebx =0.250000
+jz 0xa3 =1.000000
+@ 345_140:
+movzx %bl, %eax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+retq   =1.000000
+@ 345_141:
+cmp $0xffffffff, %eax =0.250000
+jz 0x42 =1.000000
+@ 345_142:
+sub $0x1, %rbp =0.250000
+mov %r15, %r14 =0.250000
+movq  0x28(%r12), %rdi =1.000000
+movq  0x30(%r12), %rbx =1.000000
+cmp %rbx, %rdi =0.250000
+jnb 0xffffffffffffffb0 =1.000000
+@ 345_143:
+test %rbp, %rbp =0.250000
+jz 0x7c =1.000000
+@ 345_144:
+movq  0xd8(%r12), %rbx =1.000000
+mov $0x4c3b60, %rdx =0.250000
+mov $0x4c4208, %rax =0.250000
+mov %rbx, %rcx =0.250000
+sub %rdx, %rax =0.250000
+sub %rdx, %rcx =0.250000
+cmp %rcx, %rax =0.250000
+jbe 0x6d =1.000000
+@ 345_145:
+movzxb  (%r14), %esi =0.500000
+lea 0x1(%r14), %r15 =1.000000
+mov %r12, %rdi =0.250000
+callq  0x18(%rbx) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+mov %rdi, %rbp =0.250000
+pushq  %rbx =1.000000
+movl  (%rdi), %eax =0.500000
+test $0x8, %al =0.250000
+jnz 0x201 =1.000000
+@ 345_146:
+mov %esi, %ebx =0.250000
+movq  0x20(%rdi), %rsi =1.000000
+test $0x8, %ah =0.250000
+jz 0x52 =1.000000
+@ 345_147:
+test %rsi, %rsi =0.250000
+jz 0x185 =1.000000
+@ 345_148:
+movq  0x28(%rdi), %rdx =1.000000
+cmp $0xffffffff, %ebx =0.250000
+jz 0xbd =1.000000
+@ 345_149:
+cmpq  %rdx, 0x40(%rbp) =0.500000
+jz 0xf6 =1.000000
+@ 345_150:
+lea 0x1(%rdx), %rax =1.000000
+movq  %rax, 0x28(%rbp) =1.000000
+movb  %bl, (%rdx) =1.000000
+movl  (%rbp), %eax =0.500000
+test $0x2, %al =0.250000
+jnz 0xb1 =1.000000
+@ 345_151:
+test $0x2, %ah =0.250000
+jz 0xb =1.000000
+@ 345_152:
+cmp $0xa, %ebx =0.250000
+jz 0xa3 =1.000000
+@ 345_153:
+movzx %bl, %eax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+retq   =1.000000
+@ 345_154:
+cmp $0xffffffff, %eax =0.250000
+jz 0x42 =1.000000
+@ 345_155:
+sub $0x1, %rbp =0.250000
+mov %r15, %r14 =0.250000
+movq  0x28(%r12), %rdi =1.000000
+movq  0x30(%r12), %rbx =1.000000
+cmp %rbx, %rdi =0.250000
+jnb 0xffffffffffffffb0 =1.000000
+@ 345_156:
+test %rbp, %rbp =0.250000
+jz 0x7c =1.000000
+@ 345_157:
+movq  0xd8(%r12), %rbx =1.000000
+mov $0x4c3b60, %rdx =0.250000
+mov $0x4c4208, %rax =0.250000
+mov %rbx, %rcx =0.250000
+sub %rdx, %rax =0.250000
+sub %rdx, %rcx =0.250000
+cmp %rcx, %rax =0.250000
+jbe 0x6d =1.000000
+@ 345_158:
+movzxb  (%r14), %esi =0.500000
+lea 0x1(%r14), %r15 =1.000000
+mov %r12, %rdi =0.250000
+callq  0x18(%rbx) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+mov %rdi, %rbp =0.250000
+pushq  %rbx =1.000000
+movl  (%rdi), %eax =0.500000
+test $0x8, %al =0.250000
+jnz 0x201 =1.000000
+@ 345_159:
+mov %esi, %ebx =0.250000
+movq  0x20(%rdi), %rsi =1.000000
+test $0x8, %ah =0.250000
+jz 0x52 =1.000000
+@ 345_160:
+test %rsi, %rsi =0.250000
+jz 0x185 =1.000000
+@ 345_161:
+movq  0x28(%rdi), %rdx =1.000000
+cmp $0xffffffff, %ebx =0.250000
+jz 0xbd =1.000000
+@ 345_162:
+cmpq  %rdx, 0x40(%rbp) =0.500000
+jz 0xf6 =1.000000
+@ 345_163:
+lea 0x1(%rdx), %rax =1.000000
+movq  %rax, 0x28(%rbp) =1.000000
+movb  %bl, (%rdx) =1.000000
+movl  (%rbp), %eax =0.500000
+test $0x2, %al =0.250000
+jnz 0xb1 =1.000000
+@ 345_164:
+test $0x2, %ah =0.250000
+jz 0xb =1.000000
+@ 345_165:
+cmp $0xa, %ebx =0.250000
+jz 0xa3 =1.000000
+@ 345_166:
+movzx %bl, %eax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+retq   =1.000000
+@ 345_167:
+cmp $0xffffffff, %eax =0.250000
+jz 0x42 =1.000000
+@ 345_168:
+sub $0x1, %rbp =0.250000
+mov %r15, %r14 =0.250000
+movq  0x28(%r12), %rdi =1.000000
+movq  0x30(%r12), %rbx =1.000000
+cmp %rbx, %rdi =0.250000
+jnb 0xffffffffffffffb0 =1.000000
+@ 345_169:
+test %rbp, %rbp =0.250000
+jz 0x7c =1.000000
+@ 345_170:
+movq  0xd8(%r12), %rbx =1.000000
+mov $0x4c3b60, %rdx =0.250000
+mov $0x4c4208, %rax =0.250000
+mov %rbx, %rcx =0.250000
+sub %rdx, %rax =0.250000
+sub %rdx, %rcx =0.250000
+cmp %rcx, %rax =0.250000
+jbe 0x6d =1.000000
+@ 345_171:
+movzxb  (%r14), %esi =0.500000
+lea 0x1(%r14), %r15 =1.000000
+mov %r12, %rdi =0.250000
+callq  0x18(%rbx) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+mov %rdi, %rbp =0.250000
+pushq  %rbx =1.000000
+movl  (%rdi), %eax =0.500000
+test $0x8, %al =0.250000
+jnz 0x201 =1.000000
+@ 345_172:
+mov %esi, %ebx =0.250000
+movq  0x20(%rdi), %rsi =1.000000
+test $0x8, %ah =0.250000
+jz 0x52 =1.000000
+@ 345_173:
+test %rsi, %rsi =0.250000
+jz 0x185 =1.000000
+@ 345_174:
+movq  0x28(%rdi), %rdx =1.000000
+cmp $0xffffffff, %ebx =0.250000
+jz 0xbd =1.000000
+@ 345_175:
+cmpq  %rdx, 0x40(%rbp) =0.500000
+jz 0xf6 =1.000000
+@ 345_176:
+lea 0x1(%rdx), %rax =1.000000
+movq  %rax, 0x28(%rbp) =1.000000
+movb  %bl, (%rdx) =1.000000
+movl  (%rbp), %eax =0.500000
+test $0x2, %al =0.250000
+jnz 0xb1 =1.000000
+@ 345_177:
+test $0x2, %ah =0.250000
+jz 0xb =1.000000
+@ 345_178:
+cmp $0xa, %ebx =0.250000
+jz 0xa3 =1.000000
+@ 345_179:
+movzx %bl, %eax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+retq   =1.000000
+@ 345_180:
+cmp $0xffffffff, %eax =0.250000
+jz 0x42 =1.000000
+@ 345_181:
+sub $0x1, %rbp =0.250000
+mov %r15, %r14 =0.250000
+movq  0x28(%r12), %rdi =1.000000
+movq  0x30(%r12), %rbx =1.000000
+cmp %rbx, %rdi =0.250000
+jnb 0xffffffffffffffb0 =1.000000
+@ 345_182:
+test %rbp, %rbp =0.250000
+jz 0x7c =1.000000
+@ 345_183:
+movq  0xd8(%r12), %rbx =1.000000
+mov $0x4c3b60, %rdx =0.250000
+mov $0x4c4208, %rax =0.250000
+mov %rbx, %rcx =0.250000
+sub %rdx, %rax =0.250000
+sub %rdx, %rcx =0.250000
+cmp %rcx, %rax =0.250000
+jbe 0x6d =1.000000
+@ 345_184:
+movzxb  (%r14), %esi =0.500000
+lea 0x1(%r14), %r15 =1.000000
+mov %r12, %rdi =0.250000
+callq  0x18(%rbx) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+mov %rdi, %rbp =0.250000
+pushq  %rbx =1.000000
+movl  (%rdi), %eax =0.500000
+test $0x8, %al =0.250000
+jnz 0x201 =1.000000
+@ 345_185:
+mov %esi, %ebx =0.250000
+movq  0x20(%rdi), %rsi =1.000000
+test $0x8, %ah =0.250000
+jz 0x52 =1.000000
+@ 345_186:
+test %rsi, %rsi =0.250000
+jz 0x185 =1.000000
+@ 345_187:
+movq  0x28(%rdi), %rdx =1.000000
+cmp $0xffffffff, %ebx =0.250000
+jz 0xbd =1.000000
+@ 345_188:
+cmpq  %rdx, 0x40(%rbp) =0.500000
+jz 0xf6 =1.000000
+@ 345_189:
+lea 0x1(%rdx), %rax =1.000000
+movq  %rax, 0x28(%rbp) =1.000000
+movb  %bl, (%rdx) =1.000000
+movl  (%rbp), %eax =0.500000
+test $0x2, %al =0.250000
+jnz 0xb1 =1.000000
+@ 345_190:
+test $0x2, %ah =0.250000
+jz 0xb =1.000000
+@ 345_191:
+cmp $0xa, %ebx =0.250000
+jz 0xa3 =1.000000
+@ 345_192:
+movzx %bl, %eax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+retq   =1.000000
+@ 345_193:
+cmp $0xffffffff, %eax =0.250000
+jz 0x42 =1.000000
+@ 345_194:
+sub $0x1, %rbp =0.250000
+mov %r15, %r14 =0.250000
+movq  0x28(%r12), %rdi =1.000000
+movq  0x30(%r12), %rbx =1.000000
+cmp %rbx, %rdi =0.250000
+jnb 0xffffffffffffffb0 =1.000000
+@ 345_195:
+test %rbp, %rbp =0.250000
+jz 0x7c =1.000000
+@ 345_196:
+movq  0xd8(%r12), %rbx =1.000000
+mov $0x4c3b60, %rdx =0.250000
+mov $0x4c4208, %rax =0.250000
+mov %rbx, %rcx =0.250000
+sub %rdx, %rax =0.250000
+sub %rdx, %rcx =0.250000
+cmp %rcx, %rax =0.250000
+jbe 0x6d =1.000000
+@ 345_197:
+movzxb  (%r14), %esi =0.500000
+lea 0x1(%r14), %r15 =1.000000
+mov %r12, %rdi =0.250000
+callq  0x18(%rbx) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+mov %rdi, %rbp =0.250000
+pushq  %rbx =1.000000
+movl  (%rdi), %eax =0.500000
+test $0x8, %al =0.250000
+jnz 0x201 =1.000000
+@ 345_198:
+mov %esi, %ebx =0.250000
+movq  0x20(%rdi), %rsi =1.000000
+test $0x8, %ah =0.250000
+jz 0x52 =1.000000
+@ 345_199:
+test %rsi, %rsi =0.250000
+jz 0x185 =1.000000
+@ 345_200:
+movq  0x28(%rdi), %rdx =1.000000
+cmp $0xffffffff, %ebx =0.250000
+jz 0xbd =1.000000
+@ 345_201:
+cmpq  %rdx, 0x40(%rbp) =0.500000
+jz 0xf6 =1.000000
+@ 345_202:
+lea 0x1(%rdx), %rax =1.000000
+movq  %rax, 0x28(%rbp) =1.000000
+movb  %bl, (%rdx) =1.000000
+movl  (%rbp), %eax =0.500000
+test $0x2, %al =0.250000
+jnz 0xb1 =1.000000
+@ 345_203:
+test $0x2, %ah =0.250000
+jz 0xb =1.000000
+@ 345_204:
+cmp $0xa, %ebx =0.250000
+jz 0xa3 =1.000000
+@ 345_205:
+movzx %bl, %eax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+retq   =1.000000
+@ 345_206:
+cmp $0xffffffff, %eax =0.250000
+jz 0x42 =1.000000
+@ 345_207:
+sub $0x1, %rbp =0.250000
+mov %r15, %r14 =0.250000
+movq  0x28(%r12), %rdi =1.000000
+movq  0x30(%r12), %rbx =1.000000
+cmp %rbx, %rdi =0.250000
+jnb 0xffffffffffffffb0 =1.000000
+@ 345_208:
+test %rbp, %rbp =0.250000
+jz 0x7c =1.000000
+@ 345_209:
+movq  0xd8(%r12), %rbx =1.000000
+mov $0x4c3b60, %rdx =0.250000
+mov $0x4c4208, %rax =0.250000
+mov %rbx, %rcx =0.250000
+sub %rdx, %rax =0.250000
+sub %rdx, %rcx =0.250000
+cmp %rcx, %rax =0.250000
+jbe 0x6d =1.000000
+@ 345_210:
+movzxb  (%r14), %esi =0.500000
+lea 0x1(%r14), %r15 =1.000000
+mov %r12, %rdi =0.250000
+callq  0x18(%rbx) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+mov %rdi, %rbp =0.250000
+pushq  %rbx =1.000000
+movl  (%rdi), %eax =0.500000
+test $0x8, %al =0.250000
+jnz 0x201 =1.000000
+@ 345_211:
+mov %esi, %ebx =0.250000
+movq  0x20(%rdi), %rsi =1.000000
+test $0x8, %ah =0.250000
+jz 0x52 =1.000000
+@ 345_212:
+test %rsi, %rsi =0.250000
+jz 0x185 =1.000000
+@ 345_213:
+movq  0x28(%rdi), %rdx =1.000000
+cmp $0xffffffff, %ebx =0.250000
+jz 0xbd =1.000000
+@ 345_214:
+cmpq  %rdx, 0x40(%rbp) =0.500000
+jz 0xf6 =1.000000
+@ 345_215:
+lea 0x1(%rdx), %rax =1.000000
+movq  %rax, 0x28(%rbp) =1.000000
+movb  %bl, (%rdx) =1.000000
+movl  (%rbp), %eax =0.500000
+test $0x2, %al =0.250000
+jnz 0xb1 =1.000000
+@ 345_216:
+test $0x2, %ah =0.250000
+jz 0xb =1.000000
+@ 345_217:
+cmp $0xa, %ebx =0.250000
+jz 0xa3 =1.000000
+@ 345_218:
+movzx %bl, %eax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+retq   =1.000000
+@ 345_219:
+cmp $0xffffffff, %eax =0.250000
+jz 0x42 =1.000000
+@ 345_220:
+sub $0x1, %rbp =0.250000
+mov %r15, %r14 =0.250000
+movq  0x28(%r12), %rdi =1.000000
+movq  0x30(%r12), %rbx =1.000000
+cmp %rbx, %rdi =0.250000
+jnb 0xffffffffffffffb0 =1.000000
+@ 345_221:
+test %rbp, %rbp =0.250000
+jz 0x7c =1.000000
+@ 345_222:
+movq  0xd8(%r12), %rbx =1.000000
+mov $0x4c3b60, %rdx =0.250000
+mov $0x4c4208, %rax =0.250000
+mov %rbx, %rcx =0.250000
+sub %rdx, %rax =0.250000
+sub %rdx, %rcx =0.250000
+cmp %rcx, %rax =0.250000
+jbe 0x6d =1.000000
+@ 345_223:
+movzxb  (%r14), %esi =0.500000
+lea 0x1(%r14), %r15 =1.000000
+mov %r12, %rdi =0.250000
+callq  0x18(%rbx) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+mov %rdi, %rbp =0.250000
+pushq  %rbx =1.000000
+movl  (%rdi), %eax =0.500000
+test $0x8, %al =0.250000
+jnz 0x201 =1.000000
+@ 345_224:
+mov %esi, %ebx =0.250000
+movq  0x20(%rdi), %rsi =1.000000
+test $0x8, %ah =0.250000
+jz 0x52 =1.000000
+@ 345_225:
+test %rsi, %rsi =0.250000
+jz 0x185 =1.000000
+@ 345_226:
+movq  0x28(%rdi), %rdx =1.000000
+cmp $0xffffffff, %ebx =0.250000
+jz 0xbd =1.000000
+@ 345_227:
+cmpq  %rdx, 0x40(%rbp) =0.500000
+jz 0xf6 =1.000000
+@ 345_228:
+lea 0x1(%rdx), %rax =1.000000
+movq  %rax, 0x28(%rbp) =1.000000
+movb  %bl, (%rdx) =1.000000
+movl  (%rbp), %eax =0.500000
+test $0x2, %al =0.250000
+jnz 0xb1 =1.000000
+@ 345_229:
+test $0x2, %ah =0.250000
+jz 0xb =1.000000
+@ 345_230:
+cmp $0xa, %ebx =0.250000
+jz 0xa3 =1.000000
+@ 345_231:
+movzx %bl, %eax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+retq   =1.000000
+@ 345_232:
+cmp $0xffffffff, %eax =0.250000
+jz 0x42 =1.000000
+@ 345_233:
+sub $0x1, %rbp =0.250000
+mov %r15, %r14 =0.250000
+movq  0x28(%r12), %rdi =1.000000
+movq  0x30(%r12), %rbx =1.000000
+cmp %rbx, %rdi =0.250000
+jnb 0xffffffffffffffb0 =1.000000
+@ 345_234:
+test %rbp, %rbp =0.250000
+jz 0x7c =1.000000
+@ 345_235:
+movq  0xd8(%r12), %rbx =1.000000
+mov $0x4c3b60, %rdx =0.250000
+mov $0x4c4208, %rax =0.250000
+mov %rbx, %rcx =0.250000
+sub %rdx, %rax =0.250000
+sub %rdx, %rcx =0.250000
+cmp %rcx, %rax =0.250000
+jbe 0x6d =1.000000
+@ 345_236:
+movzxb  (%r14), %esi =0.500000
+lea 0x1(%r14), %r15 =1.000000
+mov %r12, %rdi =0.250000
+callq  0x18(%rbx) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+mov %rdi, %rbp =0.250000
+pushq  %rbx =1.000000
+movl  (%rdi), %eax =0.500000
+test $0x8, %al =0.250000
+jnz 0x201 =1.000000
+@ 345_237:
+mov %esi, %ebx =0.250000
+movq  0x20(%rdi), %rsi =1.000000
+test $0x8, %ah =0.250000
+jz 0x52 =1.000000
+@ 345_238:
+test %rsi, %rsi =0.250000
+jz 0x185 =1.000000
+@ 345_239:
+movq  0x28(%rdi), %rdx =1.000000
+cmp $0xffffffff, %ebx =0.250000
+jz 0xbd =1.000000
+@ 345_240:
+cmpq  %rdx, 0x40(%rbp) =0.500000
+jz 0xf6 =1.000000
+@ 345_241:
+lea 0x1(%rdx), %rax =1.000000
+movq  %rax, 0x28(%rbp) =1.000000
+movb  %bl, (%rdx) =1.000000
+movl  (%rbp), %eax =0.500000
+test $0x2, %al =0.250000
+jnz 0xb1 =1.000000
+@ 345_242:
+test $0x2, %ah =0.250000
+jz 0xb =1.000000
+@ 345_243:
+cmp $0xa, %ebx =0.250000
+jz 0xa3 =1.000000
+@ 345_244:
+movzx %bl, %eax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+retq   =1.000000
+@ 345_245:
+cmp $0xffffffff, %eax =0.250000
+jz 0x42 =1.000000
+@ 345_246:
+sub $0x1, %rbp =0.250000
+mov %r15, %r14 =0.250000
+movq  0x28(%r12), %rdi =1.000000
+movq  0x30(%r12), %rbx =1.000000
+cmp %rbx, %rdi =0.250000
+jnb 0xffffffffffffffb0 =1.000000
+@ 345_247:
+test %rbp, %rbp =0.250000
+jz 0x7c =1.000000
+@ 345_248:
+movq  0xd8(%r12), %rbx =1.000000
+mov $0x4c3b60, %rdx =0.250000
+mov $0x4c4208, %rax =0.250000
+mov %rbx, %rcx =0.250000
+sub %rdx, %rax =0.250000
+sub %rdx, %rcx =0.250000
+cmp %rcx, %rax =0.250000
+jbe 0x6d =1.000000
+@ 345_249:
+movzxb  (%r14), %esi =0.500000
+lea 0x1(%r14), %r15 =1.000000
+mov %r12, %rdi =0.250000
+callq  0x18(%rbx) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+mov %rdi, %rbp =0.250000
+pushq  %rbx =1.000000
+movl  (%rdi), %eax =0.500000
+test $0x8, %al =0.250000
+jnz 0x201 =1.000000
+@ 345_250:
+mov %esi, %ebx =0.250000
+movq  0x20(%rdi), %rsi =1.000000
+test $0x8, %ah =0.250000
+jz 0x52 =1.000000
+@ 345_251:
+test %rsi, %rsi =0.250000
+jz 0x185 =1.000000
+@ 345_252:
+movq  0x28(%rdi), %rdx =1.000000
+cmp $0xffffffff, %ebx =0.250000
+jz 0xbd =1.000000
+@ 345_253:
+cmpq  %rdx, 0x40(%rbp) =0.500000
+jz 0xf6 =1.000000
+@ 345_254:
+lea 0x1(%rdx), %rax =1.000000
+movq  %rax, 0x28(%rbp) =1.000000
+movb  %bl, (%rdx) =1.000000
+movl  (%rbp), %eax =0.500000
+test $0x2, %al =0.250000
+jnz 0xb1 =1.000000
+@ 345_255:
+test $0x2, %ah =0.250000
+jz 0xb =1.000000
+@ 345_256:
+cmp $0xa, %ebx =0.250000
+jz 0xa3 =1.000000
+@ 345_257:
+movzx %bl, %eax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+retq   =1.000000
+@ 345_258:
+cmp $0xffffffff, %eax =0.250000
+jz 0x42 =1.000000
+@ 345_259:
+sub $0x1, %rbp =0.250000
+mov %r15, %r14 =0.250000
+movq  0x28(%r12), %rdi =1.000000
+movq  0x30(%r12), %rbx =1.000000
+cmp %rbx, %rdi =0.250000
+jnb 0xffffffffffffffb0 =1.000000
+@ 345_260:
+test %rbp, %rbp =0.250000
+jz 0x7c =1.000000
+@ 345_261:
+movq  0xd8(%r12), %rbx =1.000000
+mov $0x4c3b60, %rdx =0.250000
+mov $0x4c4208, %rax =0.250000
+mov %rbx, %rcx =0.250000
+sub %rdx, %rax =0.250000
+sub %rdx, %rcx =0.250000
+cmp %rcx, %rax =0.250000
+jbe 0x6d =1.000000
+@ 345_262:
+movzxb  (%r14), %esi =0.500000
+lea 0x1(%r14), %r15 =1.000000
+mov %r12, %rdi =0.250000
+callq  0x18(%rbx) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+mov %rdi, %rbp =0.250000
+pushq  %rbx =1.000000
+movl  (%rdi), %eax =0.500000
+test $0x8, %al =0.250000
+jnz 0x201 =1.000000
+@ 345_263:
+mov %esi, %ebx =0.250000
+movq  0x20(%rdi), %rsi =1.000000
+test $0x8, %ah =0.250000
+jz 0x52 =1.000000
+@ 345_264:
+test %rsi, %rsi =0.250000
+jz 0x185 =1.000000
+@ 345_265:
+movq  0x28(%rdi), %rdx =1.000000
+cmp $0xffffffff, %ebx =0.250000
+jz 0xbd =1.000000
+@ 345_266:
+cmpq  %rdx, 0x40(%rbp) =0.500000
+jz 0xf6 =1.000000
+@ 345_267:
+lea 0x1(%rdx), %rax =1.000000
+movq  %rax, 0x28(%rbp) =1.000000
+movb  %bl, (%rdx) =1.000000
+movl  (%rbp), %eax =0.500000
+test $0x2, %al =0.250000
+jnz 0xb1 =1.000000
+@ 345_268:
+test $0x2, %ah =0.250000
+jz 0xb =1.000000
+@ 345_269:
+cmp $0xa, %ebx =0.250000
+jz 0xa3 =1.000000
+@ 345_270:
+movzx %bl, %eax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+retq   =1.000000
+@ 345_271:
+cmp $0xffffffff, %eax =0.250000
+jz 0x42 =1.000000
+@ 345_272:
+sub $0x1, %rbp =0.250000
+mov %r15, %r14 =0.250000
+movq  0x28(%r12), %rdi =1.000000
+movq  0x30(%r12), %rbx =1.000000
+cmp %rbx, %rdi =0.250000
+jnb 0xffffffffffffffb0 =1.000000
+@ 345_273:
+test %rbp, %rbp =0.250000
+jz 0x7c =1.000000
+@ 345_274:
+movq  0xd8(%r12), %rbx =1.000000
+mov $0x4c3b60, %rdx =0.250000
+mov $0x4c4208, %rax =0.250000
+mov %rbx, %rcx =0.250000
+sub %rdx, %rax =0.250000
+sub %rdx, %rcx =0.250000
+cmp %rcx, %rax =0.250000
+jbe 0x6d =1.000000
+@ 345_275:
+movzxb  (%r14), %esi =0.500000
+lea 0x1(%r14), %r15 =1.000000
+mov %r12, %rdi =0.250000
+callq  0x18(%rbx) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+mov %rdi, %rbp =0.250000
+pushq  %rbx =1.000000
+movl  (%rdi), %eax =0.500000
+test $0x8, %al =0.250000
+jnz 0x201 =1.000000
+@ 345_276:
+mov %esi, %ebx =0.250000
+movq  0x20(%rdi), %rsi =1.000000
+test $0x8, %ah =0.250000
+jz 0x52 =1.000000
+@ 345_277:
+test %rsi, %rsi =0.250000
+jz 0x185 =1.000000
+@ 345_278:
+movq  0x28(%rdi), %rdx =1.000000
+cmp $0xffffffff, %ebx =0.250000
+jz 0xbd =1.000000
+@ 345_279:
+cmpq  %rdx, 0x40(%rbp) =0.500000
+jz 0xf6 =1.000000
+@ 345_280:
+lea 0x1(%rdx), %rax =1.000000
+movq  %rax, 0x28(%rbp) =1.000000
+movb  %bl, (%rdx) =1.000000
+movl  (%rbp), %eax =0.500000
+test $0x2, %al =0.250000
+jnz 0xb1 =1.000000
+@ 345_281:
+test $0x2, %ah =0.250000
+jz 0xb =1.000000
+@ 345_282:
+cmp $0xa, %ebx =0.250000
+jz 0xa3 =1.000000
+@ 345_283:
+movzx %bl, %eax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+retq   =1.000000
+@ 345_284:
+cmp $0xffffffff, %eax =0.250000
+jz 0x42 =1.000000
+@ 345_285:
+sub $0x1, %rbp =0.250000
+mov %r15, %r14 =0.250000
+movq  0x28(%r12), %rdi =1.000000
+movq  0x30(%r12), %rbx =1.000000
+cmp %rbx, %rdi =0.250000
+jnb 0xffffffffffffffb0 =1.000000
+@ 345_286:
+test %rbp, %rbp =0.250000
+jz 0x7c =1.000000
+@ 345_287:
+movq  0xd8(%r12), %rbx =1.000000
+mov $0x4c3b60, %rdx =0.250000
+mov $0x4c4208, %rax =0.250000
+mov %rbx, %rcx =0.250000
+sub %rdx, %rax =0.250000
+sub %rdx, %rcx =0.250000
+cmp %rcx, %rax =0.250000
+jbe 0x6d =1.000000
+@ 345_288:
+movzxb  (%r14), %esi =0.500000
+lea 0x1(%r14), %r15 =1.000000
+mov %r12, %rdi =0.250000
+callq  0x18(%rbx) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+mov %rdi, %rbp =0.250000
+pushq  %rbx =1.000000
+movl  (%rdi), %eax =0.500000
+test $0x8, %al =0.250000
+jnz 0x201 =1.000000
+@ 345_289:
+mov %esi, %ebx =0.250000
+movq  0x20(%rdi), %rsi =1.000000
+test $0x8, %ah =0.250000
+jz 0x52 =1.000000
+@ 345_290:
+test %rsi, %rsi =0.250000
+jz 0x185 =1.000000
+@ 345_291:
+movq  0x28(%rdi), %rdx =1.000000
+cmp $0xffffffff, %ebx =0.250000
+jz 0xbd =1.000000
+@ 345_292:
+cmpq  %rdx, 0x40(%rbp) =0.500000
+jz 0xf6 =1.000000
+@ 345_293:
+lea 0x1(%rdx), %rax =1.000000
+movq  %rax, 0x28(%rbp) =1.000000
+movb  %bl, (%rdx) =1.000000
+movl  (%rbp), %eax =0.500000
+test $0x2, %al =0.250000
+jnz 0xb1 =1.000000
+@ 345_294:
+test $0x2, %ah =0.250000
+jz 0xb =1.000000
+@ 345_295:
+cmp $0xa, %ebx =0.250000
+jz 0xa3 =1.000000
+@ 345_296:
+movzx %bl, %eax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+retq   =1.000000
+@ 345_297:
+cmp $0xffffffff, %eax =0.250000
+jz 0x42 =1.000000
+@ 345_298:
+sub $0x1, %rbp =0.250000
+mov %r15, %r14 =0.250000
+movq  0x28(%r12), %rdi =1.000000
+movq  0x30(%r12), %rbx =1.000000
+cmp %rbx, %rdi =0.250000
+jnb 0xffffffffffffffb0 =1.000000
+@ 345_299:
+test %rbp, %rbp =0.250000
+jz 0x7c =1.000000
+@ 345_300:
+movq  0xd8(%r12), %rbx =1.000000
+mov $0x4c3b60, %rdx =0.250000
+mov $0x4c4208, %rax =0.250000
+mov %rbx, %rcx =0.250000
+sub %rdx, %rax =0.250000
+sub %rdx, %rcx =0.250000
+cmp %rcx, %rax =0.250000
+jbe 0x6d =1.000000
+@ 345_301:
+movzxb  (%r14), %esi =0.500000
+lea 0x1(%r14), %r15 =1.000000
+mov %r12, %rdi =0.250000
+callq  0x18(%rbx) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+mov %rdi, %rbp =0.250000
+pushq  %rbx =1.000000
+movl  (%rdi), %eax =0.500000
+test $0x8, %al =0.250000
+jnz 0x201 =1.000000
+@ 345_302:
+mov %esi, %ebx =0.250000
+movq  0x20(%rdi), %rsi =1.000000
+test $0x8, %ah =0.250000
+jz 0x52 =1.000000
+@ 345_303:
+test %rsi, %rsi =0.250000
+jz 0x185 =1.000000
+@ 345_304:
+movq  0x28(%rdi), %rdx =1.000000
+cmp $0xffffffff, %ebx =0.250000
+jz 0xbd =1.000000
+@ 345_305:
+cmpq  %rdx, 0x40(%rbp) =0.500000
+jz 0xf6 =1.000000
+@ 345_306:
+lea 0x1(%rdx), %rax =1.000000
+movq  %rax, 0x28(%rbp) =1.000000
+movb  %bl, (%rdx) =1.000000
+movl  (%rbp), %eax =0.500000
+test $0x2, %al =0.250000
+jnz 0xb1 =1.000000
+@ 345_307:
+test $0x2, %ah =0.250000
+jz 0xb =1.000000
+@ 345_308:
+cmp $0xa, %ebx =0.250000
+jz 0xa3 =1.000000
+@ 345_309:
+movzx %bl, %eax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+retq   =1.000000
+@ 345_310:
+cmp $0xffffffff, %eax =0.250000
+jz 0x42 =1.000000
+@ 345_311:
+sub $0x1, %rbp =0.250000
+mov %r15, %r14 =0.250000
+movq  0x28(%r12), %rdi =1.000000
+movq  0x30(%r12), %rbx =1.000000
+cmp %rbx, %rdi =0.250000
+jnb 0xffffffffffffffb0 =1.000000
+@ 345_312:
+test %rbp, %rbp =0.250000
+jz 0x7c =1.000000
+@ 345_313:
+movq  0xd8(%r12), %rbx =1.000000
+mov $0x4c3b60, %rdx =0.250000
+mov $0x4c4208, %rax =0.250000
+mov %rbx, %rcx =0.250000
+sub %rdx, %rax =0.250000
+sub %rdx, %rcx =0.250000
+cmp %rcx, %rax =0.250000
+jbe 0x6d =1.000000
+@ 345_314:
+movzxb  (%r14), %esi =0.500000
+lea 0x1(%r14), %r15 =1.000000
+mov %r12, %rdi =0.250000
+callq  0x18(%rbx) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+mov %rdi, %rbp =0.250000
+pushq  %rbx =1.000000
+movl  (%rdi), %eax =0.500000
+test $0x8, %al =0.250000
+jnz 0x201 =1.000000
+@ 345_315:
+mov %esi, %ebx =0.250000
+movq  0x20(%rdi), %rsi =1.000000
+test $0x8, %ah =0.250000
+jz 0x52 =1.000000
+@ 345_316:
+test %rsi, %rsi =0.250000
+jz 0x185 =1.000000
+@ 345_317:
+movq  0x28(%rdi), %rdx =1.000000
+cmp $0xffffffff, %ebx =0.250000
+jz 0xbd =1.000000
+@ 345_318:
+cmpq  %rdx, 0x40(%rbp) =0.500000
+jz 0xf6 =1.000000
+@ 345_319:
+lea 0x1(%rdx), %rax =1.000000
+movq  %rax, 0x28(%rbp) =1.000000
+movb  %bl, (%rdx) =1.000000
+movl  (%rbp), %eax =0.500000
+test $0x2, %al =0.250000
+jnz 0xb1 =1.000000
+@ 345_320:
+test $0x2, %ah =0.250000
+jz 0xb =1.000000
+@ 345_321:
+cmp $0xa, %ebx =0.250000
+jz 0xa3 =1.000000
+@ 345_322:
+movzx %bl, %eax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+retq   =1.000000
+@ 345_323:
+cmp $0xffffffff, %eax =0.250000
+jz 0x42 =1.000000
+@ 345_324:
+sub $0x1, %rbp =0.250000
+mov %r15, %r14 =0.250000
+movq  0x28(%r12), %rdi =1.000000
+movq  0x30(%r12), %rbx =1.000000
+cmp %rbx, %rdi =0.250000
+jnb 0xffffffffffffffb0 =1.000000
+@ 345_325:
+test %rbp, %rbp =0.250000
+jz 0x7c =1.000000
+@ 345_326:
+movq  0xd8(%r12), %rbx =1.000000
+mov $0x4c3b60, %rdx =0.250000
+mov $0x4c4208, %rax =0.250000
+mov %rbx, %rcx =0.250000
+sub %rdx, %rax =0.250000
+sub %rdx, %rcx =0.250000
+cmp %rcx, %rax =0.250000
+jbe 0x6d =1.000000
+@ 345_327:
+movzxb  (%r14), %esi =0.500000
+lea 0x1(%r14), %r15 =1.000000
+mov %r12, %rdi =0.250000
+callq  0x18(%rbx) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+mov %rdi, %rbp =0.250000
+pushq  %rbx =1.000000
+movl  (%rdi), %eax =0.500000
+test $0x8, %al =0.250000
+jnz 0x201 =1.000000
+@ 345_328:
+mov %esi, %ebx =0.250000
+movq  0x20(%rdi), %rsi =1.000000
+test $0x8, %ah =0.250000
+jz 0x52 =1.000000
+@ 345_329:
+test %rsi, %rsi =0.250000
+jz 0x185 =1.000000
+@ 345_330:
+movq  0x28(%rdi), %rdx =1.000000
+cmp $0xffffffff, %ebx =0.250000
+jz 0xbd =1.000000
+@ 345_331:
+cmpq  %rdx, 0x40(%rbp) =0.500000
+jz 0xf6 =1.000000
+@ 345_332:
+lea 0x1(%rdx), %rax =1.000000
+movq  %rax, 0x28(%rbp) =1.000000
+movb  %bl, (%rdx) =1.000000
+movl  (%rbp), %eax =0.500000
+test $0x2, %al =0.250000
+jnz 0xb1 =1.000000
+@ 345_333:
+test $0x2, %ah =0.250000
+jz 0xb =1.000000
+@ 345_334:
+cmp $0xa, %ebx =0.250000
+jz 0xa3 =1.000000
+@ 345_335:
+movzx %bl, %eax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+retq   =1.000000
+@ 345_336:
+cmp $0xffffffff, %eax =0.250000
+jz 0x42 =1.000000
+@ 345_337:
+sub $0x1, %rbp =0.250000
+mov %r15, %r14 =0.250000
+movq  0x28(%r12), %rdi =1.000000
+movq  0x30(%r12), %rbx =1.000000
+cmp %rbx, %rdi =0.250000
+jnb 0xffffffffffffffb0 =1.000000
+@ 345_338:
+test %rbp, %rbp =0.250000
+jz 0x7c =1.000000
+@ 345_339:
+movq  0xd8(%r12), %rbx =1.000000
+mov $0x4c3b60, %rdx =0.250000
+mov $0x4c4208, %rax =0.250000
+mov %rbx, %rcx =0.250000
+sub %rdx, %rax =0.250000
+sub %rdx, %rcx =0.250000
+cmp %rcx, %rax =0.250000
+jbe 0x6d =1.000000
+@ 345_340:
+movzxb  (%r14), %esi =0.500000
+lea 0x1(%r14), %r15 =1.000000
+mov %r12, %rdi =0.250000
+callq  0x18(%rbx) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+mov %rdi, %rbp =0.250000
+pushq  %rbx =1.000000
+movl  (%rdi), %eax =0.500000
+test $0x8, %al =0.250000
+jnz 0x201 =1.000000
+@ 345_341:
+mov %esi, %ebx =0.250000
+movq  0x20(%rdi), %rsi =1.000000
+test $0x8, %ah =0.250000
+jz 0x52 =1.000000
+@ 345_342:
+test %rsi, %rsi =0.250000
+jz 0x185 =1.000000
+@ 345_343:
+movq  0x28(%rdi), %rdx =1.000000
+cmp $0xffffffff, %ebx =0.250000
+jz 0xbd =1.000000
+@ 345_344:
+cmpq  %rdx, 0x40(%rbp) =0.500000
+jz 0xf6 =1.000000
+@ 345_345:
+lea 0x1(%rdx), %rax =1.000000
+movq  %rax, 0x28(%rbp) =1.000000
+movb  %bl, (%rdx) =1.000000
+movl  (%rbp), %eax =0.500000
+test $0x2, %al =0.250000
+jnz 0xb1 =1.000000
+@ 345_346:
+test $0x2, %ah =0.250000
+jz 0xb =1.000000
+@ 345_347:
+cmp $0xa, %ebx =0.250000
+jz 0xa3 =1.000000
+@ 345_348:
+movzx %bl, %eax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+retq   =1.000000
+@ 345_349:
+cmp $0xffffffff, %eax =0.250000
+jz 0x42 =1.000000
+@ 345_350:
+sub $0x1, %rbp =0.250000
+mov %r15, %r14 =0.250000
+movq  0x28(%r12), %rdi =1.000000
+movq  0x30(%r12), %rbx =1.000000
+cmp %rbx, %rdi =0.250000
+jnb 0xffffffffffffffb0 =1.000000
+@ 345_351:
+test %rbp, %rbp =0.250000
+jz 0x7c =1.000000
+@ 345_352:
+movq  0xd8(%r12), %rbx =1.000000
+mov $0x4c3b60, %rdx =0.250000
+mov $0x4c4208, %rax =0.250000
+mov %rbx, %rcx =0.250000
+sub %rdx, %rax =0.250000
+sub %rdx, %rcx =0.250000
+cmp %rcx, %rax =0.250000
+jbe 0x6d =1.000000
+@ 345_353:
+movzxb  (%r14), %esi =0.500000
+lea 0x1(%r14), %r15 =1.000000
+mov %r12, %rdi =0.250000
+callq  0x18(%rbx) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+mov %rdi, %rbp =0.250000
+pushq  %rbx =1.000000
+movl  (%rdi), %eax =0.500000
+test $0x8, %al =0.250000
+jnz 0x201 =1.000000
+@ 345_354:
+mov %esi, %ebx =0.250000
+movq  0x20(%rdi), %rsi =1.000000
+test $0x8, %ah =0.250000
+jz 0x52 =1.000000
+@ 345_355:
+test %rsi, %rsi =0.250000
+jz 0x185 =1.000000
+@ 345_356:
+movq  0x28(%rdi), %rdx =1.000000
+cmp $0xffffffff, %ebx =0.250000
+jz 0xbd =1.000000
+@ 345_357:
+cmpq  %rdx, 0x40(%rbp) =0.500000
+jz 0xf6 =1.000000
+@ 345_358:
+lea 0x1(%rdx), %rax =1.000000
+movq  %rax, 0x28(%rbp) =1.000000
+movb  %bl, (%rdx) =1.000000
+movl  (%rbp), %eax =0.500000
+test $0x2, %al =0.250000
+jnz 0xb1 =1.000000
+@ 345_359:
+test $0x2, %ah =0.250000
+jz 0xb =1.000000
+@ 345_360:
+cmp $0xa, %ebx =0.250000
+jz 0xa3 =1.000000
+@ 345_361:
+movzx %bl, %eax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+retq   =1.000000
+@ 345_362:
+cmp $0xffffffff, %eax =0.250000
+jz 0x42 =1.000000
+@ 345_363:
+sub $0x1, %rbp =0.250000
+mov %r15, %r14 =0.250000
+movq  0x28(%r12), %rdi =1.000000
+movq  0x30(%r12), %rbx =1.000000
+cmp %rbx, %rdi =0.250000
+jnb 0xffffffffffffffb0 =1.000000
+@ 345_364:
+test %rbp, %rbp =0.250000
+jz 0x7c =1.000000
+@ 345_365:
+movq  0xd8(%r12), %rbx =1.000000
+mov $0x4c3b60, %rdx =0.250000
+mov $0x4c4208, %rax =0.250000
+mov %rbx, %rcx =0.250000
+sub %rdx, %rax =0.250000
+sub %rdx, %rcx =0.250000
+cmp %rcx, %rax =0.250000
+jbe 0x6d =1.000000
+@ 345_366:
+movzxb  (%r14), %esi =0.500000
+lea 0x1(%r14), %r15 =1.000000
+mov %r12, %rdi =0.250000
+callq  0x18(%rbx) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+mov %rdi, %rbp =0.250000
+pushq  %rbx =1.000000
+movl  (%rdi), %eax =0.500000
+test $0x8, %al =0.250000
+jnz 0x201 =1.000000
+@ 345_367:
+mov %esi, %ebx =0.250000
+movq  0x20(%rdi), %rsi =1.000000
+test $0x8, %ah =0.250000
+jz 0x52 =1.000000
+@ 345_368:
+test %rsi, %rsi =0.250000
+jz 0x185 =1.000000
+@ 345_369:
+movq  0x28(%rdi), %rdx =1.000000
+cmp $0xffffffff, %ebx =0.250000
+jz 0xbd =1.000000
+@ 345_370:
+cmpq  %rdx, 0x40(%rbp) =0.500000
+jz 0xf6 =1.000000
+@ 345_371:
+lea 0x1(%rdx), %rax =1.000000
+movq  %rax, 0x28(%rbp) =1.000000
+movb  %bl, (%rdx) =1.000000
+movl  (%rbp), %eax =0.500000
+test $0x2, %al =0.250000
+jnz 0xb1 =1.000000
+@ 345_372:
+test $0x2, %ah =0.250000
+jz 0xb =1.000000
+@ 345_373:
+cmp $0xa, %ebx =0.250000
+jz 0xa3 =1.000000
+@ 345_374:
+movzx %bl, %eax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+retq   =1.000000
+@ 345_375:
+cmp $0xffffffff, %eax =0.250000
+jz 0x42 =1.000000
+@ 345_376:
+sub $0x1, %rbp =0.250000
+mov %r15, %r14 =0.250000
+movq  0x28(%r12), %rdi =1.000000
+movq  0x30(%r12), %rbx =1.000000
+cmp %rbx, %rdi =0.250000
+jnb 0xffffffffffffffb0 =1.000000
+@ 345_377:
+test %rbp, %rbp =0.250000
+jz 0x7c =1.000000
+@ 345_378:
+movq  0xd8(%r12), %rbx =1.000000
+mov $0x4c3b60, %rdx =0.250000
+mov $0x4c4208, %rax =0.250000
+mov %rbx, %rcx =0.250000
+sub %rdx, %rax =0.250000
+sub %rdx, %rcx =0.250000
+cmp %rcx, %rax =0.250000
+jbe 0x6d =1.000000
+@ 345_379:
+movzxb  (%r14), %esi =0.500000
+lea 0x1(%r14), %r15 =1.000000
+mov %r12, %rdi =0.250000
+callq  0x18(%rbx) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+mov %rdi, %rbp =0.250000
+pushq  %rbx =1.000000
+movl  (%rdi), %eax =0.500000
+test $0x8, %al =0.250000
+jnz 0x201 =1.000000
+@ 345_380:
+mov %esi, %ebx =0.250000
+movq  0x20(%rdi), %rsi =1.000000
+test $0x8, %ah =0.250000
+jz 0x52 =1.000000
+@ 345_381:
+test %rsi, %rsi =0.250000
+jz 0x185 =1.000000
+@ 345_382:
+movq  0x28(%rdi), %rdx =1.000000
+cmp $0xffffffff, %ebx =0.250000
+jz 0xbd =1.000000
+@ 345_383:
+cmpq  %rdx, 0x40(%rbp) =0.500000
+jz 0xf6 =1.000000
+@ 345_384:
+lea 0x1(%rdx), %rax =1.000000
+movq  %rax, 0x28(%rbp) =1.000000
+movb  %bl, (%rdx) =1.000000
+movl  (%rbp), %eax =0.500000
+test $0x2, %al =0.250000
+jnz 0xb1 =1.000000
+@ 345_385:
+test $0x2, %ah =0.250000
+jz 0xb =1.000000
+@ 345_386:
+cmp $0xa, %ebx =0.250000
+jz 0xa3 =1.000000
+@ 345_387:
+movzx %bl, %eax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+retq   =1.000000
+@ 345_388:
+cmp $0xffffffff, %eax =0.250000
+jz 0x42 =1.000000
+@ 345_389:
+sub $0x1, %rbp =0.250000
+mov %r15, %r14 =0.250000
+movq  0x28(%r12), %rdi =1.000000
+movq  0x30(%r12), %rbx =1.000000
+cmp %rbx, %rdi =0.250000
+jnb 0xffffffffffffffb0 =1.000000
+@ 345_390:
+test %rbp, %rbp =0.250000
+jz 0x7c =1.000000
+@ 345_391:
+movq  0xd8(%r12), %rbx =1.000000
+mov $0x4c3b60, %rdx =0.250000
+mov $0x4c4208, %rax =0.250000
+mov %rbx, %rcx =0.250000
+sub %rdx, %rax =0.250000
+sub %rdx, %rcx =0.250000
+cmp %rcx, %rax =0.250000
+jbe 0x6d =1.000000
+@ 345_392:
+movzxb  (%r14), %esi =0.500000
+lea 0x1(%r14), %r15 =1.000000
+mov %r12, %rdi =0.250000
+callq  0x18(%rbx) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+mov %rdi, %rbp =0.250000
+pushq  %rbx =1.000000
+movl  (%rdi), %eax =0.500000
+test $0x8, %al =0.250000
+jnz 0x201 =1.000000
+@ 345_393:
+mov %esi, %ebx =0.250000
+movq  0x20(%rdi), %rsi =1.000000
+test $0x8, %ah =0.250000
+jz 0x52 =1.000000
+@ 345_394:
+test %rsi, %rsi =0.250000
+jz 0x185 =1.000000
+@ 345_395:
+movq  0x28(%rdi), %rdx =1.000000
+cmp $0xffffffff, %ebx =0.250000
+jz 0xbd =1.000000
+@ 345_396:
+cmpq  %rdx, 0x40(%rbp) =0.500000
+jz 0xf6 =1.000000
+@ 345_397:
+lea 0x1(%rdx), %rax =1.000000
+movq  %rax, 0x28(%rbp) =1.000000
+movb  %bl, (%rdx) =1.000000
+movl  (%rbp), %eax =0.500000
+test $0x2, %al =0.250000
+jnz 0xb1 =1.000000
+@ 345_398:
+test $0x2, %ah =0.250000
+jz 0xb =1.000000
+@ 345_399:
+cmp $0xa, %ebx =0.250000
+jz 0xa3 =1.000000
+@ 345_400:
+movzx %bl, %eax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+retq   =1.000000
+@ 345_401:
+cmp $0xffffffff, %eax =0.250000
+jz 0x42 =1.000000
+@ 345_402:
+sub $0x1, %rbp =0.250000
+mov %r15, %r14 =0.250000
+movq  0x28(%r12), %rdi =1.000000
+movq  0x30(%r12), %rbx =1.000000
+cmp %rbx, %rdi =0.250000
+jnb 0xffffffffffffffb0 =1.000000
+@ 345_403:
+test %rbp, %rbp =0.250000
+jz 0x7c =1.000000
+@ 345_404:
+movq  0xd8(%r12), %rbx =1.000000
+mov $0x4c3b60, %rdx =0.250000
+mov $0x4c4208, %rax =0.250000
+mov %rbx, %rcx =0.250000
+sub %rdx, %rax =0.250000
+sub %rdx, %rcx =0.250000
+cmp %rcx, %rax =0.250000
+jbe 0x6d =1.000000
+@ 345_405:
+movzxb  (%r14), %esi =0.500000
+lea 0x1(%r14), %r15 =1.000000
+mov %r12, %rdi =0.250000
+callq  0x18(%rbx) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+mov %rdi, %rbp =0.250000
+pushq  %rbx =1.000000
+movl  (%rdi), %eax =0.500000
+test $0x8, %al =0.250000
+jnz 0x201 =1.000000
+@ 345_406:
+mov %esi, %ebx =0.250000
+movq  0x20(%rdi), %rsi =1.000000
+test $0x8, %ah =0.250000
+jz 0x52 =1.000000
+@ 345_407:
+test %rsi, %rsi =0.250000
+jz 0x185 =1.000000
+@ 345_408:
+movq  0x28(%rdi), %rdx =1.000000
+cmp $0xffffffff, %ebx =0.250000
+jz 0xbd =1.000000
+@ 345_409:
+cmpq  %rdx, 0x40(%rbp) =0.500000
+jz 0xf6 =1.000000
+@ 345_410:
+lea 0x1(%rdx), %rax =1.000000
+movq  %rax, 0x28(%rbp) =1.000000
+movb  %bl, (%rdx) =1.000000
+movl  (%rbp), %eax =0.500000
+test $0x2, %al =0.250000
+jnz 0xb1 =1.000000
+@ 345_411:
+test $0x2, %ah =0.250000
+jz 0xb =1.000000
+@ 345_412:
+cmp $0xa, %ebx =0.250000
+jz 0xa3 =1.000000
+@ 345_413:
+movzx %bl, %eax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+retq   =1.000000
+@ 345_414:
+cmp $0xffffffff, %eax =0.250000
+jz 0x42 =1.000000
+@ 345_415:
+sub $0x1, %rbp =0.250000
+mov %r15, %r14 =0.250000
+movq  0x28(%r12), %rdi =1.000000
+movq  0x30(%r12), %rbx =1.000000
+cmp %rbx, %rdi =0.250000
+jnb 0xffffffffffffffb0 =1.000000
+@ 345_416:
+test %rbp, %rbp =0.250000
+jz 0x7c =1.000000
+@ 345_417:
+movq  0xd8(%r12), %rbx =1.000000
+mov $0x4c3b60, %rdx =0.250000
+mov $0x4c4208, %rax =0.250000
+mov %rbx, %rcx =0.250000
+sub %rdx, %rax =0.250000
+sub %rdx, %rcx =0.250000
+cmp %rcx, %rax =0.250000
+jbe 0x6d =1.000000
+@ 345_418:
+movzxb  (%r14), %esi =0.500000
+lea 0x1(%r14), %r15 =1.000000
+mov %r12, %rdi =0.250000
+callq  0x18(%rbx) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+mov %rdi, %rbp =0.250000
+pushq  %rbx =1.000000
+movl  (%rdi), %eax =0.500000
+test $0x8, %al =0.250000
+jnz 0x201 =1.000000
+@ 345_419:
+mov %esi, %ebx =0.250000
+movq  0x20(%rdi), %rsi =1.000000
+test $0x8, %ah =0.250000
+jz 0x52 =1.000000
+@ 345_420:
+test %rsi, %rsi =0.250000
+jz 0x185 =1.000000
+@ 345_421:
+movq  0x28(%rdi), %rdx =1.000000
+cmp $0xffffffff, %ebx =0.250000
+jz 0xbd =1.000000
+@ 345_422:
+cmpq  %rdx, 0x40(%rbp) =0.500000
+jz 0xf6 =1.000000
+@ 345_423:
+lea 0x1(%rdx), %rax =1.000000
+movq  %rax, 0x28(%rbp) =1.000000
+movb  %bl, (%rdx) =1.000000
+movl  (%rbp), %eax =0.500000
+test $0x2, %al =0.250000
+jnz 0xb1 =1.000000
+@ 345_424:
+test $0x2, %ah =0.250000
+jz 0xb =1.000000
+@ 345_425:
+cmp $0xa, %ebx =0.250000
+jz 0xa3 =1.000000
+@ 345_426:
+movzx %bl, %eax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+retq   =1.000000
+@ 345_427:
+cmp $0xffffffff, %eax =0.250000
+jz 0x42 =1.000000
+@ 345_428:
+sub $0x1, %rbp =0.250000
+mov %r15, %r14 =0.250000
+movq  0x28(%r12), %rdi =1.000000
+movq  0x30(%r12), %rbx =1.000000
+cmp %rbx, %rdi =0.250000
+jnb 0xffffffffffffffb0 =1.000000
+@ 345_429:
+test %rbp, %rbp =0.250000
+jz 0x7c =1.000000
+@ 345_430:
+add $0x8, %rsp =0.250000
+mov %r13, %rax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+popq  %r13 =0.500000
+popq  %r14 =0.500000
+popq  %r15 =0.500000
+retq   =1.000000
+@ 345_431:
+sub %r14, %rax =0.250000
+add %rax, %r13 =0.250000
+jmp 0xffffffffffffff47 =2.000000
+@ 345_432:
+add $0x18, %rsp =0.250000
+mov %r13, %rax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+popq  %r13 =0.500000
+popq  %r14 =0.500000
+popq  %r15 =0.500000
+retq   =1.000000
+@ 345_433:
+cmp %rax, %r15 =0.250000
+jnz 0x285 =1.000000
+@ 345_434:
+cmp $0x7fffffff, %r15 =0.250000
+jnle 0x348 =1.000000
+@ 345_435:
+movq  -0x4c0(%rbp), %rdi =1.000000
+mov %r15d, %r9d =0.250000
+cmpb  $0x0, (%rdi) =0.500000
+jz 0x1ad =1.000000
+@ 345_436:
+movq  0xb16b0(%rip), %rax =1.000000
+movq  %rax, -0x538(%rbp) =1.000000
+test %rax, %rax =0.250000
+jnz 0x1d16 =1.000000
+@ 345_437:
+cmpq  $0x0, 0xb16a0(%rip) =0.500000
+jnz 0x120 =1.000000
+@ 345_438:
+cmpq  $0x0, 0xb16b2(%rip) =0.500000
+jnz 0x112 =1.000000
+@ 345_439:
+movl  -0x4b8(%rbp), %eax =0.500000
+mov %rdi, %rbx =0.250000
+movl  $0x0, -0x540(%rbp) =1.000000
+movl  $0x0, -0x514(%rbp) =1.000000
+movq  $0xffffffffffffffff, -0x528(%rbp) =1.000000
+mov %eax, %esi =0.250000
+and $0x2, %esi =0.250000
+movl  %esi, -0x550(%rbp) =1.000000
+mov %eax, %esi =0.250000
+and $0x8, %eax =0.250000
+and $0x1, %esi =0.250000
+movl  %eax, -0x54c(%rbp) =1.000000
+movb  %sil, -0x545(%rbp) =1.000000
+movzxb  0x1(%rbx), %r15d =0.500000
+lea -0x20(%r15), %eax =1.000000
+cmp $0x5a, %al =0.250000
+jnbe 0x239 =1.000000
+@ 345_440:
+lea 0x1(%rbx), %rax =1.000000
+xor %r10d, %r10d =0.250000
+xor %r11d, %r11d =0.250000
+mov $0xffffffff, %r8d =0.250000
+movq  %rax, -0x4c8(%rbp) =1.000000
+movsx %r15b, %eax =0.250000
+lea 0x81701(%rip), %rbx =1.000000
+lea 0xab3da(%rip), %rsi =1.000000
+sub $0x20, %eax =0.250000
+movl  $0x0, -0x520(%rbp) =1.000000
+cdqe  =1.000000
+movl  $0x0, -0x53c(%rbp) =1.000000
+movzxb  (%rbx,%rax,1), %eax =0.250000
+movl  $0x0, -0x4e8(%rbp) =1.000000
+movl  $0x0, -0x500(%rbp) =1.000000
+movq  (%rsi,%rax,8), %rax =1.000000
+lea -0x38(%rbp), %rsi =1.000000
+movl  $0x0, -0x530(%rbp) =1.000000
+movl  $0x0, -0x4d8(%rbp) =1.000000
+movl  $0x0, -0x4f0(%rbp) =1.000000
+movl  $0x0, -0x518(%rbp) =1.000000
+movl  $0x0, -0x51c(%rbp) =1.000000
+movq  $0x0, -0x4e0(%rbp) =1.000000
+movb  $0x20, -0x508(%rbp) =1.000000
+movq  %rsi, -0x4f8(%rbp) =1.000000
+jmp %rax =2.000000
+@ 345_441:
+nop %edi, %edx =0.250000
+movl  -0x4e8(%rbp), %edx =0.500000
+movl  (%r14), %eax =0.500000
+test %edx, %edx =0.250000
+jz 0x9e1 =1.000000
+@ 345_442:
+movl  -0x53c(%rbp), %ebx =0.500000
+test %ebx, %ebx =0.250000
+jz 0x5d7 =1.000000
+@ 345_443:
+movl  -0x500(%rbp), %r11d =0.500000
+test %r11d, %r11d =0.250000
+jnz 0x52e =1.000000
+@ 345_444:
+cmp $0x2f, %eax =0.250000
+jnbe 0x7b4 =1.000000
+@ 345_445:
+mov %eax, %edx =0.250000
+add $0x8, %eax =0.250000
+addq  0x10(%r14), %rdx =0.500000
+movl  %eax, (%r14) =1.000000
+movsxdl  (%rdx), %r11 =0.500000
+jmp 0xfffffffffffff036 =2.000000
+@ 345_446:
+test %r11, %r11 =0.250000
+js 0xb40 =1.000000
+@ 345_447:
+movq  %r11, -0x500(%rbp) =1.000000
+movl  $0x0, -0x4e8(%rbp) =1.000000
+movl  $0xa, -0x510(%rbp) =1.000000
+jmp 0xfffffffffffff967 =2.000000
+@ 345_448:
+test %r8d, %r8d =0.250000
+js 0xa85 =1.000000
+@ 345_449:
+mov $0x1, %ebx =0.250000
+jmp 0xfffffffffffff58c =2.000000
+@ 345_450:
+xor %ecx, %ecx =0.250000
+movl  -0x510(%rbp), %edx =0.500000
+cmp $0x58, %r15b =0.250000
+movq  -0x4f8(%rbp), %rsi =1.000000
+movq  -0x500(%rbp), %rdi =1.000000
+setz %cl =0.800000
+movl  %r9d, -0x544(%rbp) =1.000000
+movl  %r10d, -0x53c(%rbp) =1.000000
+callq  0x52634 =2.000000
+nop %edi, %edx =0.250000
+mov %rsi, %r8 =0.250000
+test %ecx, %ecx =0.250000
+lea 0x41970(%rip), %rsi =1.000000
+lea 0x41929(%rip), %rax =1.000000
+cmovz %rax, %rsi =0.500000
+cmp $0xa, %edx =0.250000
+jz 0x72 =1.000000
+@ 345_451:
+mov $0xcccccccccccccccd, %rcx =0.250000
+nopw  %ax, (%rax,%rax,1) =0.250000
+mov %rdi, %rax =0.250000
+mov %rdi, %r9 =0.250000
+sub $0x1, %r8 =0.250000
+mul %rcx =1.000000
+shr $0x3, %rdx =0.500000
+lea (%rdx,%rdx,4), %rax =1.000000
+add %rax, %rax =0.250000
+sub %rax, %r9 =0.250000
+movzxb  (%rsi,%r9,1), %eax =0.250000
+movb  %al, (%r8) =1.000000
+mov %rdi, %rax =0.250000
+mov %rdx, %rdi =0.250000
+cmp $0x9, %rax =0.250000
+jnbe 0xffffffffffffffd3 =1.000000
+@ 345_452:
+mov %rdi, %rax =0.250000
+mov %rdi, %r9 =0.250000
+sub $0x1, %r8 =0.250000
+mul %rcx =1.000000
+shr $0x3, %rdx =0.500000
+lea (%rdx,%rdx,4), %rax =1.000000
+add %rax, %rax =0.250000
+sub %rax, %r9 =0.250000
+movzxb  (%rsi,%r9,1), %eax =0.250000
+movb  %al, (%r8) =1.000000
+mov %rdi, %rax =0.250000
+mov %rdx, %rdi =0.250000
+cmp $0x9, %rax =0.250000
+jnbe 0xffffffffffffffd3 =1.000000
+@ 345_453:
+mov %r8, %rax =0.250000
+retq   =1.000000
+@ 345_454:
+movq  -0x528(%rbp), %rcx =1.000000
+movl  -0x53c(%rbp), %r10d =0.500000
+movl  -0x544(%rbp), %r9d =0.500000
+mov %rax, %r11 =0.250000
+test %rcx, %rcx =0.250000
+jz 0x48 =1.000000
+@ 345_455:
+movl  -0x530(%rbp), %eax =0.500000
+test %eax, %eax =0.250000
+jz 0x3e =1.000000
+@ 345_456:
+cmpl  $0xa, -0x510(%rbp) =0.500000
+jnz 0x3d =1.000000
+@ 345_457:
+movl  -0x520(%rbp), %eax =0.500000
+test %eax, %eax =0.250000
+jz 0x33 =1.000000
+@ 345_458:
+movq  -0x4f8(%rbp), %rcx =1.000000
+sub %r11, %rcx =0.250000
+cmp %rbx, %rcx =0.250000
+jnl 0x7bb =1.000000
+@ 345_459:
+cmpq  $0x0, -0x500(%rbp) =0.500000
+jz 0x670 =1.000000
+@ 345_460:
+movzxb  -0x51c(%rbp), %eax =0.500000
+and $0x1, %eax =0.250000
+cmpl  $0x8, -0x510(%rbp) =0.500000
+jnz 0x1c =1.000000
+@ 345_461:
+mov $0x0, %edx =0.250000
+sub %rcx, %rbx =0.250000
+cmovs %rdx, %rbx =0.500000
+movl  -0x4f0(%rbp), %edx =0.500000
+mov %ebx, %r8d =0.250000
+test %edx, %edx =0.250000
+jnz 0xfffffffffffffd9e =1.000000
+@ 345_462:
+mov %r10d, %edx =0.250000
+movl  %ecx, -0x4f0(%rbp) =1.000000
+sub %ecx, %edx =0.250000
+sub %ebx, %edx =0.250000
+mov %edx, %ebx =0.250000
+jmp 0xfffffffffffff824 =2.000000
+@ 345_463:
+cmpl  $0x10, -0x510(%rbp) =0.500000
+jnz 0xa =1.000000
+@ 345_464:
+movl  -0x4d8(%rbp), %eax =0.500000
+orl  -0x518(%rbp), %eax =0.500000
+orl  -0x4e8(%rbp), %eax =0.500000
+jz 0x932 =1.000000
+@ 345_465:
+cmpb  $0x20, -0x508(%rbp) =0.500000
+jnz 0xfffffffffffff718 =1.000000
+@ 345_466:
+test %ebx, %ebx =0.250000
+jle 0x17e0 =1.000000
+@ 345_467:
+xor %ebx, %ebx =0.250000
+jmp 0xffffffffffffdf2e =2.000000
+@ 345_468:
+cmpq  $0x0, -0x500(%rbp) =0.500000
+jz 0x6b =1.000000
+@ 345_469:
+cmpl  $0x10, -0x510(%rbp) =0.500000
+jnz 0x62 =1.000000
+@ 345_470:
+add %r8d, %ebx =0.250000
+test %ebx, %ebx =0.250000
+jnle 0xa21 =1.000000
+@ 345_471:
+test %r9d, %r9d =0.250000
+js 0x1eea =1.000000
+@ 345_472:
+movq  0xd8(%r12), %rbx =1.000000
+mov %rbx, %rax =0.250000
+sub $0x4c3b60, %rax =0.250000
+cmpq  %rax, -0x4d0(%rbp) =0.500000
+jbe 0x1555 =1.000000
+@ 345_473:
+movq  %rcx, -0x4e8(%rbp) =1.000000
+mov %rcx, %rdx =0.250000
+mov %r11, %rsi =0.250000
+mov %r12, %rdi =0.250000
+movl  %r9d, -0x4f8(%rbp) =1.000000
+callq  0x38(%rbx) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r15 =1.000000
+pushq  %r14 =1.000000
+pushq  %r13 =1.000000
+xor %r13d, %r13d =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+pushq  %rbx =1.000000
+sub $0x18, %rsp =0.250000
+test %rdx, %rdx =0.250000
+jz 0x5f =1.000000
+@ 345_474:
+mov %rdi, %rbp =0.250000
+mov %rsi, %r12 =0.250000
+movq  0x28(%rdi), %rdi =1.000000
+mov %rdx, %rbx =0.250000
+movl  (%rbp), %eax =0.500000
+and $0xa00, %eax =0.250000
+cmp $0xa00, %eax =0.250000
+jz 0x5c =1.000000
+@ 345_475:
+movq  0x40(%rbp), %rdx =1.000000
+lea (%rsi,%rbx,1), %rax =1.000000
+sub %rdi, %rdx =0.250000
+cmp %rdx, %rbx =0.250000
+jbe 0xa7 =1.000000
+@ 345_476:
+cmp %rax, %r12 =0.250000
+jb 0xfffffffffffffff0 =1.000000
+@ 345_477:
+sub $0x1, %rax =0.250000
+cmpb  $0xa, (%rax) =0.500000
+jz 0x111 =1.000000
+@ 345_478:
+cmp %rax, %r12 =0.250000
+jb 0xfffffffffffffff0 =1.000000
+@ 345_479:
+sub $0x1, %rax =0.250000
+cmpb  $0xa, (%rax) =0.500000
+jz 0x111 =1.000000
+@ 345_480:
+cmp %rax, %r12 =0.250000
+jb 0xfffffffffffffff0 =1.000000
+@ 345_481:
+xor %r15d, %r15d =0.250000
+jmp 0xffffffffffffff00 =2.000000
+@ 345_482:
+cmp %rdx, %rbx =0.250000
+mov %r12, %rsi =0.250000
+mov %rbx, %r14 =0.250000
+cmovbe %rbx, %rdx =0.500000
+mov %rdx, %r13 =0.250000
+callq  0xfffffffffffe477b =2.000000
+jmpq  0xc0ff2(%rip) =2.000000
+nop %edi, %edx =0.250000
+mov %rdi, %rax =0.250000
+add %rdx, %rax =0.250000
+jmp 0xd =2.000000
+@ 345_483:
+cmp $0x20, %rdx =0.250000
+jb 0x4b =1.000000
+@ 345_484:
+cmp $0x10, %dl =0.250000
+jnb 0x19 =1.000000
+@ 345_485:
+cmp $0x8, %dl =0.250000
+jnb 0x29 =1.000000
+@ 345_486:
+cmp $0x4, %dl =0.250000
+jnb 0x35 =1.000000
+@ 345_487:
+cmp $0x1, %dl =0.250000
+jnbe 0x3d =1.000000
+@ 345_488:
+movzxw  -0x2(%rsi,%rdx,1), %ecx =0.250000
+movzxw  (%rsi), %esi =0.500000
+movw  %cx, -0x2(%rdi,%rdx,1) =0.250000
+movw  %si, (%rdi) =1.000000
+retq   =1.000000
+@ 345_489:
+add %r13, %r12 =0.250000
+sub %r13, %r14 =0.250000
+movq  %rax, 0x28(%rbp) =1.000000
+add %r14, %r15 =0.250000
+jnz 0x44 =1.000000
+@ 345_490:
+sub %r14, %rbx =0.250000
+mov %rbx, %r13 =0.250000
+add $0x18, %rsp =0.250000
+mov %r13, %rax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+popq  %r13 =0.500000
+popq  %r14 =0.500000
+popq  %r15 =0.500000
+retq   =1.000000
+@ 345_491:
+movq  -0x4e8(%rbp), %rcx =1.000000
+cmp %rax, %rcx =0.250000
+jnz 0xfffffffffffff14f =1.000000
+@ 345_492:
+movl  -0x4f8(%rbp), %r9d =0.500000
+mov $0x7fffffff, %eax =0.250000
+sub %r9d, %eax =0.250000
+cdqe  =1.000000
+cmp %rcx, %rax =0.250000
+jl 0xfffffffffffffc35 =1.000000
+@ 345_493:
+addl  -0x4f0(%rbp), %r9d =0.500000
+jmp 0xfffffffffffff3d0 =2.000000
+@ 345_494:
+addl  $0x1, -0x514(%rbp) =1.000000
+cmpq  $0x0, -0x4e0(%rbp) =0.500000
+jnz 0x1519 =1.000000
+@ 345_495:
+movq  -0x4c8(%rbp), %r8 =1.000000
+mov $0x25, %esi =0.250000
+movl  %r9d, -0x4e0(%rbp) =1.000000
+add $0x1, %r8 =0.250000
+mov %r8, %rdi =0.250000
+movq  %r8, -0x4c8(%rbp) =1.000000
+callq  0xfffffffffffec8aa =2.000000
+jmpq  0xc0ff2(%rip) =2.000000
+nop %edi, %edx =0.250000
+mov %edi, %ecx =0.250000
+vmovd %esi, %xmm0 =1.000000
+vpxor %xmm9, %xmm9, %xmm9 =0.330000
+vpbroadcastb %xmm0, %ymm0 =1.000000
+and $0x3f, %ecx =0.250000
+cmp $0x20, %ecx =0.250000
+jnbe 0x36 =1.000000
+@ 345_496:
+vmovdquy  (%rdi), %ymm8 =0.250000
+vpcmpeqb %ymm8, %ymm0, %ymm1 =0.500000
+vpcmpeqb %ymm8, %ymm9, %ymm2 =0.500000
+vpor %ymm1, %ymm2, %ymm1 =0.330000
+vpmovmskb %ymm1, %eax =1.000000
+test %eax, %eax =0.250000
+jnz 0x15c =1.000000
+@ 345_497:
+tzcnt %eax, %eax =1.000000
+add %rdi, %rax =0.250000
+vzeroupper =1.000000
+retq   =1.000000
+@ 345_498:
+movl  -0x4e0(%rbp), %r9d =0.500000
+movq  -0x4c8(%rbp), %r8 =1.000000
+mov %rax, %rbx =0.250000
+test %r9d, %r9d =0.250000
+js 0x2a7a =1.000000
+@ 345_499:
+movq  0xd8(%r12), %rax =1.000000
+mov %rax, %rdx =0.250000
+sub $0x4c3b60, %rdx =0.250000
+cmpq  %rdx, -0x4d0(%rbp) =0.500000
+jbe 0x1482 =1.000000
+@ 345_500:
+mov %rbx, %r15 =0.250000
+movl  %r9d, -0x4c8(%rbp) =1.000000
+mov %r8, %rsi =0.250000
+mov %r12, %rdi =0.250000
+sub %r8, %r15 =0.250000
+mov %r15, %rdx =0.250000
+callq  0x38(%rax) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r15 =1.000000
+pushq  %r14 =1.000000
+pushq  %r13 =1.000000
+xor %r13d, %r13d =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+pushq  %rbx =1.000000
+sub $0x18, %rsp =0.250000
+test %rdx, %rdx =0.250000
+jz 0x5f =1.000000
+@ 345_501:
+add $0x18, %rsp =0.250000
+mov %r13, %rax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+popq  %r13 =0.500000
+popq  %r14 =0.500000
+popq  %r15 =0.500000
+retq   =1.000000
+@ 345_502:
+cmp %rax, %r15 =0.250000
+jnz 0xfffffffffffffce0 =1.000000
+@ 345_503:
+movl  -0x4c8(%rbp), %r9d =0.500000
+mov $0x7fffffff, %eax =0.250000
+sub %r9d, %eax =0.250000
+cdqe  =1.000000
+cmp %rax, %r15 =0.250000
+jnle 0xfffffffffffffd96 =1.000000
+@ 345_504:
+add %r15d, %r9d =0.250000
+cmpb  $0x0, (%rbx) =0.500000
+jnz 0xfffffffffffffad6 =1.000000
+@ 345_505:
+jmp 0xfffffffffffffbfc =2.000000
+@ 345_506:
+testl  $0x8000, (%r12) =0.500000
+jnz 0x19 =1.000000
+@ 345_507:
+movq  0x88(%r12), %rdi =1.000000
+movl  0x4(%rdi), %eax =0.500000
+sub $0x1, %eax =0.250000
+movl  %eax, 0x4(%rdi) =1.000000
+jz 0xd5 =1.000000
+@ 345_508:
+movq  $0x0, 0x8(%rdi) =1.000000
+movl  %fs:0x18, %edx =0.500000
+test %edx, %edx =0.250000
+jnz 0x1ad6 =1.000000
+@ 345_509:
+subl  $0x1, (%rdi) =1.000000
+jmp 0xffffffffffffff16 =2.000000
+@ 345_510:
+movl  -0x4b4(%rbp), %ecx =0.500000
+test %ecx, %ecx =0.250000
+jnz 0x9f =1.000000
+@ 345_511:
+movq  -0x38(%rbp), %rax =1.000000
+xorq  %fs:0x28, %rax =0.500000
+jnz 0x2d5c =1.000000
+@ 345_512:
+lea -0x28(%rbp), %rsp =1.000000
+mov %r9d, %eax =0.250000
+popq  %rbx =0.500000
+popq  %r12 =0.500000
+popq  %r13 =0.500000
+popq  %r14 =0.500000
+popq  %r15 =0.500000
+popq  %rbp =0.500000
+retq   =1.000000
+@ 345_513:
+movq  0x18(%rsp), %rcx =1.000000
+xorq  %fs:0x28, %rcx =0.500000
+jnz 0xa =1.000000
+@ 345_514:
+add $0xd8, %rsp =0.250000
+retq   =1.000000
+@ 345_515:
+@ 346_0:
+@ 347_0:
+@ 348_0:
+callq  0xfffffffffffffe1e =2.000000
+pushq  %rbp =1.000000
+mov %rsp, %rbp =0.250000
+@ 349_0:
+popq  %rbp =0.500000
+retq   =1.000000
+@ 350_0:
+xor %eax, %eax =0.250000
+add $0x1a8, %rsp =0.250000
+popq  %rbx =0.500000
+popq  %r14 =0.500000
+popq  %r15 =0.500000
+popq  %rbp =0.500000
+retq   =1.000000
+@ 350_1:
+mov %eax, %edi =0.250000
+callq  0xd98e =2.000000
+nop %edi, %edx =0.250000
+pushq  %rax =1.000000
+popq  %rax =0.500000
+mov $0x1, %ecx =0.250000
+mov $0x1, %edx =0.250000
+lea 0xb1d89(%rip), %rsi =1.000000
+sub $0x8, %rsp =0.250000
+callq  0xfffffffffffffd25 =2.000000
+nop %edi, %edx =0.250000
+pushq  %r15 =1.000000
+pushq  %r14 =1.000000
+pushq  %r13 =1.000000
+mov %edx, %r13d =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+mov %edi, %ebp =0.250000
+pushq  %rbx =1.000000
+mov %rsi, %rbx =0.250000
+sub $0x8, %rsp =0.250000
+cmpq  $0x0, 0xb1f16(%rip) =0.500000
+jz 0xa =1.000000
+@ 350_2:
+xor %r12d, %r12d =0.250000
+nop =0.250000
+movl  %fs:0x18, %eax =0.500000
+mov $0x1, %edx =0.250000
+test %eax, %eax =0.250000
+jnz 0x1eb =1.000000
+@ 350_3:
+cmpxchgl  %edx, 0xb5664(%rip) =6.000000
+movq  (%rbx), %r14 =1.000000
+test %r14, %r14 =0.250000
+jnz 0x3d =1.000000
+@ 350_4:
+movq  0x8(%r14), %rax =1.000000
+test %rax, %rax =0.250000
+jz 0x10a =1.000000
+@ 350_5:
+lea -0x1(%rax), %r8 =1.000000
+movq  0xb5611(%rip), %r15 =1.000000
+movq  %r8, 0x8(%r14) =1.000000
+movl  %fs:0x18, %eax =0.500000
+test %eax, %eax =0.250000
+jnz 0xb3 =1.000000
+@ 350_6:
+subl  $0x1, 0xb55ee(%rip) =1.000000
+mov %r8, %rax =0.250000
+shl $0x5, %rax =0.500000
+add %r14, %rax =0.250000
+movq  0x10(%rax), %rdx =1.000000
+cmp $0x3, %rdx =0.250000
+jz 0x34 =1.000000
+@ 350_7:
+cmp $0x4, %rdx =0.250000
+jnz 0xffffffffffffff86 =1.000000
+@ 350_8:
+movq  0x18(%rax), %rdx =1.000000
+movq  0x20(%rax), %rdi =1.000000
+movq  $0x0, 0x10(%rax) =1.000000
+mov %ebp, %esi =0.250000
+ror $0x11, %rdx =0.500000
+xorq  %fs:0x30, %rdx =0.500000
+callq  %rdx =2.000000
+nop %edi, %edx =0.250000
+pushq  %rbp =1.000000
+lea 0xbbeb4(%rip), %rax =1.000000
+lea 0xbbe9d(%rip), %rbp =1.000000
+pushq  %rbx =1.000000
+sub %rbp, %rax =0.250000
+sub $0x8, %rsp =0.250000
+sar $0x3, %rax =0.500000
+jz 0x17 =1.000000
+@ 350_9:
+lea -0x1(%rax), %rbx =1.000000
+nopl  %eax, (%rax) =0.250000
+callq  (%rbp,%rbx,8) =2.000000
+nop %edi, %edx =0.250000
+movq  0xc39cd(%rip), %r8 =1.000000
+test %r8, %r8 =0.250000
+jz 0x1c =1.000000
+@ 350_10:
+retq   =1.000000
+@ 350_11:
+sub $0x1, %rbx =0.250000
+cmp $0xffffffffffffffff, %rbx =0.250000
+jnz 0xfffffffffffffff4 =1.000000
+@ 350_12:
+callq  (%rbp,%rbx,8) =2.000000
+nop %edi, %edx =0.250000
+cmpb  $0x0, 0xc2695(%rip) =0.500000
+jnz 0x2d =1.000000
+@ 350_13:
+pushq  %rbp =1.000000
+mov %rsp, %rbp =0.250000
+callq  0xffffffffffffff7f =2.000000
+mov $0x4c3b10, %eax =0.250000
+cmp $0x4c3b10, %rax =0.250000
+jz 0x15 =1.000000
+@ 350_14:
+retq   =1.000000
+@ 350_15:
+mov $0x4927e0, %eax =0.250000
+test %rax, %rax =0.250000
+jz 0xc =1.000000
+@ 350_16:
+mov $0x4b2d48, %edi =0.250000
+callq  0x90c3b =2.000000
+nop %edi, %edx =0.250000
+jmp 0xfffffffffffffecc =2.000000
+@ 350_17:
+nop %edi, %edx =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+pushq  %rbx =1.000000
+test %rdi, %rdi =0.250000
+jz 0xd5 =1.000000
+@ 350_18:
+movl  (%rdi), %eax =0.500000
+mov %rdi, %rbx =0.250000
+test %eax, %eax =0.250000
+jz 0xc8 =1.000000
+@ 350_19:
+mov $0x0, %rbp =0.250000
+test %rbp, %rbp =0.250000
+jz 0xe =1.000000
+@ 350_20:
+movq  0x32c0b(%rip), %rax =1.000000
+test %rax, %rax =0.250000
+jz 0x50 =1.000000
+@ 350_21:
+lea 0x32bff(%rip), %rcx =1.000000
+jmp 0x11 =2.000000
+@ 350_22:
+movq  0x18(%rax), %rdx =1.000000
+mov %rax, %r12 =0.250000
+movq  0x28(%rax), %rax =1.000000
+cmp %rdx, %rbx =0.250000
+jnz 0xffffffffffffffe8 =1.000000
+@ 350_23:
+movq  %rax, (%rcx) =1.000000
+test %rbp, %rbp =0.250000
+jz 0xe =1.000000
+@ 350_24:
+mov %r12, %rax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+retq   =1.000000
+@ 350_25:
+movb  $0x1, 0xc266f(%rip) =1.000000
+popq  %rbp =0.500000
+retq   =1.000000
+@ 350_26:
+sub $0x1, %rbx =0.250000
+cmp $0xffffffffffffffff, %rbx =0.250000
+jnz 0xfffffffffffffff4 =1.000000
+@ 350_27:
+add $0x8, %rsp =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+jmp 0x919f8 =2.000000
+@ 350_28:
+nop %edi, %edx =0.250000
+sub $0x8, %rsp =0.250000
+add $0x8, %rsp =0.250000
+retq   =1.000000
+@ 350_29:
+jmp 0xffffffffffffff6d =2.000000
+@ 350_30:
+movl  %fs:0x18, %eax =0.500000
+mov $0x1, %edx =0.250000
+test %eax, %eax =0.250000
+jnz 0xc7 =1.000000
+@ 350_31:
+cmpxchgl  %edx, 0xb562a(%rip) =6.000000
+cmpq  %r15, 0xb562b(%rip) =0.500000
+jnz 0xffffffffffffffbf =1.000000
+@ 350_32:
+movq  0x8(%r14), %rax =1.000000
+test %rax, %rax =0.250000
+jz 0x10a =1.000000
+@ 350_33:
+movq  (%r14), %rax =1.000000
+movq  %rax, (%rbx) =1.000000
+test %rax, %rax =0.250000
+jz 0xa =1.000000
+@ 350_34:
+movl  %fs:0x18, %eax =0.500000
+test %eax, %eax =0.250000
+jnz 0x8f =1.000000
+@ 350_35:
+subl  $0x1, 0xb54e6(%rip) =1.000000
+jmp 0xfffffffffffffe66 =2.000000
+@ 350_36:
+movl  %fs:0x18, %eax =0.500000
+mov $0x1, %edx =0.250000
+test %eax, %eax =0.250000
+jnz 0x1eb =1.000000
+@ 350_37:
+cmpxchgl  %edx, 0xb5664(%rip) =6.000000
+movq  (%rbx), %r14 =1.000000
+test %r14, %r14 =0.250000
+jnz 0x3d =1.000000
+@ 350_38:
+jmp 0x17b =2.000000
+@ 350_39:
+movb  $0x1, 0xb457e(%rip) =1.000000
+movl  %fs:0x18, %eax =0.500000
+test %eax, %eax =0.250000
+jnz 0xa8 =1.000000
+@ 350_40:
+subl  $0x1, 0xb54c3(%rip) =1.000000
+test %r13b, %r13b =0.250000
+jz 0x33 =1.000000
+@ 350_41:
+mov $0x4c4208, %rbx =0.250000
+mov $0x4c4210, %rax =0.250000
+cmp %rax, %rbx =0.250000
+jnb 0x20 =1.000000
+@ 350_42:
+sub $0x1, %rax =0.250000
+sub %rbx, %rax =0.250000
+shr $0x3, %rax =0.500000
+lea 0x8(%rbx,%rax,8), %r12 =1.000000
+nopl  %eax, (%rax) =0.250000
+callq  (%rbx) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r15 =1.000000
+xor %edi, %edi =0.250000
+pushq  %r14 =1.000000
+pushq  %r13 =1.000000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+pushq  %rbx =1.000000
+sub $0x38, %rsp =0.250000
+movq  %fs:0x28, %rax =1.000000
+movq  %rax, 0x28(%rsp) =1.000000
+xor %eax, %eax =0.250000
+callq  0xfffffffffffffcdc =2.000000
+nop %edi, %edx =0.250000
+pushq  %r15 =1.000000
+pushq  %r14 =1.000000
+pushq  %r13 =1.000000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+mov %edi, %ebp =0.250000
+pushq  %rbx =1.000000
+sub $0x38, %rsp =0.250000
+mov $0x0, %r13 =0.250000
+movq  %fs:0x28, %rax =1.000000
+movq  %rax, 0x28(%rsp) =1.000000
+xor %eax, %eax =0.250000
+test %r13, %r13 =0.250000
+jz 0x202 =1.000000
+@ 350_43:
+movq  $0x0, 0x8(%rsp) =1.000000
+lea -0x1b90(%rip), %rax =1.000000
+movq  %rax, (%rsp) =1.000000
+jmp 0xfffffffffffffe01 =2.000000
+@ 350_44:
+movq  %fs:0x10, %rbx =1.000000
+cmpq  %rbx, 0xa5083(%rip) =0.500000
+jz 0x25 =1.000000
+@ 350_45:
+movl  %fs:0x18, %eax =0.500000
+test %eax, %eax =0.250000
+jnz 0x26b =1.000000
+@ 350_46:
+mov $0x1, %edx =0.250000
+cmpxchgl  %edx, 0xa505d(%rip) =6.000000
+movq  %rbx, 0xa505e(%rip) =1.000000
+movl  0xa5054(%rip), %eax =0.500000
+movq  0xa2539(%rip), %rbx =1.000000
+xor %r14d, %r14d =0.250000
+lea 0x1(%rax), %edx =1.000000
+movl  %edx, 0xa5041(%rip) =1.000000
+test %rbx, %rbx =0.250000
+jz 0x133 =1.000000
+@ 350_47:
+movq  %fs:0x10, %r12 =1.000000
+jmp 0xaf =2.000000
+@ 350_48:
+movq  %rbx, 0xa4f65(%rip) =1.000000
+test %ebp, %ebp =0.250000
+jz 0x40 =1.000000
+@ 350_49:
+movl  0xc0(%rbx), %eax =0.500000
+test %eax, %eax =0.250000
+jnle 0xffffffffffffff0b =1.000000
+@ 350_50:
+movq  0x20(%rbx), %rax =1.000000
+cmpq  %rax, 0x28(%rbx) =0.500000
+jnbe 0xffffffffffffff0e =1.000000
+@ 350_51:
+jmp 0xffffffffffffff47 =2.000000
+@ 350_52:
+test %ebp, %ebp =0.250000
+jz 0x3e =1.000000
+@ 350_53:
+movq  $0x0, 0xa4f75(%rip) =1.000000
+movq  0x68(%rbx), %rbx =1.000000
+test %rbx, %rbx =0.250000
+jz 0x6e =1.000000
+@ 350_54:
+movq  %rbx, 0xa4f65(%rip) =1.000000
+test %ebp, %ebp =0.250000
+jz 0x40 =1.000000
+@ 350_55:
+movl  0xc0(%rbx), %eax =0.500000
+test %eax, %eax =0.250000
+jnle 0xffffffffffffff0b =1.000000
+@ 350_56:
+movq  0x20(%rbx), %rax =1.000000
+cmpq  %rax, 0x28(%rbx) =0.500000
+jnbe 0xffffffffffffff0e =1.000000
+@ 350_57:
+movq  0xd8(%rbx), %r15 =1.000000
+mov $0x4c3b60, %rdx =0.250000
+mov $0x4c4208, %rax =0.250000
+mov %r15, %rcx =0.250000
+sub %rdx, %rax =0.250000
+sub %rdx, %rcx =0.250000
+cmp %rcx, %rax =0.250000
+jbe 0x16e =1.000000
+@ 350_58:
+mov $0xffffffff, %esi =0.250000
+mov %rbx, %rdi =0.250000
+callq  0x18(%r15) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+mov %rdi, %rbp =0.250000
+pushq  %rbx =1.000000
+movl  (%rdi), %eax =0.500000
+test $0x8, %al =0.250000
+jnz 0x201 =1.000000
+@ 350_59:
+mov %esi, %ebx =0.250000
+movq  0x20(%rdi), %rsi =1.000000
+test $0x8, %ah =0.250000
+jz 0x52 =1.000000
+@ 350_60:
+test %rsi, %rsi =0.250000
+jz 0x185 =1.000000
+@ 350_61:
+movq  0x28(%rdi), %rdx =1.000000
+cmp $0xffffffff, %ebx =0.250000
+jz 0xbd =1.000000
+@ 350_62:
+popq  %rbx =0.500000
+mov %rbp, %rdi =0.250000
+sub %rsi, %rdx =0.250000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+jmp 0xfffffffffffff479 =2.000000
+@ 350_63:
+nop %edi, %edx =0.250000
+xor %eax, %eax =0.250000
+test %rdx, %rdx =0.250000
+jnz 0x7 =1.000000
+@ 350_64:
+pushq  %r15 =1.000000
+pushq  %r14 =1.000000
+pushq  %r13 =1.000000
+pushq  %r12 =1.000000
+mov %rsi, %r12 =0.250000
+pushq  %rbp =1.000000
+mov %rdx, %rbp =0.250000
+pushq  %rbx =1.000000
+mov %rdi, %rbx =0.250000
+sub $0x8, %rsp =0.250000
+movq  0xd8(%rdi), %r14 =1.000000
+mov $0x4c3b60, %r15 =0.250000
+mov $0x4c4208, %r13 =0.250000
+mov %r14, %rax =0.250000
+sub %r15, %r13 =0.250000
+sub %r15, %rax =0.250000
+testl  $0x1000, (%rdi) =0.500000
+jnz 0xc5 =1.000000
+@ 350_65:
+movq  0x10(%rdi), %rdx =1.000000
+movq  0x20(%rdi), %rsi =1.000000
+cmp %rsi, %rdx =0.250000
+jz 0x3f =1.000000
+@ 350_66:
+cmp %rax, %r13 =0.250000
+jbe 0xb2 =1.000000
+@ 350_67:
+mov %rbp, %rdx =0.250000
+mov %r12, %rsi =0.250000
+mov %rbx, %rdi =0.250000
+callq  0x78(%r14) =2.000000
+nop %edi, %edx =0.250000
+pushq  %r13 =1.000000
+mov %rdi, %r13 =0.250000
+pushq  %r12 =1.000000
+pushq  %rbp =1.000000
+pushq  %rbx =1.000000
+sub $0x8, %rsp =0.250000
+test %rdx, %rdx =0.250000
+jle 0x84 =1.000000
+@ 350_68:
+mov %rsi, %rbp =0.250000
+mov %rdx, %r12 =0.250000
+mov %rdx, %rbx =0.250000
+jmp 0x1a =2.000000
+@ 350_69:
+movl  0x70(%r13), %edi =0.500000
+mov %rbx, %rdx =0.250000
+mov %rbp, %rsi =0.250000
+testb  $0x2, 0x74(%r13) =0.500000
+jz 0xffffffffffffffdc =1.000000
+@ 350_70:
+callq  0x35458 =2.000000
+nop %edi, %edx =0.250000
+movl  %fs:0x18, %eax =0.500000
+test %eax, %eax =0.250000
+jnz 0x12 =1.000000
+@ 350_71:
+mov $0x1, %eax =0.250000
+syscall 
+cmp $0xfffffffffffff000, %rax =0.250000
+jnbe 0x53 =1.000000
+@ 350_72:
+retq   =1.000000
+@ 350_73:
+test %rax, %rax =0.250000
+js 0x30 =1.000000
+@ 350_74:
+sub %rax, %rbx =0.250000
+add %rax, %rbp =0.250000
+test %rbx, %rbx =0.250000
+jle 0x55 =1.000000
+@ 350_75:
+mov %r12, %rax =0.250000
+sub %rbx, %rax =0.250000
+jmp 0xffffffffffffffd5 =2.000000
+@ 350_76:
+movq  0x90(%r13), %rdx =1.000000
+test %rdx, %rdx =0.250000
+js 0xc =1.000000
+@ 350_77:
+add $0x8, %rsp =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+popq  %r13 =0.500000
+retq   =1.000000
+@ 350_78:
+mov %rax, %r13 =0.250000
+movzxw  0x80(%rbx), %eax =0.500000
+test %r13, %r13 =0.250000
+jz 0x7 =1.000000
+@ 350_79:
+test %ax, %ax =0.250000
+jnz 0x6d =1.000000
+@ 350_80:
+movq  0x38(%rbx), %rax =1.000000
+movl  0xc0(%rbx), %edx =0.500000
+movq  %rax, 0x18(%rbx) =1.000000
+movq  %rax, 0x8(%rbx) =1.000000
+movq  %rax, 0x10(%rbx) =1.000000
+movq  %rax, 0x28(%rbx) =1.000000
+movq  %rax, 0x20(%rbx) =1.000000
+test %edx, %edx =0.250000
+jle 0x3b =1.000000
+@ 350_81:
+testl  $0x202, (%rbx) =0.500000
+jnz 0xffffffffffffffc5 =1.000000
+@ 350_82:
+movq  %rax, 0x30(%rbx) =1.000000
+xor %eax, %eax =0.250000
+cmp %r13, %rbp =0.250000
+setnz %al =0.800000
+neg %eax =0.250000
+add $0x8, %rsp =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+popq  %r13 =0.500000
+popq  %r14 =0.500000
+popq  %r15 =0.500000
+retq   =1.000000
+@ 350_83:
+cmp $0xffffffff, %eax =0.250000
+mov $0xffffffff, %eax =0.250000
+cmovz %eax, %r14d =0.500000
+test %ebp, %ebp =0.250000
+jz 0x3e =1.000000
+@ 350_84:
+movq  $0x0, 0xa4f75(%rip) =1.000000
+movq  0x68(%rbx), %rbx =1.000000
+test %rbx, %rbx =0.250000
+jz 0x6e =1.000000
+@ 350_85:
+movq  %rbx, 0xa4f65(%rip) =1.000000
+test %ebp, %ebp =0.250000
+jz 0x40 =1.000000
+@ 350_86:
+movl  0xc0(%rbx), %eax =0.500000
+test %eax, %eax =0.250000
+jnle 0xffffffffffffff0b =1.000000
+@ 350_87:
+movq  0x20(%rbx), %rax =1.000000
+cmpq  %rax, 0x28(%rbx) =0.500000
+jnbe 0xffffffffffffff0e =1.000000
+@ 350_88:
+jmp 0xffffffffffffff47 =2.000000
+@ 350_89:
+test %ebp, %ebp =0.250000
+jz 0x3e =1.000000
+@ 350_90:
+movq  $0x0, 0xa4f75(%rip) =1.000000
+movq  0x68(%rbx), %rbx =1.000000
+test %rbx, %rbx =0.250000
+jz 0x6e =1.000000
+@ 350_91:
+movl  0xa4f0e(%rip), %eax =0.500000
+sub $0x1, %eax =0.250000
+movl  %eax, 0xa4f05(%rip) =1.000000
+test %eax, %eax =0.250000
+jnz 0x20 =1.000000
+@ 350_92:
+movq  $0x0, 0xa4efa(%rip) =1.000000
+movl  %fs:0x18, %edx =0.500000
+test %edx, %edx =0.250000
+jnz 0x72 =1.000000
+@ 350_93:
+subl  $0x1, 0xa4edf(%rip) =1.000000
+test %r13, %r13 =0.250000
+jz 0xc =1.000000
+@ 350_94:
+movq  0x28(%rsp), %rax =1.000000
+xorq  %fs:0x28, %rax =0.500000
+jnz 0xe4 =1.000000
+@ 350_95:
+add $0x38, %rsp =0.250000
+mov %r14d, %eax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+popq  %r13 =0.500000
+popq  %r14 =0.500000
+popq  %r15 =0.500000
+retq   =1.000000
+@ 350_96:
+mov $0x0, %r13 =0.250000
+mov %eax, %r12d =0.250000
+test %r13, %r13 =0.250000
+jz 0x242 =1.000000
+@ 350_97:
+movq  $0x0, 0x8(%rsp) =1.000000
+lea -0x1ed8(%rip), %rax =1.000000
+movq  %rax, (%rsp) =1.000000
+jmp 0xfffffffffffffdc1 =2.000000
+@ 350_98:
+movq  %fs:0x10, %rbx =1.000000
+cmpq  0xa4d7b(%rip), %rbx =0.250000
+jz 0x25 =1.000000
+@ 350_99:
+movl  %fs:0x18, %eax =0.500000
+test %eax, %eax =0.250000
+jnz 0x297 =1.000000
+@ 350_100:
+mov $0x1, %edx =0.250000
+cmpxchgl  %edx, 0xa4d55(%rip) =6.000000
+movq  %rbx, 0xa4d56(%rip) =1.000000
+movl  0xa4d4c(%rip), %eax =0.500000
+movq  0xa2231(%rip), %rbx =1.000000
+lea 0x1(%rax), %edx =1.000000
+movl  %edx, 0xa4d3c(%rip) =1.000000
+test %rbx, %rbx =0.250000
+jz 0x13e =1.000000
+@ 350_101:
+movq  %fs:0x10, %r14 =1.000000
+jmp 0x1d =2.000000
+@ 350_102:
+movl  (%rbx), %ebp =0.500000
+and $0x2, %ebp =0.250000
+jnz 0xffffffffffffffe4 =1.000000
+@ 350_103:
+movl  $0xffffffff, 0xc0(%rbx) =1.000000
+movq  0x68(%rbx), %rbx =1.000000
+test %rbx, %rbx =0.250000
+jz 0x10f =1.000000
+@ 350_104:
+movl  (%rbx), %ebp =0.500000
+and $0x2, %ebp =0.250000
+jnz 0xffffffffffffffe4 =1.000000
+@ 350_105:
+movl  0xc0(%rbx), %edx =0.500000
+test %edx, %edx =0.250000
+jz 0xffffffffffffffda =1.000000
+@ 350_106:
+movq  0x88(%rbx), %rdx =1.000000
+test %rdx, %rdx =0.250000
+jz 0x3f =1.000000
+@ 350_107:
+cmpq  0x8(%rdx), %r14 =0.250000
+jz 0x248 =1.000000
+@ 350_108:
+movl  %fs:0x18, %eax =0.500000
+test %eax, %eax =0.250000
+jnz 0x1d8 =1.000000
+@ 350_109:
+mov $0x1, %ecx =0.250000
+cmpxchgl  %ecx, (%rdx) =6.000000
+test %eax, %eax =0.250000
+jz 0x238 =1.000000
+@ 350_110:
+movq  0x88(%rbx), %rax =1.000000
+movq  %r14, 0x8(%rax) =1.000000
+movl  $0x1, 0x4(%rax) =1.000000
+jmp 0xfffffffffffffdcf =2.000000
+@ 350_111:
+cmpb  $0x0, 0xa4c90(%rip) =0.500000
+jnz 0xc =1.000000
+@ 350_112:
+movl  (%rbx), %eax =0.500000
+test $0x1, %al =0.250000
+jz 0x122 =1.000000
+@ 350_113:
+movqq  0xa4b58(%rip), %xmm0 =1.000000
+or $0x1, %eax =0.250000
+movq  %rbx, 0xa4b4e(%rip) =1.000000
+movl  %eax, (%rbx) =1.000000
+movhpsq  0x38(%rbx), %xmm0 =1.000000
+movupsx  %xmm0, 0xa8(%rbx) =0.500000
+jmp 0xfffffffffffffec5 =2.000000
+@ 350_114:
+movq  0xd8(%rbx), %r15 =1.000000
+mov $0x4c3b60, %rdx =0.250000
+mov $0x4c4208, %rax =0.250000
+mov %r15, %rsi =0.250000
+sub %rdx, %rax =0.250000
+sub %rdx, %rsi =0.250000
+cmp %rsi, %rax =0.250000
+jbe 0x19b =1.000000
+@ 350_115:
+xor %edx, %edx =0.250000
+xor %esi, %esi =0.250000
+mov %rbx, %rdi =0.250000
+callq  0x58(%r15) =2.000000
+nop %edi, %edx =0.250000
+pushq  %rbx =1.000000
+mov %rdi, %rbx =0.250000
+callq  0x3fa8 =2.000000
+nop %edi, %edx =0.250000
+pushq  %r13 =1.000000
+pushq  %r12 =1.000000
+mov %rdx, %r12 =0.250000
+pushq  %rbp =1.000000
+mov %rsi, %rbp =0.250000
+pushq  %rbx =1.000000
+mov %rdi, %rbx =0.250000
+sub $0x8, %rsp =0.250000
+movq  0xd8(%rdi), %r13 =1.000000
+mov $0x4c3b60, %rdx =0.250000
+mov $0x4c4208, %rax =0.250000
+mov %r13, %rcx =0.250000
+sub %rdx, %rax =0.250000
+sub %rdx, %rcx =0.250000
+cmp %rcx, %rax =0.250000
+jbe 0xd0 =1.000000
+@ 350_116:
+mov %rbx, %rdi =0.250000
+callq  0x60(%r13) =2.000000
+nop %edi, %edx =0.250000
+pushq  %rbp =1.000000
+pushq  %rbx =1.000000
+mov %rdi, %rbx =0.250000
+sub $0x18, %rsp =0.250000
+movq  0x28(%rdi), %rdx =1.000000
+movq  0x20(%rdi), %rsi =1.000000
+cmp %rsi, %rdx =0.250000
+jbe 0x38 =1.000000
+@ 350_117:
+movq  0x8(%rbx), %rsi =1.000000
+subq  0x10(%rbx), %rsi =0.500000
+jz 0x41 =1.000000
+@ 350_118:
+movq  $0xffffffffffffffff, 0x90(%rbx) =1.000000
+xor %eax, %eax =0.250000
+add $0x18, %rsp =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+retq   =1.000000
+@ 350_119:
+cmp $0xffffffff, %eax =0.250000
+jz 0xd0 =1.000000
+@ 350_120:
+movl  (%rbx), %eax =0.500000
+movq  0x38(%rbx), %rdi =1.000000
+mov %eax, %edx =0.250000
+test %rbp, %rbp =0.250000
+jz 0x57 =1.000000
+@ 350_121:
+or $0x2, %edx =0.250000
+lea 0x84(%rbx), %rbp =1.000000
+lea 0x83(%rbx), %r12 =1.000000
+movl  %edx, (%rbx) =1.000000
+test %rdi, %rdi =0.250000
+jz 0x6 =1.000000
+@ 350_122:
+test $0x1, %al =0.250000
+jz 0x2e =1.000000
+@ 350_123:
+movq %r12, %xmm0 =1.000000
+movq %rbp, %xmm1 =1.000000
+or $0x1, %edx =0.250000
+punpcklqdq %xmm1, %xmm0 =1.000000
+movl  %edx, (%rbx) =1.000000
+movupsx  %xmm0, 0x38(%rbx) =0.500000
+jmp 0xffffffffffffffa5 =2.000000
+@ 350_124:
+pxor %xmm0, %xmm0 =0.330000
+mov %rbx, %rax =0.250000
+movupsx  %xmm0, 0x8(%rbx) =0.500000
+movupsx  %xmm0, 0x18(%rbx) =0.500000
+movupsx  %xmm0, 0x28(%rbx) =0.500000
+add $0x8, %rsp =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+popq  %r13 =0.500000
+retq   =1.000000
+@ 350_125:
+test %rax, %rax =0.250000
+jz 0x1a =1.000000
+@ 350_126:
+movqq  0x38(%rbx), %xmm0 =1.000000
+mov %rbx, %rax =0.250000
+punpcklqdq %xmm0, %xmm0 =1.000000
+movupsx  %xmm0, 0x8(%rbx) =0.500000
+movupsx  %xmm0, 0x18(%rbx) =0.500000
+movupsx  %xmm0, 0x28(%rbx) =0.500000
+popq  %rbx =0.500000
+retq   =1.000000
+@ 350_127:
+movl  0xc0(%rbx), %eax =0.500000
+test %eax, %eax =0.250000
+jle 0x10 =1.000000
+@ 350_128:
+cmp $0x2, %ebp =0.250000
+jz 0xffffffffffffff2f =1.000000
+@ 350_129:
+movq  0x88(%rbx), %rdi =1.000000
+test %rdi, %rdi =0.250000
+jz 0xffffffffffffff1f =1.000000
+@ 350_130:
+movl  0x4(%rdi), %eax =0.500000
+sub $0x1, %eax =0.250000
+movl  %eax, 0x4(%rdi) =1.000000
+jnz 0xffffffffffffff10 =1.000000
+@ 350_131:
+movq  $0x0, 0x8(%rdi) =1.000000
+movl  %fs:0x18, %edx =0.500000
+test %edx, %edx =0.250000
+jnz 0x1a8 =1.000000
+@ 350_132:
+subl  $0x1, (%rdi) =1.000000
+jmp 0xfffffffffffffeef =2.000000
+@ 350_133:
+movl  $0xffffffff, 0xc0(%rbx) =1.000000
+movq  0x68(%rbx), %rbx =1.000000
+test %rbx, %rbx =0.250000
+jz 0x10f =1.000000
+@ 350_134:
+movl  (%rbx), %ebp =0.500000
+and $0x2, %ebp =0.250000
+jnz 0xffffffffffffffe4 =1.000000
+@ 350_135:
+movl  0xc0(%rbx), %edx =0.500000
+test %edx, %edx =0.250000
+jz 0xffffffffffffffda =1.000000
+@ 350_136:
+movl  $0xffffffff, 0xc0(%rbx) =1.000000
+movq  0x68(%rbx), %rbx =1.000000
+test %rbx, %rbx =0.250000
+jz 0x10f =1.000000
+@ 350_137:
+movl  0xa4bfe(%rip), %eax =0.500000
+sub $0x1, %eax =0.250000
+movl  %eax, 0xa4bf5(%rip) =1.000000
+test %eax, %eax =0.250000
+jnz 0x24 =1.000000
+@ 350_138:
+movq  $0x0, 0xa4bea(%rip) =1.000000
+movl  %fs:0x18, %edx =0.500000
+test %edx, %edx =0.250000
+jnz 0xa0 =1.000000
+@ 350_139:
+subl  $0x1, 0xa4bcb(%rip) =1.000000
+test %r13, %r13 =0.250000
+jz 0xc =1.000000
+@ 350_140:
+movq  0x28(%rsp), %rax =1.000000
+xorq  %fs:0x28, %rax =0.500000
+jnz 0x162 =1.000000
+@ 350_141:
+add $0x38, %rsp =0.250000
+mov %r12d, %eax =0.250000
+popq  %rbx =0.500000
+popq  %rbp =0.500000
+popq  %r12 =0.500000
+popq  %r13 =0.500000
+popq  %r14 =0.500000
+popq  %r15 =0.500000
+retq   =1.000000
+@ 350_142:
+add $0x8, %rbx =0.250000
+cmp %rbx, %r12 =0.250000
+jnz 0xfffffffffffffff7 =1.000000
+@ 350_143:
+mov %ebp, %edi =0.250000
+callq  0x40aeb =2.000000
+nop %edi, %edx =0.250000
+mov $0xffffffffffffffc0, %r9 =0.250000
+mov %edi, %edx =0.250000
+mov $0xe7, %r8d =0.250000
+mov $0x3c, %esi =0.250000
+jmp 0x17 =2.000000
+@ 350_144:
+mov %edx, %edi =0.250000
+mov %r8d, %eax =0.250000
