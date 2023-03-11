@@ -110,4 +110,21 @@ plt.title("Average difference percentage of  Actual energy  vs  Predicted energy
 plt.legend()
 plt.savefig("plot_total_average_perc.png")
 
+X = ['Actual vs Predicted average percentage change']
+first =[0.026618935373826362]
+second = [0.034288041965136705]
+
+
+X_axis = np.arange(len(X))
+plt.figure()
+plt.bar(X_axis - 0.2, first, 0.4, label = 'First')
+plt.bar(X_axis + 0.2, second, 0.4, label = 'Second')
+
+plt.xticks(X_axis, X)
+plt.xlabel("Groups")
+plt.ylabel("1st vs 2nd system mean error  ")
+plt.title("Mean error of 1st system vs Mean error of 2nd system ")
+plt.legend()
+plt.savefig("1st vs second.png")
+
 print(av_perc)
